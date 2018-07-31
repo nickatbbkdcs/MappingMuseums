@@ -1,0 +1,47 @@
+\hypertarget{classmodel__to__view_1_1Model__To__View}{}\section{model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View Class Reference}
+\label{classmodel__to__view_1_1Model__To__View}\index{model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View@{model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View}}
+
+
+Purpose\+:Removes type info from name Arguments\+:  
+
+
+Inheritance diagram for model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodel__to__view_1_1Model__To__View}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel__to__view_1_1Model__To__View_a9c1facf7be0e577615e2882403df13ad}\label{classmodel__to__view_1_1Model__To__View_a9c1facf7be0e577615e2882403df13ad}} 
+def {\bfseries get\+View} (self, model, attribute)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel__to__view_1_1Model__To__View_ad774c2f07747f51cad87361ca9b313a9}\label{classmodel__to__view_1_1Model__To__View_ad774c2f07747f51cad87361ca9b313a9}} 
+{\bfseries parts} = attribute.\+split(definitions.\+H\+I\+E\+R\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{classmodel__to__view_1_1Model__To__View_ac891d102693096ee4f433687ae1e7002}\label{classmodel__to__view_1_1Model__To__View_ac891d102693096ee4f433687ae1e7002}} 
+{\bfseries lastpart} = parts\mbox{[}len(parts)-\/1\mbox{]}
+\item 
+\mbox{\Hypertarget{classmodel__to__view_1_1Model__To__View_af98c0885239c59dbf61a2e4663788b77}\label{classmodel__to__view_1_1Model__To__View_af98c0885239c59dbf61a2e4663788b77}} 
+{\bfseries vals} = attribute.\+split(definitions.\+R\+A\+N\+G\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{classmodel__to__view_1_1Model__To__View_a40a49c8930b0a916947339102881c8cf}\label{classmodel__to__view_1_1Model__To__View_a40a49c8930b0a916947339102881c8cf}} 
+{\bfseries instance} = apputils.\+get\+Data\+Class\+Instance(definitions.\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+GE)
+\item 
+\mbox{\Hypertarget{classmodel__to__view_1_1Model__To__View_a7cf2a4cede857b62cb712492bf1e2889}\label{classmodel__to__view_1_1Model__To__View_a7cf2a4cede857b62cb712492bf1e2889}} 
+{\bfseries view} = instance.\+get\+Model\+To\+View(attribute)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Purpose\+:Removes type info from name Arguments\+: 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nlarsson/bbk/python/webdev/museumflask/app/main/\mbox{\hyperlink{model__to__view_8py}{model\+\_\+to\+\_\+view.\+py}}\end{DoxyCompactItemize}

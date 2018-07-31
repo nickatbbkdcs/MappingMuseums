@@ -1,0 +1,68 @@
+\hypertarget{models_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/models.py File Reference}
+\label{models_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/models.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/models.\+py}}
+
+
+~\newline
+ This module initialises the O\+NS dictionaries,all configuration lists, and builds the datatype dictionary through database introspection.  
+
+
+\subsection*{Functions}
+\begin{Indent}\textbf{ name}\par
+{\em Purpose\+:Loads pickled dictionaries Arguments\+: }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{models_8py_a3c6f3c431162e24c313c990c1f3e55bc}\label{models_8py_a3c6f3c431162e24c313c990c1f3e55bc}} 
+def {\bfseries app.\+main.\+models.\+pickle\+Object} (o, name)
+\item 
+\mbox{\Hypertarget{models_8py_a135a37ce7c267fdad56a7e8b30943eb3}\label{models_8py_a135a37ce7c267fdad56a7e8b30943eb3}} 
+def {\bfseries app.\+main.\+models.\+load\+Object} (name)
+\item 
+def \mbox{\hyperlink{models_8py_a40d991f3c5a2c0ad8a500b93de7bb526}{app.\+main.\+models.\+do\+\_\+initdefinitions}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Does all initialisations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{models_8py_a3135c18902abc0c9b85388845041a360}\label{models_8py_a3135c18902abc0c9b85388845041a360}} 
+def {\bfseries app.\+main.\+models.\+initmodels} ()
+\item 
+\mbox{\Hypertarget{models_8py_a713ffda581e0a99f923b8d19df13ade7}\label{models_8py_a713ffda581e0a99f923b8d19df13ade7}} 
+def {\bfseries app.\+main.\+models.\+initdefinitions} (force)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{models_8py_af159ab32ba53f6216eece8a4984454f5}\label{models_8py_af159ab32ba53f6216eece8a4984454f5}} 
+list {\bfseries app.\+main.\+models.\+apis} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{models_8py_ab126accfe55d6cc4ec4acd8bcd0adbc1}\label{models_8py_ab126accfe55d6cc4ec4acd8bcd0adbc1}} 
+bool {\bfseries app.\+main.\+models.\+M\+O\+D\+E\+L\+S\+\_\+\+I\+N\+I\+T\+I\+T\+A\+L\+I\+S\+ED} = False
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ This module initialises the O\+NS dictionaries,all configuration lists, and builds the datatype dictionary through database introspection. 
+
+
+\begin{DoxyItemize}
+\item All predicates are found
+\item All datatypes are found
+\item Search select menus initialised
+\item Search show and query configuration
+\item Columns to show in nakedview
+\item Create cache for all lists
+\item Read J\+S\+ON geo files In dev mode all expensive operations are replaced with loading pickled objects. The option is set in the config file app/searchapplication.\+cfg
+
+More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{models_8py_a40d991f3c5a2c0ad8a500b93de7bb526}\label{models_8py_a40d991f3c5a2c0ad8a500b93de7bb526}} 
+\index{models.\+py@{models.\+py}!do\+\_\+initdefinitions@{do\+\_\+initdefinitions}}
+\index{do\+\_\+initdefinitions@{do\+\_\+initdefinitions}!models.\+py@{models.\+py}}
+\subsubsection{\texorpdfstring{do\+\_\+initdefinitions()}{do\_initdefinitions()}}
+{\footnotesize\ttfamily def app.\+main.\+models.\+do\+\_\+initdefinitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Does all initialisations. 
+
+Triggered on first request 

@@ -1,0 +1,163 @@
+\hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node}{}\section{app.\+main.\+treelib.\+node.\+Node Class Reference}
+\label{classapp_1_1main_1_1treelib_1_1node_1_1Node}\index{app.\+main.\+treelib.\+node.\+Node@{app.\+main.\+treelib.\+node.\+Node}}
+Inheritance diagram for app.\+main.\+treelib.\+node.\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classapp_1_1main_1_1treelib_1_1node_1_1Node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_aac2165277078b78954b973a74fd68ba6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a5ddde76bda1e158e64eab1dc17712af6}{tag}}=None, \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a8ef90e787789eb8af60606d46255564f}{identifier}}=None, expanded=True, data=None)
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a8e57640cfd3cceaf2a435810b907c096}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a8e57640cfd3cceaf2a435810b907c096}} 
+def {\bfseries \+\_\+\+\_\+lt\+\_\+\+\_\+} (self, other)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a55bc875d07efd5ef95890c57882d3578}{bpointer}} (self)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a74a05c3d863c43f25536f44b5e392932}{bpointer}} (self, nid)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a98442ca873604524b806978aca72addb}{fpointer}} (self)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_afc312003b4159b00d8ed55fed0680474}{fpointer}} (self, value)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a8ef90e787789eb8af60606d46255564f}{identifier}} (self)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_af0558bf5b5af7eb1b3b2ced14c50e869}{identifier}} (self, value)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_ada4b689dcebea9b5b1adc7949b40e3d0}{is\+\_\+leaf}} (self)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a3e70bbc4a3f2e1642546769b4bc82949}{is\+\_\+root}} (self)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a5ddde76bda1e158e64eab1dc17712af6}{tag}} (self)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_adce76642226ce58f591191ba3314797c}{tag}} (self, value)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_ad5123f1013b32f2d3fc3c6aa82897a8f}{update\+\_\+bpointer}} (self, nid)
+\item 
+def \mbox{\hyperlink{classapp_1_1main_1_1treelib_1_1node_1_1Node_a1c2773beab05416bc58d9e5063b58590}{update\+\_\+fpointer}} (self, nid, mode=A\+DD, replace=None)
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a208ec50bee77d4ff1d920ecd6cfbf0d1}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a208ec50bee77d4ff1d920ecd6cfbf0d1}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a6a5c835203738fa4fd7f5fdd7358ebbd}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a6a5c835203738fa4fd7f5fdd7358ebbd}} 
+{\bfseries expanded}
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_aec761d3090512fa2151eccd678a36e1a}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_aec761d3090512fa2151eccd678a36e1a}} 
+{\bfseries data}
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_abba86dbedcc40b7635bdb1fcee1e7f08}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_abba86dbedcc40b7635bdb1fcee1e7f08}} 
+{\bfseries bpointer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Nodes are elementary objects which are stored a `_nodes` dictionary of a Tree.
+Use `data` attribute to store node-specific data.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_aac2165277078b78954b973a74fd68ba6}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_aac2165277078b78954b973a74fd68ba6}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tag = {\ttfamily None},  }\item[{}]{identifier = {\ttfamily None},  }\item[{}]{expanded = {\ttfamily True},  }\item[{}]{data = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new Node object to be placed inside a Tree object\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a55bc875d07efd5ef95890c57882d3578}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a55bc875d07efd5ef95890c57882d3578}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!bpointer@{bpointer}}
+\index{bpointer@{bpointer}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{bpointer()}{bpointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+bpointer (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of `_bpointer`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a74a05c3d863c43f25536f44b5e392932}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a74a05c3d863c43f25536f44b5e392932}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!bpointer@{bpointer}}
+\index{bpointer@{bpointer}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{bpointer()}{bpointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+bpointer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the value of `_bpointer`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a98442ca873604524b806978aca72addb}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a98442ca873604524b806978aca72addb}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!fpointer@{fpointer}}
+\index{fpointer@{fpointer}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{fpointer()}{fpointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+fpointer (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of `_fpointer`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_afc312003b4159b00d8ed55fed0680474}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_afc312003b4159b00d8ed55fed0680474}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!fpointer@{fpointer}}
+\index{fpointer@{fpointer}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{fpointer()}{fpointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+fpointer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the value of `_fpointer`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a8ef90e787789eb8af60606d46255564f}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a8ef90e787789eb8af60606d46255564f}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!identifier@{identifier}}
+\index{identifier@{identifier}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{identifier()}{identifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+identifier (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of `_identifier`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_af0558bf5b5af7eb1b3b2ced14c50e869}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_af0558bf5b5af7eb1b3b2ced14c50e869}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!identifier@{identifier}}
+\index{identifier@{identifier}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{identifier()}{identifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+identifier (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the value of `_identifier`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_ada4b689dcebea9b5b1adc7949b40e3d0}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_ada4b689dcebea9b5b1adc7949b40e3d0}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!is\+\_\+leaf@{is\+\_\+leaf}}
+\index{is\+\_\+leaf@{is\+\_\+leaf}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+\_\+leaf()}{is\_leaf()}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+is\+\_\+leaf (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if current node has no children.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a3e70bbc4a3f2e1642546769b4bc82949}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a3e70bbc4a3f2e1642546769b4bc82949}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!is\+\_\+root@{is\+\_\+root}}
+\index{is\+\_\+root@{is\+\_\+root}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+\_\+root()}{is\_root()}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+is\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if self has no parent, i.e. as root.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a5ddde76bda1e158e64eab1dc17712af6}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a5ddde76bda1e158e64eab1dc17712af6}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!tag@{tag}}
+\index{tag@{tag}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{tag()}{tag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+tag (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of `_tag`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_adce76642226ce58f591191ba3314797c}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_adce76642226ce58f591191ba3314797c}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!tag@{tag}}
+\index{tag@{tag}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{tag()}{tag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+tag (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the value of `_tag`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_ad5123f1013b32f2d3fc3c6aa82897a8f}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_ad5123f1013b32f2d3fc3c6aa82897a8f}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!update\+\_\+bpointer@{update\+\_\+bpointer}}
+\index{update\+\_\+bpointer@{update\+\_\+bpointer}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{update\+\_\+bpointer()}{update\_bpointer()}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+update\+\_\+bpointer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update parent node.\end{DoxyVerb}
+ \mbox{\Hypertarget{classapp_1_1main_1_1treelib_1_1node_1_1Node_a1c2773beab05416bc58d9e5063b58590}\label{classapp_1_1main_1_1treelib_1_1node_1_1Node_a1c2773beab05416bc58d9e5063b58590}} 
+\index{app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}!update\+\_\+fpointer@{update\+\_\+fpointer}}
+\index{update\+\_\+fpointer@{update\+\_\+fpointer}!app\+::main\+::treelib\+::node\+::\+Node@{app\+::main\+::treelib\+::node\+::\+Node}}
+\subsubsection{\texorpdfstring{update\+\_\+fpointer()}{update\_fpointer()}}
+{\footnotesize\ttfamily def app.\+main.\+treelib.\+node.\+Node.\+update\+\_\+fpointer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid,  }\item[{}]{mode = {\ttfamily ADD},  }\item[{}]{replace = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update all children nodes.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nlarsson/bbk/python/webdev/museumflask/app/main/treelib/node.\+py\end{DoxyCompactItemize}

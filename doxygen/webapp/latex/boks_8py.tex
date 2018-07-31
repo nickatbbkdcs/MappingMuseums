@@ -1,0 +1,354 @@
+\hypertarget{boks_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/boks.py File Reference}
+\label{boks_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/boks.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/boks.\+py}}
+
+
+~\newline
+ This class is the entry point for all plots in the visualise page.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks}{app.\+main.\+boks.\+Boks}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1open__at__a__given__time}{app.\+main.\+boks.\+Boks.\+open\+\_\+at\+\_\+a\+\_\+given\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1that__opened__up__to__a__given__time}{app.\+main.\+boks.\+Boks.\+that\+\_\+opened\+\_\+up\+\_\+to\+\_\+a\+\_\+given\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1openings__over__time}{app.\+main.\+boks.\+Boks.\+openings\+\_\+over\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1open__over__time}{app.\+main.\+boks.\+Boks.\+open\+\_\+over\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1closings__over__time}{app.\+main.\+boks.\+Boks.\+closings\+\_\+over\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1openings__and__closings__over__time}{app.\+main.\+boks.\+Boks.\+openings\+\_\+and\+\_\+closings\+\_\+over\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1boks_1_1Boks_1_1test__of__heatmap}{app.\+main.\+boks.\+Boks.\+test\+\_\+of\+\_\+heatmap}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{boks_8py_a1de22e17ee18cbeaad62450337338505}\label{boks_8py_a1de22e17ee18cbeaad62450337338505}} 
+def \mbox{\hyperlink{boks_8py_a1de22e17ee18cbeaad62450337338505}{app.\+main.\+boks.\+add\+Leaf}} (self, menu, action, nodename)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Adds a leaf to the menu Arguments\+:  menu  the action to take  the name of the node to add. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{boks_8py_a0000f846018e3e6ebe19b7ca8e4168cb}{app.\+main.\+boks.\+add\+Node\+With\+Action}} (self, menu, action, nodename)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Adds a node to the tree Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_a6ac441c277cdf3b11d686d42c367afb2}\label{boks_8py_a6ac441c277cdf3b11d686d42c367afb2}} 
+def \mbox{\hyperlink{boks_8py_a6ac441c277cdf3b11d686d42c367afb2}{app.\+main.\+boks.\+get\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Builds the complete menu tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_af5a04427c9d1222ebd8f5651f90fa294}\label{boks_8py_af5a04427c9d1222ebd8f5651f90fa294}} 
+def \mbox{\hyperlink{boks_8py_af5a04427c9d1222ebd8f5651f90fa294}{app.\+main.\+boks.\+get\+X\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Build the x heatmap menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_a69dd15eb1daa08207ed5e31fb616d7d4}\label{boks_8py_a69dd15eb1daa08207ed5e31fb616d7d4}} 
+def \mbox{\hyperlink{boks_8py_a69dd15eb1daa08207ed5e31fb616d7d4}{app.\+main.\+boks.\+get\+Y\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Build the y heatmap menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_a09b0097d09fda08c04f96dda9c0fd341}\label{boks_8py_a09b0097d09fda08c04f96dda9c0fd341}} 
+def \mbox{\hyperlink{boks_8py_a09b0097d09fda08c04f96dda9c0fd341}{app.\+main.\+boks.\+boks\+View}} (self, plot)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Implements the F\+L\+A\+SK view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_a7f996b29f72de283b24036c9e0836730}\label{boks_8py_a7f996b29f72de283b24036c9e0836730}} 
+def {\bfseries app.\+main.\+boks.\+plot\+Route} (self, dataview, category, parameters, contextdict)
+\item 
+def \mbox{\hyperlink{boks_8py_a97efcf7d153e66ccfb157740169d26cb}{app.\+main.\+boks.\+boks\+Plot\+View}} (self, plot)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Implements the F\+L\+A\+SK view Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_a8cd329f6be3b1307adba945e5a7cfa1a}\label{boks_8py_a8cd329f6be3b1307adba945e5a7cfa1a}} 
+def \mbox{\hyperlink{boks_8py_a8cd329f6be3b1307adba945e5a7cfa1a}{app.\+main.\+boks.\+get\+Location\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Build tree for locations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{boks_8py_a10aa2f20619a4106a71e19b59909b559}\label{boks_8py_a10aa2f20619a4106a71e19b59909b559}} 
+def \mbox{\hyperlink{boks_8py_a10aa2f20619a4106a71e19b59909b559}{app.\+main.\+boks.\+get\+England\+Tree}} (self, root, tree, prefix=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Build tree for england  node  tree =\char`\"{}\char`\"{} menu prefix. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{boks_8py_ac4c742e6aaa95ed54f7167c1a67a4cd1}{app.\+main.\+boks.\+get\+Generic\+Location\+Tree}} (self, root, tree, countryparam, pseudoparam, prefix=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Build tree for countries other than england Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{boks_8py_a9aff8a207bd71f824da28a6b60ef3a63}\label{boks_8py_a9aff8a207bd71f824da28a6b60ef3a63}} 
+{\bfseries app.\+main.\+boks.\+actionstring}
+\item 
+\mbox{\Hypertarget{boks_8py_ab09a719fdb0a1c086e6bb59697443ba9}\label{boks_8py_ab09a719fdb0a1c086e6bb59697443ba9}} 
+{\bfseries app.\+main.\+boks.\+nodename}
+\item 
+\mbox{\Hypertarget{boks_8py_a27d18e1a114bf5a1b991484f16def6f2}\label{boks_8py_a27d18e1a114bf5a1b991484f16def6f2}} 
+{\bfseries app.\+main.\+boks.\+False}
+\item 
+\mbox{\Hypertarget{boks_8py_a324b42dfca2e02d9ea186b00b55546ce}\label{boks_8py_a324b42dfca2e02d9ea186b00b55546ce}} 
+{\bfseries app.\+main.\+boks.\+action}
+\item 
+\mbox{\Hypertarget{boks_8py_ac6439b2b48eb70295e8d07cbc2f7b4c7}\label{boks_8py_ac6439b2b48eb70295e8d07cbc2f7b4c7}} 
+{\bfseries app.\+main.\+boks.\+defaultaction}
+\item 
+\mbox{\Hypertarget{boks_8py_a8d77d40c20d9876933da28026c69107d}\label{boks_8py_a8d77d40c20d9876933da28026c69107d}} 
+{\bfseries app.\+main.\+boks.\+child} = tree.\+has\+Child\+With\+Name(parent,hvector\mbox{[}idx\mbox{]})
+\item 
+\mbox{\Hypertarget{boks_8py_ae6afdd7f84f3acd0239f9901ae1819e3}\label{boks_8py_ae6afdd7f84f3acd0239f9901ae1819e3}} 
+{\bfseries app.\+main.\+boks.\+node} = tree.\+create\+\_\+node(hvector\mbox{[}idx\mbox{]},hvector\mbox{[}idx\mbox{]}+parent.\+identifier,parent=parent,data=parent.\+data)
+\item 
+\mbox{\Hypertarget{boks_8py_ab6c7d5e1190169d84cfddfa5d474fcf0}\label{boks_8py_ab6c7d5e1190169d84cfddfa5d474fcf0}} 
+{\bfseries app.\+main.\+boks.\+data}
+\item 
+\mbox{\Hypertarget{boks_8py_a35dcdfa8d6cfbe493d4ee52f173f75ef}\label{boks_8py_a35dcdfa8d6cfbe493d4ee52f173f75ef}} 
+{\bfseries app.\+main.\+boks.\+pname} = parent
+\item 
+\mbox{\Hypertarget{boks_8py_a0012d595b85fcc880129fe548e187ac0}\label{boks_8py_a0012d595b85fcc880129fe548e187ac0}} 
+dictionary {\bfseries app.\+main.\+boks.\+mergedict} = \{\}
+\item 
+\mbox{\Hypertarget{boks_8py_a63a7813586d9fd6f58e6bbac4c73b0e1}\label{boks_8py_a63a7813586d9fd6f58e6bbac4c73b0e1}} 
+{\bfseries app.\+main.\+boks.\+hnode} = tree.\+create\+\_\+node(hier,hier+pname,parent=parent,data=mergedict)
+\item 
+\mbox{\Hypertarget{boks_8py_aa7d29f49622f9c9016f2d4a908ab1faa}\label{boks_8py_aa7d29f49622f9c9016f2d4a908ab1faa}} 
+{\bfseries app.\+main.\+boks.\+subprops} = listman.\+get\+List(\char`\"{}def\+Class\char`\"{}+hier+definitions.\+L\+I\+S\+T\+N\+A\+ME)
+\item 
+\mbox{\Hypertarget{boks_8py_af52fcd8f3180fa5d77f3dbf19641ac7c}\label{boks_8py_af52fcd8f3180fa5d77f3dbf19641ac7c}} 
+{\bfseries app.\+main.\+boks.\+sortedsubprops} = sorted(subprops)
+\item 
+\mbox{\Hypertarget{boks_8py_a1c7ed69f40022777c4600ffc554c5f28}\label{boks_8py_a1c7ed69f40022777c4600ffc554c5f28}} 
+{\bfseries app.\+main.\+boks.\+parts} = sub.\+split(\char`\"{}-\/\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a870265e8e39d5fabc30bc5e3ede6f3af}\label{boks_8py_a870265e8e39d5fabc30bc5e3ede6f3af}} 
+def {\bfseries app.\+main.\+boks.\+n} = Boks.\+get\+Sub\+Hier(tree,hnode,parts,0)
+\item 
+\mbox{\Hypertarget{boks_8py_ae660f0d5a2aad35da028fa1d05a5fde4}\label{boks_8py_ae660f0d5a2aad35da028fa1d05a5fde4}} 
+{\bfseries app.\+main.\+boks.\+identifier}
+\item 
+\mbox{\Hypertarget{boks_8py_a1f3e97e0f67b1150323ac36355dfe93b}\label{boks_8py_a1f3e97e0f67b1150323ac36355dfe93b}} 
+{\bfseries app.\+main.\+boks.\+parent}
+\item 
+\mbox{\Hypertarget{boks_8py_a8db540847ada676a44bc8251fa8f7e31}\label{boks_8py_a8db540847ada676a44bc8251fa8f7e31}} 
+{\bfseries app.\+main.\+boks.\+listofleafs} = tree.\+filter\+\_\+nodes(Boks.\+filter\+Children)
+\item 
+\mbox{\Hypertarget{boks_8py_a1a714aba651be4f2e9ce37903f9f496b}\label{boks_8py_a1a714aba651be4f2e9ce37903f9f496b}} 
+dictionary {\bfseries app.\+main.\+boks.\+datadict} = \{\}
+\item 
+\mbox{\Hypertarget{boks_8py_a9e156c32e50b1044f99da2ef327cc835}\label{boks_8py_a9e156c32e50b1044f99da2ef327cc835}} 
+{\bfseries app.\+main.\+boks.\+tree}
+\item 
+\mbox{\Hypertarget{boks_8py_a282d932667251906943de6d0832f8295}\label{boks_8py_a282d932667251906943de6d0832f8295}} 
+{\bfseries app.\+main.\+boks.\+newmenu}
+\item 
+\mbox{\Hypertarget{boks_8py_a8642fe81e714fbf788fa893bd01f5d47}\label{boks_8py_a8642fe81e714fbf788fa893bd01f5d47}} 
+{\bfseries app.\+main.\+boks.\+museumroot}
+\item 
+\mbox{\Hypertarget{boks_8py_a7392039ce0caea295a9ff37d352ebfca}\label{boks_8py_a7392039ce0caea295a9ff37d352ebfca}} 
+{\bfseries app.\+main.\+boks.\+filterpathlen}
+\item 
+\mbox{\Hypertarget{boks_8py_a347f377cd060f0e4735834297c1ec88d}\label{boks_8py_a347f377cd060f0e4735834297c1ec88d}} 
+{\bfseries app.\+main.\+boks.\+menutree}
+\item 
+\mbox{\Hypertarget{boks_8py_a9d3abe2e0a09e691d4c9aebe07ed77fb}\label{boks_8py_a9d3abe2e0a09e691d4c9aebe07ed77fb}} 
+{\bfseries app.\+main.\+boks.\+color} = request.\+form.\+get(\char`\"{}colorscheme-\/label\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a2697c4fd5bab5254ec1784b4493ef1f3}\label{boks_8py_a2697c4fd5bab5254ec1784b4493ef1f3}} 
+{\bfseries app.\+main.\+boks.\+xax} = request.\+form.\+get(\char`\"{}xaxisselect-\/label\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a5f9df1100ec3fe4bf8e57293f0b231f0}\label{boks_8py_a5f9df1100ec3fe4bf8e57293f0b231f0}} 
+{\bfseries app.\+main.\+boks.\+xaxparts} = xax.\+split(\char`\"{}/\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a45530bb269c833908e7e6ef080dd8b0a}\label{boks_8py_a45530bb269c833908e7e6ef080dd8b0a}} 
+{\bfseries app.\+main.\+boks.\+yax} = request.\+form.\+get(\char`\"{}yaxisselect-\/label\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_aa6b0b518cdb196e7d7595c8876f09e55}\label{boks_8py_aa6b0b518cdb196e7d7595c8876f09e55}} 
+{\bfseries app.\+main.\+boks.\+yaxparts} = yax.\+split(\char`\"{}/\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_ae4278d16cf41daf7ff4f3fb16b058e79}\label{boks_8py_ae4278d16cf41daf7ff4f3fb16b058e79}} 
+{\bfseries app.\+main.\+boks.\+yaxdict} = request.\+form.\+get(\char`\"{}yaxisselect-\/dict\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a87168c345558616af54def3bd74bce48}\label{boks_8py_a87168c345558616af54def3bd74bce48}} 
+{\bfseries app.\+main.\+boks.\+xaxdict} = request.\+form.\+get(\char`\"{}xaxisselect-\/dict\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a3ef2c40a6858e555a8d86d90e49c9067}\label{boks_8py_a3ef2c40a6858e555a8d86d90e49c9067}} 
+{\bfseries app.\+main.\+boks.\+contextdictstr} = urllib.\+unquote(request.\+form.\+get(\char`\"{}contextdict\char`\"{})).decode(\textquotesingle{}utf8\textquotesingle{})
+\item 
+\mbox{\Hypertarget{boks_8py_a1a43f5ad883f7f2ed8ba623bb4bdeb0f}\label{boks_8py_a1a43f5ad883f7f2ed8ba623bb4bdeb0f}} 
+{\bfseries app.\+main.\+boks.\+contextdict} = urlparse.\+parse\+\_\+qs(urlparse.\+urlparse(contextdictstr).query)
+\item 
+\mbox{\Hypertarget{boks_8py_a07fa1220dfd4337e504815adb12057cf}\label{boks_8py_a07fa1220dfd4337e504815adb12057cf}} 
+string {\bfseries app.\+main.\+boks.\+path} = \char`\"{}/path\char`\"{}+urllib.\+unquote(request.\+form.\+get(\char`\"{}xaxisselect-\/dict\char`\"{})).decode(\textquotesingle{}utf8\textquotesingle{})
+\item 
+\mbox{\Hypertarget{boks_8py_abd16d9262c601ff78583c3c891ce1b3f}\label{boks_8py_abd16d9262c601ff78583c3c891ce1b3f}} 
+{\bfseries app.\+main.\+boks.\+xdict} = urlparse.\+parse\+\_\+qs(urlparse.\+urlparse(path).query)
+\item 
+\mbox{\Hypertarget{boks_8py_a9e51303931a8cdb7085f28875d5c7b13}\label{boks_8py_a9e51303931a8cdb7085f28875d5c7b13}} 
+string {\bfseries app.\+main.\+boks.\+dataview} = \char`\"{}heatmap\char`\"{}
+\item 
+\mbox{\Hypertarget{boks_8py_a6656c165618081afa3aa1d9132f6b98f}\label{boks_8py_a6656c165618081afa3aa1d9132f6b98f}} 
+{\bfseries app.\+main.\+boks.\+category} = xaxparts\mbox{[}4\+:\mbox{]}
+\item 
+\mbox{\Hypertarget{boks_8py_a678652224c172ba51212868b1b643f28}\label{boks_8py_a678652224c172ba51212868b1b643f28}} 
+list {\bfseries app.\+main.\+boks.\+parameters} = \mbox{[}yaxparts\mbox{[}4\+:\mbox{]},color\mbox{]}
+\item 
+\mbox{\Hypertarget{boks_8py_a5df38d91526c286fe8d70be95ea48847}\label{boks_8py_a5df38d91526c286fe8d70be95ea48847}} 
+{\bfseries app.\+main.\+boks.\+start\+\_\+time} = time.\+time()
+\item 
+\mbox{\Hypertarget{boks_8py_a8c6a3fff7211208b68c65dc16bf38189}\label{boks_8py_a8c6a3fff7211208b68c65dc16bf38189}} 
+{\bfseries app.\+main.\+boks.\+obj} = self.\+plot\+Route(dataview,category,parameters,contextdict)
+\item 
+\mbox{\Hypertarget{boks_8py_a0cfcb031c155a57c4f98fb34449350ec}\label{boks_8py_a0cfcb031c155a57c4f98fb34449350ec}} 
+{\bfseries app.\+main.\+boks.\+js\+\_\+resources} = I\+N\+L\+I\+N\+E.\+render\+\_\+js()
+\item 
+\mbox{\Hypertarget{boks_8py_a7ebe28f2f2566033b683e6909f9d5a41}\label{boks_8py_a7ebe28f2f2566033b683e6909f9d5a41}} 
+{\bfseries app.\+main.\+boks.\+css\+\_\+resources} = I\+N\+L\+I\+N\+E.\+render\+\_\+css()
+\item 
+\mbox{\Hypertarget{boks_8py_ac95498c16ac4d273aa34a7b30d34654c}\label{boks_8py_ac95498c16ac4d273aa34a7b30d34654c}} 
+{\bfseries app.\+main.\+boks.\+script}
+\item 
+\mbox{\Hypertarget{boks_8py_a6cb5fd2b4490e9750195677b5cca6c9e}\label{boks_8py_a6cb5fd2b4490e9750195677b5cca6c9e}} 
+{\bfseries app.\+main.\+boks.\+div}
+\item 
+\mbox{\Hypertarget{boks_8py_ae175fb2edbcf82486acd050664da9f55}\label{boks_8py_ae175fb2edbcf82486acd050664da9f55}} 
+{\bfseries app.\+main.\+boks.\+greeting}
+\item 
+\mbox{\Hypertarget{boks_8py_aa58d37be9db140061af6fb90fc3f8270}\label{boks_8py_aa58d37be9db140061af6fb90fc3f8270}} 
+{\bfseries app.\+main.\+boks.\+plot\+\_\+script}
+\item 
+\mbox{\Hypertarget{boks_8py_abceb71e18bc80a53b8f1bb4685f66f24}\label{boks_8py_abceb71e18bc80a53b8f1bb4685f66f24}} 
+{\bfseries app.\+main.\+boks.\+plot\+\_\+div}
+\item 
+\mbox{\Hypertarget{boks_8py_ad9c7dd33360d6685e2491dda79260dcf}\label{boks_8py_ad9c7dd33360d6685e2491dda79260dcf}} 
+{\bfseries app.\+main.\+boks.\+d} = dir(Boks.\+\_\+routedict\mbox{[}dataview\mbox{]})
+\item 
+\mbox{\Hypertarget{boks_8py_ad79275e3a7c52690b2c507028084c099}\label{boks_8py_ad79275e3a7c52690b2c507028084c099}} 
+{\bfseries app.\+main.\+boks.\+catid} = category
+\item 
+\mbox{\Hypertarget{boks_8py_a1d6648a4c95ef53651cb8922fda6d1a8}\label{boks_8py_a1d6648a4c95ef53651cb8922fda6d1a8}} 
+{\bfseries app.\+main.\+boks.\+func} = getattr(Boks.\+\_\+routedict\mbox{[}dataview\mbox{]}, catid)
+\item 
+\mbox{\Hypertarget{boks_8py_ae3c53a89a3ae5ba5c1d0993da7ff8872}\label{boks_8py_ae3c53a89a3ae5ba5c1d0993da7ff8872}} 
+string {\bfseries app.\+main.\+boks.\+isq} = request.\+path.\+find(\char`\"{}?\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a4e522b8bedd76c3ad111b747791b1ed7}\label{boks_8py_a4e522b8bedd76c3ad111b747791b1ed7}} 
+string {\bfseries app.\+main.\+boks.\+pathnoparams} = request.\+path
+\item 
+\mbox{\Hypertarget{boks_8py_a42692dd2d87f9bf399b6838ab32aafe1}\label{boks_8py_a42692dd2d87f9bf399b6838ab32aafe1}} 
+string {\bfseries app.\+main.\+boks.\+rpath} = pathnoparams.\+split(\char`\"{}/\char`\"{})
+\item 
+\mbox{\Hypertarget{boks_8py_a9bd67a8d75151229d5f566a10ba9dd2b}\label{boks_8py_a9bd67a8d75151229d5f566a10ba9dd2b}} 
+int {\bfseries app.\+main.\+boks.\+parameterstart} = category+1
+\item 
+def {\bfseries app.\+main.\+boks.\+plot}
+\item 
+\mbox{\Hypertarget{boks_8py_ac07f04d96dc01d39f168f5e0ebda9acd}\label{boks_8py_ac07f04d96dc01d39f168f5e0ebda9acd}} 
+{\bfseries app.\+main.\+boks.\+title}
+\item 
+\mbox{\Hypertarget{boks_8py_adebfefae9a23529a113ef71cdc4110bf}\label{boks_8py_adebfefae9a23529a113ef71cdc4110bf}} 
+{\bfseries app.\+main.\+boks.\+message}
+\item 
+\mbox{\Hypertarget{boks_8py_a7231d052aa067c18890d2162d11115e6}\label{boks_8py_a7231d052aa067c18890d2162d11115e6}} 
+{\bfseries app.\+main.\+boks.\+trees}
+\item 
+\mbox{\Hypertarget{boks_8py_a13c28605b8c64440e1cc6138bc67c468}\label{boks_8py_a13c28605b8c64440e1cc6138bc67c468}} 
+{\bfseries app.\+main.\+boks.\+pathstr} = pathstr+sep+p
+\item 
+\mbox{\Hypertarget{boks_8py_a81a08a5005850d1cdaf5b1a167e96a3f}\label{boks_8py_a81a08a5005850d1cdaf5b1a167e96a3f}} 
+{\bfseries app.\+main.\+boks.\+dstr} = dstr+\char`\"{} \char`\"{}+k+\char`\"{}\+:\char`\"{}+\char`\"{}\textbackslash{}\textquotesingle{}\char`\"{}+dict\mbox{[}k\mbox{]}+\char`\"{}\textbackslash{}\textquotesingle{},\char`\"{}
+\item 
+\mbox{\Hypertarget{boks_8py_afc0e1efe7d30a988d41187be1cc7b3e2}\label{boks_8py_afc0e1efe7d30a988d41187be1cc7b3e2}} 
+{\bfseries app.\+main.\+boks.\+thisdata} = \{\}
+\item 
+\mbox{\Hypertarget{boks_8py_a5a757a007a42e7b3334c00b53b296449}\label{boks_8py_a5a757a007a42e7b3334c00b53b296449}} 
+string {\bfseries app.\+main.\+boks.\+newid} = t.\+get\+Id()+\char`\"{}\+:\char`\"{}+node.\+tag.\+strip()
+\item 
+\mbox{\Hypertarget{boks_8py_a1c0c7a7c2e0cde52f8a48c4bc22269cc}\label{boks_8py_a1c0c7a7c2e0cde52f8a48c4bc22269cc}} 
+string {\bfseries app.\+main.\+boks.\+datalen} = \char`\"{}1\char`\"{}
+\item 
+\mbox{\Hypertarget{boks_8py_a61112b931d5113028ffed86ad498b84c}\label{boks_8py_a61112b931d5113028ffed86ad498b84c}} 
+def {\bfseries app.\+main.\+boks.\+jsdict} = Boks.\+get\+J\+S\+Dict(thisdata)
+\item 
+\mbox{\Hypertarget{boks_8py_a14e36e50092dcceacb46e4766b43124b}\label{boks_8py_a14e36e50092dcceacb46e4766b43124b}} 
+string {\bfseries app.\+main.\+boks.\+leafcontent} = \textquotesingle{}$<$label class=\char`\"{}blackanchor\char`\"{} on\+Click=\char`\"{}\{\}\char`\"{}$>$\{\} $<$/label$>$\textquotesingle{}.format(\textquotesingle{}exec(this,\textquotesingle{}+jsdict+\textquotesingle{})\textquotesingle{},node.\+tag.\+replace(\char`\"{}\+\_\+\char`\"{},\char`\"{} \char`\"{}))
+\item 
+\mbox{\Hypertarget{boks_8py_aa59094dd756a224025270025902e5f1b}\label{boks_8py_aa59094dd756a224025270025902e5f1b}} 
+{\bfseries app.\+main.\+boks.\+children} = tree.\+children(node.\+identifier)
+\item 
+\mbox{\Hypertarget{boks_8py_afb9a98f110a692f40a024c20b5946c89}\label{boks_8py_afb9a98f110a692f40a024c20b5946c89}} 
+{\bfseries app.\+main.\+boks.\+tdepth} = tree.\+depth(node)
+\item 
+\mbox{\Hypertarget{boks_8py_a46e9139ed5c3e9ee9ccc34c07ec52e04}\label{boks_8py_a46e9139ed5c3e9ee9ccc34c07ec52e04}} 
+bool {\bfseries app.\+main.\+boks.\+openpolicy} = False
+\item 
+\mbox{\Hypertarget{boks_8py_ad878d12e26167f1d3bf7e9e93c6f9c92}\label{boks_8py_ad878d12e26167f1d3bf7e9e93c6f9c92}} 
+{\bfseries app.\+main.\+boks.\+pathlen} = len(path)
+\item 
+\mbox{\Hypertarget{boks_8py_ace30529cf33b0c2e5c0f2d8cd982d7da}\label{boks_8py_ace30529cf33b0c2e5c0f2d8cd982d7da}} 
+string {\bfseries app.\+main.\+boks.\+datalentext} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{boks_8py_a7c2b6f171a88d79f4640ba2e4b6a6f27}\label{boks_8py_a7c2b6f171a88d79f4640ba2e4b6a6f27}} 
+{\bfseries app.\+main.\+boks.\+t}
+\item 
+\mbox{\Hypertarget{boks_8py_a53489c45407f213a5524634b3ab6cdcb}\label{boks_8py_a53489c45407f213a5524634b3ab6cdcb}} 
+{\bfseries app.\+main.\+boks.\+kid}
+\item 
+\mbox{\Hypertarget{boks_8py_a45c2b92b3d56cdf83cd0633dfc9cbf48}\label{boks_8py_a45c2b92b3d56cdf83cd0633dfc9cbf48}} 
+{\bfseries app.\+main.\+boks.\+opennodefilterpolicy}
+\item 
+\mbox{\Hypertarget{boks_8py_afb7aa8b6661ef9951973729a8a460d86}\label{boks_8py_afb7aa8b6661ef9951973729a8a460d86}} 
+{\bfseries app.\+main.\+boks.\+datalenoption}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ This class is the entry point for all plots in the visualise page. 
+
+~\newline
+ Each menu on the page corresponds to a class with the same name. Each menu alternative corresponds to a method on the class. This class receives the plot call and assignes it to the correct subclass and method. Each of the methonds have a \char`\"{}parameters\char`\"{} and a contextdict parameter. The parameters are provided from the querystring (G\+ET) or from the request form (P\+O\+ST). The contextdict is provided by the client and represents all knowledge around the client click. The parameters in the methods are reshuffled to fit the plotting class. Plotting is done with the bokeh classes and in module boks.
+
+The menus are built on request on the first call and can be time consuming. The menu is built by get\+Tree which builds a tree which is then converted to H\+T\+ML by get\+Tree\+From\+Tree\+Lib and the menu is pickled and cached.
+
+A file is read an put in the presentation pane with hints on the plotting.
+
+More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{boks_8py_a0000f846018e3e6ebe19b7ca8e4168cb}\label{boks_8py_a0000f846018e3e6ebe19b7ca8e4168cb}} 
+\index{boks.\+py@{boks.\+py}!add\+Node\+With\+Action@{add\+Node\+With\+Action}}
+\index{add\+Node\+With\+Action@{add\+Node\+With\+Action}!boks.\+py@{boks.\+py}}
+\subsubsection{\texorpdfstring{add\+Node\+With\+Action()}{addNodeWithAction()}}
+{\footnotesize\ttfamily def app.\+main.\+boks.\+add\+Node\+With\+Action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{menu,  }\item[{}]{action,  }\item[{}]{nodename }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Adds a node to the tree Arguments\+: 
+
+~\newline
+  menu  the action to take  the name of the node to add \mbox{\Hypertarget{boks_8py_a97efcf7d153e66ccfb157740169d26cb}\label{boks_8py_a97efcf7d153e66ccfb157740169d26cb}} 
+\index{boks.\+py@{boks.\+py}!boks\+Plot\+View@{boks\+Plot\+View}}
+\index{boks\+Plot\+View@{boks\+Plot\+View}!boks.\+py@{boks.\+py}}
+\subsubsection{\texorpdfstring{boks\+Plot\+View()}{boksPlotView()}}
+{\footnotesize\ttfamily def app.\+main.\+boks.\+boks\+Plot\+View (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plot }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Implements the F\+L\+A\+SK view Arguments\+: 
+
+~\newline
+  \mbox{\Hypertarget{boks_8py_ac4c742e6aaa95ed54f7167c1a67a4cd1}\label{boks_8py_ac4c742e6aaa95ed54f7167c1a67a4cd1}} 
+\index{boks.\+py@{boks.\+py}!get\+Generic\+Location\+Tree@{get\+Generic\+Location\+Tree}}
+\index{get\+Generic\+Location\+Tree@{get\+Generic\+Location\+Tree}!boks.\+py@{boks.\+py}}
+\subsubsection{\texorpdfstring{get\+Generic\+Location\+Tree()}{getGenericLocationTree()}}
+{\footnotesize\ttfamily def app.\+main.\+boks.\+get\+Generic\+Location\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{tree,  }\item[{}]{countryparam,  }\item[{}]{pseudoparam,  }\item[{}]{prefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Build tree for countries other than england Arguments\+: 
+
+~\newline
+  root node  tree  name  ons code =\char`\"{}\char`\"{} menu prefix 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{boks_8py_ad09f2bc5633128dd44cf273b5336de7f}\label{boks_8py_ad09f2bc5633128dd44cf273b5336de7f}} 
+\index{boks.\+py@{boks.\+py}!plot@{plot}}
+\index{plot@{plot}!boks.\+py@{boks.\+py}}
+\subsubsection{\texorpdfstring{plot}{plot}}
+{\footnotesize\ttfamily def app.\+main.\+boks.\+plot}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = self.plotRoute(rpath[dataview],}
+\DoxyCodeLine{2                     rpath[category],}
+\DoxyCodeLine{3                     list(rpath[parameterstart:]),}
+\DoxyCodeLine{4                     contextdict)}
+\end{DoxyCode}

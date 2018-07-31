@@ -1,0 +1,12 @@
+#!/usr/bin/ksh
+# Common names across the ETL branches
+echo "COMMON RUNNING"
+FNAME='MM_final_28_Jan_2018.csv';export FNAME
+FNAME='mm_input_maindatasheet_09_May_2018_FIXED.csv';export FNAME
+FNAME='mm_input_maindatasheet_18_May_2018_FIXED_NOGEONAMES.csv';export FNAME
+FNAME_GEONAMES='mm_input_maindatasheet_26_June_2018_WITH_GEONAMES.csv';export FNAME_GEONAMES
+FNAME='mm_input_maindatasheet_26_June_2018.csv';export FNAME
+#
+FN=mm_input_maindatasheet_13_July_2018_V8
+FNAME=${FN}'.csv';export FNAME
+FNAME_GEONAMES=${FN}'_WITH_GEONAMES.csv';export FNAME_GEONAMES

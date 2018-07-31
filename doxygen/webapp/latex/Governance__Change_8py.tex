@@ -1,0 +1,75 @@
+\hypertarget{Governance__Change_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Governance\+\_\+\+Change.py File Reference}
+\label{Governance__Change_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Governance\+\_\+\+Change.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Governance\+\_\+\+Change.\+py}}
+
+
+~\newline
+ Implementation of a datatype follows this interface which has to be implemented\+:  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1datatypes_1_1Governance__Change_1_1Governance__Change}{app.\+main.\+datatypes.\+Governance\+\_\+\+Change.\+Governance\+\_\+\+Change}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Governance__Change_8py_a988edb2a1ba9a3f882b270f433478b53}\label{Governance__Change_8py_a988edb2a1ba9a3f882b270f433478b53}} 
+string {\bfseries app.\+main.\+datatypes.\+Governance\+\_\+\+Change.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{Governance__Change_8py_a395e7c5598a3c7f05f8265d0b69da75c}\label{Governance__Change_8py_a395e7c5598a3c7f05f8265d0b69da75c}} 
+tuple {\bfseries app.\+main.\+datatypes.\+Governance\+\_\+\+Change.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ Implementation of a datatype follows this interface which has to be implemented\+: 
+
+Purpose\+:Returns S\+P\+A\+R\+QL for a match condition filter on the data type Arguments\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator def get\+Match\+Filter(self,rcount,match,condition)\+: 
+
+ Purpose\+:Returns S\+P\+A\+R\+QL for a condition filter on the data type Arguments\+:\\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator def get\+Compare\+Filter(self,rcount,match,condition)\+: 
+
+ Purpose\+:Returns S\+P\+A\+R\+QL for a query on the datatype without filter Arguments\+:\\
+\hline
+{\em col} & columne name for datatype \\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator \\
+\hline
+{\em matchcolumn} & not used, only here for compatibility def get\+Query(self,col,rcount,matchstring,condition,matchcolumn)\+: 
+
+ Purpose\+:Returns type for the datatype to appear in search menu def get\+Search\+Type(self)\+: 
+
+ Purpose\+:Returns the list of select conditions for the comaparator search menu def get\+G\+U\+I\+Conditions(self)\+: 
+
+ Purpose\+:Returns html code for search menu def get\+Widget(self)\+: 
+
+ Purpose\+:Returns JS code associated with the H\+T\+ML for the datatype def get\+Widget\+Code(self)\+:\\
+\hline
+\end{DoxyParams}
+~\newline
+ ~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ !/usr/bin/env python 
+\end{DoxyItemize}

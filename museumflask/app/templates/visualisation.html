@@ -1,0 +1,604 @@
+{% extends "base.html" %}
+<!-- VIZ.HTML---->
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/treecss.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tether.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tether-theme-basic.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tether-theme-arrows.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tether-theme-arrows-dark.css') }}" />
+
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" />
+
+<script src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+<script src="{{ url_for('static', filename='js/nouislider.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.css') }}" />
+
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.14.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.14.min.css"
+    rel="stylesheet" type="text/css">
+
+
+
+<style>
+.column { position: relative; float: left; }
+#center { padding: 0 20px; width: 100%; }
+#fixeddiv { position:fixed; }
+#left,#heat {	
+width: 380px; /* LC width */ 
+padding: 0 29px;  /* LC padding */	
+right: 10px;  /* LC fullwidth + CC padding */	
+}
+#nakedtab-content{ visibility:hidden; }
+
+#museumtable{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;  
+}
+#table-heading {
+    font-weight: bold;
+}
+a.blackanchor{color:black;text-decoration:  none;}
+a.blackanchor:link{color:black;text-decoration:  none;}
+a.blackanchor:visited{color:black;text-decoration:  none;}
+a.blackanchor:hover{color:black;text-decoration:  none;}
+a.blackanchor:active{color:black;text-decoration:  none;}
+
+#detail-results{ width: 100%;position: relative; float: left; }
+
+.expand{width: inherit;height: 100%; position: fixed; right: -18%; top: 183px; padding: 0 19px; }
+
+body.modal-open div.modal-backdrop { 
+    z-index: 0; 
+}
+</style>
+
+{% endblock %}
+
+{% block title %}Visualisations{% endblock %}
+<style>
+#nakedtab-content{ visibility:hidden; }
+
+
+table { 
+    border-spacing: 5;
+    border-collapse: collapse;
+    border:none
+}
+td,th { 
+    padding: 10px;
+    border:none
+
+}
+
+input {
+    margin: 2px;
+    width: 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+imgplay-button {
+      color: #AAA;
+      cursor: pointer;
+      display: inline-block;
+      height: 24px;
+      margin: 4px;
+      width: 24px; }
+imgplay-button.active {
+        color: #8BF; }
+imgplay-button:hover, .imgplay .imgplay-controls .imgplay-button:focus {
+        background: rgba(100, 100, 100, 0.5);
+        color: #FFF; }
+
+</style>
+
+</head>
+{% block page_content %}
+
+<div id="left" class="row">
+        <div class="css-treeview well">
+           {% if trees  %}
+  	     {% for tree in trees  %}
+	         {{ tree|safe}}
+	     {% endfor %}
+          {% endif %}
+	</div>
+
+
+  {% if coltrees  %}
+	<p> Selected colour :</p>
+	<div class="well">
+  	     {% for ctree in coltrees  %}
+	         {{ ctree|safe}}
+	     {% endfor %}
+	</div>
+  {% endif %}
+</div>
+
+
+ 	<form class="form-horizontal" >
+	      <input type="hidden" name="colorscheme" id="colorscheme-label" value="#219264" />
+
+	      <input type="hidden" name="input-x" id="input-x" value="Null" dict="Null" />
+	      <input type="hidden" name="input-y" id="input-y" value="Null" dict="Null" />
+	      <input type="hidden" name="input-loc" id="input-loc" value="UK" dict="Null" />
+
+	      <input type="hidden" name="xaxisselect" id="xaxisselect-label" value="Null" />
+	      <input type="hidden" name="yaxisselect" id="yaxisselect-label" value="Null" />
+	      <input type="hidden" name="xaxisselect-dict" id="xaxisselect-dict" value="Null" />
+	      <input type="hidden" name="yaxisselect-dict" id="yaxisselect-dict" value="Null" />
+
+	      <input type="hidden" name="lastclicked" id="lastclicked" value="Null" />
+	      <input type="hidden" name="lastexecuted" id="lastexecuted" value="Null" />
+	      <input type="hidden" name="lastexecuted-path" id="lastexecuted-path" value="Null" />
+
+	</form>
+
+</div>
+
+<div id="main">
+<div class="second-row-fixed-white">
+
+<script>
+
+//- - - - - - - - - - - - - - - - - 
+// New replaceall function
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};
+//- - - - - - - - - - - - - - - - - 
+
+$('.colorcheckbox').on('click', function () {
+  // Needs to remove all others and check/uncheck this.
+  var checked="";
+  if($(this)[0].checked)
+    checked="t"
+  else
+    checked="f"
+  clearChecks('colorcheckbox');
+  if(checked == "t")
+    $(this).prop("checked", true);
+});
+
+//- - - - - - - - - - - - - - - - - 
+// Post a call to the server to render a plot. Add a dictionary in the body with info on menu clicked
+function postPlot(pdict)
+{
+      var checkedValue=getAttributeByNameOnID("colorscheme-label","value");
+      
+      var xval=getAttributeByNameOnID("input-x","value");
+      var yval=getAttributeByNameOnID("input-y","value");
+      var xvaldict=getAttributeByNameOnID("input-x","dict");
+      var yvaldict=getAttributeByNameOnID("input-y","dict");
+      if (xval == "Null")
+      {
+       alert("Please select X axis property to show");
+       return false;
+      }
+      if (yval == "Null")
+     {
+     alert("Please select Y axis property to show");
+     return false;
+     }
+
+
+      var href="/visualisations";
+
+       $.post( href , {
+                        "colorscheme-label" : checkedValue,
+                        "xaxisselect-label" : xval,
+                        "yaxisselect-label" : yval,
+                        "xaxisselect-dict"  : xvaldict,
+                        "yaxisselect-dict"  : yvaldict,
+			"contextdict"       : getQueryString(pdict)
+
+                      }, 
+            function( data ) 
+            {
+             setHTMLContent("plotarea","");
+
+             $('#plotarea').append(data);
+            }
+       );
+
+  setAttributeByNameOnID("lastexecuted","value","postPlot")
+
+}
+//- - - - - - - - - - - - - - - - - 
+
+$('#plot-button').on('click', function(e)
+{
+      e.preventDefault();
+      pdict={};
+
+      var locval=getAttributeByNameOnID("input-loc","value");
+      var locarr=locval.split("/");
+      var thisloc=locarr[locarr.length-1];
+      pdict["location"]=thisloc;
+
+
+      postPlot(pdict);
+
+
+});
+
+//- - - - - - - - - - - - - - - - - 
+// Chek box code in case the colours need to change on the heatmap
+
+function clearChecks(classname)
+{
+  var inputElements = document.getElementsByClassName(classname);
+  for(var i=0; inputElements[i]; ++i)
+    {
+      if(inputElements[i].checked)
+          {
+           inputElements[i].checked=false;
+          }
+    }
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function getFirstCheckedBox(classname)
+{
+  var checkedValue = "null"; 
+  var inputElements = document.getElementsByClassName(classname);
+  for(var i=0; inputElements[i]; ++i)
+    {
+      if (checkedValue == "null")
+         {
+	   // First is default
+           checkedValue = inputElements[i].value;
+         }
+      if(inputElements[i].checked)
+          {
+           checkedValue = inputElements[i].value;
+           break;
+          }
+    }
+return checkedValue;
+}
+
+//- - - - - - - - - - - - - - - - - 
+//Adds content to a tag
+
+function setHTMLContent(id,value)
+{
+  var field = document.getElementById(id);
+  field.innerHTML = value ;
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function getHTMLContent(id)
+{
+  var field = document.getElementById(id);
+  return field.innerHTML;
+}
+
+//- - - - - - - - - - - - - - - - - 
+// The function that loads a plot into the browser
+function ShowPlot(event,pdict)
+{
+  var locval=getAttributeByNameOnID("input-loc","value");
+  var locarr=locval.split("/");
+  var thisloc=locarr[locarr.length-1];
+  pdict["location"]=thisloc;
+  var path=pdict["path"];
+  var method=pdict["method"];
+  var query=path.replaceAll(' ','_').replaceAll(',','').replaceAll('-','')+getQueryString(pdict);
+  var href="/visualisations"+query;
+  $( "#plotarea" ).load( href );
+  setAttributeByNameOnID("lastexecuted","value","showPlot")
+  setAttributeByNameOnID("lastexecuted-path","value",path)
+
+// Wipe history for Plot when non-plot menu is selected
+
+setAttributeByNameOnID("input-x","value","Null")
+setAttributeByNameOnID("input-y","value","Null")
+
+}
+
+//- - - - - - - - - - - - - - - - - 
+// A number of select methods that save history around what was
+// clicked to make the heatmap work
+
+function selectLoc(event,pdict)
+{
+  var newval=pdict["path"];
+  var locarr=newval.split("/");
+  var thisloc=locarr[locarr.length-1];
+  pdict["location"]=thisloc;
+
+
+  var locval=getAttributeByNameOnID("input-loc","value");
+  
+  setAttributeByNameOnID("input-loc","value",pdict["path"])
+  setAttributeByNameOnID("input-loc","dict",getQueryString(pdict))
+
+  var yval=getAttributeByNameOnID("input-y","value");
+  var xval=getAttributeByNameOnID("input-x","value");
+  
+  var lastexecuted=getAttributeByNameOnID("lastexecuted","value");
+  var lastexecutedpath=getAttributeByNameOnID("lastexecuted-path","value");
+
+  if (lastexecuted != "Null")
+    {
+    if (yval != "Null" && xval != "Null")
+      {
+	if (lastexecuted == "postPlot")
+	  {
+	    var str = JSON.stringify(pdict, null, 4); // (Optional) beautiful indented output.
+	    postPlot(pdict);
+	  }
+      }  
+    else if (lastexecuted == "showPlot")
+      {
+	pdict["path"]=lastexecutedpath;
+	var dummy="";
+
+	var str = JSON.stringify(pdict, null, 4); // (Optional) beautiful indented output.
+	ShowPlot(dummy,pdict);
+      }
+    }
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+
+function selectX(event,pdict)
+{
+  var yval=getAttributeByNameOnID("input-y","value");
+  var localpath=pdict["path"]
+  var yarr=yval.split("/");
+  var xarr=pdict["path"].split("/");
+  var lastx=xarr[4];
+  var lasty=yarr[4];
+  
+
+if (xarr[4] == "Location" &&  xarr.length == 5)
+   {
+    localpath=localpath+"/UK";
+   }
+       
+  var locval=getAttributeByNameOnID("input-loc","value");
+  var locarr=locval.split("/");
+  var thisloc=locarr[locarr.length-1];
+  pdict["location"]=thisloc;
+
+//  setHTMLContent("input-x",pdict["name"]);
+  setAttributeByNameOnID("input-x","value",localpath)
+  setAttributeByNameOnID("input-x","dict",getQueryString(pdict))
+  var check=getAttributeByNameOnID("input-x","value");
+  var yval=getAttributeByNameOnID("input-y","value");
+  if (yval != "Null")
+     {
+       if (lastx == lasty)
+	 {
+           alert("X and Y must be different catergories.");
+	 }
+       else
+	 {
+	   postPlot(pdict);
+	 }
+     }
+  
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function selectY(event,pdict)
+{
+  var xval=getAttributeByNameOnID("input-x","value");
+  var xarr=xval.split("/");
+  var yarr=pdict["path"].split("/");
+  var locval=getAttributeByNameOnID("input-loc","value");
+  var locarr=locval.split("/");
+  var thisloc=locarr[locarr.length-1];
+  pdict["location"]=thisloc;
+  var lastx=xarr[4];
+  var lasty=yarr[4];
+  
+  setAttributeByNameOnID("input-y","value",pdict["path"])
+  setAttributeByNameOnID("input-y","dict",getQueryString(pdict))
+
+  if (xval != "Null")
+     {
+       if (lastx == lasty)
+	 {
+           alert("X and Y must be different categories");
+	 }
+       else
+	 {
+	   postPlot(pdict);
+	 }
+     }
+
+
+}
+
+//- - - - - - - - - - - - - - - - - 
+// Routing to call different methods for clicks on different areas of the tree.
+
+function exec(event,pdict)
+{
+ var parnode=event.parentNode;
+ parnode.className += "active";
+ var str = JSON.stringify(pdict, null, 4); // (Optional) beautiful indented output.
+ var method=pdict["method"];
+ if (method == "ShowPlot")
+    {
+     ShowPlot(event,pdict);
+    }
+ else if (method == "ShowMuseums")
+    {
+     ShowMuseums(event,pdict);
+    }
+ else if (method == "selectX")
+    {
+     selectX(event,pdict);
+    }
+ else if (method == "selectY")
+    {
+     selectY(event,pdict);
+    }
+ else if (method == "selectLoc")
+    {
+     selectLoc(event,pdict);
+    }
+ else if (method == "donothing")
+    {
+    }
+ else 
+    {
+     alert("Unknow method:"+method+" sent to exec. Check if implemented or simply not in exec");
+    }
+ var previd=getAttributeByNameOnID("lastclicked","value");
+ if (previd != "Null")
+      {
+        document.getElementById(previd).classList.remove("active");
+      }
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function getQueryStringToDict(qis)
+{
+  var qs =decodeURIComponent(qis);
+  var str='{"' + decodeURI(qs.substring(0, qs.length - 1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}';
+  return JSON.parse(str)
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function getQueryString(dict)
+{
+if (dict.hasOwnProperty("path"))
+   if (isNaN(parseInt("path")) || !(dict instanceof Array))
+      delete dict["path"];
+   else
+      dict.splice("path", 1);
+if (dict.hasOwnProperty("method"))
+   if (isNaN(parseInt("method")) || !(dict instanceof Array))
+      delete dict["method"];
+   else
+      dict.splice("path", 1);
+var qs="?";
+for (var key in dict) 
+   {
+    // check if the property/key is defined in the object itself, not in parent
+    if (dict.hasOwnProperty(key)) 
+        {           
+         qs=qs+key+"="+"'"+dict[key]+"'&";
+        }
+   }
+
+return encodeURIComponent(qs.substring(0, qs.length - 1));
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function ShowMuseums(event,id,name)
+{
+// Wipe history for Plot when non-plot menu is selected
+setAttributeByNameOnID("input-x","value","Null")
+setAttributeByNameOnID("input-y","value","Null")
+
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function getAttributeByName(element,name)
+{
+  var i;
+  for (i = 0; i < element.attributes.length; i++) 
+    {
+      if (element.attributes[i].name == name)
+	{
+	      return element.attributes[i].value;
+	}
+    }
+  return undefined;
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function getAttributeByNameOnID(id,name)
+{
+  var element = document.getElementById(id);
+  var i;
+  for (i = 0; i < element.attributes.length; i++) 
+    {
+      if (element.attributes[i].name == name)
+	{
+	      return element.attributes[i].value;
+	}
+    }
+  return undefined;
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function setAttributeByNameOnID(id,name,value)
+{
+  var element = document.getElementById(id);
+  var i;
+  for (i = 0; i < element.attributes.length; i++) 
+    {
+      if (element.attributes[i].name == name)
+	{
+	  element.attributes[i].value=value;
+	}
+    }
+}
+
+//- - - - - - - - - - - - - - - - - 
+
+function setAttributeByName(element,name,value)
+{
+  var i;
+  for (i = 0; i < element.attributes.length; i++) 
+    {
+      if (element.attributes[i].name == name)
+	{
+	  element.attributes[i].value=value;
+	}
+    }
+}
+
+
+
+</script>
+
+<div id="plotarea">
+{% if greeting  %}
+  {{ greeting|safe }}
+{% endif %}
+
+  {{ div|safe }}
+  <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.14.min.js"></script>
+  <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.14.min.js"></script>
+  {{ script|safe }}
+
+
+</div>
+
+</div>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

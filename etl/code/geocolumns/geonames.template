@@ -1,0 +1,140 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################
+#
+#$Content classes
+#
+#################################################################
+
+
+bbkmm:AdminArea a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:AdminAreaClass"@en ;
+rdfs:comment         "bbkmm:AdminAreaClass"@en .
+
+bbkmm:Country a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CountryClass"@en ;
+rdfs:comment         "bbkmm:CountryClass"@en .
+
+bbkmm:Welsh_UA a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Welsh_UAClass"@en ;
+rdfs:comment         "bbkmm:Welsh_UAClass"@en .
+
+bbkmm:Scottish_Council_Area a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Scottish_Council_AreaClass"@en ;
+rdfs:comment         "bbkmm:Scottish_Council_AreaClass"@en .
+
+bbkmm:NI_Loc_Gov_District a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:NI_Loc_Gov_DistrictClass"@en ;
+rdfs:comment         "bbkmm:NI_Loc_Gov_DistrictClass"@en .
+
+bbkmm:English_County a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:English_CountyClass"@en ;
+rdfs:comment         "bbkmm:English_CountyClass"@en .
+
+bbkmm:English_Region a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:English_RegionClass"@en ;
+rdfs:comment         "bbkmm:English_RegionClass"@en .
+
+bbkmm:English_District_or_Borough a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:English_District_or_BoroughClass"@en ;
+rdfs:comment         "bbkmm:English_District_or_BoroughClass"@en .
+
+bbkmm:English_UA a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:English_UAClass"@en ;
+rdfs:comment         "bbkmm:English_UAClass"@en .
+
+bbkmm:English_CA a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:English_CAClass"@en ;
+rdfs:comment         "bbkmm:English_CAClass"@en .
+
+ bbkmm:hasName rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasName"@en ;
+                rdfs:comment "bbkmm:hasName"@en ;
+                rdfs:domain bbkmm:AdminArea ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasONSid rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasONSid"@en ;
+                rdfs:comment "bbkmm:hasONSid"@en ;
+                rdfs:domain bbkmm:AdminArea ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasTypedName rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasTypedName"@en ;
+                rdfs:comment "bbkmm:hasTypedName"@en ;
+                rdfs:domain bbkmm:AdminArea ;
+                rdfs:range xsd:string .
+#################################################################
+#
+#$Individuals
+#
+#################################################################
+
+${ExistsSubClass("bbkmm:Country","rdfs:subClassOf", "bbkmm:AdminArea",1)}
+${ExistsLinkage(bbkmm:Country,n3,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,1,classURI,classURI)}
+
+
+ bbkmm:contains rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:contains"@en ;
+                rdfs:comment "bbkmm:contains"@en ;
+                rdfs:domain bbkmm:AdminArea ;
+                rdfs:range bbkmm:AdminArea .
+${classURI("bbkmm:AdminArea",n1)} bbkmm:contains ${classURI("bbkmm:AdminArea",n1)} .
+
+ bbkmm:containedBy rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:containedBy"@en ;
+                rdfs:comment "bbkmm:containedBy"@en ;
+                rdfs:domain bbkmm:AdminArea ;
+                rdfs:range bbkmm:AdminArea .
+${classURI("bbkmm:AdminArea",n1)} bbkmm:containedBy ${classURI("bbkmm:AdminArea",n1)} .
+${ExistsSubClass("bbkmm:Welsh_UA","rdfs:subClassOf", "bbkmm:AdminArea",2)}
+${ExistsLinkage(bbkmm:Welsh_UA,n4,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,2,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:Scottish_Council_Area","rdfs:subClassOf", "bbkmm:AdminArea",3)}
+${ExistsLinkage(bbkmm:Scottish_Council_Area,n5,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,3,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:NI_Loc_Gov_District","rdfs:subClassOf", "bbkmm:AdminArea",4)}
+${ExistsLinkage(bbkmm:NI_Loc_Gov_District,n6,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,4,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:English_Region","rdfs:subClassOf", "bbkmm:AdminArea",5)}
+${ExistsLinkage(bbkmm:English_Region,n8,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,5,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:English_County","rdfs:subClassOf", "bbkmm:AdminArea",6)}
+${ExistsLinkage(bbkmm:English_County,n7,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,6,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:English_District_or_Borough","rdfs:subClassOf", "bbkmm:AdminArea",9)}
+${ExistsLinkage(bbkmm:English_District_or_Borough,n9,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,9,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:English_UA","rdfs:subClassOf", "bbkmm:AdminArea",7)}
+${ExistsLinkage(bbkmm:English_UA,n10,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,7,classURI,classURI)}
+
+${ExistsSubClass("bbkmm:English_CA","rdfs:subClassOf", "bbkmm:AdminArea",8)}
+${ExistsLinkage(bbkmm:English_CA,n11,bbkmm:isSubClassInstanceOf,bbkmm:AdminArea,n1,8,classURI,classURI)}
+
+
+
+bbkmm:PredicateList_geonames bbkmm:contents ("bbkmm:hasONSid" "bbkmm:contains" "bbkmm:hasTypedName" "bbkmm:containedBy" "bbkmm:hasName") .
+
+bbkmm:DataTypeList_geonames bbkmm:contents ( "bbkmm:hasONSid#xsd:string" "bbkmm:contains#bbkmm:AdminArea" "bbkmm:hasTypedName#xsd:string" "bbkmm:containedBy#bbkmm:AdminArea" "bbkmm:hasName#xsd:string") .

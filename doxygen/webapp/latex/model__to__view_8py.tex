@@ -1,0 +1,85 @@
+\hypertarget{model__to__view_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/model\+\_\+to\+\_\+view.py File Reference}
+\label{model__to__view_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/model\+\_\+to\+\_\+view.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/model\+\_\+to\+\_\+view.\+py}}
+
+
+~\newline
+ This class defines operations that allows to go from model representation of a variable to view representation and this is used mostly in search to format output from the database.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1model__to__view_1_1Model__To__View}{app.\+main.\+model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View}}
+\begin{DoxyCompactList}\small\item\em Purpose\+:Formats a model representation to a view representation of all datatypes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{model__to__view_8py_a287142e477bc30dd84c425e151a573e4}{app.\+main.\+model\+\_\+to\+\_\+view.\+get\+View\+For\+Type}} (self, mtype, attribute)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Formats a specific type from model to view representation Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{model__to__view_8py_a775b7538d263df357c17892442374501}{app.\+main.\+model\+\_\+to\+\_\+view.\+get\+Type\+For\+View}} (self, mtype, attribute)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Converts a view representation to model representation Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{model__to__view_8py_abe6af6487d30063c09c5832f820ca291}{app.\+main.\+model\+\_\+to\+\_\+view.\+get\+Type\+For\+View\+For\+Search}} (self, mtype, attribute)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Converts a view representation to model representation This one is particular for the search menu construction in apputils. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{model__to__view_8py_ac1648fa98eb8e8a9092913df8bfc89e9}\label{model__to__view_8py_ac1648fa98eb8e8a9092913df8bfc89e9}} 
+string {\bfseries app.\+main.\+model\+\_\+to\+\_\+view.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{model__to__view_8py_a40a61f9ced444f88e4442f1a3ce293c5}\label{model__to__view_8py_a40a61f9ced444f88e4442f1a3ce293c5}} 
+tuple {\bfseries app.\+main.\+model\+\_\+to\+\_\+view.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\item 
+\mbox{\Hypertarget{model__to__view_8py_a50eb2ddaea31229ac5fc378d5cb7ef53}\label{model__to__view_8py_a50eb2ddaea31229ac5fc378d5cb7ef53}} 
+{\bfseries app.\+main.\+model\+\_\+to\+\_\+view.\+parts} = attribute.\+split(definitions.\+H\+I\+E\+R\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{model__to__view_8py_a2c8a2b5bf00da14ab1a117e4774bf0b0}\label{model__to__view_8py_a2c8a2b5bf00da14ab1a117e4774bf0b0}} 
+{\bfseries app.\+main.\+model\+\_\+to\+\_\+view.\+lastpart} = parts\mbox{[}len(parts)-\/1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ This class defines operations that allows to go from model representation of a variable to view representation and this is used mostly in search to format output from the database. 
+
+~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ !/usr/bin/env python 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{model__to__view_8py_a775b7538d263df357c17892442374501}\label{model__to__view_8py_a775b7538d263df357c17892442374501}} 
+\index{model\+\_\+to\+\_\+view.\+py@{model\+\_\+to\+\_\+view.\+py}!get\+Type\+For\+View@{get\+Type\+For\+View}}
+\index{get\+Type\+For\+View@{get\+Type\+For\+View}!model\+\_\+to\+\_\+view.\+py@{model\+\_\+to\+\_\+view.\+py}}
+\subsubsection{\texorpdfstring{get\+Type\+For\+View()}{getTypeForView()}}
+{\footnotesize\ttfamily def app.\+main.\+model\+\_\+to\+\_\+view.\+get\+Type\+For\+View (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mtype,  }\item[{}]{attribute }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Converts a view representation to model representation Arguments\+: 
+
+type  view representation \mbox{\Hypertarget{model__to__view_8py_abe6af6487d30063c09c5832f820ca291}\label{model__to__view_8py_abe6af6487d30063c09c5832f820ca291}} 
+\index{model\+\_\+to\+\_\+view.\+py@{model\+\_\+to\+\_\+view.\+py}!get\+Type\+For\+View\+For\+Search@{get\+Type\+For\+View\+For\+Search}}
+\index{get\+Type\+For\+View\+For\+Search@{get\+Type\+For\+View\+For\+Search}!model\+\_\+to\+\_\+view.\+py@{model\+\_\+to\+\_\+view.\+py}}
+\subsubsection{\texorpdfstring{get\+Type\+For\+View\+For\+Search()}{getTypeForViewForSearch()}}
+{\footnotesize\ttfamily def app.\+main.\+model\+\_\+to\+\_\+view.\+get\+Type\+For\+View\+For\+Search (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mtype,  }\item[{}]{attribute }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Converts a view representation to model representation This one is particular for the search menu construction in apputils. 
+
+Arguments\+:
+
+type  view representation \mbox{\Hypertarget{model__to__view_8py_a287142e477bc30dd84c425e151a573e4}\label{model__to__view_8py_a287142e477bc30dd84c425e151a573e4}} 
+\index{model\+\_\+to\+\_\+view.\+py@{model\+\_\+to\+\_\+view.\+py}!get\+View\+For\+Type@{get\+View\+For\+Type}}
+\index{get\+View\+For\+Type@{get\+View\+For\+Type}!model\+\_\+to\+\_\+view.\+py@{model\+\_\+to\+\_\+view.\+py}}
+\subsubsection{\texorpdfstring{get\+View\+For\+Type()}{getViewForType()}}
+{\footnotesize\ttfamily def app.\+main.\+model\+\_\+to\+\_\+view.\+get\+View\+For\+Type (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mtype,  }\item[{}]{attribute }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Formats a specific type from model to view representation Arguments\+: 
+
+type  model representation 

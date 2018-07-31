@@ -1,0 +1,188 @@
+\hypertarget{listman_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/listman.py File Reference}
+\label{listman_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/listman.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/listman.\+py}}
+
+
+~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ More details.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{listman_8py_a731005d6824f6c2f9299aa4cc4ccf809}{app.\+main.\+listman.\+update\+List}} (classproperty, lizt)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Updata a list in db Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{listman_8py_a919ec260829ec56ab478d57c98eb45e4}{app.\+main.\+listman.\+insert\+List}} (classproperty, lizt)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Insert a list in db Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{listman_8py_a1a68da947ee1c2af06ee8ef6196d6882}{app.\+main.\+listman.\+get\+List}} (classproperty)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Get a list from the db Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{listman_8py_a6ecae63c3f9ee68632ab95819d3d534c}{app.\+main.\+listman.\+reset\+List}} (listname)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Reset a list to its original value Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{listman_8py_a49209cd5bc83b8efdc030ac9e77c4ef8}{app.\+main.\+listman.\+insert\+Config}} (classproperty, config)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Inserts a configuration in the db Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{listman_8py_a874eecbb09bb5e5e34bcf0fd551bedaa}{app.\+main.\+listman.\+get\+Config}} (classproperty)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Retrieves a configuration from the db Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listman_8py_ab855319a3e1cfa9b9b4165593953808e}\label{listman_8py_ab855319a3e1cfa9b9b4165593953808e}} 
+def \mbox{\hyperlink{listman_8py_ab855319a3e1cfa9b9b4165593953808e}{app.\+main.\+listman.\+get\+All\+List\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Retrieves all variables that are rdf\+:lists. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{listman_8py_a7350519f1c77f73785c1cc905570ba38}{app.\+main.\+listman.\+get\+List\+Collection}} (name)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Get all values for a list name Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{listman_8py_a0dd95b087a889a4fd49d3f51a06cc557}\label{listman_8py_a0dd95b087a889a4fd49d3f51a06cc557}} 
+string \mbox{\hyperlink{listman_8py_a0dd95b087a889a4fd49d3f51a06cc557}{app.\+main.\+listman.\+textvalues}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Note\+: Adds Lizt to end of classproperty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listman_8py_a76e4119e50277094435da6f34f540f26}\label{listman_8py_a76e4119e50277094435da6f34f540f26}} 
+{\bfseries app.\+main.\+listman.\+sparql} = S\+P\+A\+R\+Q\+L\+Wrapper(app.\+config\mbox{[}\textquotesingle{}S\+P\+A\+R\+Q\+L\+E\+N\+D\+P\+O\+I\+NT\textquotesingle{}\mbox{]})
+\item 
+\mbox{\Hypertarget{listman_8py_afec6302f782fc37a761deb59f3955cdc}\label{listman_8py_afec6302f782fc37a761deb59f3955cdc}} 
+string {\bfseries app.\+main.\+listman.\+query} = \char`\"{}D\+E\+F\+I\+NE sql\+:log-\/enable 2 \textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{listman_8py_ab6684e37ff48e299e79ad1ca67eb42d9}\label{listman_8py_ab6684e37ff48e299e79ad1ca67eb42d9}} 
+string {\bfseries app.\+main.\+listman.\+results} = sparql.\+query().convert()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ More details. 
+
+\$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{listman_8py_a874eecbb09bb5e5e34bcf0fd551bedaa}\label{listman_8py_a874eecbb09bb5e5e34bcf0fd551bedaa}} 
+\index{listman.\+py@{listman.\+py}!get\+Config@{get\+Config}}
+\index{get\+Config@{get\+Config}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{get\+Config()}{getConfig()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+get\+Config (\begin{DoxyParamCaption}\item[{}]{classproperty }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Retrieves a configuration from the db Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classproperty} & name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listman_8py_a1a68da947ee1c2af06ee8ef6196d6882}\label{listman_8py_a1a68da947ee1c2af06ee8ef6196d6882}} 
+\index{listman.\+py@{listman.\+py}!get\+List@{get\+List}}
+\index{get\+List@{get\+List}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{get\+List()}{getList()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+get\+List (\begin{DoxyParamCaption}\item[{}]{classproperty }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Get a list from the db Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classproperty} & name of list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listman_8py_a7350519f1c77f73785c1cc905570ba38}\label{listman_8py_a7350519f1c77f73785c1cc905570ba38}} 
+\index{listman.\+py@{listman.\+py}!get\+List\+Collection@{get\+List\+Collection}}
+\index{get\+List\+Collection@{get\+List\+Collection}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{get\+List\+Collection()}{getListCollection()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+get\+List\+Collection (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Get all values for a list name Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listman_8py_a49209cd5bc83b8efdc030ac9e77c4ef8}\label{listman_8py_a49209cd5bc83b8efdc030ac9e77c4ef8}} 
+\index{listman.\+py@{listman.\+py}!insert\+Config@{insert\+Config}}
+\index{insert\+Config@{insert\+Config}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{insert\+Config()}{insertConfig()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+insert\+Config (\begin{DoxyParamCaption}\item[{}]{classproperty,  }\item[{}]{config }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Inserts a configuration in the db Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classproperty} & name \\
+\hline
+{\em config} & values \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listman_8py_a919ec260829ec56ab478d57c98eb45e4}\label{listman_8py_a919ec260829ec56ab478d57c98eb45e4}} 
+\index{listman.\+py@{listman.\+py}!insert\+List@{insert\+List}}
+\index{insert\+List@{insert\+List}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{insert\+List()}{insertList()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+insert\+List (\begin{DoxyParamCaption}\item[{}]{classproperty,  }\item[{}]{lizt }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Insert a list in db Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classproperty} & name of list \\
+\hline
+{\em lizt} & list to be inserted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listman_8py_a6ecae63c3f9ee68632ab95819d3d534c}\label{listman_8py_a6ecae63c3f9ee68632ab95819d3d534c}} 
+\index{listman.\+py@{listman.\+py}!reset\+List@{reset\+List}}
+\index{reset\+List@{reset\+List}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{reset\+List()}{resetList()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+reset\+List (\begin{DoxyParamCaption}\item[{}]{listname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Reset a list to its original value Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listname} & name of list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listman_8py_a731005d6824f6c2f9299aa4cc4ccf809}\label{listman_8py_a731005d6824f6c2f9299aa4cc4ccf809}} 
+\index{listman.\+py@{listman.\+py}!update\+List@{update\+List}}
+\index{update\+List@{update\+List}!listman.\+py@{listman.\+py}}
+\subsubsection{\texorpdfstring{update\+List()}{updateList()}}
+{\footnotesize\ttfamily def app.\+main.\+listman.\+update\+List (\begin{DoxyParamCaption}\item[{}]{classproperty,  }\item[{}]{lizt }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Updata a list in db Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classproperty} & name of list \\
+\hline
+{\em lizt} & list to be saved \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,186 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################
+#
+#$Content classes
+#
+#################################################################
+
+
+bbkmm:Museum a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MuseumClass"@en ;
+rdfs:comment         "bbkmm:MuseumClass"@en .
+
+bbkmm:TemporalChangeEvent a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:TemporalChangeEventClass"@en ;
+rdfs:comment         "bbkmm:TemporalChangeEventClass"@en .
+
+bbkmm:Governance_Change a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Governance_ChangeClass"@en ;
+rdfs:comment         "bbkmm:Governance_ChangeClass"@en .
+
+ bbkmm:hasEventType rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasEventType"@en ;
+                rdfs:comment "bbkmm:hasEventType"@en ;
+                rdfs:domain bbkmm:TemporalChangeEvent ;
+                rdfs:range xsd:string .
+
+ time:inXSDDateTime rdf:type owl:DatatypeProperty ;
+                rdfs:label "time:inXSDDateTime"@en ;
+                rdfs:comment "time:inXSDDateTime"@en ;
+                rdfs:domain time:TimeInstant ;
+                rdfs:range xsd:dateTimeStamp .
+
+ time:inXSDDateTime rdf:type owl:DatatypeProperty ;
+                rdfs:label "time:inXSDDateTime"@en ;
+                rdfs:comment "time:inXSDDateTime"@en ;
+                rdfs:domain time:TimeInstant ;
+                rdfs:range xsd:dateTimeStamp .
+
+ prov:value rdf:type owl:DatatypeProperty ;
+                rdfs:label "prov:value"@en ;
+                rdfs:comment "prov:value"@en ;
+                rdfs:domain prov:Entity ;
+                rdfs:range xsd:string .
+
+ prov:type rdf:type owl:DatatypeProperty ;
+                rdfs:label "prov:type"@en ;
+                rdfs:comment "prov:type"@en ;
+                rdfs:domain prov:Entity ;
+                rdfs:range xsd:string .
+
+ prov:value rdf:type owl:DatatypeProperty ;
+                rdfs:label "prov:value"@en ;
+                rdfs:comment "prov:value"@en ;
+                rdfs:domain prov:Entity ;
+                rdfs:range xsd:string .
+
+ prov:type rdf:type owl:DatatypeProperty ;
+                rdfs:label "prov:type"@en ;
+                rdfs:comment "prov:type"@en ;
+                rdfs:domain prov:Entity ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasStatus rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasStatus"@en ;
+                rdfs:comment "bbkmm:hasStatus"@en ;
+                rdfs:domain bbkmm:Governance_Change ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasNotes rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasNotes"@en ;
+                rdfs:comment "bbkmm:hasNotes"@en ;
+                rdfs:domain bbkmm:TemporalChangeEvent ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasSequenceOrder rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasSequenceOrder"@en ;
+                rdfs:comment "bbkmm:hasSequenceOrder"@en ;
+                rdfs:domain bbkmm:Governance_Change ;
+                rdfs:range xsd:positiveInteger .
+#################################################################
+#
+#$Individuals
+#
+#################################################################
+
+${temporalClassURI("bbkmm:TemporalChangeEvent",n1)}  ${property("bbkmm:hasEventType","xsd:string","$$statusChangeEventType()$","visible")} .
+
+ bbkmm:hasGovernance_Change rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "hasGovernance_Change"@en ;
+                rdfs:comment "hasGovernance_Change"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Governance_Change .
+${classURI("bbkmm:Museum",n0)} bbkmm:hasGovernance_Change ${temporalClassURI("bbkmm:Governance_Change",n15)} .
+
+ time:hasBeginning rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "time:hasBeginning"@en ;
+                rdfs:comment "time:hasBeginning"@en ;
+                rdfs:domain time:TemporalEntity ;
+                rdfs:range time:TimeInstant .
+${temporalClassURI("time:TemporalEntity",n11)} time:hasBeginning ${temporalClassURI("time:TimeInstant",n6)} .
+
+ time:hasEnd rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "time:hasEnd"@en ;
+                rdfs:comment "time:hasEnd"@en ;
+                rdfs:domain time:TemporalEntity ;
+                rdfs:range time:TimeInstant .
+${temporalClassURI("time:TemporalEntity",n11)} time:hasEnd ${temporalClassURI("time:TimeInstant",n7)} .
+${temporalClassURI("time:TimeInstant",n6)} ${property("time:inXSDDateTime","xsd:dateTimeStamp",2,"Visible/Searchable")} .
+${temporalClassURI("time:TimeInstant",n7)} ${property("time:inXSDDateTime","xsd:dateTimeStamp",3,"Visible/Searchable")} .
+
+bbkmm:TemporalChangeEvent rdfs:subClassOf time:TemporalEntity .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:TemporalChangeEvent ;
+                rdfs:range time:TemporalEntity .
+
+${DeclareDefLinkage(bbkmm:TemporalChangeEvent,n1,bbkmm:isSubClassInstanceOf,time:TemporalEntity,n11,,temporalClassURI,temporalClassURI)}
+
+${temporalClassURI("prov:Entity",n8)} ${property("prov:value","xsd:string",5,"Visible/Searchable")} .
+${temporalClassURI("prov:Entity",n8)} ${property("prov:type","xsd:string",5,"Visible/Searchable")} .
+
+ prov:hadPrimarySource rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "prov:hadPrimarySource"@en ;
+                rdfs:comment "prov:hadPrimarySource"@en ;
+                rdfs:domain bbkmm:TemporalChangeEvent ;
+                rdfs:range prov:Entity .
+${temporalClassURI("bbkmm:TemporalChangeEvent",n1)} prov:hadPrimarySource ${temporalClassURI("prov:Entity",n8)} .
+${temporalClassURI("prov:Entity",n12)} ${property("prov:value","xsd:string",6,"Visible/Searchable")} .
+${temporalClassURI("prov:Entity",n12)} ${property("prov:type","xsd:string",6,"Visible/Searchable")} .
+
+ prov:hadSecondarySource rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "prov:hadSecondarySource"@en ;
+                rdfs:comment "prov:hadSecondarySource"@en ;
+                rdfs:domain bbkmm:TemporalChangeEvent ;
+                rdfs:range prov:Entity .
+${temporalClassURI("bbkmm:TemporalChangeEvent",n1)} prov:hadSecondarySource ${temporalClassURI("prov:Entity",n12)} .
+${temporalClassURI("bbkmm:Governance_Change",n15)}  ${property("bbkmm:hasStatus","xsd:string",4,"Visible/Searchable")} .
+
+bbkmm:Governance_Change rdfs:subClassOf bbkmm:TemporalChangeEvent .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Governance_Change ;
+                rdfs:range bbkmm:TemporalChangeEvent .
+
+${DeclareDefLinkage(bbkmm:Governance_Change,n15,bbkmm:isSubClassInstanceOf,bbkmm:TemporalChangeEvent,n1,,temporalClassURI,temporalClassURI)}
+
+${temporalClassURI("bbkmm:TemporalChangeEvent",n1)}  ${property("bbkmm:hasNotes","xsd:string",7,Visible)} .
+${temporalClassURI("bbkmm:Governance_Change",n15)}  ${property("bbkmm:hasSequenceOrder","xsd:positiveInteger","$$temporalSequenceOrderInt()$","Visible/Searchable")} .
+
+
+bbkmm:PredicateList_status bbkmm:contents ("bbkmm:hasEventType" "bbkmm:hasNotes" "bbkmm:hasStatus" "bbkmm:hasSequenceOrder" "bbkmm:isSubClassInstanceOf") .
+
+bbkmm:DataTypeList_status bbkmm:contents ( "time:hasBeginning#time:TimeInstant" "time:inXSDDateTime#xsd:dateTimeStamp" "bbkmm:hasEventType#xsd:string" "bbkmm:hasNotes#xsd:string" "prov:type#xsd:string" "prov:hadSecondarySource#prov:Entity" "prov:value#xsd:string" "time:hasEnd#time:TimeInstant" "bbkmm:hasStatus#xsd:string" "prov:hadPrimarySource#prov:Entity" "bbkmm:hasSequenceOrder#xsd:positiveInteger" "bbkmm:isSubClassInstanceOf#bbkmm:TemporalChangeEvent" "hasGovernance_Change#bbkmm:Governance_Change") .

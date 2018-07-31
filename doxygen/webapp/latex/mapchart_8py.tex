@@ -1,0 +1,64 @@
+\hypertarget{mapchart_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/mapchart.py File Reference}
+\label{mapchart_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/mapchart.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/mapchart.\+py}}
+
+
+This class implements the map page view.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1mapchart_1_1MapChart}{app.\+main.\+mapchart.\+Map\+Chart}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mapchart_8py_ac09a5b85342cdc9db664b3b0795c57c1}\label{mapchart_8py_ac09a5b85342cdc9db664b3b0795c57c1}} 
+def \mbox{\hyperlink{mapchart_8py_ac09a5b85342cdc9db664b3b0795c57c1}{app.\+main.\+mapchart.\+get\+Configuration}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mapchart_8py_a0016133f1bbbb9f49c330f19398f9b0e}\label{mapchart_8py_a0016133f1bbbb9f49c330f19398f9b0e}} 
+def \mbox{\hyperlink{mapchart_8py_a0016133f1bbbb9f49c330f19398f9b0e}{app.\+main.\+mapchart.\+get\+Configuration\+\_\+work}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Create menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mapchart_8py_a02340895c05867efbde019940cf7432d}\label{mapchart_8py_a02340895c05867efbde019940cf7432d}} 
+def \mbox{\hyperlink{mapchart_8py_a02340895c05867efbde019940cf7432d}{app.\+main.\+mapchart.\+mapchart\+View}} (self, prop, subprop)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Implements the F\+L\+A\+SK view Arguments\+:  the property to show  the possible subproperty to show. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mapchart_8py_a03871751f53a6d4f47ac3bbd30b565e3}\label{mapchart_8py_a03871751f53a6d4f47ac3bbd30b565e3}} 
+{\bfseries app.\+main.\+mapchart.\+t} = tree.\+Tree(\char`\"{}Museums\char`\"{},False,False,\char`\"{}menu\char`\"{})
+\item 
+\mbox{\Hypertarget{mapchart_8py_a3c3fdd7af88d5ae4ecf5ac9a24d47f3c}\label{mapchart_8py_a3c3fdd7af88d5ae4ecf5ac9a24d47f3c}} 
+{\bfseries app.\+main.\+mapchart.\+fields}
+\item 
+\mbox{\Hypertarget{mapchart_8py_a0c63bf486960dd5a0ae8855310d46417}\label{mapchart_8py_a0c63bf486960dd5a0ae8855310d46417}} 
+bool {\bfseries app.\+main.\+mapchart.\+first} = True
+\item 
+\mbox{\Hypertarget{mapchart_8py_a9f7d244fdfeb8f6291ed485f0a03f581}\label{mapchart_8py_a9f7d244fdfeb8f6291ed485f0a03f581}} 
+{\bfseries app.\+main.\+mapchart.\+b} = fields\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{mapchart_8py_ac77bac886bb8caeea1b75545185d658f}\label{mapchart_8py_ac77bac886bb8caeea1b75545185d658f}} 
+{\bfseries app.\+main.\+mapchart.\+subprops} = listman.\+get\+List(b.\+replace(definitions.\+H\+A\+S\+N\+A\+ME,\textquotesingle{}\textquotesingle{})+definitions.\+L\+I\+S\+T\+N\+A\+ME)
+\item 
+\mbox{\Hypertarget{mapchart_8py_a6dc7a9e44ba5296b539ddfdda20270c5}\label{mapchart_8py_a6dc7a9e44ba5296b539ddfdda20270c5}} 
+{\bfseries app.\+main.\+mapchart.\+subtree} = self.\+modeltoview.\+get\+Tree\+View(subprops,definitions.\+D\+E\+F\+I\+N\+E\+D\+\_\+\+H\+I\+E\+R\+T\+Y\+PE,\char`\"{}subject\+Matter\+Action\char`\"{},definitions.\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+A\+T\+T\+ER)
+\item 
+\mbox{\Hypertarget{mapchart_8py_a27a54c3e03423b9da883b4c0ec9ca978}\label{mapchart_8py_a27a54c3e03423b9da883b4c0ec9ca978}} 
+{\bfseries app.\+main.\+mapchart.\+domus} = definitions.\+H\+A\+S\+N\+A\+ME+definitions.\+D\+O\+M\+U\+S\+\_\+\+S\+U\+B\+J\+E\+C\+T\+C\+L\+A\+S\+S\+I\+F\+I\+C\+A\+T\+I\+ON
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the map page view. 
+
+~\newline
+ Returns the map data (lat/lon/subject) for a property to show to Leaflet and the menu of properties
+
+~\newline
+ ~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}

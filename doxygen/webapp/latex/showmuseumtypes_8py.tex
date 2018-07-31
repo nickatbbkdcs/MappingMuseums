@@ -1,0 +1,636 @@
+\hypertarget{showmuseumtypes_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/showmuseumtypes.py File Reference}
+\label{showmuseumtypes_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/showmuseumtypes.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/showmuseumtypes.\+py}}
+
+
+This file builds the menus for the browse page and also generates a dictionary with all the museums and their location and classification.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classshowmuseumtypes_1_1ShowMuseumTypes}{showmuseumtypes.\+Show\+Museum\+Types}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{showmuseumtypes_8py_a485d2bd3d0c35b8ede1028a5af13f84e}{showmuseumtypes.\+get\+Ptree}} (self, model, modelmap)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates a tree from the nodes in the model. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{showmuseumtypes_8py_a2f868afc48a58b686dcb10a5f7d3f032}{showmuseumtypes.\+get\+Museum\+Count}} (self, node)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Count number of museums in node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3c01da6e91b5d25636e07d7aaddbccd0}\label{showmuseumtypes_8py_a3c01da6e91b5d25636e07d7aaddbccd0}} 
+def \mbox{\hyperlink{showmuseumtypes_8py_a3c01da6e91b5d25636e07d7aaddbccd0}{showmuseumtypes.\+get\+H\+T\+M\+L\+Tree}} (self, node, t, menuname, action, path)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Recursively creates a H\+T\+ML menu tree from the node Arguments\+:  root node  H\+T\+ML tree  unique name for this menu  What happens when node is clicked  path to node in tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a53b225e5b3a1d1e6ed30227bfe2a15c3}\label{showmuseumtypes_8py_a53b225e5b3a1d1e6ed30227bfe2a15c3}} 
+def {\bfseries showmuseumtypes.\+get\+Hier\+Map\+And\+Totals} (self, results, property)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a5acdaded0fceae01975e95b0d5b63ac8}\label{showmuseumtypes_8py_a5acdaded0fceae01975e95b0d5b63ac8}} 
+def \mbox{\hyperlink{showmuseumtypes_8py_a5acdaded0fceae01975e95b0d5b63ac8}{showmuseumtypes.\+F\+A\+S\+Tconfig}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Initialises models from previously pickled build. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{showmuseumtypes_8py_a4ec40fc396fa43adb86988b2469f0ce9}{showmuseumtypes.\+S\+L\+O\+Wconfig}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Builds the menu from scratch by retrieving data from the db for each property(column) to include in the menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a7254fe7c91e4043e446c7cd7d90c2720}\label{showmuseumtypes_8py_a7254fe7c91e4043e446c7cd7d90c2720}} 
+def \mbox{\hyperlink{showmuseumtypes_8py_a7254fe7c91e4043e446c7cd7d90c2720}{showmuseumtypes.\+get\+Configuration\+\_\+work}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Chooses the initialisation type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_af2e739ceee29d71e646a5c5dce576e28}\label{showmuseumtypes_8py_af2e739ceee29d71e646a5c5dce576e28}} 
+def \mbox{\hyperlink{showmuseumtypes_8py_af2e739ceee29d71e646a5c5dce576e28}{showmuseumtypes.\+get\+England\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates the location menu for england. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a53ae9a9128ad8a11c63e89ed3d71985a}\label{showmuseumtypes_8py_a53ae9a9128ad8a11c63e89ed3d71985a}} 
+def \mbox{\hyperlink{showmuseumtypes_8py_a53ae9a9128ad8a11c63e89ed3d71985a}{showmuseumtypes.\+get\+Generic\+Location\+Tree}} (self, countryparam, pseudoparam, menuextension)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates the location menu for other places than england/ Arguments\+:  What place to build for  O\+NS pseudo code for country  unique name of menu. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{showmuseumtypes_8py_a773f45bc4dc0be24655cd64671682649}{showmuseumtypes.\+generateinterval}} (self, listofitems, tree, displayinterval, nodename, open, disabled)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Generates an interval i.\+e. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a15ca1c9db0d825fb9c0829435575a7ef}\label{showmuseumtypes_8py_a15ca1c9db0d825fb9c0829435575a7ef}} 
+def {\bfseries showmuseumtypes.\+delegate\+\_\+foundationyear} (self, property, results)
+\item 
+def \mbox{\hyperlink{showmuseumtypes_8py_abf23523cea661bc6d5081bc4acfc7d41}{showmuseumtypes.\+generateinterval\+O\+LD}} (self, listofitems, tree, displayinterval, nodename, open, disabled, isunknown)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Generates an interval i.\+e. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{showmuseumtypes_8py_a07d5965e526c633a97daf2880de7ffa7}{showmuseumtypes.\+createtreefromlistnoleaves}} (self, list, tree, nodename, bucket, ptr, open, tlist)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates the H\+T\+ML menu from the list without leaves appearing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\textbf{ }\par
+{\em Purpose\+:Removes type info from name Arguments\+:
+
+,property,results) }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a1c66bd508700aa2b196846eed70e8f85}\label{showmuseumtypes_8py_a1c66bd508700aa2b196846eed70e8f85}} 
+def {\bfseries showmuseumtypes.\+delegate\+\_\+countyproperty} (self, property, results)
+\end{DoxyCompactItemize}
+
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a1ec8261e9314c927ec6b683ffe455597}\label{showmuseumtypes_8py_a1ec8261e9314c927ec6b683ffe455597}} 
+{\bfseries showmuseumtypes.\+ptree} = P\+Tree\+Node(\textquotesingle{}Root\textquotesingle{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a81936124b072a2fd79936bcf9db5848e}\label{showmuseumtypes_8py_a81936124b072a2fd79936bcf9db5848e}} 
+{\bfseries showmuseumtypes.\+node} = ele.\+replace(definitions.\+H\+T\+T\+P\+S\+T\+R\+I\+NG+definitions.\+R\+D\+F\+D\+E\+F\+U\+R\+I\+\_\+\+N\+O\+E\+N\+D\+I\+N\+G\+S\+L\+A\+SH,\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3bd60c58eb23f4606149bb3894581415}\label{showmuseumtypes_8py_a3bd60c58eb23f4606149bb3894581415}} 
+int {\bfseries showmuseumtypes.\+op} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa31b2c8ae4b26041b6da799350246042}\label{showmuseumtypes_8py_aa31b2c8ae4b26041b6da799350246042}} 
+{\bfseries showmuseumtypes.\+data}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a8afd05578210bbe88663b70ec8af08ba}\label{showmuseumtypes_8py_a8afd05578210bbe88663b70ec8af08ba}} 
+{\bfseries showmuseumtypes.\+mcount} = mcount+len(node.\+data)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a98a864e04651e8c123d372ae7fcc608e}\label{showmuseumtypes_8py_a98a864e04651e8c123d372ae7fcc608e}} 
+dictionary {\bfseries showmuseumtypes.\+shortkeytypemap} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3b45e267539ddd162a4bca33f7cc8d72}\label{showmuseumtypes_8py_a3b45e267539ddd162a4bca33f7cc8d72}} 
+{\bfseries showmuseumtypes.\+newkey} = akey.\+replace(\char`\"{}http\+://bbk.\+ac.\+uk/Museum\+Map\+Project/def\char`\"{},\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ac5e63ab51c39b2ff3c5500df60c479ac}\label{showmuseumtypes_8py_ac5e63ab51c39b2ff3c5500df60c479ac}} 
+{\bfseries showmuseumtypes.\+typemap} = None
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0af4f63d6bbf0a6f269e52159c660533}\label{showmuseumtypes_8py_a0af4f63d6bbf0a6f269e52159c660533}} 
+{\bfseries showmuseumtypes.\+menut} = \mbox{\hyperlink{classtree_1_1Tree}{tree.\+Tree}}(\char`\"{}Museums \mbox{[}\char`\"{}+str(len(total\+\_\+list))+\char`\"{}\mbox{]}\char`\"{},False,False,\char`\"{}menu\char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6962c4760b822c263459032bc9cd7eb0}\label{showmuseumtypes_8py_a6962c4760b822c263459032bc9cd7eb0}} 
+{\bfseries showmuseumtypes.\+dimt} = \mbox{\hyperlink{classtree_1_1Tree}{tree.\+Tree}}(None,False,False,\char`\"{}dimt\char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a7c52807d033d2753e9b64ef10834351e}\label{showmuseumtypes_8py_a7c52807d033d2753e9b64ef10834351e}} 
+{\bfseries showmuseumtypes.\+dimensiontree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a071efdf3991b56f36597333889641527}\label{showmuseumtypes_8py_a071efdf3991b56f36597333889641527}} 
+{\bfseries showmuseumtypes.\+loct} = \mbox{\hyperlink{classtree_1_1Tree}{tree.\+Tree}}(None,False,False,\char`\"{}loct\char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a449560b2f8dbf16b096b44f64418c35a}\label{showmuseumtypes_8py_a449560b2f8dbf16b096b44f64418c35a}} 
+{\bfseries showmuseumtypes.\+locationtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6e13d4e8c9949868a0a5300e5986ddf5}\label{showmuseumtypes_8py_a6e13d4e8c9949868a0a5300e5986ddf5}} 
+{\bfseries showmuseumtypes.\+ptrsdict}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a61103445338a86c2bb179d57a283614c}\label{showmuseumtypes_8py_a61103445338a86c2bb179d57a283614c}} 
+{\bfseries showmuseumtypes.\+treedict} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6c7906edc8d09ed98ce1a5b5387a58ae}\label{showmuseumtypes_8py_a6c7906edc8d09ed98ce1a5b5387a58ae}} 
+list {\bfseries showmuseumtypes.\+props} = \mbox{[}definitions.\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+M\+U\+S\+E\+UM,definitions.\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+A\+T\+T\+ER,definitions.\+P\+R\+O\+J\+E\+C\+T\+\_\+\+ID\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_af717cb09cf8c2e40c84f463af45f9f72}\label{showmuseumtypes_8py_af717cb09cf8c2e40c84f463af45f9f72}} 
+{\bfseries showmuseumtypes.\+b} = definitions.\+A\+C\+C\+R\+E\+D\+I\+T\+A\+T\+I\+ON
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa4e1f562354a6f4b0a6653241c17131c}\label{showmuseumtypes_8py_aa4e1f562354a6f4b0a6653241c17131c}} 
+{\bfseries showmuseumtypes.\+subtree} = None
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a665704a5e90177d818c82b47fded7434}\label{showmuseumtypes_8py_a665704a5e90177d818c82b47fded7434}} 
+{\bfseries showmuseumtypes.\+subprops} = listman.\+get\+List(\char`\"{}def\+Class\char`\"{}+b.\+replace(definitions.\+H\+A\+S\+N\+A\+ME,\textquotesingle{}\textquotesingle{})+definitions.\+L\+I\+S\+T\+N\+A\+ME)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab32b6b39da4c1be29437e0d19b68f16f}\label{showmuseumtypes_8py_ab32b6b39da4c1be29437e0d19b68f16f}} 
+{\bfseries showmuseumtypes.\+sortedsubprops} = sorted(subprops)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab78a482c24f58f0f980a4516f8123dda}\label{showmuseumtypes_8py_ab78a482c24f58f0f980a4516f8123dda}} 
+{\bfseries showmuseumtypes.\+modelmap}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ac759cf5425845c90d19f0d382a06d2b9}\label{showmuseumtypes_8py_ac759cf5425845c90d19f0d382a06d2b9}} 
+int {\bfseries showmuseumtypes.\+level} = 1
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ac9ab9abce5fb5e607ab8422243ed25aa}\label{showmuseumtypes_8py_ac9ab9abce5fb5e607ab8422243ed25aa}} 
+list {\bfseries showmuseumtypes.\+locationlist} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aad8bfc0124b2edf33f4b7fc783049ca4}\label{showmuseumtypes_8py_aad8bfc0124b2edf33f4b7fc783049ca4}} 
+{\bfseries showmuseumtypes.\+Esubtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a210877cfcd91deb1a4a84563675cf054}\label{showmuseumtypes_8py_a210877cfcd91deb1a4a84563675cf054}} 
+{\bfseries showmuseumtypes.\+Wsubtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aac26728efabc7593fd94fce08aba7179}\label{showmuseumtypes_8py_aac26728efabc7593fd94fce08aba7179}} 
+{\bfseries showmuseumtypes.\+N\+Isubtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab65f36e4aea5f9256c67796759ee5082}\label{showmuseumtypes_8py_ab65f36e4aea5f9256c67796759ee5082}} 
+{\bfseries showmuseumtypes.\+Ssubtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_addc9d2bbfe09ac0ef77b3cabb63ba21f}\label{showmuseumtypes_8py_addc9d2bbfe09ac0ef77b3cabb63ba21f}} 
+{\bfseries showmuseumtypes.\+channelsubtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a969caf539d0fa6e7f297cc87a3c1852c}\label{showmuseumtypes_8py_a969caf539d0fa6e7f297cc87a3c1852c}} 
+{\bfseries showmuseumtypes.\+iomsubtree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a2bb52924a9efb97db09f237b169c952a}\label{showmuseumtypes_8py_a2bb52924a9efb97db09f237b169c952a}} 
+string {\bfseries showmuseumtypes.\+listname} = \char`\"{}def\+Class\char`\"{}+b.\+replace(definitions.\+H\+A\+S\+N\+A\+ME,\textquotesingle{}\textquotesingle{})+definitions.\+L\+I\+S\+T\+N\+A\+ME
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a69340f83af3b85ca41c7633869b3aa03}\label{showmuseumtypes_8py_a69340f83af3b85ca41c7633869b3aa03}} 
+{\bfseries showmuseumtypes.\+statusch} = definitions.\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+GE
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a09e33503beb6f80d8285216a08d2726a}\label{showmuseumtypes_8py_a09e33503beb6f80d8285216a08d2726a}} 
+{\bfseries showmuseumtypes.\+sgor} = sorted(apputils.\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+L\+E.\+items(), key=lambda x\+: x\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa846579a89bab59f528d282eaab9a0cc}\label{showmuseumtypes_8py_aa846579a89bab59f528d282eaab9a0cc}} 
+dictionary {\bfseries showmuseumtypes.\+regionsdict} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ac2b20c56e81e9cddbf676bc56dfc06fb}\label{showmuseumtypes_8py_ac2b20c56e81e9cddbf676bc56dfc06fb}} 
+dictionary {\bfseries showmuseumtypes.\+county\+\_\+and\+\_\+region\+\_\+table} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3e71fc0646a3a20104f3d9fcc55a0ed3}\label{showmuseumtypes_8py_a3e71fc0646a3a20104f3d9fcc55a0ed3}} 
+{\bfseries showmuseumtypes.\+scounties} = sorted(county\+\_\+and\+\_\+region\+\_\+table.\+items(), key=lambda x\+: x\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0619b0595e8e1eb5b8c645c3cbd92dc4}\label{showmuseumtypes_8py_a0619b0595e8e1eb5b8c645c3cbd92dc4}} 
+dictionary {\bfseries showmuseumtypes.\+countiesdict} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a2248a83b47a1b6ad0f98511c9b888dd5}\label{showmuseumtypes_8py_a2248a83b47a1b6ad0f98511c9b888dd5}} 
+{\bfseries showmuseumtypes.\+thisregion} = definitions.\+C\+O\+U\+N\+T\+Y2\+\_\+\+R\+E\+G\+I\+O\+N\+\_\+\+D\+I\+CT\mbox{[}counties\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab0972a2203be011ec114ae34f54538af}\label{showmuseumtypes_8py_ab0972a2203be011ec114ae34f54538af}} 
+{\bfseries showmuseumtypes.\+thisregioncode} = apputils.\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE\mbox{[}ca\+\_\+code\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a75e75a9f86ed3bd6f66f9c61fb987d0b}\label{showmuseumtypes_8py_a75e75a9f86ed3bd6f66f9c61fb987d0b}} 
+{\bfseries showmuseumtypes.\+countyname} = apputils.\+L\+A\+\_\+\+T\+O\+\_\+\+C\+A\+\_\+\+N\+A\+M\+E\+S\+\_\+\+T\+A\+B\+LE\mbox{[}laname\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a8a8b3952baeff8e6ae1704804c1c3e23}\label{showmuseumtypes_8py_a8a8b3952baeff8e6ae1704804c1c3e23}} 
+dictionary {\bfseries showmuseumtypes.\+lalist} = countiesdict\mbox{[}countyname\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ae678ebb0dafd6ede126401e19ca73cbc}\label{showmuseumtypes_8py_ae678ebb0dafd6ede126401e19ca73cbc}} 
+{\bfseries showmuseumtypes.\+rlen} = len(results\mbox{[}\char`\"{}results\char`\"{}\mbox{]}\mbox{[}\char`\"{}bindings\char`\"{}\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ac1d187b0d4861cb904c536a2017cbe2d}\label{showmuseumtypes_8py_ac1d187b0d4861cb904c536a2017cbe2d}} 
+int {\bfseries showmuseumtypes.\+notinlacount} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a547285e96ffaa09d47531d204951376b}\label{showmuseumtypes_8py_a547285e96ffaa09d47531d204951376b}} 
+{\bfseries showmuseumtypes.\+museum} = result\mbox{[}\char`\"{}museum\char`\"{}\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a2eb36a6c9564ff248f4dd92f76475055}\label{showmuseumtypes_8py_a2eb36a6c9564ff248f4dd92f76475055}} 
+{\bfseries showmuseumtypes.\+postcode} = result\mbox{[}definitions.\+P\+O\+S\+T\+C\+O\+DE\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a7b076f01ea460f4b4aca4d98569451a1}\label{showmuseumtypes_8py_a7b076f01ea460f4b4aca4d98569451a1}} 
+{\bfseries showmuseumtypes.\+thiscountry} = definitions.\+P\+O\+S\+T\+C\+O\+D\+E2\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+D\+I\+CT\mbox{[}postcode\mbox{]}.replace(\textquotesingle{}\char`\"{}\textquotesingle{},\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_af592f6111d8b981d47475c4e15a12a52}\label{showmuseumtypes_8py_af592f6111d8b981d47475c4e15a12a52}} 
+string {\bfseries showmuseumtypes.\+key} = thiscountry+\char`\"{}/\char`\"{}+thisregion
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa746d2710192a0c0e87efde82c51edea}\label{showmuseumtypes_8py_aa746d2710192a0c0e87efde82c51edea}} 
+{\bfseries showmuseumtypes.\+thisla} = definitions.\+P\+O\+S\+T\+C\+O\+D\+E2\+\_\+\+L\+A\+\_\+\+D\+I\+CT\mbox{[}postcode\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a35164a9935d2456424fdace5cb39e602}\label{showmuseumtypes_8py_a35164a9935d2456424fdace5cb39e602}} 
+{\bfseries showmuseumtypes.\+thiscounty} = apputils.\+L\+A\+\_\+\+T\+O\+\_\+\+C\+A\+\_\+\+N\+A\+M\+E\+S\+\_\+\+T\+A\+B\+LE\mbox{[}thisla\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a62455ae5e208f16f71e6d71e7f3cafb9}\label{showmuseumtypes_8py_a62455ae5e208f16f71e6d71e7f3cafb9}} 
+\mbox{\hyperlink{showmuseumtypes_8py_a62455ae5e208f16f71e6d71e7f3cafb9}{showmuseumtypes.\+thiscaname}} = apputils.\+L\+A\+\_\+\+T\+O\+\_\+\+C\+A\+\_\+\+N\+A\+M\+E\+S\+\_\+\+T\+A\+B\+LE\mbox{[}thisla\mbox{]}
+\begin{DoxyCompactList}\small\item\em CA. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a232adc5bc49026a78b7c3e739195466b}\label{showmuseumtypes_8py_a232adc5bc49026a78b7c3e739195466b}} 
+bool {\bfseries showmuseumtypes.\+firsttime\+\_\+region} = True
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a70053b921cc8507555ad96bc7f6ea2c1}\label{showmuseumtypes_8py_a70053b921cc8507555ad96bc7f6ea2c1}} 
+{\bfseries showmuseumtypes.\+regiontotal} = len(museumdict\mbox{[}\textquotesingle{}England\textquotesingle{}+\char`\"{}/\char`\"{}+reg\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a1936ac67b6eb480a497abab916bdb324}\label{showmuseumtypes_8py_a1936ac67b6eb480a497abab916bdb324}} 
+int {\bfseries showmuseumtypes.\+total} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa142f91723a6460e62dff261ef6a2ab9}\label{showmuseumtypes_8py_aa142f91723a6460e62dff261ef6a2ab9}} 
+bool {\bfseries showmuseumtypes.\+firsttime\+\_\+county} = True
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa860130e5ccbec6c9079df2527fae04b}\label{showmuseumtypes_8py_aa860130e5ccbec6c9079df2527fae04b}} 
+bool {\bfseries showmuseumtypes.\+firsttime\+\_\+la} = True
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a03d704ecb84df418331decebae13507f}\label{showmuseumtypes_8py_a03d704ecb84df418331decebae13507f}} 
+{\bfseries showmuseumtypes.\+pseudo} = pseudoparam
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aeb30c94b4fb5f340673ed70ed4491ea5}\label{showmuseumtypes_8py_aeb30c94b4fb5f340673ed70ed4491ea5}} 
+dictionary {\bfseries showmuseumtypes.\+ladict} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aefc406aef9eb157754bf053c5137fd86}\label{showmuseumtypes_8py_aefc406aef9eb157754bf053c5137fd86}} 
+{\bfseries showmuseumtypes.\+sla} = sorted(ladict)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a5d0b5394656d46c4ac1895f776f5bc52}\label{showmuseumtypes_8py_a5d0b5394656d46c4ac1895f776f5bc52}} 
+{\bfseries showmuseumtypes.\+prevhundreds} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a8ec96bb65544b1925c256d5b622af3e3}\label{showmuseumtypes_8py_a8ec96bb65544b1925c256d5b622af3e3}} 
+{\bfseries showmuseumtypes.\+iyear} = int(atuple\mbox{[}0\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_abff7df9f8917036f4c40c493855bfefe}\label{showmuseumtypes_8py_abff7df9f8917036f4c40c493855bfefe}} 
+{\bfseries showmuseumtypes.\+item} = atuple\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_acc9ca25c48bc88f0543213be8eca7797}\label{showmuseumtypes_8py_acc9ca25c48bc88f0543213be8eca7797}} 
+int {\bfseries showmuseumtypes.\+dcount} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0a59646c75468c9a615be0fc2c755e12}\label{showmuseumtypes_8py_a0a59646c75468c9a615be0fc2c755e12}} 
+{\bfseries showmuseumtypes.\+hundreds} = int(iyear/displayinterval\mbox{[}dcount\mbox{]})$\ast$displayinterval\mbox{[}dcount\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a4d188c3dd900449a28f9604752a4befa}\label{showmuseumtypes_8py_a4d188c3dd900449a28f9604752a4befa}} 
+string {\bfseries showmuseumtypes.\+macroid} = \char`\"{}\{\char`\"{}+nodename+str(macrocount)+\char`\"{}\}\char`\"{}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a4feb0f05c215db1c6ce7d9258973ad35}\label{showmuseumtypes_8py_a4feb0f05c215db1c6ce7d9258973ad35}} 
+bool {\bfseries showmuseumtypes.\+firsttime} = False
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa10f7cab13ce722120ec066cbc494f38}\label{showmuseumtypes_8py_aa10f7cab13ce722120ec066cbc494f38}} 
+{\bfseries showmuseumtypes.\+countlist} = apputils.\+rotate(countlist,1)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a882c905c135735229e60e04995127b18}\label{showmuseumtypes_8py_a882c905c135735229e60e04995127b18}} 
+int {\bfseries showmuseumtypes.\+cl} = len(countlist)-\/1
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3cd6ddce1c06b7ba0ab0d8be2d52a093}\label{showmuseumtypes_8py_a3cd6ddce1c06b7ba0ab0d8be2d52a093}} 
+{\bfseries showmuseumtypes.\+last} = countlist\mbox{[}cl\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a50fe987407cae53f6c28eea058b45fc2}\label{showmuseumtypes_8py_a50fe987407cae53f6c28eea058b45fc2}} 
+int {\bfseries showmuseumtypes.\+j} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a7305b911cca09a5876eb2b7d75d06514}\label{showmuseumtypes_8py_a7305b911cca09a5876eb2b7d75d06514}} 
+int {\bfseries showmuseumtypes.\+k} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0944e1e2f12e521e3f45df3fabb49ee0}\label{showmuseumtypes_8py_a0944e1e2f12e521e3f45df3fabb49ee0}} 
+dictionary {\bfseries showmuseumtypes.\+displaydict} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6c2db54f792dacb8a42638d0b949f5be}\label{showmuseumtypes_8py_a6c2db54f792dacb8a42638d0b949f5be}} 
+{\bfseries showmuseumtypes.\+sortedinterval} = sorted(displaydict.\+items())
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a13aaee5b9f699f92b51794e553c4d9ea}\label{showmuseumtypes_8py_a13aaee5b9f699f92b51794e553c4d9ea}} 
+{\bfseries showmuseumtypes.\+ind}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a1d925c3f148219f391692b40086dd5ac}\label{showmuseumtypes_8py_a1d925c3f148219f391692b40086dd5ac}} 
+{\bfseries showmuseumtypes.\+nodeid}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3b245891ee147f8bb455f36b039d9219}\label{showmuseumtypes_8py_a3b245891ee147f8bb455f36b039d9219}} 
+list {\bfseries showmuseumtypes.\+lb1} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a75d74c25b8d7bc6e66ba98db6027d2db}\label{showmuseumtypes_8py_a75d74c25b8d7bc6e66ba98db6027d2db}} 
+int {\bfseries showmuseumtypes.\+tot} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ae52704ff04262332cba29ce87f9d2bf1}\label{showmuseumtypes_8py_ae52704ff04262332cba29ce87f9d2bf1}} 
+{\bfseries showmuseumtypes.\+tyear}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a09a6f34d5abed38f0325387c867c76e9}\label{showmuseumtypes_8py_a09a6f34d5abed38f0325387c867c76e9}} 
+{\bfseries showmuseumtypes.\+turi}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0363a40f4a29270057575e592ab79004}\label{showmuseumtypes_8py_a0363a40f4a29270057575e592ab79004}} 
+{\bfseries showmuseumtypes.\+atuple} = item\mbox{[}0\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6e547bd96bb31fefe093f28dc046ff9f}\label{showmuseumtypes_8py_a6e547bd96bb31fefe093f28dc046ff9f}} 
+{\bfseries showmuseumtypes.\+label} = int(year/bucket\mbox{[}ptr-\/1\mbox{]})$\ast$bucket\mbox{[}ptr-\/1\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aff05f4f6664031f74c7c9e395efa02e0}\label{showmuseumtypes_8py_aff05f4f6664031f74c7c9e395efa02e0}} 
+bool {\bfseries showmuseumtypes.\+open} = True
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a8d1ccbab05b2113c1996cc1c2058d50c}\label{showmuseumtypes_8py_a8d1ccbab05b2113c1996cc1c2058d50c}} 
+{\bfseries showmuseumtypes.\+tree}
+\end{DoxyCompactItemize}
+\label{_amgrp01747264fe7bf50731df0522c351974e}%
+Purpose\+:Removes type info from name Arguments\+:
+
+,property,results,menuname,partspointerstart,partspointerend) \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab306e6acf8687c27768ec0ea20e073c7}\label{showmuseumtypes_8py_ab306e6acf8687c27768ec0ea20e073c7}} 
+int {\bfseries showmuseumtypes.\+noop} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a298baef18cac8fa1c4c60e7128c38a98}\label{showmuseumtypes_8py_a298baef18cac8fa1c4c60e7128c38a98}} 
+{\bfseries showmuseumtypes.\+uri} = res\mbox{[}\char`\"{}museum\char`\"{}\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}.encode(\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a726e476c740201a08981a363da669d6a}\label{showmuseumtypes_8py_a726e476c740201a08981a363da669d6a}} 
+{\bfseries showmuseumtypes.\+name} = res\mbox{[}definitions.\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+M\+U\+S\+E\+UM\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}.encode(\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a9808874e1a3f2731791daf9572a927dd}\label{showmuseumtypes_8py_a9808874e1a3f2731791daf9572a927dd}} 
+{\bfseries showmuseumtypes.\+lat} = res\mbox{[}definitions.\+L\+A\+T\+I\+T\+U\+DE\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a638e125abf3d527a961d39ccba43777a}\label{showmuseumtypes_8py_a638e125abf3d527a961d39ccba43777a}} 
+{\bfseries showmuseumtypes.\+lon} = res\mbox{[}definitions.\+L\+O\+N\+G\+I\+T\+U\+DE\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ae834c1bad703d2f3abaf4f7b0c57b117}\label{showmuseumtypes_8py_ae834c1bad703d2f3abaf4f7b0c57b117}} 
+{\bfseries showmuseumtypes.\+sub} = res\mbox{[}definitions.\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+A\+T\+T\+ER\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a022a8ebbb1cdde19efea12473ea6a3db}\label{showmuseumtypes_8py_a022a8ebbb1cdde19efea12473ea6a3db}} 
+tuple {\bfseries showmuseumtypes.\+mtuple} = (uri,name,sub,lat,lon)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ae62ed87ab12641cc5570256182bdda68}\label{showmuseumtypes_8py_ae62ed87ab12641cc5570256182bdda68}} 
+{\bfseries showmuseumtypes.\+sortedtuples} = sorted(listoftuples,key=lambda tup\+: tup\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa8a355388ff5ac8a4b1eddcfb3533264}\label{showmuseumtypes_8py_aa8a355388ff5ac8a4b1eddcfb3533264}} 
+list {\bfseries showmuseumtypes.\+total\+\_\+list} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ad4e766e35a554aee81d176f664832b7e}\label{showmuseumtypes_8py_ad4e766e35a554aee81d176f664832b7e}} 
+tuple {\bfseries showmuseumtypes.\+savetuple} = (uri,name,sub,lat,lon)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab639190c6a9ae84c70cd4b8fbfa766bd}\label{showmuseumtypes_8py_ab639190c6a9ae84c70cd4b8fbfa766bd}} 
+{\bfseries showmuseumtypes.\+t} = \mbox{\hyperlink{classtree_1_1Tree}{tree.\+Tree}}(\char`\"{}Museums by England/localauth\char`\"{},True,False,\char`\"{}area\char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6f405abaa522ea8b427637ace71ff2a5}\label{showmuseumtypes_8py_a6f405abaa522ea8b427637ace71ff2a5}} 
+list {\bfseries showmuseumtypes.\+buckets} = \mbox{[}10,1\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa90a689d55ac6d092bf5c8922d0e976c}\label{showmuseumtypes_8py_aa90a689d55ac6d092bf5c8922d0e976c}} 
+{\bfseries showmuseumtypes.\+newlist} = t.\+generate\+Lists(sortedtuples,buckets)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a18f8c2869f91096509f486742ee42ff2}\label{showmuseumtypes_8py_a18f8c2869f91096509f486742ee42ff2}} 
+{\bfseries showmuseumtypes.\+rootid} = tree.\+get\+Id()
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a02e9e583937b8dd022e9d399cfdf0533}\label{showmuseumtypes_8py_a02e9e583937b8dd022e9d399cfdf0533}} 
+list {\bfseries showmuseumtypes.\+nodelist} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aeb8e627dfc0686f588aa35ad2631a6df}\label{showmuseumtypes_8py_aeb8e627dfc0686f588aa35ad2631a6df}} 
+{\bfseries showmuseumtypes.\+syear} = str(atuple\mbox{[}0\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_af05aff92ad0ae138ff3ac7135641382e}\label{showmuseumtypes_8py_af05aff92ad0ae138ff3ac7135641382e}} 
+{\bfseries showmuseumtypes.\+year} = int(syear)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a9ff25b4c32dbaa3d19cbc68bf8672ac0}\label{showmuseumtypes_8py_a9ff25b4c32dbaa3d19cbc68bf8672ac0}} 
+{\bfseries showmuseumtypes.\+tlist} = tlist+nodelist
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ab5e09af5d75a856e278bf45c1cad85ae}\label{showmuseumtypes_8py_ab5e09af5d75a856e278bf45c1cad85ae}} 
+{\bfseries showmuseumtypes.\+cleanprop} = property.\+replace(\char`\"{}\+\_\+\char`\"{},\char`\"{} \char`\"{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa08787e8ae084902da98cfbc729fa9a0}\label{showmuseumtypes_8py_aa08787e8ae084902da98cfbc729fa9a0}} 
+list {\bfseries showmuseumtypes.\+nineninelist} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a54cfbeda846559303f9229cf413d23b7}\label{showmuseumtypes_8py_a54cfbeda846559303f9229cf413d23b7}} 
+list {\bfseries showmuseumtypes.\+pre1960list} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a7e8c9e7b536479563af6b54418fdae9a}\label{showmuseumtypes_8py_a7e8c9e7b536479563af6b54418fdae9a}} 
+list {\bfseries showmuseumtypes.\+sixtieslist} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_abac1509118679f3dcb3c6e87416ffe5b}\label{showmuseumtypes_8py_abac1509118679f3dcb3c6e87416ffe5b}} 
+{\bfseries showmuseumtypes.\+interval} = res\mbox{[}property\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_abc407bab328778605e4ab196d75d4d58}\label{showmuseumtypes_8py_abc407bab328778605e4ab196d75d4d58}} 
+{\bfseries showmuseumtypes.\+parts} = interval.\+split(definitions.\+R\+A\+N\+G\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a9536fe4879767e95e1dc5f7bfd0d08e5}\label{showmuseumtypes_8py_a9536fe4879767e95e1dc5f7bfd0d08e5}} 
+{\bfseries showmuseumtypes.\+eyear} = parts\mbox{[}partspointerend\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a64720ab855ad8262ef6200a5afcb7afb}\label{showmuseumtypes_8py_a64720ab855ad8262ef6200a5afcb7afb}} 
+bool {\bfseries showmuseumtypes.\+isunknown} = True
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a85abe5fcdfbe500ddb1fdf5a99560673}\label{showmuseumtypes_8py_a85abe5fcdfbe500ddb1fdf5a99560673}} 
+{\bfseries showmuseumtypes.\+templist} = None
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_afed6d47a21f0c320f52703e246bdec13}\label{showmuseumtypes_8py_afed6d47a21f0c320f52703e246bdec13}} 
+int {\bfseries showmuseumtypes.\+post1960\+\_\+tot} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a211cf740657b19d06dea87827a5c37f9}\label{showmuseumtypes_8py_a211cf740657b19d06dea87827a5c37f9}} 
+def {\bfseries showmuseumtypes.\+delegate\+\_\+foundationyear\+O\+LD} (self, property, results, menuname, partspointerstart, partspointerend)
+\end{DoxyCompactItemize}
+\label{_amgrp01747264fe7bf50731df0522c351974e}%
+Purpose\+:Removes type info from name Arguments\+:
+
+,sortedtuples,inkey,treeref) \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ac9caf3724757bf9957e64a552aed1a4b}\label{showmuseumtypes_8py_ac9caf3724757bf9957e64a552aed1a4b}} 
+tuple {\bfseries showmuseumtypes.\+tup} = (sgor\mbox{[}trange\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a52660c3f952b4282353a0ab9b4be7fc4}\label{showmuseumtypes_8py_a52660c3f952b4282353a0ab9b4be7fc4}} 
+dictionary {\bfseries showmuseumtypes.\+museumdict} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa45076b8d969944f078505679cd7ec38}\label{showmuseumtypes_8py_aa45076b8d969944f078505679cd7ec38}} 
+int {\bfseries showmuseumtypes.\+count} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aca17e0653f684dca3e67882167118155}\label{showmuseumtypes_8py_aca17e0653f684dca3e67882167118155}} 
+{\bfseries showmuseumtypes.\+tname} = str(atuple\mbox{[}nameptr\mbox{]})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0760a539294a0afccb8940f3479b2710}\label{showmuseumtypes_8py_a0760a539294a0afccb8940f3479b2710}} 
+{\bfseries showmuseumtypes.\+subt} = \mbox{\hyperlink{classtree_1_1Tree}{tree.\+Tree}}(None,True,False,treeref)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_ae296c74484360fb80e838a6e9d5adbf7}\label{showmuseumtypes_8py_ae296c74484360fb80e838a6e9d5adbf7}} 
+int {\bfseries showmuseumtypes.\+typeptr} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a441f2628d81f69d46fa97106e8a0b85e}\label{showmuseumtypes_8py_a441f2628d81f69d46fa97106e8a0b85e}} 
+int {\bfseries showmuseumtypes.\+uriptr} = 1
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a04284f4ed58b6b5c852dcf18939962d7}\label{showmuseumtypes_8py_a04284f4ed58b6b5c852dcf18939962d7}} 
+int {\bfseries showmuseumtypes.\+nameptr} = 2
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a42ccfad1f388443934d5a4a3ed85d270}\label{showmuseumtypes_8py_a42ccfad1f388443934d5a4a3ed85d270}} 
+int {\bfseries showmuseumtypes.\+subptr} = 3
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_af5603916d95cd8f93f5e8efca7737e07}\label{showmuseumtypes_8py_af5603916d95cd8f93f5e8efca7737e07}} 
+int {\bfseries showmuseumtypes.\+latptr} = 4
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a25424346da1fb286bbf2d4835384b66a}\label{showmuseumtypes_8py_a25424346da1fb286bbf2d4835384b66a}} 
+int {\bfseries showmuseumtypes.\+lonptr} = 5
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a66d615980ff9d39461574c272b5e1c39}\label{showmuseumtypes_8py_a66d615980ff9d39461574c272b5e1c39}} 
+int {\bfseries showmuseumtypes.\+partlen} = len(parts)-\/1
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6118c436f4207ca82758df407944c18b}\label{showmuseumtypes_8py_a6118c436f4207ca82758df407944c18b}} 
+def {\bfseries showmuseumtypes.\+do\+Tuples} (self, sortedtuples, inkey, treeref)
+\end{DoxyCompactItemize}
+\label{_amgrp01747264fe7bf50731df0522c351974e}%
+Purpose\+:Removes type info from name Arguments\+:
+
+,results,property) \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a305ca42d362ba8377c0b76238badb818}\label{showmuseumtypes_8py_a305ca42d362ba8377c0b76238badb818}} 
+{\bfseries showmuseumtypes.\+totallist} = totallist+sortedtuples
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a0e359357d5256264b1024ace32e1849f}\label{showmuseumtypes_8py_a0e359357d5256264b1024ace32e1849f}} 
+{\bfseries showmuseumtypes.\+mtype} = res\mbox{[}property\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}.encode(\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa5c5738e5f2699c0c925d02540389525}\label{showmuseumtypes_8py_aa5c5738e5f2699c0c925d02540389525}} 
+{\bfseries showmuseumtypes.\+mtypelist} = typemap\mbox{[}str(mtype)\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a379dba581176c99ae6303bee676379d4}\label{showmuseumtypes_8py_a379dba581176c99ae6303bee676379d4}} 
+{\bfseries showmuseumtypes.\+propkeys} = typemap.\+keys()
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a3e9d93460fd3c19bf66e3b41fb3a172a}\label{showmuseumtypes_8py_a3e9d93460fd3c19bf66e3b41fb3a172a}} 
+{\bfseries showmuseumtypes.\+listoftuples} = typemap\mbox{[}akey\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aba0e2f0bb7e861baa530280679bea98f}\label{showmuseumtypes_8py_aba0e2f0bb7e861baa530280679bea98f}} 
+int {\bfseries showmuseumtypes.\+countfacets} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a18dba962ec0f1c964e96f16978152829}\label{showmuseumtypes_8py_a18dba962ec0f1c964e96f16978152829}} 
+bool {\bfseries showmuseumtypes.\+first} = True
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa756afebbd1715f2c406c321aee08608}\label{showmuseumtypes_8py_aa756afebbd1715f2c406c321aee08608}} 
+{\bfseries showmuseumtypes.\+scount}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_afb41dc671f132e65a59421c8ccf59d27}\label{showmuseumtypes_8py_afb41dc671f132e65a59421c8ccf59d27}} 
+def {\bfseries showmuseumtypes.\+delegate\+\_\+genericproperty} (self, results, property)
+\end{DoxyCompactItemize}
+\label{_amgrp01747264fe7bf50731df0522c351974e}%
+Purpose\+:Removes type info from name Arguments\+:
+
+,property,results) \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a263f2539a4b5047035989215afc3d730}\label{showmuseumtypes_8py_a263f2539a4b5047035989215afc3d730}} 
+{\bfseries showmuseumtypes.\+menutree}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a11a95b5418475e7589d71f8fd4c6e411}\label{showmuseumtypes_8py_a11a95b5418475e7589d71f8fd4c6e411}} 
+{\bfseries showmuseumtypes.\+results} = apputils.\+get\+Marker\+Data(props)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a7e7187d80fdf53b34092908a50c87e9b}\label{showmuseumtypes_8py_a7e7187d80fdf53b34092908a50c87e9b}} 
+{\bfseries showmuseumtypes.\+title}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_afbf159c60af368fceacffec232af0ab7}\label{showmuseumtypes_8py_afbf159c60af368fceacffec232af0ab7}} 
+{\bfseries showmuseumtypes.\+message}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a2688391c7d5b7c762cce70bd158fa9da}\label{showmuseumtypes_8py_a2688391c7d5b7c762cce70bd158fa9da}} 
+{\bfseries showmuseumtypes.\+treetext} = tree.\+get\+Tree()
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a671d59700184c01c585885237c4686fa}\label{showmuseumtypes_8py_a671d59700184c01c585885237c4686fa}} 
+{\bfseries showmuseumtypes.\+alist} = \textquotesingle{}\mbox{[}\{\},\{\}\mbox{]}\textquotesingle{}.format(count,thisindex)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_adb9024470e73f1943ca398492b71c2e2}\label{showmuseumtypes_8py_adb9024470e73f1943ca398492b71c2e2}} 
+int {\bfseries showmuseumtypes.\+mapindex} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a76db227ed6cc36d654ea72974d13d0ab}\label{showmuseumtypes_8py_a76db227ed6cc36d654ea72974d13d0ab}} 
+dictionary {\bfseries showmuseumtypes.\+idtoindexmap} = \{\}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a56ae3b63e236828023ebdf8f6addf22a}\label{showmuseumtypes_8py_a56ae3b63e236828023ebdf8f6addf22a}} 
+string {\bfseries showmuseumtypes.\+arrs} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_acdbfe7fc01c85a717ff00de5483b96b6}\label{showmuseumtypes_8py_acdbfe7fc01c85a717ff00de5483b96b6}} 
+int {\bfseries showmuseumtypes.\+vallen} = len(val)-\/1
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a4e3f3f98f22b078487b52447bf504c06}\label{showmuseumtypes_8py_a4e3f3f98f22b078487b52447bf504c06}} 
+int {\bfseries showmuseumtypes.\+icount} = 0
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a9d497e5dbe5211d38faae6fb366cbfdb}\label{showmuseumtypes_8py_a9d497e5dbe5211d38faae6fb366cbfdb}} 
+{\bfseries showmuseumtypes.\+url}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_acf7a1e3d285af08b4c99d56a77665345}\label{showmuseumtypes_8py_acf7a1e3d285af08b4c99d56a77665345}} 
+int {\bfseries showmuseumtypes.\+plen} = len(parts)-\/1
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_aa1347531a1e8a1a6ec04f9b13d0fd009}\label{showmuseumtypes_8py_aa1347531a1e8a1a6ec04f9b13d0fd009}} 
+{\bfseries showmuseumtypes.\+href} = parts\mbox{[}plen\mbox{]}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_af17e94efd4893ef652116cc19b05fe21}\label{showmuseumtypes_8py_af17e94efd4893ef652116cc19b05fe21}} 
+int {\bfseries showmuseumtypes.\+thisindex} = mapindex
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a1ea6ad8c97907f9766e18a75c1518866}\label{showmuseumtypes_8py_a1ea6ad8c97907f9766e18a75c1518866}} 
+string {\bfseries showmuseumtypes.\+columns} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a5abe8d83017b91eddaa2d8dd37c70e27}\label{showmuseumtypes_8py_a5abe8d83017b91eddaa2d8dd37c70e27}} 
+string {\bfseries showmuseumtypes.\+ordercolumn} = \char`\"{}?\char`\"{}+str(propertytodisplay)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a342e74d9cb9609c6b7786303120e46fb}\label{showmuseumtypes_8py_a342e74d9cb9609c6b7786303120e46fb}} 
+{\bfseries showmuseumtypes.\+trees}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a51490b35c39ada95cb00596ca02573c8}\label{showmuseumtypes_8py_a51490b35c39ada95cb00596ca02573c8}} 
+{\bfseries showmuseumtypes.\+dicts}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a165a25870a184cd11b9cabf316dbf14f}\label{showmuseumtypes_8py_a165a25870a184cd11b9cabf316dbf14f}} 
+{\bfseries showmuseumtypes.\+mapdata}
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a6f6b145e70130cd5f76c410e7efec23e}\label{showmuseumtypes_8py_a6f6b145e70130cd5f76c410e7efec23e}} 
+{\bfseries showmuseumtypes.\+property} = propertytodisplay)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a78ec031d40cd01974b19003e160b4c3a}\label{showmuseumtypes_8py_a78ec031d40cd01974b19003e160b4c3a}} 
+def {\bfseries showmuseumtypes.\+delegate\+\_\+postcodeproperty} (self, property, results)
+\item 
+\mbox{\Hypertarget{showmuseumtypes_8py_a4af1c3ba56c7627dba9ef3a0cf8357d0}\label{showmuseumtypes_8py_a4af1c3ba56c7627dba9ef3a0cf8357d0}} 
+def {\bfseries showmuseumtypes.\+showmuseumtypes\+View} (self, propertytodisplay)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file builds the menus for the browse page and also generates a dictionary with all the museums and their location and classification. 
+
+~\newline
+ The data is shown in the render call\+: ~\newline
+ return render\+\_\+template(\textquotesingle{}browseproperties.\+html\textquotesingle{}, trees=\mbox{\hyperlink{chloro_8py_a2a877c8f8b2d7a47672e4ccd312cbe21}{Show\+Museum\+Types.\+get\+Configuration()}}, dicts=Show\+Museum\+Types.\+dictdata, mapdata=Show\+Museum\+Types.\+mapdata, results=None)
+
+\begin{DoxyVerb}trees contain the menus; dicts contain the master museum dictionary and  
+mapdata contains the lat/long and other data for the Leaflet code.
+
+Because it takes a long time to assemble this it has a FAST and a SLOW
+configuration. In slow mode all models are built and pickled. In fast
+it uses the pickled models. The choice is determined from the configuration
+of the DEV_MODE variable. Both variations cache all the data for future calls.
+\end{DoxyVerb}
+
+
+S\+L\+OW mode needs to be used if the database has changed so that models are rebuilt from scratch. Most of the code in this class is concerned with building the menus and the particulars.
+
+~\newline
+ ~\newline
+ More details. \$\$\+Author\$
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{showmuseumtypes_8py_a07d5965e526c633a97daf2880de7ffa7}\label{showmuseumtypes_8py_a07d5965e526c633a97daf2880de7ffa7}} 
+\index{showmuseumtypes.\+py@{showmuseumtypes.\+py}!createtreefromlistnoleaves@{createtreefromlistnoleaves}}
+\index{createtreefromlistnoleaves@{createtreefromlistnoleaves}!showmuseumtypes.\+py@{showmuseumtypes.\+py}}
+\subsubsection{\texorpdfstring{createtreefromlistnoleaves()}{createtreefromlistnoleaves()}}
+{\footnotesize\ttfamily def showmuseumtypes.\+createtreefromlistnoleaves (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{list,  }\item[{}]{tree,  }\item[{}]{nodename,  }\item[{}]{bucket,  }\item[{}]{ptr,  }\item[{}]{open,  }\item[{}]{tlist }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates the H\+T\+ML menu from the list without leaves appearing. 
+
+Arguments\+: ,list,tree,nodename,bucket,ptr,open,tlist) \mbox{\Hypertarget{showmuseumtypes_8py_a773f45bc4dc0be24655cd64671682649}\label{showmuseumtypes_8py_a773f45bc4dc0be24655cd64671682649}} 
+\index{showmuseumtypes.\+py@{showmuseumtypes.\+py}!generateinterval@{generateinterval}}
+\index{generateinterval@{generateinterval}!showmuseumtypes.\+py@{showmuseumtypes.\+py}}
+\subsubsection{\texorpdfstring{generateinterval()}{generateinterval()}}
+{\footnotesize\ttfamily def showmuseumtypes.\+generateinterval (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{listofitems,  }\item[{}]{tree,  }\item[{}]{displayinterval,  }\item[{}]{nodename,  }\item[{}]{open,  }\item[{}]{disabled }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Generates an interval i.\+e. 
+
+number of musuems from 1990 to 2000 and creates the menu for the interval. Used with open and close years Arguments\+:  list of museums  Tree to work with  bucket length, as in number of years  name of node  menu open by default?  menu disabled by default? \mbox{\Hypertarget{showmuseumtypes_8py_abf23523cea661bc6d5081bc4acfc7d41}\label{showmuseumtypes_8py_abf23523cea661bc6d5081bc4acfc7d41}} 
+\index{showmuseumtypes.\+py@{showmuseumtypes.\+py}!generateinterval\+O\+LD@{generateinterval\+O\+LD}}
+\index{generateinterval\+O\+LD@{generateinterval\+O\+LD}!showmuseumtypes.\+py@{showmuseumtypes.\+py}}
+\subsubsection{\texorpdfstring{generateinterval\+O\+L\+D()}{generateintervalOLD()}}
+{\footnotesize\ttfamily def showmuseumtypes.\+generateinterval\+O\+LD (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{listofitems,  }\item[{}]{tree,  }\item[{}]{displayinterval,  }\item[{}]{nodename,  }\item[{}]{open,  }\item[{}]{disabled,  }\item[{}]{isunknown }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Generates an interval i.\+e. 
+
+number of musuems from 1990 to 2000 and creates the menu for the interval. Used with open and close years Arguments\+:  list of museums  Tree to work with  bucket length, as in number of years  name of node  menu open by default?  menu disabled by default? \mbox{\Hypertarget{showmuseumtypes_8py_a2f868afc48a58b686dcb10a5f7d3f032}\label{showmuseumtypes_8py_a2f868afc48a58b686dcb10a5f7d3f032}} 
+\index{showmuseumtypes.\+py@{showmuseumtypes.\+py}!get\+Museum\+Count@{get\+Museum\+Count}}
+\index{get\+Museum\+Count@{get\+Museum\+Count}!showmuseumtypes.\+py@{showmuseumtypes.\+py}}
+\subsubsection{\texorpdfstring{get\+Museum\+Count()}{getMuseumCount()}}
+{\footnotesize\ttfamily def showmuseumtypes.\+get\+Museum\+Count (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Count number of museums in node. 
+
+Arguments\+:  to count from \mbox{\Hypertarget{showmuseumtypes_8py_a485d2bd3d0c35b8ede1028a5af13f84e}\label{showmuseumtypes_8py_a485d2bd3d0c35b8ede1028a5af13f84e}} 
+\index{showmuseumtypes.\+py@{showmuseumtypes.\+py}!get\+Ptree@{get\+Ptree}}
+\index{get\+Ptree@{get\+Ptree}!showmuseumtypes.\+py@{showmuseumtypes.\+py}}
+\subsubsection{\texorpdfstring{get\+Ptree()}{getPtree()}}
+{\footnotesize\ttfamily def showmuseumtypes.\+get\+Ptree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{modelmap }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates a tree from the nodes in the model. 
+
+Arguments\+:  nodes list  data to be added to tree node \mbox{\Hypertarget{showmuseumtypes_8py_a4ec40fc396fa43adb86988b2469f0ce9}\label{showmuseumtypes_8py_a4ec40fc396fa43adb86988b2469f0ce9}} 
+\index{showmuseumtypes.\+py@{showmuseumtypes.\+py}!S\+L\+O\+Wconfig@{S\+L\+O\+Wconfig}}
+\index{S\+L\+O\+Wconfig@{S\+L\+O\+Wconfig}!showmuseumtypes.\+py@{showmuseumtypes.\+py}}
+\subsubsection{\texorpdfstring{S\+L\+O\+Wconfig()}{SLOWconfig()}}
+{\footnotesize\ttfamily def showmuseumtypes.\+S\+L\+O\+Wconfig (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Builds the menu from scratch by retrieving data from the db for each property(column) to include in the menu. 
+

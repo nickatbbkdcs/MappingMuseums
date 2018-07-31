@@ -1,0 +1,7 @@
+Name_of_museum
+County
+Town_or_City
+Subject_Matter
+Year_opened
+Year_closed
+Governance

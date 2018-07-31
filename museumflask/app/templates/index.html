@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Database Browse, Search and Visualisation{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+<div class="page-header">
+    <h1>Database Browse, Search and Visualisation</h1>
+</div>
+<style>
+div.row {
+    font-size: 20px;
+}
+</style>
+    <div class="row">
+
+     <p>
+     This page will describe the main features and capabilities of the database Browse, Search and Visualisation facilities.
+     </p>
+     <p>
+     It will include a short Video showing how to use these facilities.
+     </p>
+     <p>
+     It will also include information about all of the hierarchies under which the museums data is organised, and a Glossary of all the terms used in the hierarchies.
+     <p/>
+     <p>
+     Technical details: This Web Application has been developed using a three-tier architecture.  
+     The database server, which hosts the Mapping Museums Knowledge Base, is a Virtuoso server. The web client application is built using Leaflet, JQuery, Bokeh, Bootstrap 
+     and various widget javascript packages. 
+     The back-end is developed in Python/Flask/Jinja and deployed to Apache/WSGI; communication with the database server is through a SPARQL endpoint.
+     <p/>
+     <p>
+     Further information is available in this <a href="http://www.dcs.bbk.ac.uk/~ap/talks/HumanitiesKBs.pdf">pdf presentation </a> from page 24 onwards. 
+     <p/>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+
+</div>
+
+
+

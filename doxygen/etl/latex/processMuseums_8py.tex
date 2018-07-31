@@ -1,0 +1,439 @@
+\hypertarget{processMuseums_8py}{}\section{/home/nlarsson/bbk/etl/code/process\+Museums.py File Reference}
+\label{processMuseums_8py}\index{/home/nlarsson/bbk/etl/code/process\+Museums.\+py@{/home/nlarsson/bbk/etl/code/process\+Museums.\+py}}
+
+
+This program takes a template file and the data sheet and fills the template with values from the data sheet thereby generating the R\+DF statements required to build the model.  
+
+
+\subsection*{Functions}
+\textbf{ }\par
+{\em Purpose\+:Removes type info from name Arguments\+: }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_af5953f2708b15d22b1cbdd16b286e217}\label{processMuseums_8py_af5953f2708b15d22b1cbdd16b286e217}} 
+def {\bfseries process\+Museums.\+strip\+Type} (name)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_afd14a130398e829a0438823e07ea0b20}\label{processMuseums_8py_afd14a130398e829a0438823e07ea0b20}} 
+def \mbox{\hyperlink{processMuseums_8py_afd14a130398e829a0438823e07ea0b20}{process\+Museums.\+add\+Line\+Change\+Macro}} (macro)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Add macro to execute after line processing terminates Arguments\+:  macro. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_a065ac4e1c50c3d2fc3c3a7842faa99f6}{process\+Museums.\+process\+Line}} (line, datamodel, datamatrix, symboltable)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Process one row in the template Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a49354824022f3c2e96307bb6a948edda}\label{processMuseums_8py_a49354824022f3c2e96307bb6a948edda}} 
+def \mbox{\hyperlink{processMuseums_8py_a49354824022f3c2e96307bb6a948edda}{process\+Museums.\+find\+Next\+Separator}} (params, separator)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Return position of the next separator in params string Arguments\+:  string input  separator to use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_ab7c9da53948328468231c5156c0d74ac}\label{processMuseums_8py_ab7c9da53948328468231c5156c0d74ac}} 
+def \mbox{\hyperlink{processMuseums_8py_ab7c9da53948328468231c5156c0d74ac}{process\+Museums.\+getparams}} (params, separator=\textquotesingle{},\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Purpose\+: Return list of parameters from string Arguments\+:  input string =\textquotesingle{},\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_aabd61f0bdc9670094ca46c05ca92f70d}\label{processMuseums_8py_aabd61f0bdc9670094ca46c05ca92f70d}} 
+def {\bfseries process\+Museums.\+evaluatemacro} (var, datamodel, datamatrix, symboltable)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_aa83ab04ba8bcf97b16316a2b673c44ec}\label{processMuseums_8py_aa83ab04ba8bcf97b16316a2b673c44ec}} 
+def \mbox{\hyperlink{processMuseums_8py_aa83ab04ba8bcf97b16316a2b673c44ec}{process\+Museums.\+process\+Template}} (header, template, datamodel, datamatrix, S\+Y\+M\+B\+O\+L\+T\+A\+B\+LE)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Process all lines in template Arguments\+:     . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\begin{Indent}\textbf{ string to filter}\par
+{\em Purpose\+:Remove unwanted characters Arguments\+: }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a2bdbb363dfd88ebdeb2a8dd0edca8c51}\label{processMuseums_8py_a2bdbb363dfd88ebdeb2a8dd0edca8c51}} 
+def {\bfseries process\+Museums.\+clean\+Name} (name)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a22c22528cab3641d318d9644d30910b9}\label{processMuseums_8py_a22c22528cab3641d318d9644d30910b9}} 
+string {\bfseries process\+Museums.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_aae868b4f5d48964cb059807513ac2a7d}\label{processMuseums_8py_aae868b4f5d48964cb059807513ac2a7d}} 
+tuple {\bfseries process\+Museums.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a4c6e30c67dc5d6cf24bc8b4cfae9ab08}\label{processMuseums_8py_a4c6e30c67dc5d6cf24bc8b4cfae9ab08}} 
+string {\bfseries process\+Museums.\+E\+X\+E\+C\+U\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+F\+O\+R\+\_\+\+U\+S\+A\+GE} = \textquotesingle{}Process\+Museums\textquotesingle{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a49f6e050126e67deaa2579614bc4e836}\label{processMuseums_8py_a49f6e050126e67deaa2579614bc4e836}} 
+string {\bfseries process\+Museums.\+S\+E\+P\+A\+R\+A\+T\+OR} = \char`\"{}\$\char`\"{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_af67fd1280c03ee006e6c77bedaeb952b}\label{processMuseums_8py_af67fd1280c03ee006e6c77bedaeb952b}} 
+string {\bfseries process\+Museums.\+U\+R\+I\+B\+A\+SE} = \textquotesingle{}$<$http\+://bbk.\+ac.\+uk/Museum\+Map\+Project/def/\{\}/id/\{\}/\{\}$>$\textquotesingle{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a7cb0e781e24405ca05748f5328d2110f}\label{processMuseums_8py_a7cb0e781e24405ca05748f5328d2110f}} 
+string {\bfseries process\+Museums.\+T\+E\+M\+P\+O\+R\+A\+L\+U\+R\+I\+B\+A\+SE} = \textquotesingle{}$<$http\+://bbk.\+ac.\+uk/Museum\+Map\+Project/def/\{\}/id/\{\}/\{\}/seq\{\}$>$\textquotesingle{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a15e824e366726a7a7c617df830531062}\label{processMuseums_8py_a15e824e366726a7a7c617df830531062}} 
+bool {\bfseries process\+Museums.\+U\+N\+Q\+U\+O\+T\+E\+V\+A\+L\+U\+ES} = True
+\item 
+\mbox{\Hypertarget{processMuseums_8py_acf9e29b0f8accb32a52d6efa55ae5d32}\label{processMuseums_8py_acf9e29b0f8accb32a52d6efa55ae5d32}} 
+string {\bfseries process\+Museums.\+E\+V\+E\+N\+T\+S\+E\+Q\+U\+E\+N\+C\+E\+O\+R\+D\+E\+R\+K\+EY} = \char`\"{}eventsequenceorder\char`\"{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a84b52ebd7347d8c29183b62d71ec0554}\label{processMuseums_8py_a84b52ebd7347d8c29183b62d71ec0554}} 
+string {\bfseries process\+Museums.\+S\+E\+Q\+U\+E\+N\+C\+E\+O\+R\+D\+E\+R\+K\+EY} = \char`\"{}sequenceorder\char`\"{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a05c7df134336f1a5e56bb6147bc1326b}\label{processMuseums_8py_a05c7df134336f1a5e56bb6147bc1326b}} 
+string {\bfseries process\+Museums.\+T\+E\+M\+P\+O\+R\+A\+L\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+M\+U\+S\+E\+U\+M\+K\+EY} = \char`\"{}temporalmeasurementsequenceorder\char`\"{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_aa26fbb8d0156c22f1e6a7c454d05a06f}\label{processMuseums_8py_aa26fbb8d0156c22f1e6a7c454d05a06f}} 
+dictionary {\bfseries process\+Museums.\+H\+E\+A\+D\+E\+R\+D\+I\+CT} = \{\}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_adde9ac9c412ba308312982fb458348ab}\label{processMuseums_8py_adde9ac9c412ba308312982fb458348ab}} 
+string {\bfseries process\+Museums.\+P\+R\+O\+J\+E\+C\+T\+ID} = \textquotesingle{}project\+\_\+id\textquotesingle{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_ac3f46c64a3b46c3c0d357810c22a0310}\label{processMuseums_8py_ac3f46c64a3b46c3c0d357810c22a0310}} 
+string {\bfseries process\+Museums.\+P\+R\+E\+F\+IX} = \textquotesingle{}bbkm\+:\textquotesingle{}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a3a6bdddc107324346d0d9ab0703b001f}\label{processMuseums_8py_a3a6bdddc107324346d0d9ab0703b001f}} 
+list {\bfseries process\+Museums.\+L\+I\+N\+E\+C\+H\+A\+N\+G\+E\+L\+I\+ST} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{String to clean}
+\label{_amgrp06577220d57345cfb60eb3b91eb78140}%
+Purpose\+:Special cleaning aware of hierarchies Arguments\+: \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_af692e1552952cb84eeb8f450ed4885b8}\label{processMuseums_8py_af692e1552952cb84eeb8f450ed4885b8}} 
+int {\bfseries process\+Museums.\+sequenceorder} = 0
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a0355156e490c3cf597daf5c8e071cbb8}\label{processMuseums_8py_a0355156e490c3cf597daf5c8e071cbb8}} 
+int {\bfseries process\+Museums.\+eventsequenceorder} = 0
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a46753a79d29e6d61b9803981101e526c}\label{processMuseums_8py_a46753a79d29e6d61b9803981101e526c}} 
+def {\bfseries process\+Museums.\+options} = parse\+\_\+options()
+\item 
+\mbox{\Hypertarget{processMuseums_8py_abe29e3acdf198da15b14483a03d59e97}\label{processMuseums_8py_abe29e3acdf198da15b14483a03d59e97}} 
+{\bfseries process\+Museums.\+fname} = str(sys.\+argv\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{processMuseums_8py_adf8e73883e2e0a3d1f27d21ca531f366}\label{processMuseums_8py_adf8e73883e2e0a3d1f27d21ca531f366}} 
+{\bfseries process\+Museums.\+tname} = str(sys.\+argv\mbox{[}2\mbox{]})
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a20d6b81a55e0f1b5244bd41023b414f8}\label{processMuseums_8py_a20d6b81a55e0f1b5244bd41023b414f8}} 
+\mbox{\hyperlink{processMuseums_8py_a20d6b81a55e0f1b5244bd41023b414f8}{process\+Museums.\+content}} = f.\+readlines()
+\begin{DoxyCompactList}\small\item\em Read. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a83f1d15d7aebd082ee93ec198df1aae3}\label{processMuseums_8py_a83f1d15d7aebd082ee93ec198df1aae3}} 
+{\bfseries process\+Museums.\+header} = content\mbox{[}0\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a1dc52f6e0f39dc1f91555ab0d24ce71f}\label{processMuseums_8py_a1dc52f6e0f39dc1f91555ab0d24ce71f}} 
+int {\bfseries process\+Museums.\+hcount} = 0
+\item 
+\mbox{\Hypertarget{processMuseums_8py_ac9bae2815956315666c362f6284fcbf4}\label{processMuseums_8py_ac9bae2815956315666c362f6284fcbf4}} 
+{\bfseries process\+Museums.\+shortheader} = content\mbox{[}1\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_af355b3570f0a235a695e0f482ac0fd0b}\label{processMuseums_8py_af355b3570f0a235a695e0f482ac0fd0b}} 
+{\bfseries process\+Museums.\+datatype} = content\mbox{[}2\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_aef8b068dc3ae2b134e8a782bfc895a4b}\label{processMuseums_8py_aef8b068dc3ae2b134e8a782bfc895a4b}} 
+{\bfseries process\+Museums.\+visibility} = content\mbox{[}3\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a21b1a351e0068b7bb440da010082d4bc}\label{processMuseums_8py_a21b1a351e0068b7bb440da010082d4bc}} 
+{\bfseries process\+Museums.\+columnnumbers} = content\mbox{[}4\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a4b296ec0c6dd0350174f639d278160ab}\label{processMuseums_8py_a4b296ec0c6dd0350174f639d278160ab}} 
+list {\bfseries process\+Museums.\+template} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_ac712d3ca3bd9fe410ec7b7488fee2361}\label{processMuseums_8py_ac712d3ca3bd9fe410ec7b7488fee2361}} 
+bool \mbox{\hyperlink{processMuseums_8py_ac712d3ca3bd9fe410ec7b7488fee2361}{process\+Museums.\+foundindividuals}} = False
+\begin{DoxyCompactList}\small\item\em Find \#\$\+Individuals to avoid repeating all the definitions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_aa287da47f8e12537e165bead162173bb}\label{processMuseums_8py_aa287da47f8e12537e165bead162173bb}} 
+{\bfseries process\+Museums.\+firsttemplate} = f.\+readlines()
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a1b2137ec0b2ea2cf6c1ab34977c011f9}\label{processMuseums_8py_a1b2137ec0b2ea2cf6c1ab34977c011f9}} 
+dictionary {\bfseries process\+Museums.\+S\+Y\+M\+B\+O\+L\+T\+A\+B\+LE} = \{\}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_ac1558957296592c957fc75b0fd8fccec}\label{processMuseums_8py_ac1558957296592c957fc75b0fd8fccec}} 
+int {\bfseries process\+Museums.\+datastart} = 5
+\item 
+\mbox{\Hypertarget{processMuseums_8py_aee116cf2af64b384a36d8a738b4ff237}\label{processMuseums_8py_aee116cf2af64b384a36d8a738b4ff237}} 
+int {\bfseries process\+Museums.\+j} = datastart
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a77f9deb851fece4c6431fef6d798a3a5}\label{processMuseums_8py_a77f9deb851fece4c6431fef6d798a3a5}} 
+list {\bfseries process\+Museums.\+datamatrix} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a3ea5e91cdd0f1111ac02c93f0178e177}\label{processMuseums_8py_a3ea5e91cdd0f1111ac02c93f0178e177}} 
+int {\bfseries process\+Museums.\+matrixcount} = 0
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a44eeaa1d00f206fcc790a18460ad6c12}\label{processMuseums_8py_a44eeaa1d00f206fcc790a18460ad6c12}} 
+{\bfseries process\+Museums.\+contentlen} = len(content)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a4f0b923ef3924bfc33ce16234d388a29}\label{processMuseums_8py_a4f0b923ef3924bfc33ce16234d388a29}} 
+int {\bfseries process\+Museums.\+row} = j-\/datastart
+\item 
+\mbox{\Hypertarget{processMuseums_8py_a0bf99ed2a76b89637eafa99d03776d29}\label{processMuseums_8py_a0bf99ed2a76b89637eafa99d03776d29}} 
+list {\bfseries process\+Museums.\+datamodel} = datamatrix\mbox{[}row\mbox{]}
+\item 
+\mbox{\Hypertarget{processMuseums_8py_aab643747f82f1c0d20a215aae2d272b8}\label{processMuseums_8py_aab643747f82f1c0d20a215aae2d272b8}} 
+def {\bfseries process\+Museums.\+clean\+Name\+For\+Alt\+Sub} (name)
+\item 
+\mbox{\Hypertarget{processMuseums_8py_af5ccbfa54c18397131173e04665cd17b}\label{processMuseums_8py_af5ccbfa54c18397131173e04665cd17b}} 
+def \mbox{\hyperlink{processMuseums_8py_af5ccbfa54c18397131173e04665cd17b}{process\+Museums.\+preamble}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Declare all namespaces. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_a6d0513ce8b59d38599749d571bdfddd6}{process\+Museums.\+convertdate}} (date)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Convert date from slash based to hyphen based Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_ae0d9d2d4bf32856a9f1abbe105729b57}\label{processMuseums_8py_ae0d9d2d4bf32856a9f1abbe105729b57}} 
+def \mbox{\hyperlink{processMuseums_8py_ae0d9d2d4bf32856a9f1abbe105729b57}{process\+Museums.\+sourcetype}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a7fe0c730b2fc8d459019b3822bf2b046}\label{processMuseums_8py_a7fe0c730b2fc8d459019b3822bf2b046}} 
+def \mbox{\hyperlink{processMuseums_8py_a7fe0c730b2fc8d459019b3822bf2b046}{process\+Museums.\+museumaddress\+U\+RI}} (uri)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns U\+RI for museum Arguments\+:  column number for project id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_af44edf2db9c6e416f4e04ac4135f5f09}\label{processMuseums_8py_af44edf2db9c6e416f4e04ac4135f5f09}} 
+def \mbox{\hyperlink{processMuseums_8py_af44edf2db9c6e416f4e04ac4135f5f09}{process\+Museums.\+srcuri}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_abbb6b6cbce27fa94ae73f5ca147f0c3e}\label{processMuseums_8py_abbb6b6cbce27fa94ae73f5ca147f0c3e}} 
+def \mbox{\hyperlink{processMuseums_8py_abbb6b6cbce27fa94ae73f5ca147f0c3e}{process\+Museums.\+source\+U\+RI}} (uri)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns uri for temporal class Arguments\+:  column number for proj id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_ac7399fb1ee812b3179f95ec1acdc7589}\label{processMuseums_8py_ac7399fb1ee812b3179f95ec1acdc7589}} 
+def \mbox{\hyperlink{processMuseums_8py_ac7399fb1ee812b3179f95ec1acdc7589}{process\+Museums.\+site\+U\+RI}} (uri)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns uri for temporal class Arguments\+:  column number for proj id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a68fb66437a00008c55fd3d246dd42334}\label{processMuseums_8py_a68fb66437a00008c55fd3d246dd42334}} 
+def \mbox{\hyperlink{processMuseums_8py_a68fb66437a00008c55fd3d246dd42334}{process\+Museums.\+site\+U\+R\+Iand\+Inc}} (uri)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a4634ec5ab583cbe8372cefac8653caf0}\label{processMuseums_8py_a4634ec5ab583cbe8372cefac8653caf0}} 
+def \mbox{\hyperlink{processMuseums_8py_a4634ec5ab583cbe8372cefac8653caf0}{process\+Museums.\+temporaladdress\+U\+RI}} (uri)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns uri for temporal class Arguments\+:  column number for proj id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a8248a77e6c294f5b8d1373ddf050c343}\label{processMuseums_8py_a8248a77e6c294f5b8d1373ddf050c343}} 
+def \mbox{\hyperlink{processMuseums_8py_a8248a77e6c294f5b8d1373ddf050c343}{process\+Museums.\+hasbeginning}} (beg)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns begin range date for range types Arguments\+:  column number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a1cd4f61837ec75b231b899a27e14605d}\label{processMuseums_8py_a1cd4f61837ec75b231b899a27e14605d}} 
+def \mbox{\hyperlink{processMuseums_8py_a1cd4f61837ec75b231b899a27e14605d}{process\+Museums.\+hasend}} (end)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns begin range date for range types Arguments\+:  column number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a52f6ec1b43a915e4d2d90c2083597142}\label{processMuseums_8py_a52f6ec1b43a915e4d2d90c2083597142}} 
+def \mbox{\hyperlink{processMuseums_8py_a52f6ec1b43a915e4d2d90c2083597142}{process\+Museums.\+museum\+U\+RI}} (mus)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a920d7a1a3bf8dc022c08bb4ea9f1db54}\label{processMuseums_8py_a920d7a1a3bf8dc022c08bb4ea9f1db54}} 
+def \mbox{\hyperlink{processMuseums_8py_a920d7a1a3bf8dc022c08bb4ea9f1db54}{process\+Museums.\+get\+Temporal\+Sequence\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns the current sequence number for the current class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a976dbd787b4e15c2c0f1abebea9532f3}\label{processMuseums_8py_a976dbd787b4e15c2c0f1abebea9532f3}} 
+def \mbox{\hyperlink{processMuseums_8py_a976dbd787b4e15c2c0f1abebea9532f3}{process\+Museums.\+temporal\+Sequence\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Increments and returns the current sequence number for the current class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a707abeb6af4d3ed0d940b77bbba663a3}\label{processMuseums_8py_a707abeb6af4d3ed0d940b77bbba663a3}} 
+def \mbox{\hyperlink{processMuseums_8py_a707abeb6af4d3ed0d940b77bbba663a3}{process\+Museums.\+get\+Temporal\+Sequence\+Order\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Get the key for the temporal sequence number. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_a61de7535139398e6ef6ebd7e0d1335e2}{process\+Museums.\+temporal\+Sequence\+Order\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Increments the temporal sequence number after line processing completes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a29a4b5bec519ba14d3deec7a1a1feb54}\label{processMuseums_8py_a29a4b5bec519ba14d3deec7a1a1feb54}} 
+def \mbox{\hyperlink{processMuseums_8py_a29a4b5bec519ba14d3deec7a1a1feb54}{process\+Museums.\+execute\+Temporal\+Sequence\+Order\+Int}} (key)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Increment a specific key or create it Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a1ef573c0b03e396683525644d6e7eaf2}\label{processMuseums_8py_a1ef573c0b03e396683525644d6e7eaf2}} 
+def \mbox{\hyperlink{processMuseums_8py_a1ef573c0b03e396683525644d6e7eaf2}{process\+Museums.\+address\+Change\+Event\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a36913e938db022e003a47a4d2df1ee9e}\label{processMuseums_8py_a36913e938db022e003a47a4d2df1ee9e}} 
+def \mbox{\hyperlink{processMuseums_8py_a36913e938db022e003a47a4d2df1ee9e}{process\+Museums.\+status\+Change\+Event\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_ad2b19f00ac6764543be99c45c9f4c9bd}\label{processMuseums_8py_ad2b19f00ac6764543be99c45c9f4c9bd}} 
+def \mbox{\hyperlink{processMuseums_8py_ad2b19f00ac6764543be99c45c9f4c9bd}{process\+Museums.\+has\+Event\+Sequence\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns the sequence order number as data statement Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_afe33f40c01d33aaed2ba00fb30584d67}{process\+Museums.\+get\+Data\+Class\+Instance}} (clazz)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Get the instance representing the clazz. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_a0ede3fdd6b1b85e03d6e935a81251c5e}{process\+Museums.\+Exists\+Sub\+Class}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return triple for s p o Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_aad17769acf81b1a37ce2f81f17ee3a04}{process\+Museums.\+Exists\+Linkage}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Return subclass linkage declaration between nodes Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_aefe54fd9c44692243aca467e34e29248}{process\+Museums.\+Declare\+Def\+Linkage}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_a3077dc7e6edac9da44e7beb1db97aac6}{process\+Museums.\+Exists\+Property}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+: This takes care of the inherited properties from a non-\/def or temporal class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_afa581af84feb22a753b083f397fb49b8}{process\+Museums.\+alt\+Named\+Instance}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generate individuals for hier classes when the correct value for the class is present Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_a3b41448a1cc7a3c0f1e44cf5ff11245b}{process\+Museums.\+alt\+Sub\+Class}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generate subclass statement for hier classes when the correct value for the class is present Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_ad04fb7459d89bea49b45996a8c88f612}{process\+Museums.\+class\+Global\+U\+RI}} (params)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generate subclass uri and declare subclass if not done. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_ac7e57bafadb7ae705d672e259c2c93e2}\label{processMuseums_8py_ac7e57bafadb7ae705d672e259c2c93e2}} 
+def \mbox{\hyperlink{processMuseums_8py_ac7e57bafadb7ae705d672e259c2c93e2}{process\+Museums.\+temporal\+Class\+U\+RI}} (params)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return uri for temporal class and declare class if not done Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a3361e519e03f33ac6c3a57894ba43bfa}\label{processMuseums_8py_a3361e519e03f33ac6c3a57894ba43bfa}} 
+def \mbox{\hyperlink{processMuseums_8py_a3361e519e03f33ac6c3a57894ba43bfa}{process\+Museums.\+class\+U\+RI}} (params)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return class uri and declare class if not done Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a49922ce133b5e52893d7076b605b5f00}\label{processMuseums_8py_a49922ce133b5e52893d7076b605b5f00}} 
+def \mbox{\hyperlink{processMuseums_8py_a49922ce133b5e52893d7076b605b5f00}{process\+Museums.\+ref\+U\+RI}} (params)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return refersto class uri Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a89851b7daa38342a928677cf14e1b7e2}\label{processMuseums_8py_a89851b7daa38342a928677cf14e1b7e2}} 
+def \mbox{\hyperlink{processMuseums_8py_a89851b7daa38342a928677cf14e1b7e2}{process\+Museums.\+D\+A\+T\+A\+C\+O\+N\+T\+E\+NT}} (params)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Execute whatever statement is in a cell in the sheet Arguments\+: Pulls in cell value and executes it  cell number. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{processMuseums_8py_ab48673f491c8ba59a68f522629c2fb3e}{process\+Museums.\+property}} (param)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Declare the value of a property by name with a type and pointer to the column in the sheet Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_a6485c351916597eea2afdc5f81c1e60a}\label{processMuseums_8py_a6485c351916597eea2afdc5f81c1e60a}} 
+def \mbox{\hyperlink{processMuseums_8py_a6485c351916597eea2afdc5f81c1e60a}{process\+Museums.\+update\+Changes\+By\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Execute macros after line processing terminates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{processMuseums_8py_ab61fc0e345c8984ff8698ef6aa5040b0}\label{processMuseums_8py_ab61fc0e345c8984ff8698ef6aa5040b0}} 
+def \mbox{\hyperlink{processMuseums_8py_ab61fc0e345c8984ff8698ef6aa5040b0}{process\+Museums.\+parse\+\_\+options}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:parse\+\_\+options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This program takes a template file and the data sheet and fills the template with values from the data sheet thereby generating the R\+DF statements required to build the model. 
+
+This is done by iterating over all rows in the datasheet and applying the template for each row. This means that some statements will be generated multiple times however the database (virtuoso) does not seem to mind processing the same information several times. It does mean that the size of the data and thereby also the processing time increases. This is not a problem with the scale of the museum data. The process\+Line method receives the whole datamatrix as well as the current row. The implication is that macros could be written to work columnwise as well as rowwise if necessary. The evaluatemacro processing is recursive so some macros generate new macros gradually refining the output. The update\+Changes\+By\+Line method allows deferred processing until the whole line has been evaluated by adding statements to the L\+I\+N\+E\+C\+H\+A\+N\+G\+E\+L\+I\+S\+T.\+This is used for generating sequence orders for temporal classes.
+
+O\+P\+T\+I\+O\+NS parser = optparse.\+Option\+Parser(usage=\char`\"{}\%prog inputfilename.\+csv outputfilename.\+template \mbox{[}options\mbox{]}\char`\"{})
+
+parser.\+add\+\_\+option(\char`\"{}-\/c\char`\"{}, \char`\"{}-\/-\/cleanurlnames\char`\"{}, dest=\char`\"{}cleanurlnames\char`\"{}, help=\char`\"{}\+Remove non letters and digits from last path of url -\/c yes means activates cleaning\char`\"{}) parser.\+add\+\_\+option(\char`\"{}-\/r\char`\"{}, \char`\"{}-\/-\/root\char`\"{}, dest=\char`\"{}root\char`\"{}, help=\char`\"{}\+Name of the root class (graphml node=n1\char`\"{})
+
+parser.\+add\+\_\+option(\char`\"{}-\/m\char`\"{}, \char`\"{}-\/-\/modulename\char`\"{}, dest=\char`\"{}moduleprefix\char`\"{}, help=\char`\"{}path to directory with clazzes module\char`\"{})
+
+argv1\+:input data sheet as csv argv2\+:input macro file name
+
+Outline\+:
+
+~\newline
+ Process options ~\newline
+ Read files Generate header information Create the datamatrix from the sheet. Process each row in the datamatrix against the template Process\+Line Evaluatemacro update\+Changes\+By\+Line 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{processMuseums_8py_afa581af84feb22a753b083f397fb49b8}\label{processMuseums_8py_afa581af84feb22a753b083f397fb49b8}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!alt\+Named\+Instance@{alt\+Named\+Instance}}
+\index{alt\+Named\+Instance@{alt\+Named\+Instance}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{alt\+Named\+Instance()}{altNamedInstance()}}
+{\footnotesize\ttfamily def process\+Museums.\+alt\+Named\+Instance (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Generate individuals for hier classes when the correct value for the class is present Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_a3b41448a1cc7a3c0f1e44cf5ff11245b}\label{processMuseums_8py_a3b41448a1cc7a3c0f1e44cf5ff11245b}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!alt\+Sub\+Class@{alt\+Sub\+Class}}
+\index{alt\+Sub\+Class@{alt\+Sub\+Class}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{alt\+Sub\+Class()}{altSubClass()}}
+{\footnotesize\ttfamily def process\+Museums.\+alt\+Sub\+Class (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Generate subclass statement for hier classes when the correct value for the class is present Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_ad04fb7459d89bea49b45996a8c88f612}\label{processMuseums_8py_ad04fb7459d89bea49b45996a8c88f612}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!class\+Global\+U\+RI@{class\+Global\+U\+RI}}
+\index{class\+Global\+U\+RI@{class\+Global\+U\+RI}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{class\+Global\+U\+R\+I()}{classGlobalURI()}}
+{\footnotesize\ttfamily def process\+Museums.\+class\+Global\+U\+RI (\begin{DoxyParamCaption}\item[{}]{params }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Generate subclass uri and declare subclass if not done. 
+
+Arguments\+:  \mbox{\Hypertarget{processMuseums_8py_a6d0513ce8b59d38599749d571bdfddd6}\label{processMuseums_8py_a6d0513ce8b59d38599749d571bdfddd6}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!convertdate@{convertdate}}
+\index{convertdate@{convertdate}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{convertdate()}{convertdate()}}
+{\footnotesize\ttfamily def process\+Museums.\+convertdate (\begin{DoxyParamCaption}\item[{}]{date }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Convert date from slash based to hyphen based Arguments\+: 
+
+\begin{DoxyDate}{Date}
+date to convert 
+\end{DoxyDate}
+\mbox{\Hypertarget{processMuseums_8py_aefe54fd9c44692243aca467e34e29248}\label{processMuseums_8py_aefe54fd9c44692243aca467e34e29248}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!Declare\+Def\+Linkage@{Declare\+Def\+Linkage}}
+\index{Declare\+Def\+Linkage@{Declare\+Def\+Linkage}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{Declare\+Def\+Linkage()}{DeclareDefLinkage()}}
+{\footnotesize\ttfamily def process\+Museums.\+Declare\+Def\+Linkage (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_aad17769acf81b1a37ce2f81f17ee3a04}\label{processMuseums_8py_aad17769acf81b1a37ce2f81f17ee3a04}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!Exists\+Linkage@{Exists\+Linkage}}
+\index{Exists\+Linkage@{Exists\+Linkage}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{Exists\+Linkage()}{ExistsLinkage()}}
+{\footnotesize\ttfamily def process\+Museums.\+Exists\+Linkage (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Return subclass linkage declaration between nodes Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_a3077dc7e6edac9da44e7beb1db97aac6}\label{processMuseums_8py_a3077dc7e6edac9da44e7beb1db97aac6}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!Exists\+Property@{Exists\+Property}}
+\index{Exists\+Property@{Exists\+Property}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{Exists\+Property()}{ExistsProperty()}}
+{\footnotesize\ttfamily def process\+Museums.\+Exists\+Property (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: This takes care of the inherited properties from a non-\/def or temporal class. 
+
+We need to have a module for each class (replace \+: with \+\_\+) A function representing the property with the same name Taking an interface of data from here. This way it will be generic if complicated. Change all the Exists to lowercase, they are not classes. 
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_a0ede3fdd6b1b85e03d6e935a81251c5e}\label{processMuseums_8py_a0ede3fdd6b1b85e03d6e935a81251c5e}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!Exists\+Sub\+Class@{Exists\+Sub\+Class}}
+\index{Exists\+Sub\+Class@{Exists\+Sub\+Class}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{Exists\+Sub\+Class()}{ExistsSubClass()}}
+{\footnotesize\ttfamily def process\+Museums.\+Exists\+Sub\+Class (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Return triple for s p o Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & p o as list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_afe33f40c01d33aaed2ba00fb30584d67}\label{processMuseums_8py_afe33f40c01d33aaed2ba00fb30584d67}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!get\+Data\+Class\+Instance@{get\+Data\+Class\+Instance}}
+\index{get\+Data\+Class\+Instance@{get\+Data\+Class\+Instance}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{get\+Data\+Class\+Instance()}{getDataClassInstance()}}
+{\footnotesize\ttfamily def process\+Museums.\+get\+Data\+Class\+Instance (\begin{DoxyParamCaption}\item[{}]{clazz }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Get the instance representing the clazz. 
+
+This instance can then be called Arguments\+:  name of class \mbox{\Hypertarget{processMuseums_8py_a065ac4e1c50c3d2fc3c3a7842faa99f6}\label{processMuseums_8py_a065ac4e1c50c3d2fc3c3a7842faa99f6}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!process\+Line@{process\+Line}}
+\index{process\+Line@{process\+Line}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{process\+Line()}{processLine()}}
+{\footnotesize\ttfamily def process\+Museums.\+process\+Line (\begin{DoxyParamCaption}\item[{}]{line,  }\item[{}]{datamodel,  }\item[{}]{datamatrix,  }\item[{}]{symboltable }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Process one row in the template Arguments\+: 
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+  Current row from sheet  Complete sheet  Symbol table to store/read values from \mbox{\Hypertarget{processMuseums_8py_ab48673f491c8ba59a68f522629c2fb3e}\label{processMuseums_8py_ab48673f491c8ba59a68f522629c2fb3e}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!property@{property}}
+\index{property@{property}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily def process\+Museums.\+property (\begin{DoxyParamCaption}\item[{}]{param }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Declare the value of a property by name with a type and pointer to the column in the sheet Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{processMuseums_8py_a61de7535139398e6ef6ebd7e0d1335e2}\label{processMuseums_8py_a61de7535139398e6ef6ebd7e0d1335e2}} 
+\index{process\+Museums.\+py@{process\+Museums.\+py}!temporal\+Sequence\+Order\+Int@{temporal\+Sequence\+Order\+Int}}
+\index{temporal\+Sequence\+Order\+Int@{temporal\+Sequence\+Order\+Int}!process\+Museums.\+py@{process\+Museums.\+py}}
+\subsubsection{\texorpdfstring{temporal\+Sequence\+Order\+Int()}{temporalSequenceOrderInt()}}
+{\footnotesize\ttfamily def process\+Museums.\+temporal\+Sequence\+Order\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Increments the temporal sequence number after line processing completes. 
+
+Arguments\+: 

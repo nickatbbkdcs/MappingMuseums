@@ -1,0 +1,215 @@
+<response cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial" step="001" number="001" type="get" result="Successful" url="/browseproperties" code="200" description="Get /browseproperties" time="1528880552.24" duration="0.566846132278" />
+<response cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial" step="001" number="002" type="link" result="Successful" url="/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" code="200" description="" time="1528880552.8" duration="0.197619915009" />
+<response cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial" step="001" number="003" type="link" result="Failure" url="/static/favicon.ico" code="404" description="" time="1528880552.8" duration="0.202246904373">
+  <headers>
+    <header name="date" value="Wed, 13 Jun 2018 09:02:33 GMT" />
+    <header name="content-length" value="5905" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+    <header name="connection" value="close" />
+    <header name="server" value="Apache/2.4.18 (Ubuntu)" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Flasky - Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="/static/css/bootstrap.css" />
+<link rel="stylesheet" href="/static/css/bootstrap-theme.css" />
+
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/tether.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap-multiselect-collapsible-groups.js"></script>
+
+<style>
+span.highlight {
+    background-color: LightCyan;
+}
+
+<!-- search form style -->
+body,html {
+  height:100%;
+}
+
+
+#sidebar {
+  width: inherit;
+  min-width: 420px;
+  max-width: 420px;
+  background-color:#f5f5f5;
+  float: left;
+  height:700px;
+  position:relative;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#main {
+  height:100%;
+  overflow:auto;
+}
+
+.second-row-fixed {position: fixed; top: 73px; left: 350px; right: 0; bottom: 0; background-color:#b3cccc }
+.second-row-fixed iframe {display: block; width: 100%; height: 100%; border: none;}
+
+.second-row-fixed-white {position: fixed; top: 73px; left: 350px; right: 0; bottom: 0;  overflow-y:scroll; }
+.second-row-fixed-white iframe {display: block; width: 100%; height: 100%; border: none;overflow-y:scroll;}
+
+.second-row {position: absolute; top: 53px; left: 430px; right: 0; bottom: 0; background-color:#b3cccc }
+.second-row iframe {display: block; width: 100%; height: 100%; border: none;}
+
+.row iframe { width: 100%;  border: none;  height: 100%; overflow-y:auto;}
+
+.col-sm-2 {  min-width: 60px;padding-right:20px;}
+
+</style>
+
+
+  </head>
+  <body>
+     
+
+
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="nav">
+                <li>      <a href="/browseproperties" ">Browse</a></li>
+                <li>      <a href="/search" ">Search</a></li>
+                <li>      <a href="/visualisations" ">Visualisation</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a id="datasetversion" ></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+ <script>
+
+
+function setHTMLContent(id,value)
+{
+  var field = document.getElementById(id);
+  console.log(field);
+  field.innerHTML = value ;
+}
+
+function doOnLoadNavBar()
+{
+  var li=window.location.href.lastIndexOf("/");
+  var ll=window.location.href.length;
+  var page=window.location.href.substring(li,ll);
+  // Find element #nav
+  var ul=document.getElementById("nav");
+  var items = ul.getElementsByTagName("li");
+  var count=1
+    for (var i = 0; i < items.length; ++i) 
+      { 
+        var atag=items[i].getElementsByTagName("a");
+	var thispage=atag[0].href;
+        var lindex=thispage.lastIndexOf("/");
+	var ll=thispage.length;
+	var newpage=thispage.substring(li,ll);
+	if (newpage == page)
+	{
+	  items[i].classList.add("active");
+          //console.log("added active to "+page);
+	  //console.log(items[i]);
+	}
+	else
+	{
+	  items[i].classList.remove("active");
+	}
+      }
+
+      $.ajax({
+      url: '/api/datasetversion/get',
+	     type: 'GET',
+	     dataType: 'json',
+	     success:function(data) 
+	{
+	  //console.log(data);
+	  setHTMLContent("datasetversion",data);
+	}
+      
+      });
+    
+}
+window.onload = doOnLoadNavBar();
+
+
+  </script>
+
+    
+    
+<div class="page-header">
+    <h1>Not Found</h1>
+</div>
+
+
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- <script type="text/javascript" src="/static/js/annotator-2.0/annotator.min.js"></script> -->
+<!-- <script type="text/javascript" src="/static/js/annotator-2.0/annotator.document.min.js"></script> -->
+<script>
+<!-- var app = new annotator.App(); -->
+<!-- app.include(annotator.ui.main, {element: document.body, -->
+<!--     editorExtensions: [annotator.ui.tags.editorExtension], -->
+<!--     viewerExtensions: [ -->
+<!--         annotator.ui.tags.viewerExtension -->
+<!--     ] -->
+<!-- }); -->
+<!-- app.include(annotator.storage.http, {prefix: 'http://localhost:5000'}); -->
+<!-- app.start().then(function () { -->
+<!--      app.annotations.load(); -->
+<!-- }); -->
+</script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
+<script>
+moment.locale("en");
+function flask_moment_render(elem) {
+    $(elem).text(eval('moment("' + $(elem).data('timestamp') + '").' + $(elem).data('format') + ';'));
+    $(elem).removeClass('flask-moment').show();
+}
+function flask_moment_render_all() {
+    $('.flask-moment').each(function() {
+        flask_moment_render(this);
+        if ($(this).data('refresh')) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data('refresh'));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+</script> -->
+
+  </body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial"  time="1528880552.24" result="Failure" steps="1" duration="0.770051956177" connection_duration="0.764466047287" requests="3" pages="1" xmlrpc="0" redirects="0" images="0" links="1" traceback='Traceback (most recent call last):&#10;   File "/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/home/nlarsson/bbk/python/webdev/museumflask/funktests/test_UserTrial.py", line 40, in test_user_trial&#10;    description="Get /browseproperties")&#10;   File "/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py", line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /static/favicon.ico&#10;HTTP Response 404: NOT FOUND&#10;' />

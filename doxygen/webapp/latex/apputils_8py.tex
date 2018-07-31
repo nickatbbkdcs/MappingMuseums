@@ -1,0 +1,625 @@
+\hypertarget{apputils_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/apputils.py File Reference}
+\label{apputils_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/apputils.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/apputils.\+py}}
+
+
+This module implements \+: 1.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{apputils_8py_a965ccb2fb5539f85fd30953516f34153}\label{apputils_8py_a965ccb2fb5539f85fd30953516f34153}} 
+def \mbox{\hyperlink{apputils_8py_a965ccb2fb5539f85fd30953516f34153}{app.\+main.\+apputils.\+rotate}} (l, n)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Small set of functions to change the appearance of names (strings) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_a6bfeb06651b70211f731c00b43d541b0}\label{apputils_8py_a6bfeb06651b70211f731c00b43d541b0}} 
+def {\bfseries app.\+main.\+apputils.\+snake2camel} (name)
+\item 
+\mbox{\Hypertarget{apputils_8py_ada4afaa18d754f234165ae5d291feb15}\label{apputils_8py_ada4afaa18d754f234165ae5d291feb15}} 
+def {\bfseries app.\+main.\+apputils.\+snake2camelback} (name)
+\item 
+\mbox{\Hypertarget{apputils_8py_a551acda6763aa89c807cf96042acf4b4}\label{apputils_8py_a551acda6763aa89c807cf96042acf4b4}} 
+def {\bfseries app.\+main.\+apputils.\+camel2snake} (name)
+\item 
+\mbox{\Hypertarget{apputils_8py_a1112ebc12b6fff5f7a85d8e0cad48b27}\label{apputils_8py_a1112ebc12b6fff5f7a85d8e0cad48b27}} 
+def {\bfseries app.\+main.\+apputils.\+camelback2snake} (name)
+\item 
+\mbox{\Hypertarget{apputils_8py_a51b9b90e79e7177f87d2bb4bc32504ba}\label{apputils_8py_a51b9b90e79e7177f87d2bb4bc32504ba}} 
+def \mbox{\hyperlink{apputils_8py_a51b9b90e79e7177f87d2bb4bc32504ba}{app.\+main.\+apputils.\+read\+O\+N\+S\+P\+C\+Repo}} (fname, lafname, postcode2\+\_\+county\+\_\+dict, postcode2\+\_\+country\+\_\+dict, postcode2\+\_\+la\+\_\+dict, postcode2\+\_\+region\+\_\+dict, county2\+\_\+region\+\_\+dict, la2\+\_\+county\+\_\+dict, la2\+\_\+region\+\_\+dict, la\+\_\+translation\+\_\+dict, reverse\+\_\+la\+\_\+translation\+\_\+dict)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Reads the O\+NS csv data creates all dictionaries needed for processing Arguments\+:  name of ons file  local authority definition file         . \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a26d1beaec54c0632a0b603a8bb1a9ba9}{app.\+main.\+apputils.\+read\+Names}} (fname)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Reads district and county names. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_a72c2a9fc4b8c4b0b21c5c2c358eb5b3e}\label{apputils_8py_a72c2a9fc4b8c4b0b21c5c2c358eb5b3e}} 
+def \mbox{\hyperlink{apputils_8py_a72c2a9fc4b8c4b0b21c5c2c358eb5b3e}{app.\+main.\+apputils.\+read\+Admin\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Sets up reading of the O\+NS data Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a4b57a30a8b9a67d46b6b0bbd37d365a5}{app.\+main.\+apputils.\+read\+List}} (fname)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Reads a list of names from a file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a6f4ac21e7ea329c188677915a341ddbc}{app.\+main.\+apputils.\+create\+Reset\+Lists}} (listnames)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates an R\+DF list of values for properties in listnames. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_aac45e0b43fbc295d84ea2c8e3003f600}{app.\+main.\+apputils.\+get\+Values\+For\+Type}} (colname, typename)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Generates a unique list of values for a property from the DB Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a1689e1921c890b50b1daf2233e1527fa}{app.\+main.\+apputils.\+create\+List\+Of\+All\+Values}} (colname, typename, attritypes)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generates a unique list of values for a column from a map and inserts it in db Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a4a11e02db98c8471b91d4167dd395c29}{app.\+main.\+apputils.\+create\+List\+Cache}} (listnames)
+\begin{DoxyCompactList}\small\item\em Purpose\+:\# Creates a cache for all lists accessibel by name key Called in models ini Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_a809cbfd3a60e2b1de72389c4cf1fd9b3}\label{apputils_8py_a809cbfd3a60e2b1de72389c4cf1fd9b3}} 
+def {\bfseries app.\+main.\+apputils.\+getall\+Museums\+Of\+Property} (property)
+\item 
+def \mbox{\hyperlink{apputils_8py_a1e9d585f9bd50aaaf11ba5d8a0e201fa}{app.\+main.\+apputils.\+get\+Museum\+Properties\+For\+Id}} (shortid)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Get all properties for a museum with id Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_aad1c9685bb71266d6e0ed705524e6a44}{app.\+main.\+apputils.\+get\+Viz\+Location\+Data}} (patharray, startperiod, endperiod, columns=None, locationname=\char`\"{}location\char`\"{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Get data for use with the Admin data property of O\+NS classifications for visualisation Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_afe0daadd8f0f852049828b0c9fc6d92c}{app.\+main.\+apputils.\+get\+Marker\+Data}} (columns, filters=None, vardict=None)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Retrieves data to be used with the browse page Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a44a09238ce2bbb0a2e2c047e39d296f4}{app.\+main.\+apputils.\+get\+Museum\+Properties\+For\+Id\+Working}} (shortid)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Removes type info from name Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a25aa0b31ab1007f23970be3a583e3ce7}{app.\+main.\+apputils.\+is\+Data\+Class}} (clazz)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Is this clazz an abstract clazz? Obviously the hard coding needs to go. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_ae149d9fda553dbf30db32b8d431f81a6}{app.\+main.\+apputils.\+get\+Data\+Class\+Instance}} (clazz)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Loads a class inmplementation Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a7dd7e769be80ca45afe9e52dfd5df0dc}{app.\+main.\+apputils.\+discover\+Datatypes}} (datadict)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Look for data type implementations and create a cache This works both on the attritypes (L\+I\+ST) and the datadict (D\+I\+CT) so we need to check which it is Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_adb609a6b67aa6c22551e87c1deb621b6}{app.\+main.\+apputils.\+getdatagroups}} (attributetypes)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates the select menu for the datatypes used in search loop over all types picking non xml datatype add List to typename (dataproperty) get list from database add all elements of list as group\+:typename to map Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a5e9522aa08c916a54a117070b1052362}{app.\+main.\+apputils.\+getpredicatestypes}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Retrieves classes and predicates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_a94bd572b5647553a38e29c43c1dbcf5e}\label{apputils_8py_a94bd572b5647553a38e29c43c1dbcf5e}} 
+def \mbox{\hyperlink{apputils_8py_a94bd572b5647553a38e29c43c1dbcf5e}{app.\+main.\+apputils.\+getmuseumpredicates}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Retrieves all predicats relating to a museum. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a00681d09a94f5f4c0311e7b8ba627d50}{app.\+main.\+apputils.\+get\+Defined\+Type}} (incol)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns the column if defined in the datatyep map Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a830894546b2b8fa295df421b5e77b866}{app.\+main.\+apputils.\+is\+Type\+A\+Clazz}} (incol, defcol)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Is this column an abstract type? Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a0873bf11568456a2cef3dc293b4983a3}{app.\+main.\+apputils.\+get\+Query\+For\+Col}} (incol, rcount, optional=True, museumuri=\textquotesingle{}?museum \textquotesingle{}, matchstrings=\mbox{[}$\,$\mbox{]}, conditions=\mbox{[}$\,$\mbox{]}, matchcolumns=\mbox{[}$\,$\mbox{]}, coltoargdict=\{\})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates a query for a column Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a66fda77a1920dc5eae535a18391c63f5}{app.\+main.\+apputils.\+get\+Col}} (col, coltocountdict, lowerorupper=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Create virtuoso data type statement for column Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_afdb0219b81b60073e446bf8a0dd5018e}{app.\+main.\+apputils.\+get\+Filter\+Clause}} (matchcolumns, conditions, matchstrings, coltocountdict)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns a filter clause for a column Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{apputils_8py_a03446e0814a13147c1dfa0446969ba58}{app.\+main.\+apputils.\+get\+Search\+Results}} (columns, matchcolumns, conditions, matchstrings, ordercolumn)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Create a query for a list of columns Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+\item 
+\mbox{\Hypertarget{apputils_8py_aca78671a184a45c163d4bdf257f21777}\label{apputils_8py_aca78671a184a45c163d4bdf257f21777}} 
+dictionary {\bfseries app.\+main.\+apputils.\+C\+O\+U\+N\+T\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+\item 
+\mbox{\Hypertarget{apputils_8py_af56153938c9589e68f0b2f609cd801c1}\label{apputils_8py_af56153938c9589e68f0b2f609cd801c1}} 
+dictionary {\bfseries app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}
+\item 
+dictionary {\bfseries app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}
+\item 
+\mbox{\Hypertarget{apputils_8py_acf32b3f153712ec7736b2d16d5a20d22}\label{apputils_8py_acf32b3f153712ec7736b2d16d5a20d22}} 
+dictionary {\bfseries app.\+main.\+apputils.\+L\+A\+\_\+\+T\+O\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+S\+\_\+\+T\+A\+B\+LE}
+\item 
+\mbox{\Hypertarget{apputils_8py_ac1264553a66f6edae499625a830095fd}\label{apputils_8py_ac1264553a66f6edae499625a830095fd}} 
+dictionary {\bfseries app.\+main.\+apputils.\+L\+A\+\_\+\+T\+O\+\_\+\+C\+A\+\_\+\+N\+A\+M\+E\+S\+\_\+\+T\+A\+B\+LE}
+\item 
+\mbox{\Hypertarget{apputils_8py_ad2849efa36bf2f32795de19b10d82289}\label{apputils_8py_ad2849efa36bf2f32795de19b10d82289}} 
+dictionary {\bfseries app.\+main.\+apputils.\+L\+A\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE} = \{\}
+\item 
+\mbox{\Hypertarget{apputils_8py_a0f8f2c775f4b1e8cd185164541799a52}\label{apputils_8py_a0f8f2c775f4b1e8cd185164541799a52}} 
+dictionary {\bfseries app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+L\+A\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE} = \{\}
+\item 
+\mbox{\Hypertarget{apputils_8py_aa315f623fd020c499508e6cf2b777cdd}\label{apputils_8py_aa315f623fd020c499508e6cf2b777cdd}} 
+{\bfseries app.\+main.\+apputils.\+modeltoview} = model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View()
+\item 
+\mbox{\hyperlink{apputils_8py_a69d63b46b6b7c27fe1df03e37bdbbc13}{app.\+main.\+apputils.\+vizgeoquery}} = vizgeoquery.\+replace(key.\+strip(),val.\+strip())
+\begin{DoxyCompactList}\small\item\em Deal with the visualisation geo query Once this works it should be turned into a ligthweight datatype class that can be added dynamically and does not have all the search interfaces. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_a4dffa204a19eb28ce6b63b36fdd9d644}\label{apputils_8py_a4dffa204a19eb28ce6b63b36fdd9d644}} 
+{\bfseries app.\+main.\+apputils.\+geoquery} = vizgeoquery
+\item 
+\mbox{\Hypertarget{apputils_8py_a59100073c2155431943fe6f89df06a3f}\label{apputils_8py_a59100073c2155431943fe6f89df06a3f}} 
+string {\bfseries app.\+main.\+apputils.\+queryparams} = queryparams+\char`\"{}?\char`\"{}+definitions.\+G\+E\+O\+C\+OL+\char`\"{} \char`\"{}
+\item 
+\mbox{\Hypertarget{apputils_8py_af65c36a426ea9d4f5507e389285e2ab8}\label{apputils_8py_af65c36a426ea9d4f5507e389285e2ab8}} 
+{\bfseries app.\+main.\+apputils.\+vizadmgeoquery} = vizadmgeoquery.\+replace(key.\+strip(),val.\+strip())
+\item 
+\mbox{\Hypertarget{apputils_8py_a888d2381d7415db1c737c314d9930313}\label{apputils_8py_a888d2381d7415db1c737c314d9930313}} 
+string {\bfseries app.\+main.\+apputils.\+filter} = filter+f+\char`\"{} . \textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{apputils_8py_a22cb223de832e5d9d70271bae44c4de6}\label{apputils_8py_a22cb223de832e5d9d70271bae44c4de6}} 
+int {\bfseries app.\+main.\+apputils.\+rcount} = 1
+\item 
+\mbox{\Hypertarget{apputils_8py_ac20d0fc2c283d6e4997c58e964c90830}\label{apputils_8py_ac20d0fc2c283d6e4997c58e964c90830}} 
+{\bfseries app.\+main.\+apputils.\+querycols} = querycols+get\+Query\+For\+Col(col,rcount)
+\item 
+\mbox{\Hypertarget{apputils_8py_a32827ce26d3309cdbda06fe1bc91d4aa}\label{apputils_8py_a32827ce26d3309cdbda06fe1bc91d4aa}} 
+{\bfseries app.\+main.\+apputils.\+sparql} = S\+P\+A\+R\+Q\+L\+Wrapper(app.\+config\mbox{[}\textquotesingle{}S\+P\+A\+R\+Q\+L\+E\+N\+D\+P\+O\+I\+NT\textquotesingle{}\mbox{]})
+\item 
+string {\bfseries app.\+main.\+apputils.\+query}
+\item 
+\mbox{\Hypertarget{apputils_8py_a6d430f60d6b0b8af6e8bcd93ddd9fb8c}\label{apputils_8py_a6d430f60d6b0b8af6e8bcd93ddd9fb8c}} 
+string {\bfseries app.\+main.\+apputils.\+results} = sparql.\+query().convert()
+\item 
+\mbox{\Hypertarget{apputils_8py_a5346e03c8574d7315e640135cff75052}\label{apputils_8py_a5346e03c8574d7315e640135cff75052}} 
+\mbox{\hyperlink{apputils_8py_a5346e03c8574d7315e640135cff75052}{app.\+main.\+apputils.\+op}}
+\begin{DoxyCompactList}\small\item\em Range lower value=lv uppervalue=uv. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_aa8d81ee08861f6b479d4045ea7dd2c1d}\label{apputils_8py_aa8d81ee08861f6b479d4045ea7dd2c1d}} 
+{\bfseries app.\+main.\+apputils.\+cond}
+\item 
+\mbox{\Hypertarget{apputils_8py_a6899fa2ad1c2e5013cc831351c09c5f6}\label{apputils_8py_a6899fa2ad1c2e5013cc831351c09c5f6}} 
+string {\bfseries app.\+main.\+apputils.\+matchfilter} = matchfilter+ \char`\"{}F\+I\+L\+T\+ER (\char`\"{}+cond+\char`\"{}) . \textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{apputils_8py_ab585e121ff9adb5c3069f9e8cd670454}\label{apputils_8py_ab585e121ff9adb5c3069f9e8cd670454}} 
+string {\bfseries app.\+main.\+apputils.\+tempfilter} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{apputils_8py_ad33f131c301cf96dab577585103ddc88}\label{apputils_8py_ad33f131c301cf96dab577585103ddc88}} 
+int {\bfseries app.\+main.\+apputils.\+tlen} = len(tempfilter)-\/2
+\item 
+\mbox{\Hypertarget{apputils_8py_a8155de3f0200f283cf0a9f5760320c86}\label{apputils_8py_a8155de3f0200f283cf0a9f5760320c86}} 
+{\bfseries app.\+main.\+apputils.\+filterdict} = None
+\item 
+\mbox{\Hypertarget{apputils_8py_ab926c9b44fbfee529286bedd4636e52d}\label{apputils_8py_ab926c9b44fbfee529286bedd4636e52d}} 
+string \mbox{\hyperlink{apputils_8py_ab926c9b44fbfee529286bedd4636e52d}{app.\+main.\+apputils.\+map\+\_\+querycols}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mapdata additions, make sure not to duplicate properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{apputils_8py_a35e04905a055f87527cd7cb417c88352}\label{apputils_8py_a35e04905a055f87527cd7cb417c88352}} 
+string {\bfseries app.\+main.\+apputils.\+map\+\_\+queryparams} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{apputils_8py_a934d15d72f07da4508cd1c73583df77e}\label{apputils_8py_a934d15d72f07da4508cd1c73583df77e}} 
+list {\bfseries app.\+main.\+apputils.\+map\+\_\+columns} = \mbox{[}definitions.\+L\+A\+T\+I\+T\+U\+DE,definitions.\+L\+O\+N\+G\+I\+T\+U\+DE\mbox{]}
+\item 
+\mbox{\Hypertarget{apputils_8py_a8688655f1d00361200405ba54787839a}\label{apputils_8py_a8688655f1d00361200405ba54787839a}} 
+list {\bfseries app.\+main.\+apputils.\+newresults} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{apputils_8py_a499e7ccec591253fee334f32be862d20}\label{apputils_8py_a499e7ccec591253fee334f32be862d20}} 
+list {\bfseries app.\+main.\+apputils.\+newres} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module implements \+: 1. 
+
+All the methods for accessing the O\+NS data for locations.
+\begin{DoxyEnumerate}
+\item All the definitions used in processing the O\+NS data.
+\item The query engine used in search.
+\end{DoxyEnumerate}
+
+~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ ~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{apputils_8py_a4a11e02db98c8471b91d4167dd395c29}\label{apputils_8py_a4a11e02db98c8471b91d4167dd395c29}} 
+\index{apputils.\+py@{apputils.\+py}!create\+List\+Cache@{create\+List\+Cache}}
+\index{create\+List\+Cache@{create\+List\+Cache}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{create\+List\+Cache()}{createListCache()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+create\+List\+Cache (\begin{DoxyParamCaption}\item[{}]{listnames }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:\# Creates a cache for all lists accessibel by name key Called in models ini Arguments\+: 
+
+~\newline
+  list of names for the lists to cache \mbox{\Hypertarget{apputils_8py_a1689e1921c890b50b1daf2233e1527fa}\label{apputils_8py_a1689e1921c890b50b1daf2233e1527fa}} 
+\index{apputils.\+py@{apputils.\+py}!create\+List\+Of\+All\+Values@{create\+List\+Of\+All\+Values}}
+\index{create\+List\+Of\+All\+Values@{create\+List\+Of\+All\+Values}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{create\+List\+Of\+All\+Values()}{createListOfAllValues()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+create\+List\+Of\+All\+Values (\begin{DoxyParamCaption}\item[{}]{colname,  }\item[{}]{typename,  }\item[{}]{attritypes }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Generates a unique list of values for a column from a map and inserts it in db Arguments\+: 
+
+~\newline
+  property  type of property  the map from which the values are taken \mbox{\Hypertarget{apputils_8py_a6f4ac21e7ea329c188677915a341ddbc}\label{apputils_8py_a6f4ac21e7ea329c188677915a341ddbc}} 
+\index{apputils.\+py@{apputils.\+py}!create\+Reset\+Lists@{create\+Reset\+Lists}}
+\index{create\+Reset\+Lists@{create\+Reset\+Lists}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{create\+Reset\+Lists()}{createResetLists()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+create\+Reset\+Lists (\begin{DoxyParamCaption}\item[{}]{listnames }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates an R\+DF list of values for properties in listnames. 
+
+This is used to allow configurations to be reset after a change If a list named xx\+List\+Reset does not exist create one from the name xx\+List Called in models ini Arguments\+:
+
+~\newline
+  conveniece method to create lists for many properties \mbox{\Hypertarget{apputils_8py_a7dd7e769be80ca45afe9e52dfd5df0dc}\label{apputils_8py_a7dd7e769be80ca45afe9e52dfd5df0dc}} 
+\index{apputils.\+py@{apputils.\+py}!discover\+Datatypes@{discover\+Datatypes}}
+\index{discover\+Datatypes@{discover\+Datatypes}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{discover\+Datatypes()}{discoverDatatypes()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+discover\+Datatypes (\begin{DoxyParamCaption}\item[{}]{datadict }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Look for data type implementations and create a cache This works both on the attritypes (L\+I\+ST) and the datadict (D\+I\+CT) so we need to check which it is Arguments\+: 
+
+~\newline
+  cache \mbox{\Hypertarget{apputils_8py_a66fda77a1920dc5eae535a18391c63f5}\label{apputils_8py_a66fda77a1920dc5eae535a18391c63f5}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Col@{get\+Col}}
+\index{get\+Col@{get\+Col}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Col()}{getCol()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Col (\begin{DoxyParamCaption}\item[{}]{col,  }\item[{}]{coltocountdict,  }\item[{}]{lowerorupper = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Create virtuoso data type statement for column Arguments\+: 
+
+~\newline
+  name  variable counts =\char`\"{}\char`\"{} name of S\+P\+A\+R\+QL variable \mbox{\Hypertarget{apputils_8py_ae149d9fda553dbf30db32b8d431f81a6}\label{apputils_8py_ae149d9fda553dbf30db32b8d431f81a6}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Data\+Class\+Instance@{get\+Data\+Class\+Instance}}
+\index{get\+Data\+Class\+Instance@{get\+Data\+Class\+Instance}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Data\+Class\+Instance()}{getDataClassInstance()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Data\+Class\+Instance (\begin{DoxyParamCaption}\item[{}]{clazz }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Loads a class inmplementation Arguments\+: 
+
+~\newline
+  name \mbox{\Hypertarget{apputils_8py_adb609a6b67aa6c22551e87c1deb621b6}\label{apputils_8py_adb609a6b67aa6c22551e87c1deb621b6}} 
+\index{apputils.\+py@{apputils.\+py}!getdatagroups@{getdatagroups}}
+\index{getdatagroups@{getdatagroups}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{getdatagroups()}{getdatagroups()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+getdatagroups (\begin{DoxyParamCaption}\item[{}]{attributetypes }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates the select menu for the datatypes used in search loop over all types picking non xml datatype add List to typename (dataproperty) get list from database add all elements of list as group\+:typename to map Arguments\+: 
+
+~\newline
+  the types to retrieve the values for \mbox{\Hypertarget{apputils_8py_a00681d09a94f5f4c0311e7b8ba627d50}\label{apputils_8py_a00681d09a94f5f4c0311e7b8ba627d50}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Defined\+Type@{get\+Defined\+Type}}
+\index{get\+Defined\+Type@{get\+Defined\+Type}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Defined\+Type()}{getDefinedType()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Defined\+Type (\begin{DoxyParamCaption}\item[{}]{incol }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Returns the column if defined in the datatyep map Arguments\+: 
+
+~\newline
+  col to look for \mbox{\Hypertarget{apputils_8py_afdb0219b81b60073e446bf8a0dd5018e}\label{apputils_8py_afdb0219b81b60073e446bf8a0dd5018e}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Filter\+Clause@{get\+Filter\+Clause}}
+\index{get\+Filter\+Clause@{get\+Filter\+Clause}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Filter\+Clause()}{getFilterClause()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Filter\+Clause (\begin{DoxyParamCaption}\item[{}]{matchcolumns,  }\item[{}]{conditions,  }\item[{}]{matchstrings,  }\item[{}]{coltocountdict }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Returns a filter clause for a column Arguments\+: 
+
+~\newline
+  columns  conditions  strings to match  variable count \mbox{\Hypertarget{apputils_8py_afe0daadd8f0f852049828b0c9fc6d92c}\label{apputils_8py_afe0daadd8f0f852049828b0c9fc6d92c}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Marker\+Data@{get\+Marker\+Data}}
+\index{get\+Marker\+Data@{get\+Marker\+Data}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Marker\+Data()}{getMarkerData()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Marker\+Data (\begin{DoxyParamCaption}\item[{}]{columns,  }\item[{}]{filters = {\ttfamily None},  }\item[{}]{vardict = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Retrieves data to be used with the browse page Arguments\+: 
+
+~\newline
+  columns to retrieve =None =None dictionary to be used when S\+P\+A\+R\+QL variables duplicate each other \mbox{\Hypertarget{apputils_8py_a1e9d585f9bd50aaaf11ba5d8a0e201fa}\label{apputils_8py_a1e9d585f9bd50aaaf11ba5d8a0e201fa}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Museum\+Properties\+For\+Id@{get\+Museum\+Properties\+For\+Id}}
+\index{get\+Museum\+Properties\+For\+Id@{get\+Museum\+Properties\+For\+Id}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Museum\+Properties\+For\+Id()}{getMuseumPropertiesForId()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Museum\+Properties\+For\+Id (\begin{DoxyParamCaption}\item[{}]{shortid }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Get all properties for a museum with id Arguments\+: 
+
+~\newline
+  museum id \mbox{\Hypertarget{apputils_8py_a44a09238ce2bbb0a2e2c047e39d296f4}\label{apputils_8py_a44a09238ce2bbb0a2e2c047e39d296f4}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Museum\+Properties\+For\+Id\+Working@{get\+Museum\+Properties\+For\+Id\+Working}}
+\index{get\+Museum\+Properties\+For\+Id\+Working@{get\+Museum\+Properties\+For\+Id\+Working}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Museum\+Properties\+For\+Id\+Working()}{getMuseumPropertiesForIdWorking()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Museum\+Properties\+For\+Id\+Working (\begin{DoxyParamCaption}\item[{}]{shortid }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Removes type info from name Arguments\+: 
+
+~\newline
+  \mbox{\Hypertarget{apputils_8py_a5e9522aa08c916a54a117070b1052362}\label{apputils_8py_a5e9522aa08c916a54a117070b1052362}} 
+\index{apputils.\+py@{apputils.\+py}!getpredicatestypes@{getpredicatestypes}}
+\index{getpredicatestypes@{getpredicatestypes}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{getpredicatestypes()}{getpredicatestypes()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+getpredicatestypes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Retrieves classes and predicates. 
+
+Side effect that they go into the definitions dict as well \mbox{\Hypertarget{apputils_8py_a0873bf11568456a2cef3dc293b4983a3}\label{apputils_8py_a0873bf11568456a2cef3dc293b4983a3}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Query\+For\+Col@{get\+Query\+For\+Col}}
+\index{get\+Query\+For\+Col@{get\+Query\+For\+Col}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Query\+For\+Col()}{getQueryForCol()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Query\+For\+Col (\begin{DoxyParamCaption}\item[{}]{incol,  }\item[{}]{rcount,  }\item[{}]{optional = {\ttfamily True},  }\item[{}]{museumuri = {\ttfamily \textquotesingle{}?museum~\textquotesingle{}},  }\item[{}]{matchstrings = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{conditions = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{matchcolumns = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{coltoargdict = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates a query for a column Arguments\+: 
+
+~\newline
+  the column to search  variable repeat count =True Is the query optional? =\textquotesingle{}?museum \textquotesingle{} name of museum class variable =\mbox{[}\mbox{]} query match string =\mbox{[}\mbox{]} condition =\mbox{[}\mbox{]} column name =\{\} macro name for column in case type is an implementation class \mbox{\Hypertarget{apputils_8py_a03446e0814a13147c1dfa0446969ba58}\label{apputils_8py_a03446e0814a13147c1dfa0446969ba58}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Search\+Results@{get\+Search\+Results}}
+\index{get\+Search\+Results@{get\+Search\+Results}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Search\+Results()}{getSearchResults()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Search\+Results (\begin{DoxyParamCaption}\item[{}]{columns,  }\item[{}]{matchcolumns,  }\item[{}]{conditions,  }\item[{}]{matchstrings,  }\item[{}]{ordercolumn }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Create a query for a list of columns Arguments\+: 
+
+~\newline
+  column names  match names  conditions  strings to match  which column to order on \mbox{\Hypertarget{apputils_8py_aac45e0b43fbc295d84ea2c8e3003f600}\label{apputils_8py_aac45e0b43fbc295d84ea2c8e3003f600}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Values\+For\+Type@{get\+Values\+For\+Type}}
+\index{get\+Values\+For\+Type@{get\+Values\+For\+Type}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Values\+For\+Type()}{getValuesForType()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Values\+For\+Type (\begin{DoxyParamCaption}\item[{}]{colname,  }\item[{}]{typename }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Generates a unique list of values for a property from the DB Arguments\+: 
+
+~\newline
+   \mbox{\Hypertarget{apputils_8py_aad1c9685bb71266d6e0ed705524e6a44}\label{apputils_8py_aad1c9685bb71266d6e0ed705524e6a44}} 
+\index{apputils.\+py@{apputils.\+py}!get\+Viz\+Location\+Data@{get\+Viz\+Location\+Data}}
+\index{get\+Viz\+Location\+Data@{get\+Viz\+Location\+Data}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{get\+Viz\+Location\+Data()}{getVizLocationData()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+get\+Viz\+Location\+Data (\begin{DoxyParamCaption}\item[{}]{patharray,  }\item[{}]{startperiod,  }\item[{}]{endperiod,  }\item[{}]{columns = {\ttfamily None},  }\item[{}]{locationname = {\ttfamily \char`\"{}location\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Get data for use with the Admin data property of O\+NS classifications for visualisation Arguments\+: 
+
+~\newline
+  the menu path  start year  end year =None columns to retrieve =\char`\"{}location\char`\"{} The location attribute to retrieve on \mbox{\Hypertarget{apputils_8py_a25aa0b31ab1007f23970be3a583e3ce7}\label{apputils_8py_a25aa0b31ab1007f23970be3a583e3ce7}} 
+\index{apputils.\+py@{apputils.\+py}!is\+Data\+Class@{is\+Data\+Class}}
+\index{is\+Data\+Class@{is\+Data\+Class}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{is\+Data\+Class()}{isDataClass()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+is\+Data\+Class (\begin{DoxyParamCaption}\item[{}]{clazz }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Is this clazz an abstract clazz? Obviously the hard coding needs to go. 
+
+The names are available in the db. Arguments\+:
+
+~\newline
+  name \mbox{\Hypertarget{apputils_8py_a830894546b2b8fa295df421b5e77b866}\label{apputils_8py_a830894546b2b8fa295df421b5e77b866}} 
+\index{apputils.\+py@{apputils.\+py}!is\+Type\+A\+Clazz@{is\+Type\+A\+Clazz}}
+\index{is\+Type\+A\+Clazz@{is\+Type\+A\+Clazz}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{is\+Type\+A\+Clazz()}{isTypeAClazz()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+is\+Type\+A\+Clazz (\begin{DoxyParamCaption}\item[{}]{incol,  }\item[{}]{defcol }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Is this column an abstract type? Arguments\+: 
+
+~\newline
+  colomn  its abstract type name \mbox{\Hypertarget{apputils_8py_a4b57a30a8b9a67d46b6b0bbd37d365a5}\label{apputils_8py_a4b57a30a8b9a67d46b6b0bbd37d365a5}} 
+\index{apputils.\+py@{apputils.\+py}!read\+List@{read\+List}}
+\index{read\+List@{read\+List}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{read\+List()}{readList()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+read\+List (\begin{DoxyParamCaption}\item[{}]{fname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Reads a list of names from a file. 
+
+Used for configuration Arguments\+:
+
+~\newline
+  name of file to read \mbox{\Hypertarget{apputils_8py_a26d1beaec54c0632a0b603a8bb1a9ba9}\label{apputils_8py_a26d1beaec54c0632a0b603a8bb1a9ba9}} 
+\index{apputils.\+py@{apputils.\+py}!read\+Names@{read\+Names}}
+\index{read\+Names@{read\+Names}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{read\+Names()}{readNames()}}
+{\footnotesize\ttfamily def app.\+main.\+apputils.\+read\+Names (\begin{DoxyParamCaption}\item[{}]{fname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Reads district and county names. 
+
+Arguments\+:
+
+~\newline
+  name of file to read 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{apputils_8py_a41028399931db4d2aa32f4a595ff15b1}\label{apputils_8py_a41028399931db4d2aa32f4a595ff15b1}} 
+\index{apputils.\+py@{apputils.\+py}!C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE@{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE}}
+\index{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE@{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE}{CA\_CODE\_TO\_GOR\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+G\+O\+R\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2 \textcolor{stringliteral}{"E47000001"}:\textcolor{stringliteral}{"E12000002"},}
+\DoxyCodeLine{3 \textcolor{stringliteral}{"E47000002"}:\textcolor{stringliteral}{"E12000003"},}
+\DoxyCodeLine{4 \textcolor{stringliteral}{"E47000003"}:\textcolor{stringliteral}{"E12000003"},}
+\DoxyCodeLine{5 \textcolor{stringliteral}{"E47000004"}:\textcolor{stringliteral}{"E12000002"},}
+\DoxyCodeLine{6 \textcolor{stringliteral}{"E47000005"}:\textcolor{stringliteral}{"E12000001"},}
+\DoxyCodeLine{7 \textcolor{stringliteral}{"E47000006"}:\textcolor{stringliteral}{"E12000001"},}
+\DoxyCodeLine{8 \textcolor{stringliteral}{"E47000007"}:\textcolor{stringliteral}{"E12000005"},}
+\DoxyCodeLine{9 \textcolor{stringliteral}{"E47000008"}:\textcolor{stringliteral}{"E12000006"},}
+\DoxyCodeLine{10 \textcolor{stringliteral}{"E47000009"}:\textcolor{stringliteral}{"E12000009"}}
+\DoxyCodeLine{11 \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_ab3a1dfa0dade2357dc636ab318663850}\label{apputils_8py_ab3a1dfa0dade2357dc636ab318663850}} 
+\index{apputils.\+py@{apputils.\+py}!C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE@{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}}
+\index{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE@{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}{CA\_CODE\_TO\_NAME\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2 \textcolor{stringliteral}{"E47000001"}:\textcolor{stringliteral}{"Greater Manchester"},}
+\DoxyCodeLine{3 \textcolor{stringliteral}{"E47000002"}:\textcolor{stringliteral}{"Sheffield City Region"},}
+\DoxyCodeLine{4 \textcolor{stringliteral}{"E47000003"}:\textcolor{stringliteral}{"West Yorkshire"},}
+\DoxyCodeLine{5 \textcolor{stringliteral}{"E47000004"}:\textcolor{stringliteral}{"Liverpool City Region"},}
+\DoxyCodeLine{6 \textcolor{stringliteral}{"E47000005"}:\textcolor{stringliteral}{"North East"},}
+\DoxyCodeLine{7 \textcolor{stringliteral}{"E47000006"}:\textcolor{stringliteral}{"Tees Valley"},}
+\DoxyCodeLine{8 \textcolor{stringliteral}{"E47000007"}:\textcolor{stringliteral}{"West Midlands"},}
+\DoxyCodeLine{9 \textcolor{stringliteral}{"E47000008"}:\textcolor{stringliteral}{"Cambridgeshire and Peterborough"},}
+\DoxyCodeLine{10 \textcolor{stringliteral}{"E47000009"}:\textcolor{stringliteral}{"West of England"}}
+\DoxyCodeLine{11 \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_a59548f46630d6e1f8e24676832100db3}\label{apputils_8py_a59548f46630d6e1f8e24676832100db3}} 
+\index{apputils.\+py@{apputils.\+py}!C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}}
+\index{C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}{COUNTRY\_TRANSLATION\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"E92000001"}:\textcolor{stringliteral}{"England"},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"L93000001"}:\textcolor{stringliteral}{"Channel Islands"},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"M83000003"}:\textcolor{stringliteral}{"Isle of Man"},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{"N92000002"}:\textcolor{stringliteral}{"Northern Ireland"},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{"S92000003"}:\textcolor{stringliteral}{"Scotland"},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{"W92000004"}:\textcolor{stringliteral}{"Wales"}}
+\DoxyCodeLine{8     \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_a69bc57fce2cd8f6dc66633a71891e2db}\label{apputils_8py_a69bc57fce2cd8f6dc66633a71891e2db}} 
+\index{apputils.\+py@{apputils.\+py}!G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}}
+\index{G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}{GOR\_TRANSLATION\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"E12000001"} : \textcolor{stringliteral}{"North East"},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"E12000002"} : \textcolor{stringliteral}{"North West"},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"E12000003"} : \textcolor{stringliteral}{"Yorkshire and The Humber"},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{"E12000004"} : \textcolor{stringliteral}{"East Midlands"},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{"E12000005"} : \textcolor{stringliteral}{"West Midlands"},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{"E12000006"} : \textcolor{stringliteral}{"East of England"},}
+\DoxyCodeLine{8     \textcolor{stringliteral}{"E12000007"} : \textcolor{stringliteral}{"London"},}
+\DoxyCodeLine{9     \textcolor{stringliteral}{"E12000008"} : \textcolor{stringliteral}{"South East"},}
+\DoxyCodeLine{10     \textcolor{stringliteral}{"E12000009"} : \textcolor{stringliteral}{"South West"},}
+\DoxyCodeLine{11     \textcolor{stringliteral}{"W99999999"} : \textcolor{stringliteral}{"(pseudo) Wales"},}
+\DoxyCodeLine{12     \textcolor{stringliteral}{"S99999999"} : \textcolor{stringliteral}{"(pseudo) Scotland"},}
+\DoxyCodeLine{13     \textcolor{stringliteral}{"N99999999"} : \textcolor{stringliteral}{"(pseudo) Northern Ireland"},}
+\DoxyCodeLine{14     \textcolor{stringliteral}{"L99999999"} : \textcolor{stringliteral}{"(pseudo) Channel Islands"},}
+\DoxyCodeLine{15     \textcolor{stringliteral}{"M99999999"} : \textcolor{stringliteral}{"(pseudo) Isle of Man"}}
+\DoxyCodeLine{16     \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_aa6246ecc64ed168988053fd9b09c3cb4}\label{apputils_8py_aa6246ecc64ed168988053fd9b09c3cb4}} 
+\index{apputils.\+py@{apputils.\+py}!query@{query}}
+\index{query@{query}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{query}{query}}
+{\footnotesize\ttfamily string app.\+main.\+apputils.\+query}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = definitions.RDF\_PREFIX\_PRELUDE+\textcolor{stringliteral}{"""}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{    prefix """}+definitions.PREFIX\_WITHCOLON+\textcolor{stringliteral}{""" <http://"""}+definitions.RDFDEFURI+\textcolor{stringliteral}{"""> }}
+\DoxyCodeLine{3 \textcolor{stringliteral}{}}
+\DoxyCodeLine{4 \textcolor{stringliteral}{    SELECT DISTINCT  ?museum ?Latitude ?Longitude """}+str(queryparams)+\textcolor{stringliteral}{""" }}
+\DoxyCodeLine{5 \textcolor{stringliteral}{    FROM <"""}+app.config[\textcolor{stringliteral}{'DEFAULTGRAPH'}]+\textcolor{stringliteral}{""">}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{    FROM <"""}+app.config[\textcolor{stringliteral}{'GEOADMINGRAPH'}]+\textcolor{stringliteral}{""">}}
+\DoxyCodeLine{7 \textcolor{stringliteral}{    WHERE \{ }}
+\DoxyCodeLine{8 \textcolor{stringliteral}{    ?museum  rdf:type """}+definitions.PREFIX\_WITHCOLON+\textcolor{stringliteral}{"""Museum .}}
+\DoxyCodeLine{9 \textcolor{stringliteral}{    ?museum  """}+definitions.PREFIX\_WITHCOLON+definitions.HASNAME+definitions.LATITUDE+\textcolor{stringliteral}{""" ?Latitude . }}
+\DoxyCodeLine{10 \textcolor{stringliteral}{    ?museum  """}+definitions.PREFIX\_WITHCOLON+definitions.HASNAME+definitions.LONGITUDE+\textcolor{stringliteral}{""" ?Longitude . }}
+\DoxyCodeLine{11 \textcolor{stringliteral}{    """}+str(geoquery)+\textcolor{stringliteral}{"""}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{    """}+str(querycols)+\textcolor{stringliteral}{"""}}
+\DoxyCodeLine{13 \textcolor{stringliteral}{    """}+str(filter)+\textcolor{stringliteral}{"""}}
+\DoxyCodeLine{14 \textcolor{stringliteral}{    \} """}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_a93f158683f7b03f39ab52742d66556f9}\label{apputils_8py_a93f158683f7b03f39ab52742d66556f9}} 
+\index{apputils.\+py@{apputils.\+py}!R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE@{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}}
+\index{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE@{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}{REVERSE\_CA\_CODE\_TO\_NAME\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+A\+\_\+\+C\+O\+D\+E\+\_\+\+T\+O\+\_\+\+N\+A\+M\+E\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"Greater Manchester"} :     \textcolor{stringliteral}{"E47000001"},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"Sheffield City Region"} :     \textcolor{stringliteral}{"E47000002"},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"West Yorkshire"} :     \textcolor{stringliteral}{"E47000003"},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{"Liverpool City Region"} :     \textcolor{stringliteral}{"E47000004"},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{"North East"} :     \textcolor{stringliteral}{"E47000005"},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{"Tees Valley"} :     \textcolor{stringliteral}{"E47000006"},}
+\DoxyCodeLine{8     \textcolor{stringliteral}{"West Midlands"} :     \textcolor{stringliteral}{"E47000007"},  }
+\DoxyCodeLine{9     \textcolor{stringliteral}{"Cambridgeshire and Peterborough"} :     \textcolor{stringliteral}{"E47000008"},}
+\DoxyCodeLine{10     \textcolor{stringliteral}{"West of England"}:\textcolor{stringliteral}{"E47000009"}}
+\DoxyCodeLine{11 \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_a4b29e77554c9c75fd96474c6757a99b4}\label{apputils_8py_a4b29e77554c9c75fd96474c6757a99b4}} 
+\index{apputils.\+py@{apputils.\+py}!R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}}
+\index{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}{REVERSE\_COUNTRY\_TRANSLATION\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+C\+O\+U\+N\+T\+R\+Y\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"England"}:\textcolor{stringliteral}{"E92000001"},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"Channel Islands"}:\textcolor{stringliteral}{"L93000001"},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"Isle of Man"}:\textcolor{stringliteral}{"M83000003"},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{"Northern Ireland"}:\textcolor{stringliteral}{"N92000002"},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{"Scotland"}:\textcolor{stringliteral}{"S92000003"},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{"Wales"}:\textcolor{stringliteral}{"W92000004"}}
+\DoxyCodeLine{8     \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_a5287d499c97955411692a01dd0876000}\label{apputils_8py_a5287d499c97955411692a01dd0876000}} 
+\index{apputils.\+py@{apputils.\+py}!R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}}
+\index{R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE@{R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}{REVERSE\_GOR\_TRANSLATION\_TABLE}}
+{\footnotesize\ttfamily dictionary app.\+main.\+apputils.\+R\+E\+V\+E\+R\+S\+E\+\_\+\+G\+O\+R\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"North East"}:\textcolor{stringliteral}{"E12000001"},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"North West"}:\textcolor{stringliteral}{"E12000002"},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"Yorkshire and The Humber"}:\textcolor{stringliteral}{"E12000003"},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{"East Midlands"}:\textcolor{stringliteral}{"E12000004"},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{"West Midlands"}:\textcolor{stringliteral}{"E12000005"},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{"East of England"}:\textcolor{stringliteral}{"E12000006"},}
+\DoxyCodeLine{8     \textcolor{stringliteral}{"London"}:\textcolor{stringliteral}{"E12000007"},}
+\DoxyCodeLine{9     \textcolor{stringliteral}{"South East"}:\textcolor{stringliteral}{"E12000008"},}
+\DoxyCodeLine{10     \textcolor{stringliteral}{"South West"}:\textcolor{stringliteral}{"E12000009"},}
+\DoxyCodeLine{11     \textcolor{stringliteral}{"(pseudo) Wales"}:\textcolor{stringliteral}{"W99999999"},}
+\DoxyCodeLine{12     \textcolor{stringliteral}{"(pseudo) Scotland"}:\textcolor{stringliteral}{"S99999999"},}
+\DoxyCodeLine{13     \textcolor{stringliteral}{"(pseudo) Northern Ireland"}:\textcolor{stringliteral}{"N99999999"},}
+\DoxyCodeLine{14     \textcolor{stringliteral}{"(pseudo) Channel Islands"}:\textcolor{stringliteral}{"L99999999"},}
+\DoxyCodeLine{15     \textcolor{stringliteral}{"(pseudo) Isle of Man"}:\textcolor{stringliteral}{"M99999999"}}
+\DoxyCodeLine{16     \}}
+\end{DoxyCode}
+\mbox{\Hypertarget{apputils_8py_a69d63b46b6b7c27fe1df03e37bdbbc13}\label{apputils_8py_a69d63b46b6b7c27fe1df03e37bdbbc13}} 
+\index{apputils.\+py@{apputils.\+py}!vizgeoquery@{vizgeoquery}}
+\index{vizgeoquery@{vizgeoquery}!apputils.\+py@{apputils.\+py}}
+\subsubsection{\texorpdfstring{vizgeoquery}{vizgeoquery}}
+{\footnotesize\ttfamily app.\+main.\+apputils.\+vizgeoquery = vizgeoquery.\+replace(key.\+strip(),val.\+strip())}
+
+
+
+Deal with the visualisation geo query Once this works it should be turned into a ligthweight datatype class that can be added dynamically and does not have all the search interfaces. 
+
+Only need to work with markerdata and getquery for col. Remnove params from markerdata 

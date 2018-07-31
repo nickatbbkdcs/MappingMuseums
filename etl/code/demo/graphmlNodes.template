@@ -1,0 +1,31 @@
+
+    <node id="${objectnodeid}">
+      <data key="d4"/>
+      <data key="d6">${col},${vis},graphmlNodes</data>
+      <data key="d7">
+        <y:ShapeNode>
+          <y:Geometry height="44.0" width="186.4296875" x="742.6735182434335" y="264.30975422322564"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="176.4296875" x="5.0" y="10.6875">${objecttype}</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+
+    <edge id="${objectedgeid}" source="n0" target="${nodeidnoupdate}">
+      <data key="d11">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000080" type="line" width="1.0"/>
+          <y:Arrows source="circle" target="delta"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.625" modelName="side_slider" preferredPlacement="anywhere" ratio="0.0" textColor="#000080" visible="true" width="255.6953125" x="-247.5477825529773" y="-32.73473205206801">${objectpredicate}<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    ${generatetemporalrangenodes}
+    ${generatehierclasses}
+    ${generateobjectnamenodes}
+    ${generateurireferences}

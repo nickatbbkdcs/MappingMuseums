@@ -1,0 +1,77 @@
+\hypertarget{Visitor__Numbers__Data_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Visitor\+\_\+\+Numbers\+\_\+\+Data.py File Reference}
+\label{Visitor__Numbers__Data_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Visitor\+\_\+\+Numbers\+\_\+\+Data.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Visitor\+\_\+\+Numbers\+\_\+\+Data.\+py}}
+
+
+~\newline
+ Implementation of a datatype follows this interface which has to be implemented\+:  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1datatypes_1_1Visitor__Numbers__Data_1_1Visitor__Numbers__Data}{app.\+main.\+datatypes.\+Visitor\+\_\+\+Numbers\+\_\+\+Data.\+Visitor\+\_\+\+Numbers\+\_\+\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Visitor__Numbers__Data_8py_a1f9d763c749c9a339bfb476b18a1f08c}\label{Visitor__Numbers__Data_8py_a1f9d763c749c9a339bfb476b18a1f08c}} 
+string {\bfseries app.\+main.\+datatypes.\+Visitor\+\_\+\+Numbers\+\_\+\+Data.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{Visitor__Numbers__Data_8py_a8af2aa4f24ba4902843c2a50ca6cd847}\label{Visitor__Numbers__Data_8py_a8af2aa4f24ba4902843c2a50ca6cd847}} 
+tuple {\bfseries app.\+main.\+datatypes.\+Visitor\+\_\+\+Numbers\+\_\+\+Data.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ Implementation of a datatype follows this interface which has to be implemented\+: 
+
+Purpose\+:Returns S\+P\+A\+R\+QL for a match condition filter on the data type Arguments\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator def get\+Match\+Filter(self,rcount,match,condition)\+: 
+
+ Purpose\+:Returns S\+P\+A\+R\+QL for a condition filter on the data type Arguments\+:\\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator def get\+Compare\+Filter(self,rcount,match,condition)\+: 
+
+ Purpose\+:Returns S\+P\+A\+R\+QL for a query on the datatype without filter Arguments\+:\\
+\hline
+{\em col} & columne name for datatype \\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator \\
+\hline
+{\em matchcolumn} & not used, only here for compatibility def get\+Query(self,col,rcount,matchstring,condition,matchcolumn)\+: 
+
+ Purpose\+:Returns type for the datatype to appear in search menu def get\+Search\+Type(self)\+: 
+
+ Purpose\+:Returns the list of select conditions for the comaparator search menu def get\+G\+U\+I\+Conditions(self)\+: 
+
+ Purpose\+:Returns html code for search menu def get\+Widget(self)\+: 
+
+ Purpose\+:Returns JS code associated with the H\+T\+ML for the datatype def get\+Widget\+Code(self)\+: 
+
+ O\+P\+T\+I\+O\+N\+AL ~\newline
+ Purpose\+:Returns the formatting of the datatype for the search table cell. This requires a call in the model\+\_\+to\+\_\+view\+\_\+class and needs to be changed to be done by introspection. def get\+Model\+To\+View(self,model,tup=None)\+:\\
+\hline
+\end{DoxyParams}
+~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ !/usr/bin/env python 
+\end{DoxyItemize}

@@ -1,0 +1,192 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Mapping Museums{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" />
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/tether.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap-multiselect.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap-multiselect-collapsible-groups.js') }}"></script>
+
+<style>
+span.highlight {
+    background-color: LightCyan;
+}
+
+<!-- search form style -->
+body,html {
+  height:100%;
+}
+
+
+#sidebar {
+  width: inherit;
+  min-width: 420px;
+  max-width: 420px;
+  background-color:#f5f5f5;
+  float: left;
+  height:700px;
+  position:relative;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#main {
+  height:100%;
+  overflow:auto;
+}
+
+.second-row-fixed {position: fixed; top: 73px; left: 350px; right: 0; bottom: 0; background-color:#b3cccc }
+.second-row-fixed iframe {display: block; width: 100%; height: 100%; border: none;}
+
+.second-row-fixed-white {position: fixed; top: 73px; left: 350px; right: 0; bottom: 0;  overflow-y:scroll; }
+.second-row-fixed-white iframe {display: block; width: 100%; height: 100%; border: none;overflow-y:scroll;}
+
+.second-row {position: absolute; top: 53px; left: 430px; right: 0; bottom: 0; background-color:#b3cccc }
+.second-row iframe {display: block; width: 100%; height: 100%; border: none;}
+
+.row iframe { width: 100%;  border: none;  height: 100%; overflow-y:auto;}
+
+.col-sm-2 {  min-width: 60px;padding-right:20px;}
+
+</style>
+
+{% endblock %}
+
+{% block body_attrs %}  {% endblock %}
+
+{% block navbar %} 
+
+
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home">Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="nav">
+                <li>      <a href="/browseproperties" ">Browse</a></li>
+                <li>      <a href="/search" ">Search</a></li>
+                <li>      <a href="/visualisations" ">Visualisation</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a id="datasetversion" ></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+ <script>
+
+
+function setHTMLContent(id,value)
+{
+  var field = document.getElementById(id);
+  field.innerHTML = value ;
+}
+
+function doOnLoadNavBar()
+{
+  var li=window.location.href.lastIndexOf("/");
+  var ll=window.location.href.length;
+  var page=window.location.href.substring(li,ll);
+  // Find element #nav
+  var ul=document.getElementById("nav");
+  var items = ul.getElementsByTagName("li");
+  var count=1
+    for (var i = 0; i < items.length; ++i) 
+      { 
+        var atag=items[i].getElementsByTagName("a");
+	var thispage=atag[0].href;
+        var lindex=thispage.lastIndexOf("/");
+	var ll=thispage.length;
+	var newpage=thispage.substring(li,ll);
+	if (newpage == page)
+	{
+	  items[i].classList.add("active");
+	}
+	else
+	{
+	  items[i].classList.remove("active");
+	}
+      }
+
+      $.ajax({
+      url: '/api/datasetversion/get',
+	     type: 'GET',
+	     dataType: 'json',
+	     success:function(data) 
+	{
+	  setHTMLContent("datasetversion",data);
+	}
+      
+      });
+    
+}
+window.onload = doOnLoadNavBar();
+
+
+  </script>
+{% endblock %}
+
+{% block sidebar %}
+
+<div id="sidebar">
+    <div class="col-md-12">
+      <h3>Sidebar (fixed)</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+        <li><a href="#">Section</a></li>
+      </ul>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+    {% block page_content %}{% endblock %}
+{% endblock %}
+  
+
+{% block scripts %}
+{{ super()  }}
+
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/annotator-2.0/annotator.min.js') }}"></script> -->
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/annotator-2.0/annotator.document.min.js') }}"></script> -->
+<script>
+<!-- var app = new annotator.App(); -->
+<!-- app.include(annotator.ui.main, {element: document.body, -->
+<!--     editorExtensions: [annotator.ui.tags.editorExtension], -->
+<!--     viewerExtensions: [ -->
+<!--         annotator.ui.tags.viewerExtension -->
+<!--     ] -->
+<!-- }); -->
+<!-- app.include(annotator.storage.http, {prefix: 'http://localhost:5000'}); -->
+<!-- app.start().then(function () { -->
+<!--      app.annotations.load(); -->
+<!-- }); -->
+</script>
+<!-- {{ moment.include_moment() }} -->
+{% endblock %}

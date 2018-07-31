@@ -1,0 +1,122 @@
+\hypertarget{chloro_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/chloro.py File Reference}
+\label{chloro_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/chloro.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/chloro.\+py}}
+
+
+This class implements the choropleths used for the various regions.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1chloro_1_1Chloro}{app.\+main.\+chloro.\+Chloro}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{chloro_8py_aa0d7ab9cc52cbca34b64ffaed814515a}\label{chloro_8py_aa0d7ab9cc52cbca34b64ffaed814515a}} 
+def \mbox{\hyperlink{chloro_8py_aa0d7ab9cc52cbca34b64ffaed814515a}{app.\+main.\+chloro.\+get\+Configuration}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Removes type info from name. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{chloro_8py_a3a1904dac150a794766549563d40caf1}{app.\+main.\+chloro.\+chloro\+View}} (self, prop)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Removes type info from name Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{chloro_8py_a8b3658cd8474f1f949ba3b2b968b8ca4}\label{chloro_8py_a8b3658cd8474f1f949ba3b2b968b8ca4}} 
+string {\bfseries app.\+main.\+chloro.\+prop} = \textquotesingle{}county\textquotesingle{}
+\item 
+\mbox{\Hypertarget{chloro_8py_a25f4aa4aa2860dc9a5001eab6b13624b}\label{chloro_8py_a25f4aa4aa2860dc9a5001eab6b13624b}} 
+string {\bfseries app.\+main.\+chloro.\+boundary} = prop.\+lower()
+\item 
+\mbox{\Hypertarget{chloro_8py_afde94b5d010377730a5cdaababde52bb}\label{chloro_8py_afde94b5d010377730a5cdaababde52bb}} 
+string {\bfseries app.\+main.\+chloro.\+grades} = \textquotesingle{}\mbox{[}0, 1, 5, 15, 20, 35, 50, 100\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{chloro_8py_a678b5186f34b8ea55c70f600860b8ff8}\label{chloro_8py_a678b5186f34b8ea55c70f600860b8ff8}} 
+dictionary {\bfseries app.\+main.\+chloro.\+latomuseumsdict} = \{\}
+\item 
+\mbox{\Hypertarget{chloro_8py_ac3e07b958418bdbd4a524abc75978dce}\label{chloro_8py_ac3e07b958418bdbd4a524abc75978dce}} 
+list {\bfseries app.\+main.\+chloro.\+mapdata} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_a51316f53bfb67812a26f4677a0723c2a}\label{chloro_8py_a51316f53bfb67812a26f4677a0723c2a}} 
+int {\bfseries app.\+main.\+chloro.\+mcount} = 0
+\item 
+\mbox{\Hypertarget{chloro_8py_ad25e4c0df01cb65efe2a434b6106ee94}\label{chloro_8py_ad25e4c0df01cb65efe2a434b6106ee94}} 
+list {\bfseries app.\+main.\+chloro.\+props} = \mbox{[}definitions.\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+M\+U\+S\+E\+UM,definitions.\+D\+O\+M\+U\+S\+\_\+\+S\+U\+B\+J\+E\+C\+T\+C\+L\+A\+S\+S\+I\+F\+I\+C\+A\+T\+I\+ON,definitions.\+P\+O\+S\+T\+C\+O\+DE\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_a9e126468fb87ef66095a1f1267408f1c}\label{chloro_8py_a9e126468fb87ef66095a1f1267408f1c}} 
+{\bfseries app.\+main.\+chloro.\+results} = apputils.\+get\+Marker\+Data(props)
+\item 
+\mbox{\Hypertarget{chloro_8py_af8bd6fb251ab39fbfcc52e64bdf36f28}\label{chloro_8py_af8bd6fb251ab39fbfcc52e64bdf36f28}} 
+{\bfseries app.\+main.\+chloro.\+title}
+\item 
+\mbox{\Hypertarget{chloro_8py_a4b231e89bae7242bb8a6843a1815be37}\label{chloro_8py_a4b231e89bae7242bb8a6843a1815be37}} 
+{\bfseries app.\+main.\+chloro.\+message}
+\item 
+\mbox{\Hypertarget{chloro_8py_a1bee2b1ccf960631379c431694876af6}\label{chloro_8py_a1bee2b1ccf960631379c431694876af6}} 
+{\bfseries app.\+main.\+chloro.\+rlen} = len(results\mbox{[}\char`\"{}results\char`\"{}\mbox{]}\mbox{[}\char`\"{}bindings\char`\"{}\mbox{]})
+\item 
+\mbox{\Hypertarget{chloro_8py_a4a2aac2b9fc887545969c1cc7cfc214a}\label{chloro_8py_a4a2aac2b9fc887545969c1cc7cfc214a}} 
+string {\bfseries app.\+main.\+chloro.\+postcode} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{chloro_8py_aec81adbf3a76f3dc2fcf1e17cf5aae9f}\label{chloro_8py_aec81adbf3a76f3dc2fcf1e17cf5aae9f}} 
+{\bfseries app.\+main.\+chloro.\+name} = result\mbox{[}definitions.\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+M\+U\+S\+E\+UM\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_a2dbec032f37a70758ccfa4b5ed77c91f}\label{chloro_8py_a2dbec032f37a70758ccfa4b5ed77c91f}} 
+{\bfseries app.\+main.\+chloro.\+sub} = result\mbox{[}definitions.\+D\+O\+M\+U\+S\+\_\+\+S\+U\+B\+J\+E\+C\+T\+C\+L\+A\+S\+S\+I\+F\+I\+C\+A\+T\+I\+ON\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_a53973a0e5e090c7cfe3a52fc061fd8ea}\label{chloro_8py_a53973a0e5e090c7cfe3a52fc061fd8ea}} 
+{\bfseries app.\+main.\+chloro.\+lat} = result\mbox{[}definitions.\+L\+A\+T\+I\+T\+U\+DE\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_a04c4c9b786b5a6c79315424513009f4f}\label{chloro_8py_a04c4c9b786b5a6c79315424513009f4f}} 
+{\bfseries app.\+main.\+chloro.\+lon} = result\mbox{[}definitions.\+L\+O\+N\+G\+I\+T\+U\+DE\mbox{]}\mbox{[}\char`\"{}value\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_a2bf7ed2347d60a9e6a69cbaaf3ce46a0}\label{chloro_8py_a2bf7ed2347d60a9e6a69cbaaf3ce46a0}} 
+{\bfseries app.\+main.\+chloro.\+la} = definitions.\+P\+O\+S\+T\+C\+O\+D\+E2\+\_\+\+L\+A\+\_\+\+D\+I\+CT\mbox{[}postcode\mbox{]}.replace(\textquotesingle{}\char`\"{}\textquotesingle{},\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{chloro_8py_abdffba9fcdee7629b68f199aa16a1352}\label{chloro_8py_abdffba9fcdee7629b68f199aa16a1352}} 
+{\bfseries app.\+main.\+chloro.\+caname} = apputils.\+L\+A\+\_\+\+T\+O\+\_\+\+C\+A\+\_\+\+N\+A\+M\+E\+S\+\_\+\+T\+A\+B\+LE\mbox{[}la\mbox{]}
+\item 
+\mbox{\Hypertarget{chloro_8py_ac74e03c7a7d714eb67d42a5c50bce08f}\label{chloro_8py_ac74e03c7a7d714eb67d42a5c50bce08f}} 
+{\bfseries app.\+main.\+chloro.\+alert}
+\item 
+\mbox{\Hypertarget{chloro_8py_a342777adddf951deb5bac3e7b31166f5}\label{chloro_8py_a342777adddf951deb5bac3e7b31166f5}} 
+{\bfseries app.\+main.\+chloro.\+heading}
+\item 
+\mbox{\Hypertarget{chloro_8py_a5ad60fa43b93f0439c15611ff05341e2}\label{chloro_8py_a5ad60fa43b93f0439c15611ff05341e2}} 
+{\bfseries app.\+main.\+chloro.\+boundarydata}
+\item 
+\mbox{\Hypertarget{chloro_8py_ae0f55a148888a7a16084eb2ca09f129e}\label{chloro_8py_ae0f55a148888a7a16084eb2ca09f129e}} 
+{\bfseries app.\+main.\+chloro.\+trees}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the choropleths used for the various regions. 
+
+It provides the menu for the page and the data and boundary for leaflet as well as the legend for the colours used.
+
+~\newline
+ ~\newline
+ ~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{chloro_8py_a3a1904dac150a794766549563d40caf1}\label{chloro_8py_a3a1904dac150a794766549563d40caf1}} 
+\index{chloro.\+py@{chloro.\+py}!chloro\+View@{chloro\+View}}
+\index{chloro\+View@{chloro\+View}!chloro.\+py@{chloro.\+py}}
+\subsubsection{\texorpdfstring{chloro\+View()}{chloroView()}}
+{\footnotesize\ttfamily def app.\+main.\+chloro.\+chloro\+View (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{prop }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Removes type info from name Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prop} & = area to show \\
+\hline
+\end{DoxyParams}

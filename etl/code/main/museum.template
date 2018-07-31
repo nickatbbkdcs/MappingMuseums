@@ -1,0 +1,2605 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################
+#
+#$Content classes
+#
+#################################################################
+
+
+bbkmm:Museum a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MuseumClass"@en ;
+rdfs:comment         "bbkmm:MuseumClass"@en .
+
+bbkmm:Primary_provenance_of_data a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Primary_provenance_of_dataClass"@en ;
+rdfs:comment         "bbkmm:Primary_provenance_of_dataClass"@en .
+
+bbkmm:ValueRange a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ValueRangeClass"@en ;
+rdfs:comment         "bbkmm:ValueRangeClass"@en .
+
+bbkmm:Year_opened a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Year_openedClass"@en ;
+rdfs:comment         "bbkmm:Year_openedClass"@en .
+
+bbkmm:LowerValue a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:LowerValueClass"@en ;
+rdfs:comment         "bbkmm:LowerValueClass"@en .
+
+bbkmm:UpperValue a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:UpperValueClass"@en ;
+rdfs:comment         "bbkmm:UpperValueClass"@en .
+
+bbkmm:ValueRange a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ValueRangeClass"@en ;
+rdfs:comment         "bbkmm:ValueRangeClass"@en .
+
+bbkmm:Year_closed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Year_closedClass"@en ;
+rdfs:comment         "bbkmm:Year_closedClass"@en .
+
+bbkmm:LowerValue a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:LowerValueClass"@en ;
+rdfs:comment         "bbkmm:LowerValueClass"@en .
+
+bbkmm:UpperValue a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:UpperValueClass"@en ;
+rdfs:comment         "bbkmm:UpperValueClass"@en .
+
+bbkmm:defClassSubject_Matter a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:defClassSubject_MatterClass"@en ;
+rdfs:comment         "bbkmm:defClassSubject_MatterClass"@en .
+
+bbkmm:War_and_conflict a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:War_and_conflictClass"@en ;
+rdfs:comment         "bbkmm:War_and_conflictClass"@en .
+
+bbkmm:Airforce a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:AirforceClass"@en ;
+rdfs:comment         "bbkmm:AirforceClass"@en .
+
+bbkmm:Event_or_site a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Event_or_siteClass"@en ;
+rdfs:comment         "bbkmm:Event_or_siteClass"@en .
+
+bbkmm:Regiment a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:RegimentClass"@en ;
+rdfs:comment         "bbkmm:RegimentClass"@en .
+
+bbkmm:Buildings a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:BuildingsClass"@en ;
+rdfs:comment         "bbkmm:BuildingsClass"@en .
+
+bbkmm:Houses a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:HousesClass"@en ;
+rdfs:comment         "bbkmm:HousesClass"@en .
+
+bbkmm:Large_houses a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Large_housesClass"@en ;
+rdfs:comment         "bbkmm:Large_housesClass"@en .
+
+bbkmm:Personality a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PersonalityClass"@en ;
+rdfs:comment         "bbkmm:PersonalityClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Medium_houses a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Medium_housesClass"@en ;
+rdfs:comment         "bbkmm:Medium_housesClass"@en .
+
+bbkmm:Arts a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ArtsClass"@en ;
+rdfs:comment         "bbkmm:ArtsClass"@en .
+
+bbkmm:Crafts a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CraftsClass"@en ;
+rdfs:comment         "bbkmm:CraftsClass"@en .
+
+bbkmm:Mixed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MixedClass"@en ;
+rdfs:comment         "bbkmm:MixedClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Science_and_technology a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Science_and_technologyClass"@en ;
+rdfs:comment         "bbkmm:Science_and_technologyClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Industry_and_manufacture a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Industry_and_manufactureClass"@en ;
+rdfs:comment         "bbkmm:Industry_and_manufactureClass"@en .
+
+bbkmm:Industrial_life a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Industrial_lifeClass"@en ;
+rdfs:comment         "bbkmm:Industrial_lifeClass"@en .
+
+bbkmm:Fine_and_decorative_arts a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Fine_and_decorative_artsClass"@en ;
+rdfs:comment         "bbkmm:Fine_and_decorative_artsClass"@en .
+
+bbkmm:Local_Histories a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Local_HistoriesClass"@en ;
+rdfs:comment         "bbkmm:Local_HistoriesClass"@en .
+
+bbkmm:Literary a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:LiteraryClass"@en ;
+rdfs:comment         "bbkmm:LiteraryClass"@en .
+
+bbkmm:Leisure_and_sport a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Leisure_and_sportClass"@en ;
+rdfs:comment         "bbkmm:Leisure_and_sportClass"@en .
+
+bbkmm:Toys_and_models a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Toys_and_modelsClass"@en ;
+rdfs:comment         "bbkmm:Toys_and_modelsClass"@en .
+
+bbkmm:Small_houses a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Small_housesClass"@en ;
+rdfs:comment         "bbkmm:Small_housesClass"@en .
+
+bbkmm:Sea_and_seafaring a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Sea_and_seafaringClass"@en ;
+rdfs:comment         "bbkmm:Sea_and_seafaringClass"@en .
+
+bbkmm:Mixed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MixedClass"@en ;
+rdfs:comment         "bbkmm:MixedClass"@en .
+
+bbkmm:Rural_Industry a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Rural_IndustryClass"@en ;
+rdfs:comment         "bbkmm:Rural_IndustryClass"@en .
+
+bbkmm:Farming a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:FarmingClass"@en ;
+rdfs:comment         "bbkmm:FarmingClass"@en .
+
+bbkmm:Ceramics a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CeramicsClass"@en ;
+rdfs:comment         "bbkmm:CeramicsClass"@en .
+
+bbkmm:Transport a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:TransportClass"@en ;
+rdfs:comment         "bbkmm:TransportClass"@en .
+
+bbkmm:Trains_and_railways a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Trains_and_railwaysClass"@en ;
+rdfs:comment         "bbkmm:Trains_and_railwaysClass"@en .
+
+bbkmm:Communications a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CommunicationsClass"@en ;
+rdfs:comment         "bbkmm:CommunicationsClass"@en .
+
+bbkmm:Radio a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:RadioClass"@en ;
+rdfs:comment         "bbkmm:RadioClass"@en .
+
+bbkmm:Natural_world a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Natural_worldClass"@en ;
+rdfs:comment         "bbkmm:Natural_worldClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Archaeology a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ArchaeologyClass"@en ;
+rdfs:comment         "bbkmm:ArchaeologyClass"@en .
+
+bbkmm:Roman a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:RomanClass"@en ;
+rdfs:comment         "bbkmm:RomanClass"@en .
+
+bbkmm:Buses_and_trams a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Buses_and_tramsClass"@en ;
+rdfs:comment         "bbkmm:Buses_and_tramsClass"@en .
+
+bbkmm:Medicine_and_health a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Medicine_and_healthClass"@en ;
+rdfs:comment         "bbkmm:Medicine_and_healthClass"@en .
+
+bbkmm:Professional_association a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Professional_associationClass"@en ;
+rdfs:comment         "bbkmm:Professional_associationClass"@en .
+
+bbkmm:Prehistory a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PrehistoryClass"@en ;
+rdfs:comment         "bbkmm:PrehistoryClass"@en .
+
+bbkmm:Boats_and_ships a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Boats_and_shipsClass"@en ;
+rdfs:comment         "bbkmm:Boats_and_shipsClass"@en .
+
+bbkmm:Encyclopaedic a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:EncyclopaedicClass"@en ;
+rdfs:comment         "bbkmm:EncyclopaedicClass"@en .
+
+bbkmm:Castles_and_forts a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Castles_and_fortsClass"@en ;
+rdfs:comment         "bbkmm:Castles_and_fortsClass"@en .
+
+bbkmm:Geology a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:GeologyClass"@en ;
+rdfs:comment         "bbkmm:GeologyClass"@en .
+
+bbkmm:Mixed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MixedClass"@en ;
+rdfs:comment         "bbkmm:MixedClass"@en .
+
+bbkmm:Fairgrounds_and_amusements a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Fairgrounds_and_amusementsClass"@en ;
+rdfs:comment         "bbkmm:Fairgrounds_and_amusementsClass"@en .
+
+bbkmm:Religious a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ReligiousClass"@en ;
+rdfs:comment         "bbkmm:ReligiousClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Print a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PrintClass"@en ;
+rdfs:comment         "bbkmm:PrintClass"@en .
+
+bbkmm:Political a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PoliticalClass"@en ;
+rdfs:comment         "bbkmm:PoliticalClass"@en .
+
+bbkmm:Art a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ArtClass"@en ;
+rdfs:comment         "bbkmm:ArtClass"@en .
+
+bbkmm:Rural_life a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Rural_lifeClass"@en ;
+rdfs:comment         "bbkmm:Rural_lifeClass"@en .
+
+bbkmm:Belief_and_identity a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Belief_and_identityClass"@en ;
+rdfs:comment         "bbkmm:Belief_and_identityClass"@en .
+
+bbkmm:Religious_buildings a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Religious_buildingsClass"@en ;
+rdfs:comment         "bbkmm:Religious_buildingsClass"@en .
+
+bbkmm:Mining_and_quarrying a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Mining_and_quarryingClass"@en ;
+rdfs:comment         "bbkmm:Mining_and_quarryingClass"@en .
+
+bbkmm:Lighthouses a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:LighthousesClass"@en ;
+rdfs:comment         "bbkmm:LighthousesClass"@en .
+
+bbkmm:Watermills a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:WatermillsClass"@en ;
+rdfs:comment         "bbkmm:WatermillsClass"@en .
+
+bbkmm:Rugby_and_football a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Rugby_and_footballClass"@en ;
+rdfs:comment         "bbkmm:Rugby_and_footballClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Music a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MusicClass"@en ;
+rdfs:comment         "bbkmm:MusicClass"@en .
+
+bbkmm:Industry_and_manufactu a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Industry_and_manufactuClass"@en ;
+rdfs:comment         "bbkmm:Industry_and_manufactuClass"@en .
+
+bbkmm:Metals a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MetalsClass"@en ;
+rdfs:comment         "bbkmm:MetalsClass"@en .
+
+bbkmm:Cars_and_motorbikes a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Cars_and_motorbikesClass"@en ;
+rdfs:comment         "bbkmm:Cars_and_motorbikesClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Palace a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PalaceClass"@en ;
+rdfs:comment         "bbkmm:PalaceClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Film_Cinema_and_TV a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Film_Cinema_and_TVClass"@en ;
+rdfs:comment         "bbkmm:Film_Cinema_and_TVClass"@en .
+
+bbkmm:Food_and_drink a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Food_and_drinkClass"@en ;
+rdfs:comment         "bbkmm:Food_and_drinkClass"@en .
+
+bbkmm:Services a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ServicesClass"@en ;
+rdfs:comment         "bbkmm:ServicesClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Textiles a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:TextilesClass"@en ;
+rdfs:comment         "bbkmm:TextilesClass"@en .
+
+bbkmm:Bygones a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:BygonesClass"@en ;
+rdfs:comment         "bbkmm:BygonesClass"@en .
+
+bbkmm:Mixed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MixedClass"@en ;
+rdfs:comment         "bbkmm:MixedClass"@en .
+
+bbkmm:Medieval a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MedievalClass"@en ;
+rdfs:comment         "bbkmm:MedievalClass"@en .
+
+bbkmm:Fossils a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:FossilsClass"@en ;
+rdfs:comment         "bbkmm:FossilsClass"@en .
+
+bbkmm:Mixed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MixedClass"@en ;
+rdfs:comment         "bbkmm:MixedClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Post a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PostClass"@en ;
+rdfs:comment         "bbkmm:PostClass"@en .
+
+bbkmm:Bunker a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:BunkerClass"@en ;
+rdfs:comment         "bbkmm:BunkerClass"@en .
+
+bbkmm:Military a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MilitaryClass"@en ;
+rdfs:comment         "bbkmm:MilitaryClass"@en .
+
+bbkmm:Penal a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PenalClass"@en ;
+rdfs:comment         "bbkmm:PenalClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Bicycles a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:BicyclesClass"@en ;
+rdfs:comment         "bbkmm:BicyclesClass"@en .
+
+bbkmm:Freemasons a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:FreemasonsClass"@en ;
+rdfs:comment         "bbkmm:FreemasonsClass"@en .
+
+bbkmm:Hospital a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:HospitalClass"@en ;
+rdfs:comment         "bbkmm:HospitalClass"@en .
+
+bbkmm:Civic a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CivicClass"@en ;
+rdfs:comment         "bbkmm:CivicClass"@en .
+
+bbkmm:Costume_and_textiles a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Costume_and_textilesClass"@en ;
+rdfs:comment         "bbkmm:Costume_and_textilesClass"@en .
+
+bbkmm:Mixed a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MixedClass"@en ;
+rdfs:comment         "bbkmm:MixedClass"@en .
+
+bbkmm:Utilities a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:UtilitiesClass"@en ;
+rdfs:comment         "bbkmm:UtilitiesClass"@en .
+
+bbkmm:Gas_and_electricity a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Gas_and_electricityClass"@en ;
+rdfs:comment         "bbkmm:Gas_and_electricityClass"@en .
+
+bbkmm:Canals a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CanalsClass"@en ;
+rdfs:comment         "bbkmm:CanalsClass"@en .
+
+bbkmm:Metals a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MetalsClass"@en ;
+rdfs:comment         "bbkmm:MetalsClass"@en .
+
+bbkmm:Water_and_waste a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Water_and_wasteClass"@en ;
+rdfs:comment         "bbkmm:Water_and_wasteClass"@en .
+
+bbkmm:Religion a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ReligionClass"@en ;
+rdfs:comment         "bbkmm:ReligionClass"@en .
+
+bbkmm:Fire a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:FireClass"@en ;
+rdfs:comment         "bbkmm:FireClass"@en .
+
+bbkmm:Aviation a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:AviationClass"@en ;
+rdfs:comment         "bbkmm:AviationClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Police a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PoliceClass"@en ;
+rdfs:comment         "bbkmm:PoliceClass"@en .
+
+bbkmm:Fishing a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:FishingClass"@en ;
+rdfs:comment         "bbkmm:FishingClass"@en .
+
+bbkmm:Navy a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:NavyClass"@en ;
+rdfs:comment         "bbkmm:NavyClass"@en .
+
+bbkmm:Ethnic_group a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Ethnic_groupClass"@en ;
+rdfs:comment         "bbkmm:Ethnic_groupClass"@en .
+
+bbkmm:Steam_and_engines a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Steam_and_enginesClass"@en ;
+rdfs:comment         "bbkmm:Steam_and_enginesClass"@en .
+
+bbkmm:Clocks_and_watches a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Clocks_and_watchesClass"@en ;
+rdfs:comment         "bbkmm:Clocks_and_watchesClass"@en .
+
+bbkmm:School a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:SchoolClass"@en ;
+rdfs:comment         "bbkmm:SchoolClass"@en .
+
+bbkmm:Music a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MusicClass"@en ;
+rdfs:comment         "bbkmm:MusicClass"@en .
+
+bbkmm:Glass a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:GlassClass"@en ;
+rdfs:comment         "bbkmm:GlassClass"@en .
+
+bbkmm:Potteries a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PotteriesClass"@en ;
+rdfs:comment         "bbkmm:PotteriesClass"@en .
+
+bbkmm:Windmills a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:WindmillsClass"@en ;
+rdfs:comment         "bbkmm:WindmillsClass"@en .
+
+bbkmm:Explorer a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ExplorerClass"@en ;
+rdfs:comment         "bbkmm:ExplorerClass"@en .
+
+bbkmm:Church_treasuries a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Church_treasuriesClass"@en ;
+rdfs:comment         "bbkmm:Church_treasuriesClass"@en .
+
+bbkmm:Cricket a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CricketClass"@en ;
+rdfs:comment         "bbkmm:CricketClass"@en .
+
+bbkmm:Computing_and_gaming a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Computing_and_gamingClass"@en ;
+rdfs:comment         "bbkmm:Computing_and_gamingClass"@en .
+
+bbkmm:Forges a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ForgesClass"@en ;
+rdfs:comment         "bbkmm:ForgesClass"@en .
+
+bbkmm:Literature a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:LiteratureClass"@en ;
+rdfs:comment         "bbkmm:LiteratureClass"@en .
+
+bbkmm:Textiles a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:TextilesClass"@en ;
+rdfs:comment         "bbkmm:TextilesClass"@en .
+
+bbkmm:Design a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:DesignClass"@en ;
+rdfs:comment         "bbkmm:DesignClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Dinosaurs a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:DinosaursClass"@en ;
+rdfs:comment         "bbkmm:DinosaursClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Scientific a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ScientificClass"@en ;
+rdfs:comment         "bbkmm:ScientificClass"@en .
+
+bbkmm:Mixed_arts a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Mixed_artsClass"@en ;
+rdfs:comment         "bbkmm:Mixed_artsClass"@en .
+
+bbkmm:Greek_and_Egyptian a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Greek_and_EgyptianClass"@en ;
+rdfs:comment         "bbkmm:Greek_and_EgyptianClass"@en .
+
+bbkmm:Shops a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ShopsClass"@en ;
+rdfs:comment         "bbkmm:ShopsClass"@en .
+
+bbkmm:Photography a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PhotographyClass"@en ;
+rdfs:comment         "bbkmm:PhotographyClass"@en .
+
+bbkmm:Zoology a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ZoologyClass"@en ;
+rdfs:comment         "bbkmm:ZoologyClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:Herbaria_and_gardening a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Herbaria_and_gardeningClass"@en ;
+rdfs:comment         "bbkmm:Herbaria_and_gardeningClass"@en .
+
+bbkmm:RNLI a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:RNLIClass"@en ;
+rdfs:comment         "bbkmm:RNLIClass"@en .
+
+bbkmm:DOMUS_Subject_Matter a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:DOMUS_Subject_MatterClass"@en ;
+rdfs:comment         "bbkmm:DOMUS_Subject_MatterClass"@en .
+
+bbkmm:Accreditation a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:AccreditationClass"@en ;
+rdfs:comment         "bbkmm:AccreditationClass"@en .
+
+bbkmm:defClassGovernance a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:defClassGovernanceClass"@en ;
+rdfs:comment         "bbkmm:defClassGovernanceClass"@en .
+
+bbkmm:Independent a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:IndependentClass"@en ;
+rdfs:comment         "bbkmm:IndependentClass"@en .
+
+bbkmm:Not_for_profit a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Not_for_profitClass"@en ;
+rdfs:comment         "bbkmm:Not_for_profitClass"@en .
+
+bbkmm:English_Heritage a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:English_HeritageClass"@en ;
+rdfs:comment         "bbkmm:English_HeritageClass"@en .
+
+bbkmm:Government a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:GovernmentClass"@en ;
+rdfs:comment         "bbkmm:GovernmentClass"@en .
+
+bbkmm:Local_Authority a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Local_AuthorityClass"@en ;
+rdfs:comment         "bbkmm:Local_AuthorityClass"@en .
+
+bbkmm:Private a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:PrivateClass"@en ;
+rdfs:comment         "bbkmm:PrivateClass"@en .
+
+bbkmm:National_Trust a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:National_TrustClass"@en ;
+rdfs:comment         "bbkmm:National_TrustClass"@en .
+
+bbkmm:University a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:UniversityClass"@en ;
+rdfs:comment         "bbkmm:UniversityClass"@en .
+
+bbkmm:Unknown a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:UnknownClass"@en ;
+rdfs:comment         "bbkmm:UnknownClass"@en .
+
+bbkmm:Unknown a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:UnknownClass"@en ;
+rdfs:comment         "bbkmm:UnknownClass"@en .
+
+bbkmm:National_Trust_for_Scotland a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:National_Trust_for_ScotlandClass"@en ;
+rdfs:comment         "bbkmm:National_Trust_for_ScotlandClass"@en .
+
+bbkmm:National a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:NationalClass"@en ;
+rdfs:comment         "bbkmm:NationalClass"@en .
+
+bbkmm:Historic_Environment_Scotland a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Historic_Environment_ScotlandClass"@en ;
+rdfs:comment         "bbkmm:Historic_Environment_ScotlandClass"@en .
+
+bbkmm:Cadw a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:CadwClass"@en ;
+rdfs:comment         "bbkmm:CadwClass"@en .
+
+bbkmm:Other a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:OtherClass"@en ;
+rdfs:comment         "bbkmm:OtherClass"@en .
+
+bbkmm:ACE_size_designation a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:ACE_size_designationClass"@en ;
+rdfs:comment         "bbkmm:ACE_size_designationClass"@en .
+
+bbkmm:AIM_size_designation a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:AIM_size_designationClass"@en ;
+rdfs:comment         "bbkmm:AIM_size_designationClass"@en .
+
+bbkmm:Size a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:SizeClass"@en ;
+rdfs:comment         "bbkmm:SizeClass"@en .
+
+ bbkmm:hasDOMUS_Identifier rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasDOMUS_Identifier"@en ;
+                rdfs:comment "bbkmm:hasDOMUS_Identifier"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:positiveInteger .
+
+ bbkmm:hasproject_id rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasproject_id"@en ;
+                rdfs:comment "bbkmm:hasproject_id"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasIdentifier_used_in_source_database rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasIdentifier_used_in_source_database"@en ;
+                rdfs:comment "bbkmm:hasIdentifier_used_in_source_database"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasName_of_museum rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasName_of_museum"@en ;
+                rdfs:comment "bbkmm:hasName_of_museum"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAlternative_museum_name rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAlternative_museum_name"@en ;
+                rdfs:comment "bbkmm:hasAlternative_museum_name"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAlternative_museum_name_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAlternative_museum_name_source"@en ;
+                rdfs:comment "bbkmm:hasAlternative_museum_name_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAddress_line_1 rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAddress_line_1"@en ;
+                rdfs:comment "bbkmm:hasAddress_line_1"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAddress_line_2 rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAddress_line_2"@en ;
+                rdfs:comment "bbkmm:hasAddress_line_2"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAddress_line_3 rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAddress_line_3"@en ;
+                rdfs:comment "bbkmm:hasAddress_line_3"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasTown_or_City rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasTown_or_City"@en ;
+                rdfs:comment "bbkmm:hasTown_or_City"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasCounty rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasCounty"@en ;
+                rdfs:comment "bbkmm:hasCounty"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasPostcode rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasPostcode"@en ;
+                rdfs:comment "bbkmm:hasPostcode"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasLatitude rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasLatitude"@en ;
+                rdfs:comment "bbkmm:hasLatitude"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:decimal .
+
+ bbkmm:hasLongitude rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasLongitude"@en ;
+                rdfs:comment "bbkmm:hasLongitude"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:decimal .
+
+ bbkmm:hasYear_museum_first_documented rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasYear_museum_first_documented"@en ;
+                rdfs:comment "bbkmm:hasYear_museum_first_documented"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:positiveInteger .
+
+ bbkmm:hasYear_museum_first_documented_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasYear_museum_first_documented_source"@en ;
+                rdfs:comment "bbkmm:hasYear_museum_first_documented_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasYear_opened rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasYear_opened"@en ;
+                rdfs:comment "bbkmm:hasYear_opened"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:positiveInteger .
+
+ bbkmm:hasYear_opened_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasYear_opened_source"@en ;
+                rdfs:comment "bbkmm:hasYear_opened_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasYear_closed rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasYear_closed"@en ;
+                rdfs:comment "bbkmm:hasYear_closed"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:positiveInteger .
+
+ bbkmm:hasYear_closed_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasYear_closed_source"@en ;
+                rdfs:comment "bbkmm:hasYear_closed_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasFounder rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasFounder"@en ;
+                rdfs:comment "bbkmm:hasFounder"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasFounder_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasFounder_source"@en ;
+                rdfs:comment "bbkmm:hasFounder_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAccreditation_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAccreditation_source"@en ;
+                rdfs:comment "bbkmm:hasAccreditation_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasGovernance_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasGovernance_source"@en ;
+                rdfs:comment "bbkmm:hasGovernance_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasACE_size_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasACE_size_source"@en ;
+                rdfs:comment "bbkmm:hasACE_size_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAIM_size_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAIM_size_source"@en ;
+                rdfs:comment "bbkmm:hasAIM_size_source"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasNotes_internal rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasNotes_internal"@en ;
+                rdfs:comment "bbkmm:hasNotes_internal"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasNotes rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasNotes"@en ;
+                rdfs:comment "bbkmm:hasNotes"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:refersToCountry rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToCountry"@en ;
+                rdfs:comment "bbkmm:refersToCountry"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Country .
+
+ bbkmm:refersToWelsh_UA rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToWelsh_UA"@en ;
+                rdfs:comment "bbkmm:refersToWelsh_UA"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Welsh_UA .
+
+ bbkmm:refersToScottish_Council_Area rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToScottish_Council_Area"@en ;
+                rdfs:comment "bbkmm:refersToScottish_Council_Area"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Scottish_Council_Area .
+
+ bbkmm:refersToNI_Loc_Gov_District rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToNI_Loc_Gov_District"@en ;
+                rdfs:comment "bbkmm:refersToNI_Loc_Gov_District"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:NI_Loc_Gov_District .
+
+ bbkmm:refersToEnglish_Region rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToEnglish_Region"@en ;
+                rdfs:comment "bbkmm:refersToEnglish_Region"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:English_Region .
+
+ bbkmm:refersToEnglish_County rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToEnglish_County"@en ;
+                rdfs:comment "bbkmm:refersToEnglish_County"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:English_County .
+
+ bbkmm:refersToEnglish_UA rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToEnglish_UA"@en ;
+                rdfs:comment "bbkmm:refersToEnglish_UA"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:English_UA .
+
+ bbkmm:refersToEnglish_CA rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToEnglish_CA"@en ;
+                rdfs:comment "bbkmm:refersToEnglish_CA"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:English_CA .
+
+ bbkmm:refersToEnglish_District_or_Borough rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:refersToEnglish_District_or_Borough"@en ;
+                rdfs:comment "bbkmm:refersToEnglish_District_or_Borough"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:English_District_or_Borough .
+
+ vcard:formattedName rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:formattedName"@en ;
+                rdfs:comment "vcard:formattedName"@en ;
+                rdfs:domain vcard:Address ;
+                rdfs:range xsd:string .
+
+ vcard:locality rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:locality"@en ;
+                rdfs:comment "vcard:locality"@en ;
+                rdfs:domain vcard:Address ;
+                rdfs:range xsd:string .
+
+ vcard:postalCode rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:postalCode"@en ;
+                rdfs:comment "vcard:postalCode"@en ;
+                rdfs:domain vcard:Address ;
+                rdfs:range xsd:string .
+
+ vcard:streetAddress rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:streetAddress"@en ;
+                rdfs:comment "vcard:streetAddress"@en ;
+                rdfs:domain vcard:Address ;
+                rdfs:range xsd:string .
+
+ vcard:hasURL rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:hasURL"@en ;
+                rdfs:comment "vcard:hasURL"@en ;
+                rdfs:domain org:Organisation ;
+                rdfs:range xsd:string .
+
+ vcard:hasGivenName rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:hasGivenName"@en ;
+                rdfs:comment "vcard:hasGivenName"@en ;
+                rdfs:domain org:Organisation ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasNamedSource rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasNamedSource"@en ;
+                rdfs:comment "bbkmm:hasNamedSource"@en ;
+                rdfs:domain org:Organisation ;
+                rdfs:range xsd:string .
+
+ vcard:hasOrganisationName rdf:type owl:DatatypeProperty ;
+                rdfs:label "vcard:hasOrganisationName"@en ;
+                rdfs:comment "vcard:hasOrganisationName"@en ;
+                rdfs:domain org:Organisation ;
+                rdfs:range xsd:string .
+#################################################################
+#
+#$Individuals
+#
+#################################################################
+
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasDOMUS_Identifier","xsd:positiveInteger",0,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasproject_id","xsd:string",1,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasIdentifier_used_in_source_database","xsd:string",3,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasName_of_museum","xsd:string",4,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAlternative_museum_name","xsd:string",5,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAlternative_museum_name_source","xsd:string",6,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAddress_line_1","xsd:string",7,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAddress_line_2","xsd:string",8,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAddress_line_3","xsd:string",9,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasTown_or_City","xsd:string",10,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasCounty","xsd:string",11,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasPostcode","xsd:string",12,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasLatitude","xsd:decimal",13,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasLongitude","xsd:decimal",14,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasYear_museum_first_documented","xsd:positiveInteger",15,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasYear_museum_first_documented_source","xsd:string",16,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasYear_opened","xsd:positiveInteger",17,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasYear_opened_source","xsd:string",18,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasYear_closed","xsd:positiveInteger",19,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasYear_closed_source","xsd:string",20,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasFounder","xsd:string",21,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasFounder_source","xsd:string",22,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAccreditation_source","xsd:string",26,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasGovernance_source","xsd:string",28,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasACE_size_source","xsd:string",30,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasAIM_size_source","xsd:string",32,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasNotes_internal","xsd:string",34,Visible)} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasNotes","xsd:string",35,Visible)} .
+
+ bbkmm:defPrimary_provenance_of_data rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defPrimary_provenance_of_data"@en ;
+                rdfs:comment "defPrimary_provenance_of_data"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Primary_provenance_of_data .
+${classURI("bbkmm:Museum",n0)} bbkmm:defPrimary_provenance_of_data ${classURI("bbkmm:Primary_provenance_of_data",62)} .
+${classURI("bbkmm:Primary_provenance_of_data",62)}  ${property("bbkmm:hasPrimary_provenance_of_data","xsd:string",2,Visible,graphmlNodes)} .
+${classGlobalURI("bbkmm:Primary_provenance_of_data",Misc)}  ${property("bbkmm:hasName","xsd:string","Misc","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"Misc",Misc,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",aimNM)}  ${property("bbkmm:hasName","xsd:string","aim82NM","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"aim82NM",aimNM,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",mald)}  ${property("bbkmm:hasName","xsd:string","mald","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"mald",mald,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",misc)}  ${property("bbkmm:hasName","xsd:string","misc","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"misc",misc,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",domus)}  ${property("bbkmm:hasName","xsd:string","domus","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"domus",domus,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",hud)}  ${property("bbkmm:hasName","xsd:string","hud","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"hud",hud,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",mgs)}  ${property("bbkmm:hasName","xsd:string","mgs","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"mgs",mgs,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",musassoc)}  ${property("bbkmm:hasName","xsd:string","musassoc","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"musassoc",musassoc,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",aim)}  ${property("bbkmm:hasName","xsd:string","aim","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"aim",aim,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",MusCal)}  ${property("bbkmm:hasName","xsd:string","MusCal","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"MusCal",MusCal,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",aimM)}  ${property("bbkmm:hasName","xsd:string","aim82M","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"aim82M",aimM,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",nimc)}  ${property("bbkmm:hasName","xsd:string","nimc","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"nimc",nimc,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",fcm)}  ${property("bbkmm:hasName","xsd:string","fcm","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"fcm",fcm,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",hha)}  ${property("bbkmm:hasName","xsd:string","hha","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"hha",hha,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",wiki)}  ${property("bbkmm:hasName","xsd:string","wiki","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"wiki",wiki,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",ace)}  ${property("bbkmm:hasName","xsd:string","ace","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"ace",ace,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",us)}  ${property("bbkmm:hasName","xsd:string","us","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"us",us,"xsd:string",2,graphmlNames)}
+${classGlobalURI("bbkmm:Primary_provenance_of_data",MDN)}  ${property("bbkmm:hasName","xsd:string","MDN","Visible")} .
+${altNamedInstance("bbkmm:Primary_provenance_of_data",62, a ,"MDN",MDN,"xsd:string",2,graphmlNames)}
+${classURI("bbkmm:ValueRange" ,81)} ${property("bbkmm:hasDataType","xsd:string",xsd:(xsd:positiveInteger),Visible)} .
+${ExistsSubClass("bbkmm:Year_opened","rdfs:subClassOf", "bbkmm:ValueRange",17)}
+${ExistsLinkage(bbkmm:Year_opened,82,bbkmm:isSubClassInstanceOf,bbkmm:ValueRange,81,17,classURI,classURI)}
+
+${classURI("bbkmm:LowerValue" ,84)} ${property("bbkmm:hasLowerValue","xsd:anyType",17;0,Visible)} .
+${classURI("bbkmm:UpperValue" ,85)} ${property("bbkmm:hasUpperValue","xsd:anyType",17;1,Visible)} .
+
+ bbkmm:hasLowerRange rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:hasLowerRange"@en ;
+                rdfs:comment "bbkmm:hasLowerRange"@en ;
+                rdfs:domain bbkmm:ValueRange ;
+                rdfs:range bbkmm:LowerValue .
+${classURI("bbkmm:ValueRange",81)} bbkmm:hasLowerRange ${classURI("bbkmm:LowerValue",84)} .
+
+ bbkmm:hasUpperRange rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:hasUpperRange"@en ;
+                rdfs:comment "bbkmm:hasUpperRange"@en ;
+                rdfs:domain bbkmm:ValueRange ;
+                rdfs:range bbkmm:UpperValue .
+${classURI("bbkmm:ValueRange",81)} bbkmm:hasUpperRange ${classURI("bbkmm:UpperValue",85)} .
+
+ bbkmm:defRangeYear_opened rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defRangeYear_opened"@en ;
+                rdfs:comment "defRangeYear_opened"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Year_opened .
+${classURI("bbkmm:Museum",n0)} bbkmm:defRangeYear_opened ${classURI("bbkmm:Year_opened",82)} .
+${classURI("bbkmm:ValueRange" ,88)} ${property("bbkmm:hasDataType","xsd:string",xsd:(xsd:positiveInteger),Visible)} .
+${ExistsSubClass("bbkmm:Year_closed","rdfs:subClassOf", "bbkmm:ValueRange",19)}
+${ExistsLinkage(bbkmm:Year_closed,89,bbkmm:isSubClassInstanceOf,bbkmm:ValueRange,88,19,classURI,classURI)}
+
+${classURI("bbkmm:LowerValue" ,91)} ${property("bbkmm:hasLowerValue","xsd:anyType",19;0,Visible)} .
+${classURI("bbkmm:UpperValue" ,92)} ${property("bbkmm:hasUpperValue","xsd:anyType",19;1,Visible)} .
+
+ bbkmm:hasLowerRange rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:hasLowerRange"@en ;
+                rdfs:comment "bbkmm:hasLowerRange"@en ;
+                rdfs:domain bbkmm:ValueRange ;
+                rdfs:range bbkmm:LowerValue .
+${classURI("bbkmm:ValueRange",88)} bbkmm:hasLowerRange ${classURI("bbkmm:LowerValue",91)} .
+
+ bbkmm:hasUpperRange rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:hasUpperRange"@en ;
+                rdfs:comment "bbkmm:hasUpperRange"@en ;
+                rdfs:domain bbkmm:ValueRange ;
+                rdfs:range bbkmm:UpperValue .
+${classURI("bbkmm:ValueRange",88)} bbkmm:hasUpperRange ${classURI("bbkmm:UpperValue",92)} .
+
+ bbkmm:defRangeYear_closed rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defRangeYear_closed"@en ;
+                rdfs:comment "defRangeYear_closed"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Year_closed .
+${classURI("bbkmm:Museum",n0)} bbkmm:defRangeYear_closed ${classURI("bbkmm:Year_closed",89)} .
+
+ bbkmm:defSubject_Matter rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defSubject_Matter"@en ;
+                rdfs:comment "defSubject_Matter"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+bbkmm:War_and_conflict rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:War_and_conflict ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:War_and_conflict,96,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/War_and_conflict,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict","/War_and_conflict","23")}
+bbkmm:War_and_conflict-Airforce rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Airforce,97,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Airforce,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Airforce","/War_and_conflict/Airforce","23")}
+bbkmm:War_and_conflict-Event_or_site rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Event_or_site,98,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Event_or_site,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Event_or_site","/War_and_conflict/Event_or_site","23")}
+bbkmm:War_and_conflict-Regiment rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Regiment,99,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Regiment,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Regiment","/War_and_conflict/Regiment","23")}
+
+bbkmm:Buildings rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Buildings ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Buildings,100,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Buildings,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings","/Buildings","23")}
+bbkmm:Buildings-Houses rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-Houses,101,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/Houses,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Houses","/Buildings/Houses","23")}
+bbkmm:Buildings-Houses-Large_houses rdfs:subClassOf bbkmm:Buildings-Houses .
+${DeclareDefLinkage(bbkmm:Buildings-Houses-Large_houses,102,bbkmm:isSubClassInstanceOf,bbkmm:Houses,101,/Buildings/Houses/Large_houses,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Houses-Large_houses","/Buildings/Houses/Large_houses","23")}
+
+bbkmm:Personality rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Personality ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Personality,103,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Personality,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality","/Personality","23")}
+bbkmm:Personality-Other rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Other,104,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Other","/Personality/Other","23")}
+
+bbkmm:Other rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Other ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Other,105,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Other","/Other","23")}
+bbkmm:Buildings-Houses-Medium_houses rdfs:subClassOf bbkmm:Buildings-Houses .
+${DeclareDefLinkage(bbkmm:Buildings-Houses-Medium_houses,106,bbkmm:isSubClassInstanceOf,bbkmm:Houses,101,/Buildings/Houses/Medium_houses,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Houses-Medium_houses","/Buildings/Houses/Medium_houses","23")}
+
+bbkmm:Arts rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Arts ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Arts,107,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Arts,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts","/Arts","23")}
+bbkmm:Arts-Crafts rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Crafts,108,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Crafts,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Crafts","/Arts/Crafts","23")}
+
+bbkmm:Mixed rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Mixed ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Mixed,109,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Mixed,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Mixed","/Mixed","23")}
+bbkmm:Mixed-Other rdfs:subClassOf bbkmm:Mixed .
+${DeclareDefLinkage(bbkmm:Mixed-Other,110,bbkmm:isSubClassInstanceOf,bbkmm:Mixed,109,/Mixed/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Mixed-Other","/Mixed/Other","23")}
+
+bbkmm:Science_and_technology rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Science_and_technology ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Science_and_technology,111,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Science_and_technology,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Science_and_technology","/Science_and_technology","23")}
+bbkmm:Science_and_technology-Other rdfs:subClassOf bbkmm:Science_and_technology .
+${DeclareDefLinkage(bbkmm:Science_and_technology-Other,112,bbkmm:isSubClassInstanceOf,bbkmm:Science_and_technology,111,/Science_and_technology/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Science_and_technology-Other","/Science_and_technology/Other","23")}
+
+bbkmm:Industry_and_manufacture rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Industry_and_manufacture ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture,113,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Industry_and_manufacture,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture","/Industry_and_manufacture","23")}
+bbkmm:Industry_and_manufacture-Industrial_life rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Industrial_life,114,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Industrial_life,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Industrial_life","/Industry_and_manufacture/Industrial_life","23")}
+bbkmm:Arts-Fine_and_decorative_arts rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Fine_and_decorative_arts,115,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Fine_and_decorative_arts,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Fine_and_decorative_arts","/Arts/Fine_and_decorative_arts","23")}
+
+bbkmm:Local_Histories rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Local_Histories ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Local_Histories,116,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Local_Histories,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Local_Histories","/Local_Histories","23")}
+bbkmm:Personality-Literary rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Literary,117,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Literary,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Literary","/Personality/Literary","23")}
+
+bbkmm:Leisure_and_sport rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Leisure_and_sport ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Leisure_and_sport,118,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Leisure_and_sport,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport","/Leisure_and_sport","23")}
+bbkmm:Leisure_and_sport-Toys_and_models rdfs:subClassOf bbkmm:Leisure_and_sport .
+${DeclareDefLinkage(bbkmm:Leisure_and_sport-Toys_and_models,119,bbkmm:isSubClassInstanceOf,bbkmm:Leisure_and_sport,118,/Leisure_and_sport/Toys_and_models,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport-Toys_and_models","/Leisure_and_sport/Toys_and_models","23")}
+bbkmm:Buildings-Houses-Small_houses rdfs:subClassOf bbkmm:Buildings-Houses .
+${DeclareDefLinkage(bbkmm:Buildings-Houses-Small_houses,120,bbkmm:isSubClassInstanceOf,bbkmm:Houses,101,/Buildings/Houses/Small_houses,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Houses-Small_houses","/Buildings/Houses/Small_houses","23")}
+
+bbkmm:Sea_and_seafaring rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Sea_and_seafaring ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Sea_and_seafaring,121,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Sea_and_seafaring,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Sea_and_seafaring","/Sea_and_seafaring","23")}
+bbkmm:Sea_and_seafaring-Mixed rdfs:subClassOf bbkmm:Sea_and_seafaring .
+${DeclareDefLinkage(bbkmm:Sea_and_seafaring-Mixed,122,bbkmm:isSubClassInstanceOf,bbkmm:Sea_and_seafaring,121,/Sea_and_seafaring/Mixed,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Sea_and_seafaring-Mixed","/Sea_and_seafaring/Mixed","23")}
+
+bbkmm:Rural_Industry rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Rural_Industry ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Rural_Industry,123,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Rural_Industry,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry","/Rural_Industry","23")}
+bbkmm:Rural_Industry-Farming rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Farming,124,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Farming,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Farming","/Rural_Industry/Farming","23")}
+bbkmm:Arts-Ceramics rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Ceramics,125,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Ceramics,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Ceramics","/Arts/Ceramics","23")}
+
+bbkmm:Transport rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Transport ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Transport,126,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Transport,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport","/Transport","23")}
+bbkmm:Transport-Trains_and_railways rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Trains_and_railways,127,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Trains_and_railways,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Trains_and_railways","/Transport/Trains_and_railways","23")}
+
+bbkmm:Communications rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Communications ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Communications,128,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Communications,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Communications","/Communications","23")}
+bbkmm:Communications-Radio rdfs:subClassOf bbkmm:Communications .
+${DeclareDefLinkage(bbkmm:Communications-Radio,129,bbkmm:isSubClassInstanceOf,bbkmm:Communications,128,/Communications/Radio,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Communications-Radio","/Communications/Radio","23")}
+
+bbkmm:Natural_world rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Natural_world ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Natural_world,130,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Natural_world,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world","/Natural_world","23")}
+bbkmm:Natural_world-Other rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Other,131,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Other","/Natural_world/Other","23")}
+
+bbkmm:Archaeology rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Archaeology ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Archaeology,132,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Archaeology,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology","/Archaeology","23")}
+bbkmm:Archaeology-Roman rdfs:subClassOf bbkmm:Archaeology .
+${DeclareDefLinkage(bbkmm:Archaeology-Roman,133,bbkmm:isSubClassInstanceOf,bbkmm:Archaeology,132,/Archaeology/Roman,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology-Roman","/Archaeology/Roman","23")}
+bbkmm:Transport-Buses_and_trams rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Buses_and_trams,134,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Buses_and_trams,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Buses_and_trams","/Transport/Buses_and_trams","23")}
+
+bbkmm:Medicine_and_health rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Medicine_and_health ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Medicine_and_health,135,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Medicine_and_health,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Medicine_and_health","/Medicine_and_health","23")}
+bbkmm:Medicine_and_health-Professional_association rdfs:subClassOf bbkmm:Medicine_and_health .
+${DeclareDefLinkage(bbkmm:Medicine_and_health-Professional_association,136,bbkmm:isSubClassInstanceOf,bbkmm:Medicine_and_health,135,/Medicine_and_health/Professional_association,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Medicine_and_health-Professional_association","/Medicine_and_health/Professional_association","23")}
+bbkmm:Archaeology-Prehistory rdfs:subClassOf bbkmm:Archaeology .
+${DeclareDefLinkage(bbkmm:Archaeology-Prehistory,137,bbkmm:isSubClassInstanceOf,bbkmm:Archaeology,132,/Archaeology/Prehistory,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology-Prehistory","/Archaeology/Prehistory","23")}
+bbkmm:Sea_and_seafaring-Boats_and_ships rdfs:subClassOf bbkmm:Sea_and_seafaring .
+${DeclareDefLinkage(bbkmm:Sea_and_seafaring-Boats_and_ships,138,bbkmm:isSubClassInstanceOf,bbkmm:Sea_and_seafaring,121,/Sea_and_seafaring/Boats_and_ships,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Sea_and_seafaring-Boats_and_ships","/Sea_and_seafaring/Boats_and_ships","23")}
+bbkmm:Mixed-Encyclopaedic rdfs:subClassOf bbkmm:Mixed .
+${DeclareDefLinkage(bbkmm:Mixed-Encyclopaedic,139,bbkmm:isSubClassInstanceOf,bbkmm:Mixed,109,/Mixed/Encyclopaedic,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Mixed-Encyclopaedic","/Mixed/Encyclopaedic","23")}
+bbkmm:War_and_conflict-Castles_and_forts rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Castles_and_forts,140,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Castles_and_forts,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Castles_and_forts","/War_and_conflict/Castles_and_forts","23")}
+bbkmm:Natural_world-Geology rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Geology,141,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Geology,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Geology","/Natural_world/Geology","23")}
+bbkmm:Industry_and_manufacture-Mixed rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Mixed,142,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Mixed,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Mixed","/Industry_and_manufacture/Mixed","23")}
+bbkmm:Leisure_and_sport-Fairgrounds_and_amusements rdfs:subClassOf bbkmm:Leisure_and_sport .
+${DeclareDefLinkage(bbkmm:Leisure_and_sport-Fairgrounds_and_amusements,143,bbkmm:isSubClassInstanceOf,bbkmm:Leisure_and_sport,118,/Leisure_and_sport/Fairgrounds_and_amusements,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport-Fairgrounds_and_amusements","/Leisure_and_sport/Fairgrounds_and_amusements","23")}
+bbkmm:Personality-Religious rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Religious,144,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Religious,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Religious","/Personality/Religious","23")}
+bbkmm:Medicine_and_health-Other rdfs:subClassOf bbkmm:Medicine_and_health .
+${DeclareDefLinkage(bbkmm:Medicine_and_health-Other,145,bbkmm:isSubClassInstanceOf,bbkmm:Medicine_and_health,135,/Medicine_and_health/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Medicine_and_health-Other","/Medicine_and_health/Other","23")}
+bbkmm:Industry_and_manufacture-Print rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Print,146,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Print,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Print","/Industry_and_manufacture/Print","23")}
+bbkmm:Personality-Political rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Political,147,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Political,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Political","/Personality/Political","23")}
+bbkmm:Personality-Art rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Art,148,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Art,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Art","/Personality/Art","23")}
+bbkmm:Rural_Industry-Rural_life rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Rural_life,149,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Rural_life,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Rural_life","/Rural_Industry/Rural_life","23")}
+
+bbkmm:Belief_and_identity rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Belief_and_identity ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Belief_and_identity,150,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Belief_and_identity,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity","/Belief_and_identity","23")}
+bbkmm:Belief_and_identity-Religious_buildings rdfs:subClassOf bbkmm:Belief_and_identity .
+${DeclareDefLinkage(bbkmm:Belief_and_identity-Religious_buildings,151,bbkmm:isSubClassInstanceOf,bbkmm:Belief_and_identity,150,/Belief_and_identity/Religious_buildings,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity-Religious_buildings","/Belief_and_identity/Religious_buildings","23")}
+bbkmm:Industry_and_manufacture-Mining_and_quarrying rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Mining_and_quarrying,152,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Mining_and_quarrying,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Mining_and_quarrying","/Industry_and_manufacture/Mining_and_quarrying","23")}
+bbkmm:Sea_and_seafaring-Lighthouses rdfs:subClassOf bbkmm:Sea_and_seafaring .
+${DeclareDefLinkage(bbkmm:Sea_and_seafaring-Lighthouses,153,bbkmm:isSubClassInstanceOf,bbkmm:Sea_and_seafaring,121,/Sea_and_seafaring/Lighthouses,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Sea_and_seafaring-Lighthouses","/Sea_and_seafaring/Lighthouses","23")}
+bbkmm:Rural_Industry-Watermills rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Watermills,154,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Watermills,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Watermills","/Rural_Industry/Watermills","23")}
+bbkmm:Leisure_and_sport-Rugby_and_football rdfs:subClassOf bbkmm:Leisure_and_sport .
+${DeclareDefLinkage(bbkmm:Leisure_and_sport-Rugby_and_football,155,bbkmm:isSubClassInstanceOf,bbkmm:Leisure_and_sport,118,/Leisure_and_sport/Rugby_and_football,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport-Rugby_and_football","/Leisure_and_sport/Rugby_and_football","23")}
+bbkmm:War_and_conflict-Other rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Other,156,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Other","/War_and_conflict/Other","23")}
+bbkmm:Arts-Music rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Music,157,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Music,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Music","/Arts/Music","23")}
+
+bbkmm:Industry_and_manufactu rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Industry_and_manufactu ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Industry_and_manufactu,158,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Industry_and_manufactu,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufactu","/Industry_and_manufactu","23")}
+bbkmm:Industry_and_manufactu-Metals rdfs:subClassOf bbkmm:Industry_and_manufactu .
+${DeclareDefLinkage(bbkmm:Industry_and_manufactu-Metals,159,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufactu,158,/Industry_and_manufactu/Metals,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufactu-Metals","/Industry_and_manufactu/Metals","23")}
+bbkmm:Transport-Cars_and_motorbikes rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Cars_and_motorbikes,160,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Cars_and_motorbikes,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Cars_and_motorbikes","/Transport/Cars_and_motorbikes","23")}
+bbkmm:Buildings-Other rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-Other,161,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Other","/Buildings/Other","23")}
+bbkmm:Buildings-Palace rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-Palace,162,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/Palace,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Palace","/Buildings/Palace","23")}
+bbkmm:Industry_and_manufacture-Other rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Other,163,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Other","/Industry_and_manufacture/Other","23")}
+bbkmm:Leisure_and_sport-Film_Cinema_and_TV rdfs:subClassOf bbkmm:Leisure_and_sport .
+${DeclareDefLinkage(bbkmm:Leisure_and_sport-Film_Cinema_and_TV,164,bbkmm:isSubClassInstanceOf,bbkmm:Leisure_and_sport,118,/Leisure_and_sport/Film_Cinema_and_TV,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport-Film_Cinema_and_TV","/Leisure_and_sport/Film_Cinema_and_TV","23")}
+
+bbkmm:Food_and_drink rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Food_and_drink ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Food_and_drink,165,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Food_and_drink,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Food_and_drink","/Food_and_drink","23")}
+
+bbkmm:Services rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Services ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Services,166,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Services,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Services","/Services","23")}
+bbkmm:Services-Other rdfs:subClassOf bbkmm:Services .
+${DeclareDefLinkage(bbkmm:Services-Other,167,bbkmm:isSubClassInstanceOf,bbkmm:Services,166,/Services/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Services-Other","/Services/Other","23")}
+bbkmm:Industry_and_manufacture-Textiles rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Textiles,168,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Textiles,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Textiles","/Industry_and_manufacture/Textiles","23")}
+bbkmm:Mixed-Bygones rdfs:subClassOf bbkmm:Mixed .
+${DeclareDefLinkage(bbkmm:Mixed-Bygones,169,bbkmm:isSubClassInstanceOf,bbkmm:Mixed,109,/Mixed/Bygones,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Mixed-Bygones","/Mixed/Bygones","23")}
+bbkmm:Archaeology-Mixed rdfs:subClassOf bbkmm:Archaeology .
+${DeclareDefLinkage(bbkmm:Archaeology-Mixed,170,bbkmm:isSubClassInstanceOf,bbkmm:Archaeology,132,/Archaeology/Mixed,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology-Mixed","/Archaeology/Mixed","23")}
+bbkmm:Archaeology-Medieval rdfs:subClassOf bbkmm:Archaeology .
+${DeclareDefLinkage(bbkmm:Archaeology-Medieval,171,bbkmm:isSubClassInstanceOf,bbkmm:Archaeology,132,/Archaeology/Medieval,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology-Medieval","/Archaeology/Medieval","23")}
+bbkmm:Natural_world-Fossils rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Fossils,172,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Fossils,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Fossils","/Natural_world/Fossils","23")}
+bbkmm:Natural_world-Mixed rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Mixed,173,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Mixed,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Mixed","/Natural_world/Mixed","23")}
+bbkmm:Rural_Industry-Other rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Other,174,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Other","/Rural_Industry/Other","23")}
+bbkmm:Transport-Other rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Other,175,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Other","/Transport/Other","23")}
+bbkmm:Communications-Post rdfs:subClassOf bbkmm:Communications .
+${DeclareDefLinkage(bbkmm:Communications-Post,176,bbkmm:isSubClassInstanceOf,bbkmm:Communications,128,/Communications/Post,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Communications-Post","/Communications/Post","23")}
+bbkmm:War_and_conflict-Bunker rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Bunker,177,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Bunker,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Bunker","/War_and_conflict/Bunker","23")}
+bbkmm:War_and_conflict-Military rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Military,178,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Military,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Military","/War_and_conflict/Military","23")}
+bbkmm:Buildings-Penal rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-Penal,179,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/Penal,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Penal","/Buildings/Penal","23")}
+bbkmm:Arts-Other rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Other,180,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Other","/Arts/Other","23")}
+bbkmm:Leisure_and_sport-Other rdfs:subClassOf bbkmm:Leisure_and_sport .
+${DeclareDefLinkage(bbkmm:Leisure_and_sport-Other,181,bbkmm:isSubClassInstanceOf,bbkmm:Leisure_and_sport,118,/Leisure_and_sport/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport-Other","/Leisure_and_sport/Other","23")}
+bbkmm:Transport-Bicycles rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Bicycles,182,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Bicycles,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Bicycles","/Transport/Bicycles","23")}
+bbkmm:Belief_and_identity-Freemasons rdfs:subClassOf bbkmm:Belief_and_identity .
+${DeclareDefLinkage(bbkmm:Belief_and_identity-Freemasons,183,bbkmm:isSubClassInstanceOf,bbkmm:Belief_and_identity,150,/Belief_and_identity/Freemasons,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity-Freemasons","/Belief_and_identity/Freemasons","23")}
+bbkmm:Medicine_and_health-Hospital rdfs:subClassOf bbkmm:Medicine_and_health .
+${DeclareDefLinkage(bbkmm:Medicine_and_health-Hospital,184,bbkmm:isSubClassInstanceOf,bbkmm:Medicine_and_health,135,/Medicine_and_health/Hospital,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Medicine_and_health-Hospital","/Medicine_and_health/Hospital","23")}
+bbkmm:Buildings-Civic rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-Civic,185,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/Civic,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Civic","/Buildings/Civic","23")}
+bbkmm:Arts-Costume_and_textiles rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Costume_and_textiles,186,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Costume_and_textiles,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Costume_and_textiles","/Arts/Costume_and_textiles","23")}
+bbkmm:Transport-Mixed rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Mixed,187,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Mixed,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Mixed","/Transport/Mixed","23")}
+
+bbkmm:Utilities rdfs:subClassOf bbkmm:defClassSubject_Matter .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Utilities ;
+                rdfs:range bbkmm:defClassSubject_Matter .
+
+${DeclareDefLinkage(bbkmm:Utilities,188,bbkmm:isSubClassInstanceOf,bbkmm:defClassSubject_Matter,95,/Utilities,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Utilities","/Utilities","23")}
+bbkmm:Utilities-Gas_and_electricity rdfs:subClassOf bbkmm:Utilities .
+${DeclareDefLinkage(bbkmm:Utilities-Gas_and_electricity,189,bbkmm:isSubClassInstanceOf,bbkmm:Utilities,188,/Utilities/Gas_and_electricity,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Utilities-Gas_and_electricity","/Utilities/Gas_and_electricity","23")}
+bbkmm:Transport-Canals rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Canals,190,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Canals,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Canals","/Transport/Canals","23")}
+bbkmm:Industry_and_manufacture-Metals rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Metals,191,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Metals,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Metals","/Industry_and_manufacture/Metals","23")}
+bbkmm:Utilities-Water_and_waste rdfs:subClassOf bbkmm:Utilities .
+${DeclareDefLinkage(bbkmm:Utilities-Water_and_waste,192,bbkmm:isSubClassInstanceOf,bbkmm:Utilities,188,/Utilities/Water_and_waste,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Utilities-Water_and_waste","/Utilities/Water_and_waste","23")}
+bbkmm:Belief_and_identity-Religion rdfs:subClassOf bbkmm:Belief_and_identity .
+${DeclareDefLinkage(bbkmm:Belief_and_identity-Religion,193,bbkmm:isSubClassInstanceOf,bbkmm:Belief_and_identity,150,/Belief_and_identity/Religion,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity-Religion","/Belief_and_identity/Religion","23")}
+bbkmm:Services-Fire rdfs:subClassOf bbkmm:Services .
+${DeclareDefLinkage(bbkmm:Services-Fire,194,bbkmm:isSubClassInstanceOf,bbkmm:Services,166,/Services/Fire,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Services-Fire","/Services/Fire","23")}
+bbkmm:Transport-Aviation rdfs:subClassOf bbkmm:Transport .
+${DeclareDefLinkage(bbkmm:Transport-Aviation,195,bbkmm:isSubClassInstanceOf,bbkmm:Transport,126,/Transport/Aviation,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Transport-Aviation","/Transport/Aviation","23")}
+bbkmm:Belief_and_identity-Other rdfs:subClassOf bbkmm:Belief_and_identity .
+${DeclareDefLinkage(bbkmm:Belief_and_identity-Other,196,bbkmm:isSubClassInstanceOf,bbkmm:Belief_and_identity,150,/Belief_and_identity/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity-Other","/Belief_and_identity/Other","23")}
+bbkmm:Services-Police rdfs:subClassOf bbkmm:Services .
+${DeclareDefLinkage(bbkmm:Services-Police,197,bbkmm:isSubClassInstanceOf,bbkmm:Services,166,/Services/Police,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Services-Police","/Services/Police","23")}
+bbkmm:Sea_and_seafaring-Fishing rdfs:subClassOf bbkmm:Sea_and_seafaring .
+${DeclareDefLinkage(bbkmm:Sea_and_seafaring-Fishing,198,bbkmm:isSubClassInstanceOf,bbkmm:Sea_and_seafaring,121,/Sea_and_seafaring/Fishing,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Sea_and_seafaring-Fishing","/Sea_and_seafaring/Fishing","23")}
+bbkmm:War_and_conflict-Navy rdfs:subClassOf bbkmm:War_and_conflict .
+${DeclareDefLinkage(bbkmm:War_and_conflict-Navy,199,bbkmm:isSubClassInstanceOf,bbkmm:War_and_conflict,96,/War_and_conflict/Navy,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:War_and_conflict-Navy","/War_and_conflict/Navy","23")}
+bbkmm:Belief_and_identity-Ethnic_group rdfs:subClassOf bbkmm:Belief_and_identity .
+${DeclareDefLinkage(bbkmm:Belief_and_identity-Ethnic_group,200,bbkmm:isSubClassInstanceOf,bbkmm:Belief_and_identity,150,/Belief_and_identity/Ethnic_group,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity-Ethnic_group","/Belief_and_identity/Ethnic_group","23")}
+bbkmm:Industry_and_manufacture-Steam_and_engines rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Steam_and_engines,201,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Steam_and_engines,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Steam_and_engines","/Industry_and_manufacture/Steam_and_engines","23")}
+bbkmm:Industry_and_manufacture-Clocks_and_watches rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Clocks_and_watches,202,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Clocks_and_watches,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Clocks_and_watches","/Industry_and_manufacture/Clocks_and_watches","23")}
+bbkmm:Buildings-School rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-School,203,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/School,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-School","/Buildings/School","23")}
+bbkmm:Personality-Music rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Music,204,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Music,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Music","/Personality/Music","23")}
+bbkmm:Arts-Glass rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Glass,205,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Glass,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Glass","/Arts/Glass","23")}
+bbkmm:Industry_and_manufacture-Potteries rdfs:subClassOf bbkmm:Industry_and_manufacture .
+${DeclareDefLinkage(bbkmm:Industry_and_manufacture-Potteries,206,bbkmm:isSubClassInstanceOf,bbkmm:Industry_and_manufacture,113,/Industry_and_manufacture/Potteries,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Industry_and_manufacture-Potteries","/Industry_and_manufacture/Potteries","23")}
+bbkmm:Rural_Industry-Windmills rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Windmills,207,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Windmills,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Windmills","/Rural_Industry/Windmills","23")}
+bbkmm:Personality-Explorer rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Explorer,208,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Explorer,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Explorer","/Personality/Explorer","23")}
+bbkmm:Belief_and_identity-Church_treasuries rdfs:subClassOf bbkmm:Belief_and_identity .
+${DeclareDefLinkage(bbkmm:Belief_and_identity-Church_treasuries,209,bbkmm:isSubClassInstanceOf,bbkmm:Belief_and_identity,150,/Belief_and_identity/Church_treasuries,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Belief_and_identity-Church_treasuries","/Belief_and_identity/Church_treasuries","23")}
+bbkmm:Leisure_and_sport-Cricket rdfs:subClassOf bbkmm:Leisure_and_sport .
+${DeclareDefLinkage(bbkmm:Leisure_and_sport-Cricket,210,bbkmm:isSubClassInstanceOf,bbkmm:Leisure_and_sport,118,/Leisure_and_sport/Cricket,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Leisure_and_sport-Cricket","/Leisure_and_sport/Cricket","23")}
+bbkmm:Science_and_technology-Computing_and_gaming rdfs:subClassOf bbkmm:Science_and_technology .
+${DeclareDefLinkage(bbkmm:Science_and_technology-Computing_and_gaming,211,bbkmm:isSubClassInstanceOf,bbkmm:Science_and_technology,111,/Science_and_technology/Computing_and_gaming,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Science_and_technology-Computing_and_gaming","/Science_and_technology/Computing_and_gaming","23")}
+bbkmm:Rural_Industry-Forges rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Forges,212,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Forges,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Forges","/Rural_Industry/Forges","23")}
+bbkmm:Arts-Literature rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Literature,213,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Literature,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Literature","/Arts/Literature","23")}
+bbkmm:Rural_Industry-Textiles rdfs:subClassOf bbkmm:Rural_Industry .
+${DeclareDefLinkage(bbkmm:Rural_Industry-Textiles,214,bbkmm:isSubClassInstanceOf,bbkmm:Rural_Industry,123,/Rural_Industry/Textiles,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Rural_Industry-Textiles","/Rural_Industry/Textiles","23")}
+bbkmm:Arts-Design rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Design,215,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Design,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Design","/Arts/Design","23")}
+bbkmm:Archaeology-Other rdfs:subClassOf bbkmm:Archaeology .
+${DeclareDefLinkage(bbkmm:Archaeology-Other,216,bbkmm:isSubClassInstanceOf,bbkmm:Archaeology,132,/Archaeology/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology-Other","/Archaeology/Other","23")}
+bbkmm:Natural_world-Dinosaurs rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Dinosaurs,217,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Dinosaurs,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Dinosaurs","/Natural_world/Dinosaurs","23")}
+bbkmm:Sea_and_seafaring-Other rdfs:subClassOf bbkmm:Sea_and_seafaring .
+${DeclareDefLinkage(bbkmm:Sea_and_seafaring-Other,218,bbkmm:isSubClassInstanceOf,bbkmm:Sea_and_seafaring,121,/Sea_and_seafaring/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Sea_and_seafaring-Other","/Sea_and_seafaring/Other","23")}
+bbkmm:Personality-Scientific rdfs:subClassOf bbkmm:Personality .
+${DeclareDefLinkage(bbkmm:Personality-Scientific,219,bbkmm:isSubClassInstanceOf,bbkmm:Personality,103,/Personality/Scientific,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Personality-Scientific","/Personality/Scientific","23")}
+bbkmm:Arts-Mixed_arts rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Mixed_arts,220,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Mixed_arts,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Mixed_arts","/Arts/Mixed_arts","23")}
+bbkmm:Archaeology-Greek_and_Egyptian rdfs:subClassOf bbkmm:Archaeology .
+${DeclareDefLinkage(bbkmm:Archaeology-Greek_and_Egyptian,221,bbkmm:isSubClassInstanceOf,bbkmm:Archaeology,132,/Archaeology/Greek_and_Egyptian,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Archaeology-Greek_and_Egyptian","/Archaeology/Greek_and_Egyptian","23")}
+bbkmm:Buildings-Shops rdfs:subClassOf bbkmm:Buildings .
+${DeclareDefLinkage(bbkmm:Buildings-Shops,222,bbkmm:isSubClassInstanceOf,bbkmm:Buildings,100,/Buildings/Shops,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Buildings-Shops","/Buildings/Shops","23")}
+bbkmm:Arts-Photography rdfs:subClassOf bbkmm:Arts .
+${DeclareDefLinkage(bbkmm:Arts-Photography,223,bbkmm:isSubClassInstanceOf,bbkmm:Arts,107,/Arts/Photography,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Arts-Photography","/Arts/Photography","23")}
+bbkmm:Natural_world-Zoology rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Zoology,224,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Zoology,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Zoology","/Natural_world/Zoology","23")}
+bbkmm:Communications-Other rdfs:subClassOf bbkmm:Communications .
+${DeclareDefLinkage(bbkmm:Communications-Other,225,bbkmm:isSubClassInstanceOf,bbkmm:Communications,128,/Communications/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Communications-Other","/Communications/Other","23")}
+bbkmm:Natural_world-Herbaria_and_gardening rdfs:subClassOf bbkmm:Natural_world .
+${DeclareDefLinkage(bbkmm:Natural_world-Herbaria_and_gardening,226,bbkmm:isSubClassInstanceOf,bbkmm:Natural_world,130,/Natural_world/Herbaria_and_gardening,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Natural_world-Herbaria_and_gardening","/Natural_world/Herbaria_and_gardening","23")}
+bbkmm:Services-RNLI rdfs:subClassOf bbkmm:Services .
+${DeclareDefLinkage(bbkmm:Services-RNLI,227,bbkmm:isSubClassInstanceOf,bbkmm:Services,166,/Services/RNLI,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defSubject_Matter","bbkmm:Services-RNLI","/Services/RNLI","23")}
+
+ bbkmm:defDOMUS_Subject_Matter rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defDOMUS_Subject_Matter"@en ;
+                rdfs:comment "defDOMUS_Subject_Matter"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:DOMUS_Subject_Matter .
+${classURI("bbkmm:Museum",n0)} bbkmm:defDOMUS_Subject_Matter ${classURI("bbkmm:DOMUS_Subject_Matter",228)} .
+${classURI("bbkmm:DOMUS_Subject_Matter",228)}  ${property("bbkmm:hasDOMUS_Subject_Matter","xsd:string",24,Visible,graphmlNodes)} .
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",military)}  ${property("bbkmm:hasName","xsd:string","military","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"military",military,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",archaeology)}  ${property("bbkmm:hasName","xsd:string","archaeology","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"archaeology",archaeology,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",transport)}  ${property("bbkmm:hasName","xsd:string","transport","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"transport",transport,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",mixed_collection)}  ${property("bbkmm:hasName","xsd:string","mixed collection","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"mixed collection",mixed_collection,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",biology_and_natural_history)}  ${property("bbkmm:hasName","xsd:string","biology and natural history","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"biology and natural history",biology_and_natural_history,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",science_and_industry)}  ${property("bbkmm:hasName","xsd:string","science and industry","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"science and industry",science_and_industry,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",arms_and_armour)}  ${property("bbkmm:hasName","xsd:string","arms and armour","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"arms and armour",arms_and_armour,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",decorative_and_applied_arts)}  ${property("bbkmm:hasName","xsd:string","decorative and applied arts","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"decorative and applied arts",decorative_and_applied_arts,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",medicine)}  ${property("bbkmm:hasName","xsd:string","medicine","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"medicine",medicine,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",archives)}  ${property("bbkmm:hasName","xsd:string","archives","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"archives",archives,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",geology)}  ${property("bbkmm:hasName","xsd:string","geology","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"geology",geology,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",photography)}  ${property("bbkmm:hasName","xsd:string","photography","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"photography",photography,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",agriculture)}  ${property("bbkmm:hasName","xsd:string","agriculture","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"agriculture",agriculture,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",oral_history)}  ${property("bbkmm:hasName","xsd:string","oral history","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"oral history",oral_history,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",maritime)}  ${property("bbkmm:hasName","xsd:string","maritime","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"maritime",maritime,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",ethnography)}  ${property("bbkmm:hasName","xsd:string","ethnography","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"ethnography",ethnography,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",music)}  ${property("bbkmm:hasName","xsd:string","music","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"music",music,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",fine_art)}  ${property("bbkmm:hasName","xsd:string","fine art","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"fine art",fine_art,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",costume_and_textiles)}  ${property("bbkmm:hasName","xsd:string","costume and textiles","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"costume and textiles",costume_and_textiles,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",personalia)}  ${property("bbkmm:hasName","xsd:string","personalia","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"personalia",personalia,"xsd:string",24,graphmlNames)}
+${classGlobalURI("bbkmm:DOMUS_Subject_Matter",social_history)}  ${property("bbkmm:hasName","xsd:string","social history","Visible")} .
+${altNamedInstance("bbkmm:DOMUS_Subject_Matter",228, a ,"social history",social_history,"xsd:string",24,graphmlNames)}
+
+ bbkmm:defAccreditation rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defAccreditation"@en ;
+                rdfs:comment "defAccreditation"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Accreditation .
+${classURI("bbkmm:Museum",n0)} bbkmm:defAccreditation ${classURI("bbkmm:Accreditation",250)} .
+${classURI("bbkmm:Accreditation",250)}  ${property("bbkmm:hasAccreditation","xsd:string",25,Visible,graphmlNodes)} .
+${classGlobalURI("bbkmm:Accreditation",Accredited)}  ${property("bbkmm:hasName","xsd:string","Accredited","Visible")} .
+${altNamedInstance("bbkmm:Accreditation",250, a ,"Accredited",Accredited,"xsd:string",25,graphmlNames)}
+${classGlobalURI("bbkmm:Accreditation",Unaccredited)}  ${property("bbkmm:hasName","xsd:string","Unaccredited","Visible")} .
+${altNamedInstance("bbkmm:Accreditation",250, a ,"Unaccredited",Unaccredited,"xsd:string",25,graphmlNames)}
+
+ bbkmm:defGovernance rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defGovernance"@en ;
+                rdfs:comment "defGovernance"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:defClassGovernance .
+
+bbkmm:Independent rdfs:subClassOf bbkmm:defClassGovernance .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Independent ;
+                rdfs:range bbkmm:defClassGovernance .
+
+${DeclareDefLinkage(bbkmm:Independent,254,bbkmm:isSubClassInstanceOf,bbkmm:defClassGovernance,253,/Independent,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent","/Independent","27")}
+bbkmm:Independent-Not_for_profit rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-Not_for_profit,255,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/Not_for_profit,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-Not_for_profit","/Independent/Not_for_profit","27")}
+bbkmm:Independent-English_Heritage rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-English_Heritage,256,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/English_Heritage,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-English_Heritage","/Independent/English_Heritage","27")}
+
+bbkmm:Government rdfs:subClassOf bbkmm:defClassGovernance .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Government ;
+                rdfs:range bbkmm:defClassGovernance .
+
+${DeclareDefLinkage(bbkmm:Government,257,bbkmm:isSubClassInstanceOf,bbkmm:defClassGovernance,253,/Government,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Government","/Government","27")}
+bbkmm:Government-Local_Authority rdfs:subClassOf bbkmm:Government .
+${DeclareDefLinkage(bbkmm:Government-Local_Authority,258,bbkmm:isSubClassInstanceOf,bbkmm:Government,257,/Government/Local_Authority,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Government-Local_Authority","/Government/Local_Authority","27")}
+bbkmm:Independent-Private rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-Private,259,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/Private,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-Private","/Independent/Private","27")}
+bbkmm:Independent-National_Trust rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-National_Trust,260,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/National_Trust,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-National_Trust","/Independent/National_Trust","27")}
+
+bbkmm:University rdfs:subClassOf bbkmm:defClassGovernance .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:University ;
+                rdfs:range bbkmm:defClassGovernance .
+
+${DeclareDefLinkage(bbkmm:University,261,bbkmm:isSubClassInstanceOf,bbkmm:defClassGovernance,253,/University,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:University","/University","27")}
+bbkmm:Independent-Unknown rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-Unknown,262,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/Unknown,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-Unknown","/Independent/Unknown","27")}
+
+bbkmm:Unknown rdfs:subClassOf bbkmm:defClassGovernance .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Unknown ;
+                rdfs:range bbkmm:defClassGovernance .
+
+${DeclareDefLinkage(bbkmm:Unknown,263,bbkmm:isSubClassInstanceOf,bbkmm:defClassGovernance,253,/Unknown,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Unknown","/Unknown","27")}
+bbkmm:Independent-National_Trust_for_Scotland rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-National_Trust_for_Scotland,264,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/National_Trust_for_Scotland,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-National_Trust_for_Scotland","/Independent/National_Trust_for_Scotland","27")}
+bbkmm:Government-National rdfs:subClassOf bbkmm:Government .
+${DeclareDefLinkage(bbkmm:Government-National,265,bbkmm:isSubClassInstanceOf,bbkmm:Government,257,/Government/National,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Government-National","/Government/National","27")}
+bbkmm:Independent-Historic_Environment_Scotland rdfs:subClassOf bbkmm:Independent .
+${DeclareDefLinkage(bbkmm:Independent-Historic_Environment_Scotland,266,bbkmm:isSubClassInstanceOf,bbkmm:Independent,254,/Independent/Historic_Environment_Scotland,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Independent-Historic_Environment_Scotland","/Independent/Historic_Environment_Scotland","27")}
+bbkmm:Government-Cadw rdfs:subClassOf bbkmm:Government .
+${DeclareDefLinkage(bbkmm:Government-Cadw,267,bbkmm:isSubClassInstanceOf,bbkmm:Government,257,/Government/Cadw,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Government-Cadw","/Government/Cadw","27")}
+bbkmm:Government-Other rdfs:subClassOf bbkmm:Government .
+${DeclareDefLinkage(bbkmm:Government-Other,268,bbkmm:isSubClassInstanceOf,bbkmm:Government,257,/Government/Other,classURI,classURI)}
+
+${altSubClass("bbkmm:Museum",n0,"bbkmm:defGovernance","bbkmm:Government-Other","/Government/Other","27")}
+
+ bbkmm:defACE_size_designation rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defACE_size_designation"@en ;
+                rdfs:comment "defACE_size_designation"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:ACE_size_designation .
+${classURI("bbkmm:Museum",n0)} bbkmm:defACE_size_designation ${classURI("bbkmm:ACE_size_designation",269)} .
+${classURI("bbkmm:ACE_size_designation",269)}  ${property("bbkmm:hasACE_size_designation","xsd:string",29,Visible,graphmlNodes)} .
+${classGlobalURI("bbkmm:ACE_size_designation",Independent__type_three)}  ${property("bbkmm:hasName","xsd:string","Independent - type three","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Independent - type three",Independent__type_three,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",University__type_one)}  ${property("bbkmm:hasName","xsd:string","University - type one","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"University - type one",University__type_one,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",Independent__type_one)}  ${property("bbkmm:hasName","xsd:string","Independent - type one","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Independent - type one",Independent__type_one,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",University__type_two)}  ${property("bbkmm:hasName","xsd:string","University - type two","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"University - type two",University__type_two,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",Nationally_styled)}  ${property("bbkmm:hasName","xsd:string","Nationally styled","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Nationally styled",Nationally_styled,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",National_Trust)}  ${property("bbkmm:hasName","xsd:string","National Trust","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"National Trust",National_Trust,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",Local_authority__type_one)}  ${property("bbkmm:hasName","xsd:string","Local authority - type one","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Local authority - type one",Local_authority__type_one,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",University__type_three)}  ${property("bbkmm:hasName","xsd:string","University - type three","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"University - type three",University__type_three,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",Local_authority__type_two)}  ${property("bbkmm:hasName","xsd:string","Local authority - type two","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Local authority - type two",Local_authority__type_two,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",National_Museum)}  ${property("bbkmm:hasName","xsd:string","National Museum","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"National Museum",National_Museum,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",Independent__type_two)}  ${property("bbkmm:hasName","xsd:string","Independent - type two","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Independent - type two",Independent__type_two,"xsd:string",29,graphmlNames)}
+${classGlobalURI("bbkmm:ACE_size_designation",Local_authority__type_three)}  ${property("bbkmm:hasName","xsd:string","Local authority - type three","Visible")} .
+${altNamedInstance("bbkmm:ACE_size_designation",269, a ,"Local authority - type three",Local_authority__type_three,"xsd:string",29,graphmlNames)}
+
+ bbkmm:defAIM_size_designation rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defAIM_size_designation"@en ;
+                rdfs:comment "defAIM_size_designation"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:AIM_size_designation .
+${classURI("bbkmm:Museum",n0)} bbkmm:defAIM_size_designation ${classURI("bbkmm:AIM_size_designation",282)} .
+${classURI("bbkmm:AIM_size_designation",282)}  ${property("bbkmm:hasAIM_size_designation","xsd:string",31,Visible,graphmlNodes)} .
+${classGlobalURI("bbkmm:AIM_size_designation",Medium_Museum__to__visitors_pa)}  ${property("bbkmm:hasName","xsd:string","Medium Museum (20,000 to 50,000 visitors p.a.)","Visible")} .
+${altNamedInstance("bbkmm:AIM_size_designation",282, a ,"Medium Museum (20,000 to 50,000 visitors p.a.)",Medium_Museum__to__visitors_pa,"xsd:string",31,graphmlNames)}
+${classGlobalURI("bbkmm:AIM_size_designation",Small_Museum_up_to__visitors_pa_)}  ${property("bbkmm:hasName","xsd:string","Small Museum (up to 20,000 visitors p.a.) ","Visible")} .
+${altNamedInstance("bbkmm:AIM_size_designation",282, a ,"Small Museum (up to 20,000 visitors p.a.) ",Small_Museum_up_to__visitors_pa_,"xsd:string",31,graphmlNames)}
+${classGlobalURI("bbkmm:AIM_size_designation",Large_Museum__to__visitors_pa)}  ${property("bbkmm:hasName","xsd:string","Large Museum (50,000 to 100,000 visitors p.a.)","Visible")} .
+${altNamedInstance("bbkmm:AIM_size_designation",282, a ,"Large Museum (50,000 to 100,000 visitors p.a.)",Large_Museum__to__visitors_pa,"xsd:string",31,graphmlNames)}
+${classGlobalURI("bbkmm:AIM_size_designation",Largest_Museums_over__visitors_pa)}  ${property("bbkmm:hasName","xsd:string","Largest Museums (over 100,000 visitors p.a.)","Visible")} .
+${altNamedInstance("bbkmm:AIM_size_designation",282, a ,"Largest Museums (over 100,000 visitors p.a.)",Largest_Museums_over__visitors_pa,"xsd:string",31,graphmlNames)}
+
+ bbkmm:defSize rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "defSize"@en ;
+                rdfs:comment "defSize"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Size .
+${classURI("bbkmm:Museum",n0)} bbkmm:defSize ${classURI("bbkmm:Size",287)} .
+${classURI("bbkmm:Size",287)}  ${property("bbkmm:hasSize","xsd:string",33,Visible,graphmlNodes)} .
+${classGlobalURI("bbkmm:Size",Small)}  ${property("bbkmm:hasName","xsd:string","Small","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Small",Small,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Very_Small)}  ${property("bbkmm:hasName","xsd:string","Very Small","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Very Small",Very_Small,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Tiny)}  ${property("bbkmm:hasName","xsd:string","Tiny","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Tiny",Tiny,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Huge)}  ${property("bbkmm:hasName","xsd:string","Huge","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Huge",Huge,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Very_Large)}  ${property("bbkmm:hasName","xsd:string","Very Large","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Very Large",Very_Large,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Unknown)}  ${property("bbkmm:hasName","xsd:string","Unknown","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Unknown",Unknown,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Large)}  ${property("bbkmm:hasName","xsd:string","Large","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Large",Large,"xsd:string",33,graphmlNames)}
+${classGlobalURI("bbkmm:Size",Medium)}  ${property("bbkmm:hasName","xsd:string","Medium","Visible")} .
+${altNamedInstance("bbkmm:Size",287, a ,"Medium",Medium,"xsd:string",33,graphmlNames)}
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToCountry ${DATACONTENT(37)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToWelsh_UA ${DATACONTENT(38)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToScottish_Council_Area ${DATACONTENT(39)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToNI_Loc_Gov_District ${DATACONTENT(40)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToEnglish_Region ${DATACONTENT(41)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToEnglish_County ${DATACONTENT(42)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToEnglish_UA ${DATACONTENT(43)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToEnglish_CA ${DATACONTENT(44)}  .
+${classURI("bbkmm:Museum",n0)} bbkmm:refersToEnglish_District_or_Borough ${DATACONTENT(45)}  .
+
+ bbkmm:partOfOrganisation rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "partOfOrganisation"@en ;
+                rdfs:comment "partOfOrganisation"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range org:Organisation .
+${classURI("bbkmm:Museum",n0)} bbkmm:partOfOrganisation ${classURI("org:Organisation",n1)} .
+
+ org:hasPrimarySite rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "org:hasPrimarySite"@en ;
+                rdfs:comment "org:hasPrimarySite"@en ;
+                rdfs:domain org:Organisation ;
+                rdfs:range org:Site .
+${classURI("org:Organisation",n1)} org:hasPrimarySite ${classURI("org:Site",n2)} .
+
+ bbkmm:hasRatingAuthority rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:hasRatingAuthority"@en ;
+                rdfs:comment "bbkmm:hasRatingAuthority"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range org:Organisation .
+${classURI("bbkmm:Museum",n0)} bbkmm:hasRatingAuthority ${classURI("org:Organisation",n3)} .
+${classURI("vcard:Address",n8)} ${property("vcard:formattedName","xsd:string",3,"Visible/Searchablle")} .
+${classURI("vcard:Address",n8)} ${property("vcard:locality","xsd:string",13,"Visible/Searchable")} .
+${classURI("vcard:Address",n8)} ${property("vcard:postalCode","xsd:string",15,"Visible/Searchable")} .
+${classURI("vcard:Address",n8)} ${property("vcard:streetAddress","xsd:string",[11;12;13],Visible)} .
+
+ vcard:hasAddress rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "vcard:hasAddress"@en ;
+                rdfs:comment "vcard:hasAddress"@en ;
+                rdfs:domain org:Site ;
+                rdfs:range vcard:Address .
+${classURI("org:Site",n2)} vcard:hasAddress ${classURI("vcard:Address",n8)} .
+${classURI("org:Organisation",n1)} ${property("vcard:hasURL","xsd:string",19,"invisible")} .
+${classURI("org:Organisation",n1)} ${property("vcard:hasGivenName","xsd:string",4, "invisible")} .
+${classURI("org:Organisation",n1)} ${property("bbkmm:hasNamedSource","xsd:string",5,"Invisible")} .
+${classURI("org:Organisation",n1)} ${property("vcard:hasOrganisationName","xsd:string",3,"Visible/Searchable")} .
+${classURI("vcard:Address",n8)} vcard:Country "UK" .
+
+ bbkmm:hasAccreditation rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAccreditation"@en ;
+                rdfs:comment "bbkmm:hasAccreditation"@en ;
+                rdfs:domain bbkmm:Accreditation ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasAIM_size_designation rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasAIM_size_designation"@en ;
+                rdfs:comment "bbkmm:hasAIM_size_designation"@en ;
+                rdfs:domain bbkmm:AIM_size_designation ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasDOMUS_Subject_Matter rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasDOMUS_Subject_Matter"@en ;
+                rdfs:comment "bbkmm:hasDOMUS_Subject_Matter"@en ;
+                rdfs:domain bbkmm:DOMUS_Subject_Matter ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasACE_size_designation rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasACE_size_designation"@en ;
+                rdfs:comment "bbkmm:hasACE_size_designation"@en ;
+                rdfs:domain bbkmm:ACE_size_designation ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasSize rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasSize"@en ;
+                rdfs:comment "bbkmm:hasSize"@en ;
+                rdfs:domain bbkmm:Size ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasPrimary_provenance_of_data rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasPrimary_provenance_of_data"@en ;
+                rdfs:comment "bbkmm:hasPrimary_provenance_of_data"@en ;
+                rdfs:domain bbkmm:Primary_provenance_of_data ;
+                rdfs:range xsd:string .
+
+bbkmm:AccreditationList bbkmm:contents ("Accredited" "Unaccredited" "Accredited" "Unaccredited") .
+bbkmm:AIM_size_designationList bbkmm:contents ("Medium Museum (20,000 to 50,000 visitors p.a.)" "Small Museum (up to 20,000 visitors p.a.) " "Large Museum (50,000 to 100,000 visitors p.a.)" "Largest Museums (over 100,000 visitors p.a.)" "Medium Museum (20,000 to 50,000 visitors p.a.)" "Small Museum (up to 20,000 visitors p.a.) " "Large Museum (50,000 to 100,000 visitors p.a.)" "Largest Museums (over 100,000 visitors p.a.)") .
+bbkmm:DOMUS_Subject_MatterList bbkmm:contents ("military" "archaeology" "transport" "mixed collection" "biology and natural history" "science and industry" "arms and armour" "decorative and applied arts" "medicine" "archives" "geology" "photography" "agriculture" "oral history" "maritime" "ethnography" "music" "fine art" "costume and textiles" "personalia" "social history" "military" "archaeology" "transport" "mixed collection" "biology and natural history" "science and industry" "arms and armour" "decorative and applied arts" "medicine" "archives" "geology" "photography" "agriculture" "oral history" "maritime" "ethnography" "music" "fine art" "costume and textiles" "personalia" "social history") .
+bbkmm:ACE_size_designationList bbkmm:contents ("Independent - type three" "University - type one" "Independent - type one" "University - type two" "Nationally styled" "National Trust" "Local authority - type one" "University - type three" "Local authority - type two" "National Museum" "Independent - type two" "Local authority - type three" "Independent - type three" "University - type one" "Independent - type one" "University - type two" "Nationally styled" "National Trust" "Local authority - type one" "University - type three" "Local authority - type two" "National Museum" "Independent - type two" "Local authority - type three") .
+bbkmm:SizeList bbkmm:contents ("Small" "Very Small" "Tiny" "Huge" "Very Large" "Unknown" "Large" "Medium" "Small" "Very Small" "Tiny" "Huge" "Very Large" "Unknown" "Large" "Medium") .
+bbkmm:Primary_provenance_of_dataList bbkmm:contents ("Misc" "aim82NM" "mald" "misc" "domus" "hud" "mgs" "musassoc" "aim" "MusCal" "aim82M" "nimc" "fcm" "hha" "wiki" "ace" "us" "MDN" "Misc" "aim82NM" "mald" "misc" "domus" "hud" "mgs" "musassoc" "aim" "MusCal" "aim82M" "nimc" "fcm" "hha" "wiki" "ace" "us" "MDN") .
+
+bbkmm:PredicateList_mainsheet bbkmm:contents ("bbkmm:refersToWelsh_UA" "bbkmm:defRangeYear_closed" "bbkmm:hasGovernance_source" "bbkmm:hasName_of_museum" "bbkmm:hasACE_size_source" "bbkmm:hasAccreditation" "bbkmm:hasLatitude" "bbkmm:hasAIM_size_designation" "bbkmm:refersToEnglish_District_or_Borough" "bbkmm:hasIdentifier_used_in_source_database" "bbkmm:hasDOMUS_Subject_Matter" "bbkmm:refersToNI_Loc_Gov_District" "bbkmm:hasLongitude" "bbkmm:hasproject_id" "bbkmm:hasYear_museum_first_documented" "bbkmm:hasDOMUS_Identifier" "bbkmm:hasLowerRange" "bbkmm:hasAlternative_museum_name" "bbkmm:hasNotes" "bbkmm:hasPostcode" "bbkmm:hasNotes_internal" "bbkmm:hasYear_opened_source" "bbkmm:hasSize" "bbkmm:hasAddress_line_1" "bbkmm:hasAddress_line_2" "bbkmm:hasAddress_line_3" "bbkmm:refersToCountry" "bbkmm:hasFounder" "bbkmm:hasYear_closed_source" "bbkmm:isSubClassInstanceOf" "bbkmm:refersToEnglish_Region" "bbkmm:refersToEnglish_UA" "bbkmm:hasPrimary_provenance_of_data" "bbkmm:hasTown_or_City" "bbkmm:defRangeYear_opened" "bbkmm:hasAlternative_museum_name_source" "bbkmm:hasYear_museum_first_documented_source" "bbkmm:hasAccreditation_source" "bbkmm:refersToEnglish_CA" "bbkmm:refersToEnglish_County" "bbkmm:hasYear_opened" "bbkmm:hasFounder_source" "bbkmm:hasACE_size_designation" "bbkmm:hasRatingAuthority" "bbkmm:hasNamedSource" "bbkmm:refersToScottish_Council_Area" "bbkmm:hasCounty" "bbkmm:hasUpperRange" "bbkmm:hasAIM_size_source" "bbkmm:hasYear_closed") .
+
+bbkmm:DataTypeList_mainsheet bbkmm:contents ( "bbkmm:refersToWelsh_UA#bbkmm:Welsh_UA" "defRangeYear_closed#RangeType" "bbkmm:hasGovernance_source#xsd:string" "bbkmm:hasName_of_museum#xsd:string" "bbkmm:hasACE_size_source#xsd:string" "bbkmm:hasAccreditation#xsd:string" "bbkmm:hasLatitude#xsd:decimal" "vcard:hasGivenName#xsd:string" "bbkmm:hasAIM_size_designation#xsd:string" "bbkmm:refersToEnglish_District_or_Borough#bbkmm:English_District_or_Borough" "bbkmm:hasIdentifier_used_in_source_database#xsd:string" "bbkmm:hasDOMUS_Subject_Matter#xsd:string" "bbkmm:refersToNI_Loc_Gov_District#bbkmm:NI_Loc_Gov_District" "bbkmm:hasLongitude#xsd:decimal" "bbkmm:hasproject_id#xsd:string" "bbkmm:hasYear_museum_first_documented#xsd:positiveInteger" "bbkmm:hasDOMUS_Identifier#xsd:positiveInteger" "bbkmm:hasLowerRange#bbkmm:LowerValue" "bbkmm:hasAlternative_museum_name#xsd:string" "bbkmm:hasNotes#xsd:string" "defDOMUS_Subject_Matter#ListType" "bbkmm:hasPostcode#xsd:string" "bbkmm:hasNotes_internal#xsd:string" "bbkmm:hasYear_opened_source#xsd:string" "bbkmm:hasSize#xsd:string" "vcard:hasOrganisationName#xsd:string" "bbkmm:hasAddress_line_1#xsd:string" "bbkmm:hasAddress_line_2#xsd:string" "bbkmm:hasAddress_line_3#xsd:string" "defAccreditation#ListType" "vcard:hasAddress#vcard:Address" "bbkmm:refersToCountry#bbkmm:Country" "vcard:locality#xsd:string" "vcard:formattedName#xsd:string" "bbkmm:hasFounder#xsd:string" "bbkmm:hasYear_closed_source#xsd:string" "vcard:postalCode#xsd:string" "bbkmm:isSubClassInstanceOf#HierType" "bbkmm:refersToEnglish_Region#bbkmm:English_Region" "bbkmm:refersToEnglish_UA#bbkmm:English_UA" "bbkmm:hasPrimary_provenance_of_data#xsd:string" "bbkmm:hasTown_or_City#xsd:string" "defRangeYear_opened#RangeType" "bbkmm:hasAlternative_museum_name_source#xsd:string" "defACE_size_designation#ListType" "partOfOrganisation#org:Organisation" "defSubject_Matter#HierType" "bbkmm:hasYear_museum_first_documented_source#xsd:string" "defPrimary_provenance_of_data#ListType" "bbkmm:hasAccreditation_source#xsd:string" "vcard:hasURL#xsd:string" "defAIM_size_designation#ListType" "bbkmm:refersToEnglish_CA#bbkmm:English_CA" "bbkmm:refersToEnglish_County#bbkmm:English_County" "org:hasPrimarySite#org:Site" "bbkmm:hasYear_opened#xsd:positiveInteger" "bbkmm:hasFounder_source#xsd:string" "bbkmm:hasACE_size_designation#xsd:string" "defGovernance#HierType" "vcard:streetAddress#xsd:string" "bbkmm:hasRatingAuthority#org:Organisation" "bbkmm:hasNamedSource#xsd:string" "bbkmm:refersToScottish_Council_Area#bbkmm:Scottish_Council_Area" "bbkmm:hasCounty#xsd:string" "bbkmm:hasUpperRange#bbkmm:UpperValue" "defSize#ListType" "bbkmm:hasAIM_size_source#xsd:string" "bbkmm:hasYear_closed#xsd:positiveInteger") .

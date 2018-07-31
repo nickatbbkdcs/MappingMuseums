@@ -1,0 +1,46 @@
+
+
+
+
+#################################################################
+#
+#$Content classes
+#
+#################################################################
+
+
+bbkmm:Museum a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MuseumClass"@en ;
+rdfs:comment         "bbkmm:MuseumClass"@en .
+
+ bbkmm:hasProject_id rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasProject_id"@en ;
+                rdfs:comment "bbkmm:hasProject_id"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasName rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasName"@en ;
+                rdfs:comment "bbkmm:hasName"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasOpen rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasOpen"@en ;
+                rdfs:comment "bbkmm:hasOpen"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range xsd:positiveInteger .
+#################################################################
+#
+#$Individuals
+#
+#################################################################
+
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasProject_id","xsd:string",0,"visible")} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasName","xsd:string",1,"visible")} .
+${classURI("bbkmm:Museum",n0)}  ${property("bbkmm:hasOpen","xsd:positiveInteger",2,"visible")} .
+
+
+bbkmm:PredicateList_demo bbkmm:contents ("bbkmm:hasProject_id" "bbkmm:hasOpen" "bbkmm:hasName") .
+
+bbkmm:DataTypeList_demo bbkmm:contents ( "bbkmm:hasProject_id#xsd:string" "bbkmm:hasOpen#xsd:positiveInteger" "bbkmm:hasName#xsd:string") .

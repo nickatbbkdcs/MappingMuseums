@@ -1,0 +1,69 @@
+<html>
+<head>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" />
+<style>
+#nakedtab-content{ visibility:hidden; }
+body{
+font-size:10px;
+}
+</style>
+
+</head>
+<body>
+	    {% if alltups %}
+             {% for list  in alltups  %}
+              <table class="table table-striped table-bordered" border="2" width="80%">
+		{% for item  in list  %}
+		<tr>
+		  <td bgcolor="lightgrey" width="25%">   {{ item[0] }}</td>
+		  <td width="75%">    {{ item[1]|safe }}</td>
+                </tr>
+		  {% endfor %}
+	      </table>
+	      <p/>
+         {% endfor %}
+	    {% endif %}
+	    {% if allprops %}
+	      <p>
+	      <button id="btn-see" type="button" class="btn btn-primary pull-right" onclick="seeAll();">See all</button>
+            </p>
+	      <div id="nakedtab-content" class="nakedtab-content" >
+	      
+	      <h3 >All Properties</h3>
+              <table class="table table-striped table-bordered" border="2" width="80%">
+             {% for item  in allprops  %}
+		<tr>
+		  <td bgcolor="lightgrey" width="25%">   {{ item[0] }}</td>
+		  <td width="75%">    {{ item[1]|safe }}</td>
+                </tr>
+             {% endfor %}
+	      </table>
+	      <p/>
+	    </div>
+	    {% endif %}
+
+	<script type="text/javascript">
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	// Toggle all/default properties
+	function seeAll()
+        {
+	  var el =document.getElementById("nakedtab-content");
+	  if (el.style.visibility == 'visible')
+            {
+	      el.style.visibility = 'hidden';
+            }
+          else
+            {
+   	      el.style.display = 'block';
+	      el.style.visibility = 'visible';
+            }
+	}
+
+	</script >
+
+</body>
+</html>

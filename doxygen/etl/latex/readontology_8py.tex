@@ -1,0 +1,328 @@
+\hypertarget{readontology_8py}{}\section{/home/nlarsson/bbk/etl/code/readontology.py File Reference}
+\label{readontology_8py}\index{/home/nlarsson/bbk/etl/code/readontology.\+py@{/home/nlarsson/bbk/etl/code/readontology.\+py}}
+
+
+The program reads a graphml file which contains the ontology and creates a macro template which contains classes,predicates and individuals.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{readontology_8py_acf55b72d52c04eaf4c16b42d3f8e84c1}\label{readontology_8py_acf55b72d52c04eaf4c16b42d3f8e84c1}} 
+def \mbox{\hyperlink{readontology_8py_acf55b72d52c04eaf4c16b42d3f8e84c1}{readontology.\+emit\+Declaration}} (emitstring)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Emits the declaration or supresses it depending on state of E\+M\+I\+T\+T\+I\+NG Arguments\+: . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ is a string needing cleanup}\par
+{\em Purpose\+: Removes unwanted characters from string Arguments\+: }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{readontology_8py_aa4d244b4be61efa7061d6e3f07ac1d69}\label{readontology_8py_aa4d244b4be61efa7061d6e3f07ac1d69}} 
+def {\bfseries readontology.\+clean\+Name} (name)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{readontology_8py_a5a0515b91dd547fcece346ac0ce93ba6}\label{readontology_8py_a5a0515b91dd547fcece346ac0ce93ba6}} 
+string {\bfseries readontology.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a82de5905cfe9e35f9c597de506464fca}\label{readontology_8py_a82de5905cfe9e35f9c597de506464fca}} 
+tuple {\bfseries readontology.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\item 
+\mbox{\Hypertarget{readontology_8py_a6d9e05606321ae2d46e7c487431093ca}\label{readontology_8py_a6d9e05606321ae2d46e7c487431093ca}} 
+string {\bfseries readontology.\+P\+R\+E\+F\+IX} = \textquotesingle{}bbkmm\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_acc5b48fc78b12506e9d1cedd58a4f659}\label{readontology_8py_acc5b48fc78b12506e9d1cedd58a4f659}} 
+string {\bfseries readontology.\+P\+R\+E\+F\+I\+X\+\_\+\+W\+I\+T\+H\+C\+O\+L\+ON} = \textquotesingle{}bbkmm\+:\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a30ce10f5eb49878facc139fa6dc4ff64}\label{readontology_8py_a30ce10f5eb49878facc139fa6dc4ff64}} 
+string {\bfseries readontology.\+D\+O\+M\+A\+I\+N\+C\+L\+A\+SS} = \textquotesingle{}domainclass\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a63cb8c7641e8a8dad34517bef7922808}\label{readontology_8py_a63cb8c7641e8a8dad34517bef7922808}} 
+string {\bfseries readontology.\+S\+U\+B\+C\+L\+A\+SS} = \textquotesingle{}subclasses\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a0b91d51c1a63b7583d40434a34c176f2}\label{readontology_8py_a0b91d51c1a63b7583d40434a34c176f2}} 
+string {\bfseries readontology.\+C\+O\+M\+M\+E\+NT} = \textquotesingle{}comment\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a95b8ba47e0fcdc07ab67567b84465814}\label{readontology_8py_a95b8ba47e0fcdc07ab67567b84465814}} 
+string {\bfseries readontology.\+L\+A\+B\+EL} = \textquotesingle{}label\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a1ea14a27f4ac91134bc1f31c53b1b833}\label{readontology_8py_a1ea14a27f4ac91134bc1f31c53b1b833}} 
+string {\bfseries readontology.\+U\+RI} = \textquotesingle{}uri\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a5129ac8affa4f9faab8b5f14994588b8}\label{readontology_8py_a5129ac8affa4f9faab8b5f14994588b8}} 
+string {\bfseries readontology.\+S\+U\+B\+C\+L\+A\+S\+S\+N\+A\+M\+E\+S\+E\+P\+A\+R\+A\+T\+OR} = \textquotesingle{}-\/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{readontology_8py_af32c32fb7acc4c9f61a933ff7d56c3bf}\label{readontology_8py_af32c32fb7acc4c9f61a933ff7d56c3bf}} 
+string {\bfseries readontology.\+B\+A\+S\+E\+N\+O\+D\+E\+ID} = \char`\"{}n0\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_ab70f8fcb431f978a0ca3d2ff00b3f39d}\label{readontology_8py_ab70f8fcb431f978a0ca3d2ff00b3f39d}} 
+string {\bfseries readontology.\+B\+A\+S\+E\+N\+O\+D\+E\+N\+A\+ME} = \char`\"{}Museum\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a2599a16a2e4d124eac27b7c841e2facd}\label{readontology_8py_a2599a16a2e4d124eac27b7c841e2facd}} 
+dictionary \mbox{\hyperlink{readontology_8py_a2599a16a2e4d124eac27b7c841e2facd}{readontology.\+I\+N\+H\+E\+R\+I\+T\+A\+N\+C\+E\+M\+AP}} = \{\}
+\begin{DoxyCompactList}\small\item\em Maps for storing data about classes and properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a2659803edf1b35cb4f2294d8c2d8effa}\label{readontology_8py_a2659803edf1b35cb4f2294d8c2d8effa}} 
+dictionary {\bfseries readontology.\+C\+L\+A\+S\+S\+T\+O\+P\+R\+O\+P\+E\+R\+T\+Y\+M\+AP} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_a6552cd269848699ece93208bd58bb674}\label{readontology_8py_a6552cd269848699ece93208bd58bb674}} 
+dictionary {\bfseries readontology.\+S\+U\+B\+C\+L\+A\+S\+S\+D\+A\+T\+A\+D\+I\+CT} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_a688c3f4a0067a7b316642e19ae2020c5}\label{readontology_8py_a688c3f4a0067a7b316642e19ae2020c5}} 
+dictionary {\bfseries readontology.\+C\+L\+A\+S\+S\+D\+A\+T\+A\+D\+I\+CT} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_a434dd3697ee35ac6344c618d4e2a6a63}\label{readontology_8py_a434dd3697ee35ac6344c618d4e2a6a63}} 
+dictionary {\bfseries readontology.\+C\+L\+A\+S\+S\+N\+O\+D\+E\+N\+U\+M\+B\+E\+R\+D\+I\+CT} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_a752718644e80ccd7980b2e451e52dffe}\label{readontology_8py_a752718644e80ccd7980b2e451e52dffe}} 
+list {\bfseries readontology.\+C\+L\+A\+Z\+Z\+ES} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{readontology_8py_a7f99638cbed7ed0c115e338bdf0d36b5}\label{readontology_8py_a7f99638cbed7ed0c115e338bdf0d36b5}} 
+dictionary {\bfseries readontology.\+L\+I\+S\+T\+C\+L\+A\+Z\+Z\+ES} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_aef4c393b0b76b4191844cc85b15d423a}\label{readontology_8py_aef4c393b0b76b4191844cc85b15d423a}} 
+dictionary {\bfseries readontology.\+P\+R\+E\+D\+I\+C\+A\+T\+ES} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_ab2a08cec73ca82f3ab8018c7972a63b6}\label{readontology_8py_ab2a08cec73ca82f3ab8018c7972a63b6}} 
+dictionary {\bfseries readontology.\+D\+A\+T\+A\+T\+Y\+P\+E\+D\+I\+CT} = \{\}
+\item 
+\mbox{\Hypertarget{readontology_8py_a283152dba2b149e5bf18f012063a3557}\label{readontology_8py_a283152dba2b149e5bf18f012063a3557}} 
+string {\bfseries readontology.\+N\+A\+M\+E\+D\+I\+N\+S\+T\+A\+N\+CE} = \char`\"{}has\+Named\+Instance\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a896f6db864432b2285ebe697a6bc9cd8}\label{readontology_8py_a896f6db864432b2285ebe697a6bc9cd8}} 
+string \mbox{\hyperlink{readontology_8py_a896f6db864432b2285ebe697a6bc9cd8}{readontology.\+IS}} = \char`\"{}Is\char`\"{}
+\begin{DoxyCompactList}\small\item\em Definitions for our abstract types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a2976e886be5d680e05e12c0b765103e5}\label{readontology_8py_a2976e886be5d680e05e12c0b765103e5}} 
+string {\bfseries readontology.\+D\+EF} = \char`\"{}def\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_aeb1e5efbef349fe65c20360621fd2371}\label{readontology_8py_aeb1e5efbef349fe65c20360621fd2371}} 
+string {\bfseries readontology.\+H\+AS} = \char`\"{}has\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a46c0c9f57046dabe5c39c4d3079e48bb}\label{readontology_8py_a46c0c9f57046dabe5c39c4d3079e48bb}} 
+string {\bfseries readontology.\+D\+E\+F\+R\+A\+N\+GE} = \char`\"{}def\+Range\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a1fecc222a8c290b720b12169869c972b}\label{readontology_8py_a1fecc222a8c290b720b12169869c972b}} 
+string {\bfseries readontology.\+D\+E\+F\+C\+L\+A\+SS} = \char`\"{}def\+Class\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a5bbe220b879e967690ceb6b9230f1b12}\label{readontology_8py_a5bbe220b879e967690ceb6b9230f1b12}} 
+string {\bfseries readontology.\+H\+I\+E\+R\+\_\+\+T\+Y\+PE} = \char`\"{}Hier\+Type\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_aba5da86ed0d894ec080a15f67fd928ed}\label{readontology_8py_aba5da86ed0d894ec080a15f67fd928ed}} 
+string {\bfseries readontology.\+L\+I\+S\+T\+\_\+\+T\+Y\+PE} = \char`\"{}List\+Type\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_ad636edaddec02aca9d277c1196876aad}\label{readontology_8py_ad636edaddec02aca9d277c1196876aad}} 
+string {\bfseries readontology.\+R\+A\+N\+G\+E\+\_\+\+T\+Y\+PE} = \char`\"{}Range\+Type\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{name to add}
+\label{_amgrp173a84984a94b6bd1f3977b9798f061c}%
+Purpose\+: Adds a name to the datatype dict Arguments\+:
+
+datatyep to add \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{readontology_8py_ad5d70398fe7d25aafbd5dfbbd91ced37}\label{readontology_8py_ad5d70398fe7d25aafbd5dfbbd91ced37}} 
+{\bfseries readontology.\+N\+O\+D\+ES} = None
+\item 
+\mbox{\Hypertarget{readontology_8py_a1721b23d19b4b92fcaea40bab04d3402}\label{readontology_8py_a1721b23d19b4b92fcaea40bab04d3402}} 
+{\bfseries readontology.\+E\+D\+G\+ES} = None
+\item 
+bool \mbox{\hyperlink{readontology_8py_a2be95f661a637158f82573d72c804a39}{readontology.\+E\+M\+I\+T\+T\+I\+NG}} = True
+\begin{DoxyCompactList}\small\item\em P\+A\+SS 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a527f462fd2adb4fbda8f435357666fd4}\label{readontology_8py_a527f462fd2adb4fbda8f435357666fd4}} 
+string \mbox{\hyperlink{readontology_8py_a527f462fd2adb4fbda8f435357666fd4}{readontology.\+decl}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em predicatelist \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a6c071354b2aee6bdf287213b071b00d9}\label{readontology_8py_a6c071354b2aee6bdf287213b071b00d9}} 
+string {\bfseries readontology.\+alldecl} = alldecl+\char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{readontology_8py_a8e4446502c7abe7cce3504798eb7a1b7}\label{readontology_8py_a8e4446502c7abe7cce3504798eb7a1b7}} 
+{\bfseries readontology.\+fp} = str(sys.\+argv\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{readontology_8py_a8543f26623c05ba54c35feab1069d6ac}\label{readontology_8py_a8543f26623c05ba54c35feab1069d6ac}} 
+{\bfseries readontology.\+processinglabel} = sys.\+argv\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{readontology_8py_a3c63bb9f9d00c197af3612f046b8f4b3}\label{readontology_8py_a3c63bb9f9d00c197af3612f046b8f4b3}} 
+{\bfseries readontology.\+soup} = Beautiful\+Soup(file, \char`\"{}lxml\char`\"{})
+\item 
+\mbox{\Hypertarget{readontology_8py_ae2489cfccf14b0e0d9114926db6bc84b}\label{readontology_8py_ae2489cfccf14b0e0d9114926db6bc84b}} 
+{\bfseries readontology.\+gmlkeys} = soup.\+find\+All(\textquotesingle{}key\textquotesingle{},\{\char`\"{}attr.\+name\char`\"{}\+:True\})
+\item 
+\mbox{\Hypertarget{readontology_8py_a75dca2c33c2160ae70ef892de5926a4f}\label{readontology_8py_a75dca2c33c2160ae70ef892de5926a4f}} 
+def {\bfseries readontology.\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+N\+O\+D\+E\+N\+A\+ME} = get\+Description\+Node\+Name(gmlkeys)
+\item 
+\mbox{\Hypertarget{readontology_8py_afb3f66aaf12dc7d98b98a26324120684}\label{readontology_8py_afb3f66aaf12dc7d98b98a26324120684}} 
+def {\bfseries readontology.\+add\+To\+Data\+Type\+Dict} (name, datatype)
+\item 
+def \mbox{\hyperlink{readontology_8py_a55b2e9510efb0eb0051bab7a4aba62ba}{readontology.\+generate\+Data\+Type\+List}} (label)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generates the datatype list at end of processing. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{readontology_8py_a021028750572b1cb2f0bf67627ce2ec1}{readontology.\+add\+To\+List\+For\+Declaration}} (clazz, instancevalue)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Adds an instance to the dictionary for the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a628accef8004b81f80071901adb9ccbf}\label{readontology_8py_a628accef8004b81f80071901adb9ccbf}} 
+def \mbox{\hyperlink{readontology_8py_a628accef8004b81f80071901adb9ccbf}{readontology.\+generate\+List\+Declarations}} (label)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Declares a list with its content as name label Arguments\+:  name of list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_aa85943e973e4980c05e200751f01d91b}\label{readontology_8py_aa85943e973e4980c05e200751f01d91b}} 
+def \mbox{\hyperlink{readontology_8py_aa85943e973e4980c05e200751f01d91b}{readontology.\+add\+Sub\+Class}} (base, derived)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Constructs the inheritance map Arguments\+:  base class  class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_adc650fa750d2f064aaf8d1e05b08004c}\label{readontology_8py_adc650fa750d2f064aaf8d1e05b08004c}} 
+def \mbox{\hyperlink{readontology_8py_adc650fa750d2f064aaf8d1e05b08004c}{readontology.\+get\+Sub\+Class}} (classmap, derivedin)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Gets a subclass from the map if it is a derived class Arguments\+:  . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a0a60f333a955f0a77b9b6d364a8c64e3}\label{readontology_8py_a0a60f333a955f0a77b9b6d364a8c64e3}} 
+def {\bfseries readontology.\+get\+Sub\+Class\+For\+Property} (classmap, derivedin, property)
+\item 
+\mbox{\Hypertarget{readontology_8py_a0da97385eb5d5c5dfe66ef44aa96bdb4}\label{readontology_8py_a0da97385eb5d5c5dfe66ef44aa96bdb4}} 
+def \mbox{\hyperlink{readontology_8py_a0da97385eb5d5c5dfe66ef44aa96bdb4}{readontology.\+get\+Parent\+Class}} (classmap, clazz)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return a parent class to clazz Arguments\+:  map of classes  class to look for. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_aa72d1b91048db715811ea650d378b27d}\label{readontology_8py_aa72d1b91048db715811ea650d378b27d}} 
+def \mbox{\hyperlink{readontology_8py_aa72d1b91048db715811ea650d378b27d}{readontology.\+get\+Root\+Class}} (classmap, clazz)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Get root class for clazz Arguments\+:  map of classes  class to look for. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a584fe64d3d7852ad9795081909236fe8}\label{readontology_8py_a584fe64d3d7852ad9795081909236fe8}} 
+def \mbox{\hyperlink{readontology_8py_a584fe64d3d7852ad9795081909236fe8}{readontology.\+getparams}} (params, separator=\textquotesingle{},\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return a list of parameters decoded from the input string Arguments\+:  input string =\textquotesingle{},\textquotesingle{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{readontology_8py_ad4be72f04feed5ddd08e1a78597aa257}{readontology.\+iscomplextype}} (propertyname)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Is the name an abstract class? E.\+g. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_af76d22314b3ffdec9669d358070581bf}\label{readontology_8py_af76d22314b3ffdec9669d358070581bf}} 
+def \mbox{\hyperlink{readontology_8py_af76d22314b3ffdec9669d358070581bf}{readontology.\+declare\+Property}} (domain, propertyname, rangetype)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Declares a dataproperty with domain and range Arguments\+:  domain  name of property  range of property. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_addd9b513a0d8ce13b8dc90a629e2f0f8}\label{readontology_8py_addd9b513a0d8ce13b8dc90a629e2f0f8}} 
+def \mbox{\hyperlink{readontology_8py_addd9b513a0d8ce13b8dc90a629e2f0f8}{readontology.\+declare\+Object\+Property}} (domain, propertyname, rangetype)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Declare the propertyname as an objectproperty Arguments\+:  domain  name of property  range of property. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{readontology_8py_ab4316b1c16949f6d5dc9c4df018d52a8}{readontology.\+declare\+Subclass}} (clazz, subclazz, srcdatacontent, datacontent)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Declare a subclass with special concern for hier classes and derived classes Arguments\+:  the new class  the ancestor class  Column number in sheet  Data supplied in graph\+ML file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{readontology_8py_aea06d6149c307ded8c4e26464a040cba}{readontology.\+get\+Class\+U\+RI}} (clazzname)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Decide if we need a sequenced (temporal) uri or unsequenced. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_ab409182abd58745c33b27fc543b494b9}\label{readontology_8py_ab409182abd58745c33b27fc543b494b9}} 
+def \mbox{\hyperlink{readontology_8py_ab409182abd58745c33b27fc543b494b9}{readontology.\+is\+Temporal}} (clazzname)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Is clazzname a temporal class or derived from one? Arguments\+: . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a1220230990788afe0cb286e50c5b1a29}\label{readontology_8py_a1220230990788afe0cb286e50c5b1a29}} 
+def {\bfseries readontology.\+declare\+Instance\+Linkage} (clazz, src, subclazz, subsrc, property, srcdatacontent)
+\item 
+\mbox{\Hypertarget{readontology_8py_a05220ac49605ecd65ff3e95f8257da3c}\label{readontology_8py_a05220ac49605ecd65ff3e95f8257da3c}} 
+def \mbox{\hyperlink{readontology_8py_a05220ac49605ecd65ff3e95f8257da3c}{readontology.\+process\+Node}} (node)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generate class declaration from node Arguments\+:  node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a3b08b8e067238acf733277227f732ba4}\label{readontology_8py_a3b08b8e067238acf733277227f732ba4}} 
+def \mbox{\hyperlink{readontology_8py_a3b08b8e067238acf733277227f732ba4}{readontology.\+process\+Edge}} (edge, nodes)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Process edge to generate predicates or subclassing Arguments\+:  edge  list of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a15721198022171073e599870e729bcd5}\label{readontology_8py_a15721198022171073e599870e729bcd5}} 
+def \mbox{\hyperlink{readontology_8py_a15721198022171073e599870e729bcd5}{readontology.\+process\+Edge\+Properties}} (edge, nodes)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generate classes resulting from hierarchies Arguments\+:  edge  list of nodes. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{readontology_8py_a60243dce08d5a15b0d24decc69b12966}{readontology.\+get\+Description\+Node\+Name}} (gmlkeys)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Finds the node with the description of the data in the Graph\+ML file from the header. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a23c747139413a6b2eb46da48cd241d40}\label{readontology_8py_a23c747139413a6b2eb46da48cd241d40}} 
+def \mbox{\hyperlink{readontology_8py_a23c747139413a6b2eb46da48cd241d40}{readontology.\+get\+Node\+With\+Id}} (id, nodes)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Return node with id Arguments\+:  id to look for  list of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a00beabfe54960a9099fd7920d4c444b0}\label{readontology_8py_a00beabfe54960a9099fd7920d4c444b0}} 
+def \mbox{\hyperlink{readontology_8py_a00beabfe54960a9099fd7920d4c444b0}{readontology.\+get\+Edgewith\+Target}} (node, edges, nodes)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Return the edge that points to a specific node Arguments\+:  Node to look for  list of edges  list of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_a5afb13824c9c5f4034e6b14d0d49ef80}\label{readontology_8py_a5afb13824c9c5f4034e6b14d0d49ef80}} 
+def \mbox{\hyperlink{readontology_8py_a5afb13824c9c5f4034e6b14d0d49ef80}{readontology.\+get\+Node\+Path\+Name}} (idl, nodes)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Generate a path to the node via ancestor class Arguments\+:  list of nodes  list of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{readontology_8py_abeaeb6aa19b94c11b728665e6dcda196}\label{readontology_8py_abeaeb6aa19b94c11b728665e6dcda196}} 
+def \mbox{\hyperlink{readontology_8py_abeaeb6aa19b94c11b728665e6dcda196}{readontology.\+get\+Node\+Path\+Ids}} (id, edges, nodes)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generate list of nodes on path to id Arguments\+:  node to look for  list ef edges  list of nodes. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{readontology_8py_a98e947b629577c854e9594ebc9dc1c1b}{readontology.\+get\+Node\+Path}} (id)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Convert list of nodes to string path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The program reads a graphml file which contains the ontology and creates a macro template which contains classes,predicates and individuals. 
+
+Combining this template with the data sheet produces N3 R\+DF in the next step. Arguments\+: argument1 \+: ontology.\+graphml argument2 \+: domain label = this label is used to partition the generated model in case many sheets are being processed.
+
+The program uses beautiful soup to parse the graph\+ML file. The program makes 2 passes over the same ontology file. The first pass collects information on subclasses etc and the second pass generates the code.
+
+General outline\+:
+
+~\newline
+ P\+A\+S\+S1\+: Process all nodes and edges and collect information in dictionaries and maps. P\+A\+S\+S2\+: Process all nodes to generate content classes Process all edges to generate predicates Process all edges to generate individuals Generate list declarations for datatypes and predicates
+
+The datatypes and predicates are used in the web application to build menus and decide on what capabilities should be attributed to a data item.
+
+The basenode id is as before n0 Z\+E\+RO, the museum class.
+
+More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{readontology_8py_a021028750572b1cb2f0bf67627ce2ec1}\label{readontology_8py_a021028750572b1cb2f0bf67627ce2ec1}} 
+\index{readontology.\+py@{readontology.\+py}!add\+To\+List\+For\+Declaration@{add\+To\+List\+For\+Declaration}}
+\index{add\+To\+List\+For\+Declaration@{add\+To\+List\+For\+Declaration}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{add\+To\+List\+For\+Declaration()}{addToListForDeclaration()}}
+{\footnotesize\ttfamily def readontology.\+add\+To\+List\+For\+Declaration (\begin{DoxyParamCaption}\item[{}]{clazz,  }\item[{}]{instancevalue }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Adds an instance to the dictionary for the list. 
+
+Arguments\+:  name of class  name of instance \mbox{\Hypertarget{readontology_8py_ab4316b1c16949f6d5dc9c4df018d52a8}\label{readontology_8py_ab4316b1c16949f6d5dc9c4df018d52a8}} 
+\index{readontology.\+py@{readontology.\+py}!declare\+Subclass@{declare\+Subclass}}
+\index{declare\+Subclass@{declare\+Subclass}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{declare\+Subclass()}{declareSubclass()}}
+{\footnotesize\ttfamily def readontology.\+declare\+Subclass (\begin{DoxyParamCaption}\item[{}]{clazz,  }\item[{}]{subclazz,  }\item[{}]{srcdatacontent,  }\item[{}]{datacontent }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Declare a subclass with special concern for hier classes and derived classes Arguments\+:  the new class  the ancestor class  Column number in sheet  Data supplied in graph\+ML file. 
+
+\mbox{\Hypertarget{readontology_8py_a55b2e9510efb0eb0051bab7a4aba62ba}\label{readontology_8py_a55b2e9510efb0eb0051bab7a4aba62ba}} 
+\index{readontology.\+py@{readontology.\+py}!generate\+Data\+Type\+List@{generate\+Data\+Type\+List}}
+\index{generate\+Data\+Type\+List@{generate\+Data\+Type\+List}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{generate\+Data\+Type\+List()}{generateDataTypeList()}}
+{\footnotesize\ttfamily def readontology.\+generate\+Data\+Type\+List (\begin{DoxyParamCaption}\item[{}]{label }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Generates the datatype list at end of processing. 
+
+Arguments\+:  name of list label \mbox{\Hypertarget{readontology_8py_aea06d6149c307ded8c4e26464a040cba}\label{readontology_8py_aea06d6149c307ded8c4e26464a040cba}} 
+\index{readontology.\+py@{readontology.\+py}!get\+Class\+U\+RI@{get\+Class\+U\+RI}}
+\index{get\+Class\+U\+RI@{get\+Class\+U\+RI}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{get\+Class\+U\+R\+I()}{getClassURI()}}
+{\footnotesize\ttfamily def readontology.\+get\+Class\+U\+RI (\begin{DoxyParamCaption}\item[{}]{clazzname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Decide if we need a sequenced (temporal) uri or unsequenced. 
+
+Arguments\+:  \mbox{\Hypertarget{readontology_8py_a60243dce08d5a15b0d24decc69b12966}\label{readontology_8py_a60243dce08d5a15b0d24decc69b12966}} 
+\index{readontology.\+py@{readontology.\+py}!get\+Description\+Node\+Name@{get\+Description\+Node\+Name}}
+\index{get\+Description\+Node\+Name@{get\+Description\+Node\+Name}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{get\+Description\+Node\+Name()}{getDescriptionNodeName()}}
+{\footnotesize\ttfamily def readontology.\+get\+Description\+Node\+Name (\begin{DoxyParamCaption}\item[{}]{gmlkeys }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Finds the node with the description of the data in the Graph\+ML file from the header. 
+
+Arguments\+:  \mbox{\Hypertarget{readontology_8py_a98e947b629577c854e9594ebc9dc1c1b}\label{readontology_8py_a98e947b629577c854e9594ebc9dc1c1b}} 
+\index{readontology.\+py@{readontology.\+py}!get\+Node\+Path@{get\+Node\+Path}}
+\index{get\+Node\+Path@{get\+Node\+Path}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{get\+Node\+Path()}{getNodePath()}}
+{\footnotesize\ttfamily def readontology.\+get\+Node\+Path (\begin{DoxyParamCaption}\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Convert list of nodes to string path. 
+
+Arguments\+:  id to look for \mbox{\Hypertarget{readontology_8py_ad4be72f04feed5ddd08e1a78597aa257}\label{readontology_8py_ad4be72f04feed5ddd08e1a78597aa257}} 
+\index{readontology.\+py@{readontology.\+py}!iscomplextype@{iscomplextype}}
+\index{iscomplextype@{iscomplextype}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{iscomplextype()}{iscomplextype()}}
+{\footnotesize\ttfamily def readontology.\+iscomplextype (\begin{DoxyParamCaption}\item[{}]{propertyname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Is the name an abstract class? E.\+g. 
+
+def\+Class Arguments\+:  
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{readontology_8py_a2be95f661a637158f82573d72c804a39}\label{readontology_8py_a2be95f661a637158f82573d72c804a39}} 
+\index{readontology.\+py@{readontology.\+py}!E\+M\+I\+T\+T\+I\+NG@{E\+M\+I\+T\+T\+I\+NG}}
+\index{E\+M\+I\+T\+T\+I\+NG@{E\+M\+I\+T\+T\+I\+NG}!readontology.\+py@{readontology.\+py}}
+\subsubsection{\texorpdfstring{E\+M\+I\+T\+T\+I\+NG}{EMITTING}}
+{\footnotesize\ttfamily bool readontology.\+E\+M\+I\+T\+T\+I\+NG = True}
+
+
+
+P\+A\+SS 1. 
+
+P\+A\+SS 2.
+
+No declarations emitted
+
+Emit declarations 

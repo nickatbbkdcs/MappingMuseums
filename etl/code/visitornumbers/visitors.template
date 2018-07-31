@@ -1,0 +1,154 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################
+#
+#$Content classes
+#
+#################################################################
+
+
+bbkmm:Museum a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:MuseumClass"@en ;
+rdfs:comment         "bbkmm:MuseumClass"@en .
+
+bbkmm:TemporalMeasurement a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:TemporalMeasurementClass"@en ;
+rdfs:comment         "bbkmm:TemporalMeasurementClass"@en .
+
+bbkmm:Visitor_Numbers_Data a    owl:Class, rdfs:Class;
+rdfs:label           "bbkmm:Visitor_Numbers_DataClass"@en ;
+rdfs:comment         "bbkmm:Visitor_Numbers_DataClass"@en .
+
+ time:inXSDDateTime rdf:type owl:DatatypeProperty ;
+                rdfs:label "time:inXSDDateTime"@en ;
+                rdfs:comment "time:inXSDDateTime"@en ;
+                rdfs:domain time:TimeInstant ;
+                rdfs:range xsd:dateTimeStamp .
+
+ time:inXSDDateTime rdf:type owl:DatatypeProperty ;
+                rdfs:label "time:inXSDDateTime"@en ;
+                rdfs:comment "time:inXSDDateTime"@en ;
+                rdfs:domain time:TimeInstant ;
+                rdfs:range xsd:dateTimeStamp .
+
+ prov:value rdf:type owl:DatatypeProperty ;
+                rdfs:label "prov:value"@en ;
+                rdfs:comment "prov:value"@en ;
+                rdfs:domain prov:Entity ;
+                rdfs:range xsd:string .
+
+ prov:type rdf:type owl:DatatypeProperty ;
+                rdfs:label "prov:type"@en ;
+                rdfs:comment "prov:type"@en ;
+                rdfs:domain prov:Entity ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasNote rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasNote"@en ;
+                rdfs:comment "bbkmm:hasNote"@en ;
+                rdfs:domain bbkmm:TemporalMeasurement ;
+                rdfs:range xsd:string .
+
+ bbkmm:hasSequenceOrder rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasSequenceOrder"@en ;
+                rdfs:comment "bbkmm:hasSequenceOrder"@en ;
+                rdfs:domain bbkmm:Visitor_Numbers_Data ;
+                rdfs:range xsd:positiveInteger .
+
+ bbkmm:hasValue rdf:type owl:DatatypeProperty ;
+                rdfs:label "bbkmm:hasValue"@en ;
+                rdfs:comment "bbkmm:hasValue"@en ;
+                rdfs:domain bbkmm:Visitor_Numbers_Data ;
+                rdfs:range xsd:positiveInteger .
+#################################################################
+#
+#$Individuals
+#
+#################################################################
+
+
+ time:hasBeginning rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "time:hasBeginning"@en ;
+                rdfs:comment "time:hasBeginning"@en ;
+                rdfs:domain time:TemporalEntity ;
+                rdfs:range time:TimeInstant .
+${temporalClassURI("time:TemporalEntity",n10)} time:hasBeginning ${temporalClassURI("time:TimeInstant",n5)} .
+
+ time:hasEnd rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "time:hasEnd"@en ;
+                rdfs:comment "time:hasEnd"@en ;
+                rdfs:domain time:TemporalEntity ;
+                rdfs:range time:TimeInstant .
+${temporalClassURI("time:TemporalEntity",n10)} time:hasEnd ${temporalClassURI("time:TimeInstant",n6)} .
+${temporalClassURI("time:TimeInstant",n5)} ${property("time:inXSDDateTime","xsd:dateTimeStamp",2,"Visible/Searchable")} .
+${temporalClassURI("time:TimeInstant",n6)} ${property("time:inXSDDateTime","xsd:dateTimeStamp",2,"Visible/Searchable")} .
+
+bbkmm:TemporalMeasurement rdfs:subClassOf time:TemporalEntity .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:TemporalMeasurement ;
+                rdfs:range time:TemporalEntity .
+
+${DeclareDefLinkage(bbkmm:TemporalMeasurement,n1,bbkmm:isSubClassInstanceOf,time:TemporalEntity,n10,,temporalClassURI,temporalClassURI)}
+
+${temporalClassURI("prov:Entity",n7)} ${property("prov:value","xsd:string",4,"Visible/Searchable")} .
+${temporalClassURI("prov:Entity",n7)} ${property("prov:type","xsd:string",4,"Visible/Searchable")} .
+
+ prov:hadPrimarySource rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "prov:hadPrimarySource"@en ;
+                rdfs:comment "prov:hadPrimarySource"@en ;
+                rdfs:domain bbkmm:TemporalMeasurement ;
+                rdfs:range prov:Entity .
+${temporalClassURI("bbkmm:TemporalMeasurement",n1)} prov:hadPrimarySource ${temporalClassURI("prov:Entity",n7)} .
+${temporalClassURI("bbkmm:TemporalMeasurement",n1)}  ${property("bbkmm:hasNote","xsd:string",5,Visible)} .
+
+ bbkmm:hasVisitor_Numbers_Data rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "hasVisitor_Numbers_Data"@en ;
+                rdfs:comment "hasVisitor_Numbers_Data"@en ;
+                rdfs:domain bbkmm:Museum ;
+                rdfs:range bbkmm:Visitor_Numbers_Data .
+${classURI("bbkmm:Museum",n0)} bbkmm:hasVisitor_Numbers_Data ${temporalClassURI("bbkmm:Visitor_Numbers_Data",n12)} .
+
+bbkmm:Visitor_Numbers_Data rdfs:subClassOf bbkmm:TemporalMeasurement .
+
+
+ bbkmm:isSubClassInstanceOf rdf:type owl:ObjecttypeProperty ;
+                rdfs:label "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:comment "bbkmm:isSubClassInstanceOf"@en ;
+                rdfs:domain bbkmm:Visitor_Numbers_Data ;
+                rdfs:range bbkmm:TemporalMeasurement .
+
+${DeclareDefLinkage(bbkmm:Visitor_Numbers_Data,n12,bbkmm:isSubClassInstanceOf,bbkmm:TemporalMeasurement,n1,,temporalClassURI,temporalClassURI)}
+
+${temporalClassURI("bbkmm:Visitor_Numbers_Data",n12)}  ${property("bbkmm:hasSequenceOrder","xsd:positiveInteger","$$temporalSequenceOrderInt()$","Visible/Searchable")} .
+${temporalClassURI("bbkmm:Visitor_Numbers_Data",n12)}  ${property("bbkmm:hasValue","xsd:positiveInteger",3,Visible)} .
+
+
+bbkmm:PredicateList_visitornumbers bbkmm:contents ("bbkmm:hasNote" "bbkmm:hasSequenceOrder" "bbkmm:isSubClassInstanceOf" "bbkmm:hasValue") .
+
+bbkmm:DataTypeList_visitornumbers bbkmm:contents ( "time:hasBeginning#time:TimeInstant" "time:inXSDDateTime#xsd:dateTimeStamp" "bbkmm:hasNote#xsd:string" "prov:type#xsd:string" "prov:value#xsd:string" "time:hasEnd#time:TimeInstant" "prov:hadPrimarySource#prov:Entity" "bbkmm:hasSequenceOrder#xsd:positiveInteger" "bbkmm:isSubClassInstanceOf#bbkmm:TemporalMeasurement" "bbkmm:hasValue#xsd:positiveInteger" "hasVisitor_Numbers_Data#bbkmm:Visitor_Numbers_Data") .

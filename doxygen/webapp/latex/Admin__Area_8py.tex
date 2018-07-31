@@ -1,0 +1,164 @@
+\hypertarget{Admin__Area_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Admin\+\_\+\+Area.py File Reference}
+\label{Admin__Area_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Admin\+\_\+\+Area.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\+Admin\+\_\+\+Area.\+py}}
+
+
+~\newline
+ Implementation of a datatype follows this interface which has to be implemented\+:  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1datatypes_1_1Admin__Area_1_1Admin__Area}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+Admin\+\_\+\+Area}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{Admin__Area_8py_aab38abe1a6fdfeebcac2bbf61b16129d}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Match\+Filter}} (self, rcount, match, condition)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns S\+P\+A\+R\+QL for a match condition filter on the data type Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{Admin__Area_8py_a0346bc7b61fff05405e0c00fb0eb0562}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Compare\+Filter}} (self, rcount, match, condition)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns S\+P\+A\+R\+QL for a condition filter on the data type Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{Admin__Area_8py_a38ed60d46b000630e0223043c802f518}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Query}} (self, col, rcount, matchstring, condition, matchcolumn)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns S\+P\+A\+R\+QL for a query on the datatype without filter Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Admin__Area_8py_a7b02aebccafdba49ce1d47950aa50d78}\label{Admin__Area_8py_a7b02aebccafdba49ce1d47950aa50d78}} 
+def \mbox{\hyperlink{Admin__Area_8py_a7b02aebccafdba49ce1d47950aa50d78}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Search\+Type}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns type for the datatype to appear in search menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Admin__Area_8py_a59a232688d736d2957982f6189b8f25b}\label{Admin__Area_8py_a59a232688d736d2957982f6189b8f25b}} 
+def \mbox{\hyperlink{Admin__Area_8py_a59a232688d736d2957982f6189b8f25b}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+G\+U\+I\+Conditions}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns the list of select conditions for the comaparator search menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Admin__Area_8py_a3e2ee6a90fefa669b1ce357a8d260100}\label{Admin__Area_8py_a3e2ee6a90fefa669b1ce357a8d260100}} 
+def \mbox{\hyperlink{Admin__Area_8py_a3e2ee6a90fefa669b1ce357a8d260100}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Widget}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns html code for search menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Admin__Area_8py_a5a3d05b6eebe3bd646fdcc70ed193a40}\label{Admin__Area_8py_a5a3d05b6eebe3bd646fdcc70ed193a40}} 
+def \mbox{\hyperlink{Admin__Area_8py_a5a3d05b6eebe3bd646fdcc70ed193a40}{app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Widget\+Code}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns JS code associated with the H\+T\+ML for the datatype. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Admin__Area_8py_a99a1428a7ad3039103c461c28a42a84e}\label{Admin__Area_8py_a99a1428a7ad3039103c461c28a42a84e}} 
+string {\bfseries app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{Admin__Area_8py_a4833f72dc68c8d6c6717fc4249bd5e7e}\label{Admin__Area_8py_a4833f72dc68c8d6c6717fc4249bd5e7e}} 
+tuple {\bfseries app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\item 
+\mbox{\Hypertarget{Admin__Area_8py_a2ade1428b900eb544332234fd0544123}\label{Admin__Area_8py_a2ade1428b900eb544332234fd0544123}} 
+string {\bfseries app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+matchfilter} = \textquotesingle{}(S\+TR(?pred\$\{rcount\}) = S\+TR(\textquotesingle{}+\char`\"{}\textquotesingle{}\char`\"{}+ match +\char`\"{}\textquotesingle{}\char`\"{}+\textquotesingle{}) )\textquotesingle{}
+\item 
+\mbox{\Hypertarget{Admin__Area_8py_a1f88adbeeb020b8ed0dd3e2f2cee55e4}\label{Admin__Area_8py_a1f88adbeeb020b8ed0dd3e2f2cee55e4}} 
+string {\bfseries app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+compfilter} = \textquotesingle{}(S\+TR(?pred\$\{rcount\}) \textquotesingle{}+self.\+\_\+conditiondict\mbox{[}condition\mbox{]}+\textquotesingle{} S\+TR(\textquotesingle{}+\char`\"{}\textquotesingle{}\char`\"{}+ match +\char`\"{}\textquotesingle{}\char`\"{}+\textquotesingle{}) )\textquotesingle{}
+\item 
+\mbox{\Hypertarget{Admin__Area_8py_aed3c4dc2c00a9d1fa85636d0a8685298}\label{Admin__Area_8py_aed3c4dc2c00a9d1fa85636d0a8685298}} 
+{\bfseries app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+query} = self.\+\_\+adminareaquery.\+replace(\char`\"{}\$\{column\+\_\+name\}\char`\"{},col)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ Implementation of a datatype follows this interface which has to be implemented\+: 
+
+Purpose\+:Returns S\+P\+A\+R\+QL for a match condition filter on the data type Arguments\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator def get\+Match\+Filter(self,rcount,match,condition)\+: 
+
+ Purpose\+:Returns S\+P\+A\+R\+QL for a condition filter on the data type Arguments\+:\\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator def get\+Compare\+Filter(self,rcount,match,condition)\+: 
+
+ Purpose\+:Returns S\+P\+A\+R\+QL for a query on the datatype without filter Arguments\+:\\
+\hline
+{\em col} & columne name for datatype \\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator \\
+\hline
+{\em matchcolumn} & not used, only here for compatibility def get\+Query(self,col,rcount,matchstring,condition,matchcolumn)\+: 
+
+ Purpose\+:Returns type for the datatype to appear in search menu def get\+Search\+Type(self)\+: 
+
+ Purpose\+:Returns the list of select conditions for the comaparator search menu def get\+G\+U\+I\+Conditions(self)\+: 
+
+ Purpose\+:Returns html code for search menu def get\+Widget(self)\+: 
+
+ Purpose\+:Returns JS code associated with the H\+T\+ML for the datatype def get\+Widget\+Code(self)\+:\\
+\hline
+\end{DoxyParams}
+~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+!/usr/bin/env python 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Admin__Area_8py_a0346bc7b61fff05405e0c00fb0eb0562}\label{Admin__Area_8py_a0346bc7b61fff05405e0c00fb0eb0562}} 
+\index{Admin\+\_\+\+Area.\+py@{Admin\+\_\+\+Area.\+py}!get\+Compare\+Filter@{get\+Compare\+Filter}}
+\index{get\+Compare\+Filter@{get\+Compare\+Filter}!Admin\+\_\+\+Area.\+py@{Admin\+\_\+\+Area.\+py}}
+\subsubsection{\texorpdfstring{get\+Compare\+Filter()}{getCompareFilter()}}
+{\footnotesize\ttfamily def app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Compare\+Filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rcount,  }\item[{}]{match,  }\item[{}]{condition }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Returns S\+P\+A\+R\+QL for a condition filter on the data type Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Admin__Area_8py_aab38abe1a6fdfeebcac2bbf61b16129d}\label{Admin__Area_8py_aab38abe1a6fdfeebcac2bbf61b16129d}} 
+\index{Admin\+\_\+\+Area.\+py@{Admin\+\_\+\+Area.\+py}!get\+Match\+Filter@{get\+Match\+Filter}}
+\index{get\+Match\+Filter@{get\+Match\+Filter}!Admin\+\_\+\+Area.\+py@{Admin\+\_\+\+Area.\+py}}
+\subsubsection{\texorpdfstring{get\+Match\+Filter()}{getMatchFilter()}}
+{\footnotesize\ttfamily def app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Match\+Filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rcount,  }\item[{}]{match,  }\item[{}]{condition }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Returns S\+P\+A\+R\+QL for a match condition filter on the data type Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Admin__Area_8py_a38ed60d46b000630e0223043c802f518}\label{Admin__Area_8py_a38ed60d46b000630e0223043c802f518}} 
+\index{Admin\+\_\+\+Area.\+py@{Admin\+\_\+\+Area.\+py}!get\+Query@{get\+Query}}
+\index{get\+Query@{get\+Query}!Admin\+\_\+\+Area.\+py@{Admin\+\_\+\+Area.\+py}}
+\subsubsection{\texorpdfstring{get\+Query()}{getQuery()}}
+{\footnotesize\ttfamily def app.\+main.\+datatypes.\+Admin\+\_\+\+Area.\+get\+Query (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{col,  }\item[{}]{rcount,  }\item[{}]{matchstring,  }\item[{}]{condition,  }\item[{}]{matchcolumn }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Returns S\+P\+A\+R\+QL for a query on the datatype without filter Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & columne name for datatype \\
+\hline
+{\em rcount} & count to be attached to S\+P\+A\+R\+QL variables \\
+\hline
+{\em match} & string to match \\
+\hline
+{\em condition} & comparator \\
+\hline
+{\em matchcolumn} & not used, only here for compatibility \\
+\hline
+\end{DoxyParams}

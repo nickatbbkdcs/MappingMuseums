@@ -1,0 +1,32 @@
+<response cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial" step="001" number="001" type="get" result="Successful" url="/browseproperties" code="200" description="Get /browseproperties" time="1528880957.78" duration="0.577377080917" />
+<response cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial" step="001" number="002" type="link" result="Successful" url="/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" code="200" description="" time="1528880958.36" duration="0.049546957016" />
+<response cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial" step="001" number="003" type="link" result="Failure" url="/static/favicon.ico" code="500" description="" time="1528880958.36" duration="0.0565559864044">
+  <headers>
+    <header name="date" value="Wed, 13 Jun 2018 09:09:18 GMT" />
+    <header name="content-length" value="609" />
+    <header name="content-type" value="text/html; charset=iso-8859-1" />
+    <header name="connection" value="close" />
+    <header name="server" value="Apache/2.4.18 (Ubuntu)" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator at 
+ [no address given] to inform them of the time this error occurred,
+ and the actions you performed just before this error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at 193.61.36.71 Port 80</address>
+</body></html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="000" thread="001" suite="UserTrial" name="test_user_trial"  time="1528880957.78" result="Failure" steps="1" duration="0.637326955795" connection_duration="0.626924037933" requests="3" pages="1" xmlrpc="0" redirects="0" images="0" links="1" traceback='Traceback (most recent call last):&#10;   File "/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/home/nlarsson/bbk/python/webdev/museumflask/funktests/test_UserTrial.py", line 40, in test_user_trial&#10;    description="Get /browseproperties")&#10;   File "/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py", line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /static/favicon.ico&#10;HTTP Response 500: Internal Server Error&#10;' />

@@ -1,0 +1,52 @@
+\hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area}{}\section{datatypes.\+Admin\+\_\+\+Area.\+Admin\+\_\+\+Area Class Reference}
+\label{classdatatypes_1_1Admin__Area_1_1Admin__Area}\index{datatypes.\+Admin\+\_\+\+Area.\+Admin\+\_\+\+Area@{datatypes.\+Admin\+\_\+\+Area.\+Admin\+\_\+\+Area}}
+Inheritance diagram for datatypes.\+Admin\+\_\+\+Area.\+Admin\+\_\+\+Area\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdatatypes_1_1Admin__Area_1_1Admin__Area}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a8717bfca3a365b492ca6189b278f0f0b}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a8717bfca3a365b492ca6189b278f0f0b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_aa73ea473d571296bf30a2444d5f21fe0}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_aa73ea473d571296bf30a2444d5f21fe0}} 
+def {\bfseries get\+Match\+Filter} (self, rcount, match, condition)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_aa9a48ae9637b62c5afc251ff19a630c6}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_aa9a48ae9637b62c5afc251ff19a630c6}} 
+def {\bfseries get\+Compare\+Filter} (self, rcount, match, condition)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a39b3196f45dcb7e6a92f0942fad28ee0}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a39b3196f45dcb7e6a92f0942fad28ee0}} 
+def {\bfseries get\+Query} (self, col, rcount, matchstring, condition, matchcolumn)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a2031b97ee2f081c670e8a91a9c1c73d5}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a2031b97ee2f081c670e8a91a9c1c73d5}} 
+def {\bfseries get\+Search\+Type} (self)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_af3d3973d0a8c0a888c0a5d2fc9e66480}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_af3d3973d0a8c0a888c0a5d2fc9e66480}} 
+def {\bfseries get\+G\+U\+I\+Conditions} (self)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a303c7b22180bbc7a113f21709a585582}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a303c7b22180bbc7a113f21709a585582}} 
+def {\bfseries get\+Widget} (self)
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a9cf29675992244bfc386c36fe2ab37ef}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a9cf29675992244bfc386c36fe2ab37ef}} 
+def {\bfseries get\+Widget\+Code} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a10d24492669a3453cfd058a9b1751f6c}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a10d24492669a3453cfd058a9b1751f6c}} 
+string {\bfseries matchfilter} = \textquotesingle{}(S\+TR(?pred\$\{rcount\}) = S\+TR(\textquotesingle{}+\char`\"{}\textquotesingle{}\char`\"{}+ match +\char`\"{}\textquotesingle{}\char`\"{}+\textquotesingle{}) )\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_ac6b7c981192e6ee62aa8e543dc03862c}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_ac6b7c981192e6ee62aa8e543dc03862c}} 
+string {\bfseries compfilter} = \textquotesingle{}(S\+TR(?pred\$\{rcount\}) \textquotesingle{}+self.\+\_\+conditiondict\mbox{[}condition\mbox{]}+\textquotesingle{} S\+TR(\textquotesingle{}+\char`\"{}\textquotesingle{}\char`\"{}+ match +\char`\"{}\textquotesingle{}\char`\"{}+\textquotesingle{}) )\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classdatatypes_1_1Admin__Area_1_1Admin__Area_a636dfc46a615789b42d7836fef84b200}\label{classdatatypes_1_1Admin__Area_1_1Admin__Area_a636dfc46a615789b42d7836fef84b200}} 
+string {\bfseries query} = self.\+\_\+adminareaquery.\+replace(\char`\"{}\$\{column\+\_\+name\}\char`\"{},col)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nlarsson/bbk/python/webdev/museumflask/app/main/datatypes/\mbox{\hyperlink{Admin__Area_8py}{Admin\+\_\+\+Area.\+py}}\end{DoxyCompactItemize}

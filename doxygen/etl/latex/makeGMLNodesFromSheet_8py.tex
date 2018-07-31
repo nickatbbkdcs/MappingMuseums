@@ -1,0 +1,465 @@
+\hypertarget{makeGMLNodesFromSheet_8py}{}\section{/home/nlarsson/bbk/etl/code/make\+G\+M\+L\+Nodes\+From\+Sheet.py File Reference}
+\label{makeGMLNodesFromSheet_8py}\index{/home/nlarsson/bbk/etl/code/make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{/home/nlarsson/bbk/etl/code/make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+
+
+This program reads the headers in the data sheet as a csv file with D\+O\+L\+L\+AR as separator and all text fields quoted.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_aa647b6ad2dbbc1a4d4dbadf19b9a3d5b}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+process\+Line}} (header, line, indatamodel, symboltable)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Processes each line in the template and evaluates the macros. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a45b067d5bb6be4d03ab06ab5b9b3097e}\label{makeGMLNodesFromSheet_8py_a45b067d5bb6be4d03ab06ab5b9b3097e}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+evaluatemacro} (var, indatamodel, symboltable)
+\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_aef0d1d7fb313a56bc2b2d646d703a86e}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+process\+Template}} (header, template, indatamodel, S\+Y\+M\+B\+O\+L\+T\+A\+B\+LE)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Processes one template line by line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ The name of the node}\par
+{\em Purpose\+: Creates a graph\+ML U\+R\+Inode with id data and name inserted.
+
+Arguments\+:  The id of the node
+
+The data to be inserted in the data field. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a43f0d99cb4492f4e55245245c5125b8e}\label{makeGMLNodesFromSheet_8py_a43f0d99cb4492f4e55245245c5125b8e}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Data\+Node} (id, name, data)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aad0883f889b3396be0da9e28cfcecfe3}\label{makeGMLNodesFromSheet_8py_aad0883f889b3396be0da9e28cfcecfe3}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Object\+Node} (id, name, data)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0604686271ab437c450bc4fc6ac9729e}\label{makeGMLNodesFromSheet_8py_a0604686271ab437c450bc4fc6ac9729e}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+U\+R\+I\+Node} (id, name, data)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a5f95cd22e9e9e43dca5e22e3672f0a2d}\label{makeGMLNodesFromSheet_8py_a5f95cd22e9e9e43dca5e22e3672f0a2d}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a029144ab0258632e6b62c5b26b9a8059}\label{makeGMLNodesFromSheet_8py_a029144ab0258632e6b62c5b26b9a8059}} 
+tuple {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a89bcc14e0cdb5cbd963ef88d3a6640c5}\label{makeGMLNodesFromSheet_8py_a89bcc14e0cdb5cbd963ef88d3a6640c5}} 
+bool {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+U\+N\+Q\+U\+O\+T\+E\+V\+A\+L\+U\+ES} = True
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a3578945f36fedd6b87361af6bb56feda}\label{makeGMLNodesFromSheet_8py_a3578945f36fedd6b87361af6bb56feda}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+S\+E\+Q\+U\+E\+N\+C\+E\+\_\+\+O\+R\+D\+ER} = \char`\"{}sequenceorder\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a528b9f099f3acb78738571010081cfca}\label{makeGMLNodesFromSheet_8py_a528b9f099f3acb78738571010081cfca}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+P\+A\+R\+E\+N\+T\+\_\+\+N\+O\+DE} = \char`\"{}parentnode\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a701f9364905098313e178575bca279f9}\label{makeGMLNodesFromSheet_8py_a701f9364905098313e178575bca279f9}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+B\+A\+S\+E\+\_\+\+N\+O\+DE} = \char`\"{}basenode\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a902ccf0e4c9295ebf9464052ce331f74}\label{makeGMLNodesFromSheet_8py_a902ccf0e4c9295ebf9464052ce331f74}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+D\+A\+T\+A\+C\+OL} = \char`\"{}datacolumnforlists\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0612a9786cde4214634533e1edfa734c}\label{makeGMLNodesFromSheet_8py_a0612a9786cde4214634533e1edfa734c}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+C\+O\+L\+U\+MN} = \char`\"{}P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+C\+O\+L\+U\+MN\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{The string to clean}
+\label{_amgrp61459438e9997bf850e9f633202dbaee}%
+Purpose\+: Removes unwanted characters from argument.
+
+Arguments\+: \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_abb72f494b4ca2879b51aa69306bfb97c}\label{makeGMLNodesFromSheet_8py_abb72f494b4ca2879b51aa69306bfb97c}} 
+int {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+N\+O\+D\+E\+ID} = 25
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_afbd9a43622a60c72eb5b962b9d1b5475}\label{makeGMLNodesFromSheet_8py_afbd9a43622a60c72eb5b962b9d1b5475}} 
+int {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+E\+D\+G\+E\+ID} = 25
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a55852cd156a0a1a6bed1ae0426378288}\label{makeGMLNodesFromSheet_8py_a55852cd156a0a1a6bed1ae0426378288}} 
+int {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+T\+A\+R\+G\+E\+T\+ID} = 25
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aa955d193d1555a30a653a1019ddd8595}\label{makeGMLNodesFromSheet_8py_aa955d193d1555a30a653a1019ddd8595}} 
+int {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+C\+OL} = 0
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_adb6e9ad91029ac790834c1ee98899019}\label{makeGMLNodesFromSheet_8py_adb6e9ad91029ac790834c1ee98899019}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+S\+E\+P\+A\+R\+A\+T\+OR} = \char`\"{}\$\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a1e8ca61bd73766271017e36cf62a0778}\label{makeGMLNodesFromSheet_8py_a1e8ca61bd73766271017e36cf62a0778}} 
+bool {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+P\+R\+I\+N\+T\+\_\+\+L\+I\+NE} = True
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ab5befc9d6cffc597461bdd52fd1f5bd3}\label{makeGMLNodesFromSheet_8py_ab5befc9d6cffc597461bdd52fd1f5bd3}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+P\+R\+E\+F\+I\+X\+\_\+\+W\+I\+T\+H\+\_\+\+C\+O\+L\+ON} = \char`\"{}bbkmm\+:\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a6cb0185f97b02e5e6e6b349487438fd0}\label{makeGMLNodesFromSheet_8py_a6cb0185f97b02e5e6e6b349487438fd0}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+P\+R\+E\+F\+IX} = \char`\"{}bbkmm\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ae23187e9c444f7033c566a2d0a786f91}\label{makeGMLNodesFromSheet_8py_ae23187e9c444f7033c566a2d0a786f91}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+R\+A\+N\+GE} = \char`\"{}range\+:\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a2938ff0e836c23afea563021a8c285ee}\label{makeGMLNodesFromSheet_8py_a2938ff0e836c23afea563021a8c285ee}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+H\+I\+ER} = \char`\"{}hier\+:\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ae0a2557ab88c542b7055592995ff10c6}\label{makeGMLNodesFromSheet_8py_ae0a2557ab88c542b7055592995ff10c6}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+U\+RI} = \char`\"{}uri\+:\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a866d0110c22e982391bf9c591d327d9a}\label{makeGMLNodesFromSheet_8py_a866d0110c22e982391bf9c591d327d9a}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+X\+SD} = \char`\"{}xsd\+:\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aa2b32537342f0c981efc559e3aea4d1a}\label{makeGMLNodesFromSheet_8py_aa2b32537342f0c981efc559e3aea4d1a}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+IS} = \char`\"{}Is\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a4aa27ac10020e44db8170c2cb8dd5a91}\label{makeGMLNodesFromSheet_8py_a4aa27ac10020e44db8170c2cb8dd5a91}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+D\+EF} = \char`\"{}def\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aadd8dec04046da322b5336e6091332cb}\label{makeGMLNodesFromSheet_8py_aadd8dec04046da322b5336e6091332cb}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+H\+AS} = \char`\"{}has\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a98f30d31d677b1c04444ac0932f8eb2c}\label{makeGMLNodesFromSheet_8py_a98f30d31d677b1c04444ac0932f8eb2c}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+D\+E\+F\+R\+A\+N\+GE} = \char`\"{}def\+Range\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a03f2e118ee8e92b4a5892c0b43959d7c}\label{makeGMLNodesFromSheet_8py_a03f2e118ee8e92b4a5892c0b43959d7c}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+D\+E\+F\+C\+L\+A\+SS} = \char`\"{}def\+Class\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a55d15ee07e9e508799cc837e3097ee18}\label{makeGMLNodesFromSheet_8py_a55d15ee07e9e508799cc837e3097ee18}} 
+dictionary {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+D\+A\+T\+A\+T\+Y\+P\+E\+D\+I\+CT} = \{\}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a78897b496e09ab73a9a38f131952981b}\label{makeGMLNodesFromSheet_8py_a78897b496e09ab73a9a38f131952981b}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+H\+I\+E\+R\+\_\+\+T\+Y\+PE} = \char`\"{}Hier\+Type\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a605fcc06739e9c963a8aa55fa5f7e226}\label{makeGMLNodesFromSheet_8py_a605fcc06739e9c963a8aa55fa5f7e226}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+L\+I\+S\+T\+\_\+\+T\+Y\+PE} = \char`\"{}List\+Type\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0b4a15ce4d4bd2dcd9ceb27c4b9888c7}\label{makeGMLNodesFromSheet_8py_a0b4a15ce4d4bd2dcd9ceb27c4b9888c7}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+R\+A\+N\+G\+E\+\_\+\+T\+Y\+PE} = \char`\"{}Range\+Type\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a84df0acd2cb263581c10a80c00e5c58c}\label{makeGMLNodesFromSheet_8py_a84df0acd2cb263581c10a80c00e5c58c}} 
+string {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+U\+R\+I\+T\+Y\+PE} = \char`\"{}U\+R\+I\+Type\char`\"{}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a7a1d658adb2b0d5049a5d0c6e3645c24}\label{makeGMLNodesFromSheet_8py_a7a1d658adb2b0d5049a5d0c6e3645c24}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+clean\+Name} (name)
+\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_af2bef3deb90851667ebc33e4207f2510}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+objectnodeid}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:This function is called in the graphml\+Nodes template and determines if a node is an object node starting with prefix. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a94e8fc4efd925298d7fc48b3c0124202}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+objecttype}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the type as declared in the sheet header. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ab0cd073a87ba68373c116562aeec13ca}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+objectpredicate}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns the abstraction (def) appended to the type. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a312e764111634e17a0edbb17accbd50a}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+objectedgeid}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Increments the current edge id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ab54159f16f641051cb95fa764dea8400}\label{makeGMLNodesFromSheet_8py_ab54159f16f641051cb95fa764dea8400}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ab54159f16f641051cb95fa764dea8400}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+generatehierclasses}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Generates graph\+Ml for the hierarchy abstract type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_af36116cf63524fa97bc4427609b096e6}\label{makeGMLNodesFromSheet_8py_af36116cf63524fa97bc4427609b096e6}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_af36116cf63524fa97bc4427609b096e6}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+generatetemporalrangenodes}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Generates graph\+Ml for the abstract Range\+Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a3d8fd050e5f7074bb97d83762495670d}\label{makeGMLNodesFromSheet_8py_a3d8fd050e5f7074bb97d83762495670d}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a3d8fd050e5f7074bb97d83762495670d}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+generateurireferences}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Creates a U\+RI node attached to the base node representing an individual. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a0a953f5d045cff95dfedd1ef78c464e9}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+datacolumn}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the data for the column. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ac7e0cda33ffe1544254c4900212c1af5}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+generateobjectnamenodes}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates all names in a L\+I\+S\+T\+\_\+\+T\+Y\+PE abstraction using the file given as arg1 to the program. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_aa148cc64e6cc7c57c567cc41dd75b1f6}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+parentnodenumber}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the node id of the current nodes parent. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a29667c4a43d6cf6569120218bc9f0408}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+nameinstance}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the string used as a name from the sheet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ae6e8e5126dbd5967a0d339900b83071b}\label{makeGMLNodesFromSheet_8py_ae6e8e5126dbd5967a0d339900b83071b}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ae6e8e5126dbd5967a0d339900b83071b}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+namedproperty}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the string used as predicate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a1cf5d912102eced17c1a7f5c021b43cd}\label{makeGMLNodesFromSheet_8py_a1cf5d912102eced17c1a7f5c021b43cd}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a1cf5d912102eced17c1a7f5c021b43cd}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+nodeid}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Increments the current nodeid and checks that the type is correct. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ae26b765215a40d81e388619572596ac5}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+nodeidnoupdate}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Reports the current node id without incrementing it. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_aaf9b799c34959723cc4363d3af1a0919}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+targetid}} ()
+\begin{DoxyCompactList}\small\item\em Purpose \+:Increments and returns the current target id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a9df14dd7cd0c2623e32ac939339cb405}\label{makeGMLNodesFromSheet_8py_a9df14dd7cd0c2623e32ac939339cb405}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a9df14dd7cd0c2623e32ac939339cb405}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+edgeid}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Increments and returns the current edge id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0aa003242b3c8b3140930089b32440f9}\label{makeGMLNodesFromSheet_8py_a0aa003242b3c8b3140930089b32440f9}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a0aa003242b3c8b3140930089b32440f9}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+datatype}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the datatype for the column. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a5b0327331b2b84b6408b56a355747822}\label{makeGMLNodesFromSheet_8py_a5b0327331b2b84b6408b56a355747822}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a5b0327331b2b84b6408b56a355747822}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+predicate}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns the predicate name for the column. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a11ce8f7dfbd77cc658332e9fda729f12}\label{makeGMLNodesFromSheet_8py_a11ce8f7dfbd77cc658332e9fda729f12}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a11ce8f7dfbd77cc658332e9fda729f12}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+col}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns current column. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ae2b160038c917bbd5d0833000594e136}\label{makeGMLNodesFromSheet_8py_ae2b160038c917bbd5d0833000594e136}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ae2b160038c917bbd5d0833000594e136}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+vis}} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns the visibility of a column (Not used) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Name of edge}
+\label{_amgrpab71eb28256ce55beb4fada9129b8e93}%
+Purpose\+: Creates an edge between source and target data nodes nodes.
+
+Arguments\+:  edge id  source node  target node \begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ac333770a1652446782e64a05667884ff}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+sequenceorder}} = 0
+\begin{DoxyCompactList}\small\item\em Deal with all arguments; read files. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a35ced83f8464e3ea3137ceaba095f66e}\label{makeGMLNodesFromSheet_8py_a35ced83f8464e3ea3137ceaba095f66e}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+fname} = str(sys.\+argv\mbox{[}2\mbox{]})
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a6505ede9827c22eb01f4a628d1eb1e75}\label{makeGMLNodesFromSheet_8py_a6505ede9827c22eb01f4a628d1eb1e75}} 
+\mbox{\hyperlink{makeGMLNodesFromSheet_8py_a6505ede9827c22eb01f4a628d1eb1e75}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+tname}} = str(sys.\+argv\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Process the objectproperty.\+template file \#\#\#. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a6435ddfb227da027a983b5750e3ef8b3}\label{makeGMLNodesFromSheet_8py_a6435ddfb227da027a983b5750e3ef8b3}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+content} = f.\+readlines()
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a76ff360d1416e0709224bbc862647dde}\label{makeGMLNodesFromSheet_8py_a76ff360d1416e0709224bbc862647dde}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+headerline} = content\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0264fb6cf2b21f8471ae00cc276065a9}\label{makeGMLNodesFromSheet_8py_a0264fb6cf2b21f8471ae00cc276065a9}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+header} = headerline.\+split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a502229f9db47d5e295ecab5ced42e4b1}\label{makeGMLNodesFromSheet_8py_a502229f9db47d5e295ecab5ced42e4b1}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+h} = h.\+strip().replace(\textquotesingle{}\textbackslash{}n\textquotesingle{}, \textquotesingle{}\textquotesingle{}).replace(\textquotesingle{}\textbackslash{}r\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aa4546f01dda3c9d81e2a8e8dcd561f7d}\label{makeGMLNodesFromSheet_8py_aa4546f01dda3c9d81e2a8e8dcd561f7d}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+template} = f.\+readlines()
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a381549d8e0e00464a2ffeefe4ae6ab99}\label{makeGMLNodesFromSheet_8py_a381549d8e0e00464a2ffeefe4ae6ab99}} 
+dictionary \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a381549d8e0e00464a2ffeefe4ae6ab99}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+S\+Y\+M\+B\+O\+L\+T\+A\+B\+LE}} = \{\}
+\begin{DoxyCompactList}\small\item\em Process the dataproperty.\+template file \#\#\#. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_adef2538005d4874ee3afaef436a51d1d}\label{makeGMLNodesFromSheet_8py_adef2538005d4874ee3afaef436a51d1d}} 
+int {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+i} = 0
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a2e1e6fc3285760cdb590caae8f24d6aa}\label{makeGMLNodesFromSheet_8py_a2e1e6fc3285760cdb590caae8f24d6aa}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+datamodel} = content\mbox{[}1\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_adc201fb01dd50cda9d830b474b55dc3b}\label{makeGMLNodesFromSheet_8py_adc201fb01dd50cda9d830b474b55dc3b}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+d} = d.\+strip().replace(\textquotesingle{}\textbackslash{}n\textquotesingle{}, \textquotesingle{}\textquotesingle{}).replace(\textquotesingle{}\textbackslash{}r\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_abd6915e52d022cc09c771093824bef72}\label{makeGMLNodesFromSheet_8py_abd6915e52d022cc09c771093824bef72}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+visdatamodel} = content\mbox{[}3\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a15edc71dae1f03bbb8e1bb22f28c052e}\label{makeGMLNodesFromSheet_8py_a15edc71dae1f03bbb8e1bb22f28c052e}} 
+int \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a15edc71dae1f03bbb8e1bb22f28c052e}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+vcount}} = 0
+\begin{DoxyCompactList}\small\item\em Get rid of any newlines in last field. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a153e84faf046e18e99066fa30486b24f}\label{makeGMLNodesFromSheet_8py_a153e84faf046e18e99066fa30486b24f}} 
+{\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+valuedatamodel} = content\mbox{[}2\mbox{]}.split(S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a7959d00f609d1904f65527d7447a28f4}\label{makeGMLNodesFromSheet_8py_a7959d00f609d1904f65527d7447a28f4}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Object\+Property\+Edge} (id, source, target, name)
+\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a508889910f8ddd05268166f373ed95ac}\label{makeGMLNodesFromSheet_8py_a508889910f8ddd05268166f373ed95ac}} 
+def {\bfseries make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Data\+Property\+Edge} (id, source, target, name)
+\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a4d0418b249e1d82c7d95722ab74b2899}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Temporal\+Property}} (parent, propertyname)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Create graph\+ML for a temporal property. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_aac308c8bb3872fc747abfe3292f55588}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Value\+Range\+Property}} (parent, propertyname, rangetype)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Create graph\+ML for an abstract R\+A\+N\+G\+E\+\_\+\+T\+Y\+PE property. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_a0c0693936b7c4e0b8d99b727aaccd33c}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+U\+R\+Ireference\+Object\+Property}} (parent, propertyname, rangetype)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Create graph\+ML for a U\+RI property that defines a name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_abc51baf608d99328d1c88de6d8cb18e7}\label{makeGMLNodesFromSheet_8py_abc51baf608d99328d1c88de6d8cb18e7}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_abc51baf608d99328d1c88de6d8cb18e7}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+get\+Key}} (values, level, base, dict)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Arguments\+:    . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ac60303f2b79619c64c488a8690fbab93}\label{makeGMLNodesFromSheet_8py_ac60303f2b79619c64c488a8690fbab93}} 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_ac60303f2b79619c64c488a8690fbab93}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+get\+Name\+For\+Class}} (clazzname)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns name of class for hierarchies Arguments\+: . \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{makeGMLNodesFromSheet_8py_af394879e33880d16027df914c52e6529}{make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Hierarchy\+Subclasses}} (parent, propertyname)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates graph\+ML for all classes in a hierarchy by traversing all rows and putting each class in a dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This program reads the headers in the data sheet as a csv file with D\+O\+L\+L\+AR as separator and all text fields quoted. 
+
+It produces a graph\+Ml file that represents the ontology needed to map the columns in the data sheet to R\+DF classes and predicates.
+
+A typical call could look like this\+: python \$\{X\+B\+IN\}/make\+G\+M\+L\+Nodes\+From\+Sheet.py \$\{M\+L\+N\+A\+M\+ES\} \$\{F\+N\+A\+M\+E\+\_\+\+G\+E\+O\+N\+A\+M\+ES\} \$\{G\+N\+A\+ME\} \$\{G\+N\+O\+D\+E\+S\+N\+A\+ME\}
+
+arg1 namestemplate \+: graphml\+Names.\+template \+: A file that has node and edge templates in graph\+Ml. The template contains macros \$\{M\+A\+C\+RO\} that will be called to generate the actual graph\+Ml nodes in the output file. E.\+g. $<$node id=\char`\"{}\$\{nodeid\}\char`\"{}$>$ .... ~\newline
+ $<$/node$>$ nodeid is a python method in this file which will be called when the line with the macro is processed. This file is a template for the L\+I\+ST datatype and is only used if such a datatype is found in the sheet. Called from generateobjectnamenodes.
+
+arg2 The data sheet from which the graphml is generated. The sheet needs to have the headers specified as shown in the documentation E\+T\+L\+D\+OC
+
+arg3 graphml.\+template \+: A file that has node and edge templates in graph\+Ml that represents data properties in rdf.
+
+arg4 graphml\+Nodes.\+template \+:A file that has node and edge templates in graph\+Ml that represents object properties in rdf.
+
+General outline\+:
+
+Read data sheet (arg2) Read data property template (arg3) Read object property template (arg4)
+
+For each column in data sheet process line in data property templates if macro is found in template evaluate the macro and insert text as replacement in output stream Repeat for object property template
+
+A symbol table is used to hold values like current node id between macro calls. A macro can switch on or off printing as a method of supressing output. A number of central variables are G\+L\+O\+B\+AL to the processing as it simplified the programming. Nodes and edges has a starting number. This is dependent on the whether you have other nodes in the ontology preceding the nodes that will be generated by the program. In this case there are 25 nodes preceding so we need to start from this number. This should be a parameter to the program in next version.
+
+A small set of node and edge creation methods are used for creating method patterns. These are used by the pattern \char`\"{}create\+Temporal\+Property\char`\"{} which is easier to implement in this way compared to using macros. Notice the base node which is n0 = Musuem class
+
+More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_af394879e33880d16027df914c52e6529}\label{makeGMLNodesFromSheet_8py_af394879e33880d16027df914c52e6529}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!create\+Hierarchy\+Subclasses@{create\+Hierarchy\+Subclasses}}
+\index{create\+Hierarchy\+Subclasses@{create\+Hierarchy\+Subclasses}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{create\+Hierarchy\+Subclasses()}{createHierarchySubclasses()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Hierarchy\+Subclasses (\begin{DoxyParamCaption}\item[{}]{parent,  }\item[{}]{propertyname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates graph\+ML for all classes in a hierarchy by traversing all rows and putting each class in a dictionary. 
+
+Arguments\+:  parent node id  name of hierarchy \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a4d0418b249e1d82c7d95722ab74b2899}\label{makeGMLNodesFromSheet_8py_a4d0418b249e1d82c7d95722ab74b2899}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!create\+Temporal\+Property@{create\+Temporal\+Property}}
+\index{create\+Temporal\+Property@{create\+Temporal\+Property}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{create\+Temporal\+Property()}{createTemporalProperty()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Temporal\+Property (\begin{DoxyParamCaption}\item[{}]{parent,  }\item[{}]{propertyname }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Create graph\+ML for a temporal property. 
+
+This is a property with a start and an end range. Arguments\+:   \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0c0693936b7c4e0b8d99b727aaccd33c}\label{makeGMLNodesFromSheet_8py_a0c0693936b7c4e0b8d99b727aaccd33c}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!create\+U\+R\+Ireference\+Object\+Property@{create\+U\+R\+Ireference\+Object\+Property}}
+\index{create\+U\+R\+Ireference\+Object\+Property@{create\+U\+R\+Ireference\+Object\+Property}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{create\+U\+R\+Ireference\+Object\+Property()}{createURIreferenceObjectProperty()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+U\+R\+Ireference\+Object\+Property (\begin{DoxyParamCaption}\item[{}]{parent,  }\item[{}]{propertyname,  }\item[{}]{rangetype }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Create graph\+ML for a U\+RI property that defines a name. 
+
+Arguments\+:  parent node  name of property  Range of value \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aac308c8bb3872fc747abfe3292f55588}\label{makeGMLNodesFromSheet_8py_aac308c8bb3872fc747abfe3292f55588}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!create\+Value\+Range\+Property@{create\+Value\+Range\+Property}}
+\index{create\+Value\+Range\+Property@{create\+Value\+Range\+Property}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{create\+Value\+Range\+Property()}{createValueRangeProperty()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+create\+Value\+Range\+Property (\begin{DoxyParamCaption}\item[{}]{parent,  }\item[{}]{propertyname,  }\item[{}]{rangetype }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Create graph\+ML for an abstract R\+A\+N\+G\+E\+\_\+\+T\+Y\+PE property. 
+
+Arguments\+:  parent node  name of node  Type of property (int,decimal or date) \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a0a953f5d045cff95dfedd1ef78c464e9}\label{makeGMLNodesFromSheet_8py_a0a953f5d045cff95dfedd1ef78c464e9}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!datacolumn@{datacolumn}}
+\index{datacolumn@{datacolumn}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{datacolumn()}{datacolumn()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+datacolumn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Returns the data for the column. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ac7e0cda33ffe1544254c4900212c1af5}\label{makeGMLNodesFromSheet_8py_ac7e0cda33ffe1544254c4900212c1af5}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!generateobjectnamenodes@{generateobjectnamenodes}}
+\index{generateobjectnamenodes@{generateobjectnamenodes}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{generateobjectnamenodes()}{generateobjectnamenodes()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+generateobjectnamenodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Creates all names in a L\+I\+S\+T\+\_\+\+T\+Y\+PE abstraction using the file given as arg1 to the program. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a29667c4a43d6cf6569120218bc9f0408}\label{makeGMLNodesFromSheet_8py_a29667c4a43d6cf6569120218bc9f0408}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!nameinstance@{nameinstance}}
+\index{nameinstance@{nameinstance}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{nameinstance()}{nameinstance()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+nameinstance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Returns the string used as a name from the sheet. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ae26b765215a40d81e388619572596ac5}\label{makeGMLNodesFromSheet_8py_ae26b765215a40d81e388619572596ac5}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!nodeidnoupdate@{nodeidnoupdate}}
+\index{nodeidnoupdate@{nodeidnoupdate}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{nodeidnoupdate()}{nodeidnoupdate()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+nodeidnoupdate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Reports the current node id without incrementing it. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a312e764111634e17a0edbb17accbd50a}\label{makeGMLNodesFromSheet_8py_a312e764111634e17a0edbb17accbd50a}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!objectedgeid@{objectedgeid}}
+\index{objectedgeid@{objectedgeid}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{objectedgeid()}{objectedgeid()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+objectedgeid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Increments the current edge id. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_af2bef3deb90851667ebc33e4207f2510}\label{makeGMLNodesFromSheet_8py_af2bef3deb90851667ebc33e4207f2510}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!objectnodeid@{objectnodeid}}
+\index{objectnodeid@{objectnodeid}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{objectnodeid()}{objectnodeid()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+objectnodeid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:This function is called in the graphml\+Nodes template and determines if a node is an object node starting with prefix. 
+
+All other nodes get supressed via the P\+R\+I\+N\+T\+\_\+\+L\+I\+NE variable. \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ab0cd073a87ba68373c116562aeec13ca}\label{makeGMLNodesFromSheet_8py_ab0cd073a87ba68373c116562aeec13ca}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!objectpredicate@{objectpredicate}}
+\index{objectpredicate@{objectpredicate}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{objectpredicate()}{objectpredicate()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+objectpredicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Returns the abstraction (def) appended to the type. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_a94e8fc4efd925298d7fc48b3c0124202}\label{makeGMLNodesFromSheet_8py_a94e8fc4efd925298d7fc48b3c0124202}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!objecttype@{objecttype}}
+\index{objecttype@{objecttype}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{objecttype()}{objecttype()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+objecttype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Returns the type as declared in the sheet header. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aa148cc64e6cc7c57c567cc41dd75b1f6}\label{makeGMLNodesFromSheet_8py_aa148cc64e6cc7c57c567cc41dd75b1f6}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!parentnodenumber@{parentnodenumber}}
+\index{parentnodenumber@{parentnodenumber}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{parentnodenumber()}{parentnodenumber()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+parentnodenumber (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Returns the node id of the current nodes parent. 
+
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aa647b6ad2dbbc1a4d4dbadf19b9a3d5b}\label{makeGMLNodesFromSheet_8py_aa647b6ad2dbbc1a4d4dbadf19b9a3d5b}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!process\+Line@{process\+Line}}
+\index{process\+Line@{process\+Line}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{process\+Line()}{processLine()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+process\+Line (\begin{DoxyParamCaption}\item[{}]{header,  }\item[{}]{line,  }\item[{}]{indatamodel,  }\item[{}]{symboltable }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Processes each line in the template and evaluates the macros. 
+
+Arguments\+:  The header from the sheet 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+  The whole sheet ~\newline
+  The symbol table to store/read values from \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aef0d1d7fb313a56bc2b2d646d703a86e}\label{makeGMLNodesFromSheet_8py_aef0d1d7fb313a56bc2b2d646d703a86e}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!process\+Template@{process\+Template}}
+\index{process\+Template@{process\+Template}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{process\+Template()}{processTemplate()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+process\+Template (\begin{DoxyParamCaption}\item[{}]{header,  }\item[{}]{template,  }\item[{}]{indatamodel,  }\item[{}]{S\+Y\+M\+B\+O\+L\+T\+A\+B\+LE }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Processes one template line by line. 
+
+Arguments\+:  The header  The template  The sheet  The symbol table to store/read values from \mbox{\Hypertarget{makeGMLNodesFromSheet_8py_aaf9b799c34959723cc4363d3af1a0919}\label{makeGMLNodesFromSheet_8py_aaf9b799c34959723cc4363d3af1a0919}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!targetid@{targetid}}
+\index{targetid@{targetid}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{targetid()}{targetid()}}
+{\footnotesize\ttfamily def make\+G\+M\+L\+Nodes\+From\+Sheet.\+targetid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Purpose \+:Increments and returns the current target id. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{makeGMLNodesFromSheet_8py_ac333770a1652446782e64a05667884ff}\label{makeGMLNodesFromSheet_8py_ac333770a1652446782e64a05667884ff}} 
+\index{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}!sequenceorder@{sequenceorder}}
+\index{sequenceorder@{sequenceorder}!make\+G\+M\+L\+Nodes\+From\+Sheet.\+py@{make\+G\+M\+L\+Nodes\+From\+Sheet.\+py}}
+\subsubsection{\texorpdfstring{sequenceorder}{sequenceorder}}
+{\footnotesize\ttfamily int make\+G\+M\+L\+Nodes\+From\+Sheet.\+sequenceorder = 0}
+
+
+
+Deal with all arguments; read files. 
+

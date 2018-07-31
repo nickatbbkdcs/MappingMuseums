@@ -1,0 +1,555 @@
+\hypertarget{tree_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/tree.py File Reference}
+\label{tree_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/tree.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/tree.\+py}}
+
+
+Builds the menu tree for browse.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1tree_1_1Tree}{app.\+main.\+tree.\+Tree}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{tree_8py_a43d251f59e5f0460f753ee4445a88621}{app.\+main.\+tree.\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, rootnodename, opened, disabled, base=\textquotesingle{}item\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Init Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a667378b76d1dfb6bf5e9d11d0fb3a454}\label{tree_8py_a667378b76d1dfb6bf5e9d11d0fb3a454}} 
+def \mbox{\hyperlink{tree_8py_a667378b76d1dfb6bf5e9d11d0fb3a454}{app.\+main.\+tree.\+new\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Creates new tree. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_ae74fc0038e9d1a36c84e2851c173d07a}{app.\+main.\+tree.\+set\+No\+Leafs}} (self, value=False)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Whether tree has leaves Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a0b175f362d03df1981e0ba72af7c99f6}{app.\+main.\+tree.\+trunc\+Level}} (self, level)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Truncates the level of a menu Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a05ef05a89bbc55153924dc0137de71f3}{app.\+main.\+tree.\+get\+Label\+From\+String}} (self, ids)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Parse the label from an id Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a638719cf5e01e171fb6a9de8b0d2b5bb}{app.\+main.\+tree.\+get\+Path}} (self, id)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Calculates a path from an id Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a33a4c53a537dc2da245fe1570ad754fa}{app.\+main.\+tree.\+get\+Path\+For\+ID}} (self, id)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Calculates a path from an id Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a41b1e49cfbf24f41a700561cf6708acf}\label{tree_8py_a41b1e49cfbf24f41a700561cf6708acf}} 
+def \mbox{\hyperlink{tree_8py_a41b1e49cfbf24f41a700561cf6708acf}{app.\+main.\+tree.\+get\+Path\+From\+Last\+Id}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Calculates a path from last id. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a48546a777c3de501f0dc17ad1232624e}{app.\+main.\+tree.\+get\+Id\+From\+Line}} (self, line)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Parse id from line Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a00db558c3c0cf8112194828a1a1773bf}{app.\+main.\+tree.\+append}} (self, line)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Appends a subtree to an existing tree line by line Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_aa09df701a18392546f9d479e968407ca}\label{tree_8py_aa09df701a18392546f9d479e968407ca}} 
+def \mbox{\hyperlink{tree_8py_aa09df701a18392546f9d479e968407ca}{app.\+main.\+tree.\+get\+Last\+Line}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Returns last line in tree. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a661a6d35745a42d44ed81ff84b13f271}{app.\+main.\+tree.\+put\+Last\+Line}} (self, line)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Replaces the last line in a tree Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_af9f763e642179fb1f64539e625cee343}{app.\+main.\+tree.\+modify\+Id}} (self, mod, line, id)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Changes an id on a line and returns the new line and its id Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a3902cffa6e18e4edfdc2d67588608bb2}{app.\+main.\+tree.\+add\+Sub\+Tree}} (self, sub, start)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Adds a subtree to the tree Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a38a9e9333ea609f53518330acc090a88}\label{tree_8py_a38a9e9333ea609f53518330acc090a88}} 
+def \mbox{\hyperlink{tree_8py_a38a9e9333ea609f53518330acc090a88}{app.\+main.\+tree.\+lower\+Level}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Reduce the level of the tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_ab872b20b31b0f6e59db03802c9d9d663}\label{tree_8py_ab872b20b31b0f6e59db03802c9d9d663}} 
+def \mbox{\hyperlink{tree_8py_ab872b20b31b0f6e59db03802c9d9d663}{app.\+main.\+tree.\+close\+Level}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Close the current level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a7ab8fe20553db912f5b2393a7b5276e1}\label{tree_8py_a7ab8fe20553db912f5b2393a7b5276e1}} 
+def \mbox{\hyperlink{tree_8py_a7ab8fe20553db912f5b2393a7b5276e1}{app.\+main.\+tree.\+close\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Close the whole tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a7f765e8f03a6aed44edc390576d86c6f}\label{tree_8py_a7f765e8f03a6aed44edc390576d86c6f}} 
+def \mbox{\hyperlink{tree_8py_a7f765e8f03a6aed44edc390576d86c6f}{app.\+main.\+tree.\+get\+Id}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:formats the current id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a4d04cc52147895c84a9d0024634b064d}\label{tree_8py_a4d04cc52147895c84a9d0024634b064d}} 
+def \mbox{\hyperlink{tree_8py_a4d04cc52147895c84a9d0024634b064d}{app.\+main.\+tree.\+add\+Level}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Increases the level. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a7d1047c61b413e8bf57070c76eec5161}{app.\+main.\+tree.\+add\+Leaf}} (self, item)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Adds a leav to the tree with menu item and default action Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_a7f30c70a7c94cbeecebf739971699e71}\label{tree_8py_a7f30c70a7c94cbeecebf739971699e71}} 
+def \mbox{\hyperlink{tree_8py_a7f30c70a7c94cbeecebf739971699e71}{app.\+main.\+tree.\+define\+Dict}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Create the JS dict to be used with the browse page. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a0470dc5bdd53f26144e7ea03ccc54471}{app.\+main.\+tree.\+add\+Node\+And\+Level}} (self, nodecontent, opened, disabled, action=\textquotesingle{}Show\+Museums\textquotesingle{}, defaultaction=True)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Adds a node to the tree and increases the level Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a4dc40a96db4f687a9e64be9fdb108eaa}{app.\+main.\+tree.\+add\+Node\+At\+Current\+Level}} (self, nodecontent, opened, disabled, action=\textquotesingle{}Show\+Museums\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Purpose\+:Add a node at the current level Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_aebbd5dea7be617cbe6067d553e176c65}\label{tree_8py_aebbd5dea7be617cbe6067d553e176c65}} 
+def \mbox{\hyperlink{tree_8py_aebbd5dea7be617cbe6067d553e176c65}{app.\+main.\+tree.\+get\+Current\+Level}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return the current tree level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_ac8e34c2c8829d777feb59109b8b9272e}\label{tree_8py_ac8e34c2c8829d777feb59109b8b9272e}} 
+def \mbox{\hyperlink{tree_8py_ac8e34c2c8829d777feb59109b8b9272e}{app.\+main.\+tree.\+get\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return the whole tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tree_8py_aa5ec16341356582b11c9a0f79879ec7e}\label{tree_8py_aa5ec16341356582b11c9a0f79879ec7e}} 
+def \mbox{\hyperlink{tree_8py_aa5ec16341356582b11c9a0f79879ec7e}{app.\+main.\+tree.\+get\+Dict}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Return tree dictionary. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a8fcf998b9c788c89c2d50f4d0299b603}{app.\+main.\+tree.\+dobucket}} (self, blist, ptr, inputlist)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Calculate a bucket list of blist size of museums included in years. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a170c63a22b10c3e14da835b94f68455e}{app.\+main.\+tree.\+generate\+Lists}} (self, sortedtuples, buckets)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Generates lists of musuems with bucket sizes in years using the prev method from the sorted sequence of museums. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a5167924d0a288e66319b620c10401d65}{app.\+main.\+tree.\+createtreefromlist}} (self, list, tree, nodename, bucket, ptr, open)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Recursively add to tree from bucket lists Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a8d0db47b3cf6dcf3ad1e6a5059ffe373}{app.\+main.\+tree.\+pickle\+Tree}} (self, name)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Save tree with name Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a916f819d9fe675061f69522454e87d15}{app.\+main.\+tree.\+load\+Tree}} (self, name)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Load tree with name Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{tree_8py_a96627ba3ed605e7fc930082f98a3a1ee}{app.\+main.\+tree.\+find\+\_\+all}} (self, a\+\_\+str, sub)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Finds a substring in a string Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{tree_8py_a15c9b8299a8b32ab0bc83e3ee76412e7}\label{tree_8py_a15c9b8299a8b32ab0bc83e3ee76412e7}} 
+{\bfseries app.\+main.\+tree.\+version}
+\item 
+\mbox{\Hypertarget{tree_8py_a7e0a2280e7df72cd6c11bd216ffb726a}\label{tree_8py_a7e0a2280e7df72cd6c11bd216ffb726a}} 
+{\bfseries app.\+main.\+tree.\+version\+\_\+info}
+\item 
+\mbox{\Hypertarget{tree_8py_a3512220c1ac4a4f071c067ab0053bbe0}\label{tree_8py_a3512220c1ac4a4f071c067ab0053bbe0}} 
+{\bfseries app.\+main.\+tree.\+pos}
+\item 
+\mbox{\Hypertarget{tree_8py_a91e73052cf50fc9847967d886a053860}\label{tree_8py_a91e73052cf50fc9847967d886a053860}} 
+{\bfseries app.\+main.\+tree.\+trunc}
+\item 
+\mbox{\Hypertarget{tree_8py_a8d62571f4291edd4eee5355f79e848fe}\label{tree_8py_a8d62571f4291edd4eee5355f79e848fe}} 
+{\bfseries app.\+main.\+tree.\+lepos}
+\item 
+\mbox{\Hypertarget{tree_8py_ac0c8e82c31cddaf293797d6df208852f}\label{tree_8py_ac0c8e82c31cddaf293797d6df208852f}} 
+{\bfseries app.\+main.\+tree.\+stpos}
+\item 
+\mbox{\Hypertarget{tree_8py_a9845a98deb1acd65ab6831881bf2a0ff}\label{tree_8py_a9845a98deb1acd65ab6831881bf2a0ff}} 
+{\bfseries app.\+main.\+tree.\+label}
+\item 
+\mbox{\Hypertarget{tree_8py_a7ba6e1176e79e6cd75ca49c204e455c7}\label{tree_8py_a7ba6e1176e79e6cd75ca49c204e455c7}} 
+{\bfseries app.\+main.\+tree.\+iddict}
+\item 
+\mbox{\Hypertarget{tree_8py_ad386fed6ca52536fb8f20d9d2f807aae}\label{tree_8py_ad386fed6ca52536fb8f20d9d2f807aae}} 
+{\bfseries app.\+main.\+tree.\+path}
+\item 
+\mbox{\Hypertarget{tree_8py_ad17209426ac4257b046aa98ff93316c8}\label{tree_8py_ad17209426ac4257b046aa98ff93316c8}} 
+{\bfseries app.\+main.\+tree.\+thisid}
+\item 
+\mbox{\Hypertarget{tree_8py_af0b5ce02a2b6ec68b174fde61140c4b1}\label{tree_8py_af0b5ce02a2b6ec68b174fde61140c4b1}} 
+{\bfseries app.\+main.\+tree.\+pat1}
+\item 
+\mbox{\Hypertarget{tree_8py_a3a6b1c51d01e94774db659462e9610f4}\label{tree_8py_a3a6b1c51d01e94774db659462e9610f4}} 
+{\bfseries app.\+main.\+tree.\+idpos}
+\item 
+\mbox{\Hypertarget{tree_8py_adf15e0fe165b0dbc2ef248cf1beaab61}\label{tree_8py_adf15e0fe165b0dbc2ef248cf1beaab61}} 
+{\bfseries app.\+main.\+tree.\+subline}
+\item 
+\mbox{\Hypertarget{tree_8py_ae9f8d13527210352d323c0b5911a061e}\label{tree_8py_ae9f8d13527210352d323c0b5911a061e}} 
+{\bfseries app.\+main.\+tree.\+pat2}
+\item 
+\mbox{\Hypertarget{tree_8py_a3909c1f8fb38e93074ccc944ee252044}\label{tree_8py_a3909c1f8fb38e93074ccc944ee252044}} 
+{\bfseries app.\+main.\+tree.\+qpos}
+\item 
+\mbox{\Hypertarget{tree_8py_abe8bd43ed5e37800a221bbb9a138a197}\label{tree_8py_abe8bd43ed5e37800a221bbb9a138a197}} 
+{\bfseries app.\+main.\+tree.\+line}
+\item 
+\mbox{\Hypertarget{tree_8py_a6d6e7f1ff679e50a991eff8ee065ae05}\label{tree_8py_a6d6e7f1ff679e50a991eff8ee065ae05}} 
+{\bfseries app.\+main.\+tree.\+uplevel}
+\item 
+\mbox{\Hypertarget{tree_8py_aab0682d0f42eb8cabeaf9c75dc637016}\label{tree_8py_aab0682d0f42eb8cabeaf9c75dc637016}} 
+{\bfseries app.\+main.\+tree.\+dc}
+\item 
+\mbox{\Hypertarget{tree_8py_a5532c8413ea5f642827ff0ec5c09b6df}\label{tree_8py_a5532c8413ea5f642827ff0ec5c09b6df}} 
+{\bfseries app.\+main.\+tree.\+newid}
+\item 
+\mbox{\Hypertarget{tree_8py_a945dc6d9f4cd1ab6b6754ddbc61246c6}\label{tree_8py_a945dc6d9f4cd1ab6b6754ddbc61246c6}} 
+{\bfseries app.\+main.\+tree.\+sd}
+\item 
+\mbox{\Hypertarget{tree_8py_ac1588bb70f7b1431c13f25ac2a22e79c}\label{tree_8py_ac1588bb70f7b1431c13f25ac2a22e79c}} 
+{\bfseries app.\+main.\+tree.\+st}
+\item 
+\mbox{\Hypertarget{tree_8py_a29a1d7a4d21fb8c0cf63e27db3808c98}\label{tree_8py_a29a1d7a4d21fb8c0cf63e27db3808c98}} 
+{\bfseries app.\+main.\+tree.\+count}
+\item 
+\mbox{\Hypertarget{tree_8py_ace78661ab05eef4f4749ebcdd07c75e6}\label{tree_8py_ace78661ab05eef4f4749ebcdd07c75e6}} 
+{\bfseries app.\+main.\+tree.\+itemid}
+\item 
+\mbox{\Hypertarget{tree_8py_a8ff1323544c8a45eb2418b4d094117e0}\label{tree_8py_a8ff1323544c8a45eb2418b4d094117e0}} 
+{\bfseries app.\+main.\+tree.\+itemlist}
+\item 
+\mbox{\Hypertarget{tree_8py_a18205a28c3b7d1446d4e21abc8449631}\label{tree_8py_a18205a28c3b7d1446d4e21abc8449631}} 
+{\bfseries app.\+main.\+tree.\+jsdata}
+\item 
+\mbox{\Hypertarget{tree_8py_ae230e45d071ad5016dba1c66eb2db70c}\label{tree_8py_ae230e45d071ad5016dba1c66eb2db70c}} 
+{\bfseries app.\+main.\+tree.\+code}
+\item 
+\mbox{\Hypertarget{tree_8py_a61cbadf66ee1ffb48eb364ad48676125}\label{tree_8py_a61cbadf66ee1ffb48eb364ad48676125}} 
+{\bfseries app.\+main.\+tree.\+isp}
+\item 
+\mbox{\Hypertarget{tree_8py_a66d77861cf1ace692ab47658445dd4e9}\label{tree_8py_a66d77861cf1ace692ab47658445dd4e9}} 
+{\bfseries app.\+main.\+tree.\+prevhu}
+\item 
+\mbox{\Hypertarget{tree_8py_a73e0711391197e9cc7d0d67567e31199}\label{tree_8py_a73e0711391197e9cc7d0d67567e31199}} 
+{\bfseries app.\+main.\+tree.\+index}
+\item 
+\mbox{\Hypertarget{tree_8py_a20030b61adbb7d84fb69578c0d2d37d7}\label{tree_8py_a20030b61adbb7d84fb69578c0d2d37d7}} 
+{\bfseries app.\+main.\+tree.\+worklist}
+\item 
+\mbox{\Hypertarget{tree_8py_a58b7743cc4ad1c869c126e0ff3059b4c}\label{tree_8py_a58b7743cc4ad1c869c126e0ff3059b4c}} 
+{\bfseries app.\+main.\+tree.\+nl}
+\item 
+\mbox{\Hypertarget{tree_8py_aa5556f8e265203ed6e0505dc3b89f02e}\label{tree_8py_aa5556f8e265203ed6e0505dc3b89f02e}} 
+{\bfseries app.\+main.\+tree.\+start}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Builds the menu tree for browse. 
+
+Contains a number of methods to split sequences of museums on year into buckets of N length. The class was superceded by a new tree lib as the task became more complex and this solution was nonworkable for the visualise page. It represents a bit of effort to convert from this tree to the new treelib so as long as it works it could be left alone. If however new functionality is needed the better and cleaner approach in Boks should be used.
+
+This class essentially builds and maintains a css tree as text and in this lies the problem. The tree should be maintained as a normal tree structure and the text generated on the finished tree. The tree contains a dictionary that relates nodes to museum lists which is generated for the JS to support the browsing of lists of museums.
+
+More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+
+\begin{DoxyItemize}
+\item \# -\/ \# -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ !/usr/bin/env python 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tree_8py_a43d251f59e5f0460f753ee4445a88621}\label{tree_8py_a43d251f59e5f0460f753ee4445a88621}} 
+\index{tree.\+py@{tree.\+py}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rootnodename,  }\item[{}]{opened,  }\item[{}]{disabled,  }\item[{}]{base = {\ttfamily \textquotesingle{}item\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Init Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rootnodename} & \\
+\hline
+{\em opened} & is menu open \\
+\hline
+{\em disabled} & is menu disabled \\
+\hline
+{\em base=\textquotesingle{}item\textquotesingle{}} & menuname base \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a7d1047c61b413e8bf57070c76eec5161}\label{tree_8py_a7d1047c61b413e8bf57070c76eec5161}} 
+\index{tree.\+py@{tree.\+py}!add\+Leaf@{add\+Leaf}}
+\index{add\+Leaf@{add\+Leaf}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{add\+Leaf()}{addLeaf()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+add\+Leaf (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Adds a leav to the tree with menu item and default action Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a0470dc5bdd53f26144e7ea03ccc54471}\label{tree_8py_a0470dc5bdd53f26144e7ea03ccc54471}} 
+\index{tree.\+py@{tree.\+py}!add\+Node\+And\+Level@{add\+Node\+And\+Level}}
+\index{add\+Node\+And\+Level@{add\+Node\+And\+Level}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{add\+Node\+And\+Level()}{addNodeAndLevel()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+add\+Node\+And\+Level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nodecontent,  }\item[{}]{opened,  }\item[{}]{disabled,  }\item[{}]{action = {\ttfamily \textquotesingle{}ShowMuseums\textquotesingle{}},  }\item[{}]{defaultaction = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Adds a node to the tree and increases the level Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodecontent} & \\
+\hline
+{\em opened} & is open? \\
+\hline
+{\em disabled} & is disabled? \\
+\hline
+{\em action=\textquotesingle{}\+Show\+Museums\textquotesingle{}} & click action \\
+\hline
+{\em defaultaction=\+True} & use default action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a4dc40a96db4f687a9e64be9fdb108eaa}\label{tree_8py_a4dc40a96db4f687a9e64be9fdb108eaa}} 
+\index{tree.\+py@{tree.\+py}!add\+Node\+At\+Current\+Level@{add\+Node\+At\+Current\+Level}}
+\index{add\+Node\+At\+Current\+Level@{add\+Node\+At\+Current\+Level}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{add\+Node\+At\+Current\+Level()}{addNodeAtCurrentLevel()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+add\+Node\+At\+Current\+Level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nodecontent,  }\item[{}]{opened,  }\item[{}]{disabled,  }\item[{}]{action = {\ttfamily \textquotesingle{}ShowMuseums\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Add a node at the current level Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodecontent} & \\
+\hline
+{\em opened} & is open? \\
+\hline
+{\em disabled} & is disabled? \\
+\hline
+{\em action=\textquotesingle{}\+Show\+Museums\textquotesingle{}} & click action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a3902cffa6e18e4edfdc2d67588608bb2}\label{tree_8py_a3902cffa6e18e4edfdc2d67588608bb2}} 
+\index{tree.\+py@{tree.\+py}!add\+Sub\+Tree@{add\+Sub\+Tree}}
+\index{add\+Sub\+Tree@{add\+Sub\+Tree}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{add\+Sub\+Tree()}{addSubTree()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+add\+Sub\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sub,  }\item[{}]{start }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Adds a subtree to the tree Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub} & \\
+\hline
+{\em start} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a00db558c3c0cf8112194828a1a1773bf}\label{tree_8py_a00db558c3c0cf8112194828a1a1773bf}} 
+\index{tree.\+py@{tree.\+py}!append@{append}}
+\index{append@{append}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+append (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Appends a subtree to an existing tree line by line Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a5167924d0a288e66319b620c10401d65}\label{tree_8py_a5167924d0a288e66319b620c10401d65}} 
+\index{tree.\+py@{tree.\+py}!createtreefromlist@{createtreefromlist}}
+\index{createtreefromlist@{createtreefromlist}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{createtreefromlist()}{createtreefromlist()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+createtreefromlist (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{list,  }\item[{}]{tree,  }\item[{}]{nodename,  }\item[{}]{bucket,  }\item[{}]{ptr,  }\item[{}]{open }\end{DoxyParamCaption})}
+
+
+
+Purpose\+: Recursively add to tree from bucket lists Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & list to add \\
+\hline
+{\em tree} & tree to add to \\
+\hline
+{\em nodename} & node to add to \\
+\hline
+{\em bucket} & definition \\
+\hline
+{\em ptr} & list pointer \\
+\hline
+{\em open} & menu open? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a8fcf998b9c788c89c2d50f4d0299b603}\label{tree_8py_a8fcf998b9c788c89c2d50f4d0299b603}} 
+\index{tree.\+py@{tree.\+py}!dobucket@{dobucket}}
+\index{dobucket@{dobucket}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{dobucket()}{dobucket()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+dobucket (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{blist,  }\item[{}]{ptr,  }\item[{}]{inputlist }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Calculate a bucket list of blist size of museums included in years. 
+
+Arguments\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em blist} & example\+:buckets=\mbox{[}10,1\mbox{]} buckets of 10 years \\
+\hline
+{\em ptr} & traverse pointer index in list \\
+\hline
+{\em inputlist} & list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a96627ba3ed605e7fc930082f98a3a1ee}\label{tree_8py_a96627ba3ed605e7fc930082f98a3a1ee}} 
+\index{tree.\+py@{tree.\+py}!find\+\_\+all@{find\+\_\+all}}
+\index{find\+\_\+all@{find\+\_\+all}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{find\+\_\+all()}{find\_all()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+find\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{a\+\_\+str,  }\item[{}]{sub }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Finds a substring in a string Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+\_\+str} & input \\
+\hline
+{\em sub} & to find \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a170c63a22b10c3e14da835b94f68455e}\label{tree_8py_a170c63a22b10c3e14da835b94f68455e}} 
+\index{tree.\+py@{tree.\+py}!generate\+Lists@{generate\+Lists}}
+\index{generate\+Lists@{generate\+Lists}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{generate\+Lists()}{generateLists()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+generate\+Lists (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sortedtuples,  }\item[{}]{buckets }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Generates lists of musuems with bucket sizes in years using the prev method from the sorted sequence of museums. 
+
+Arguments\+:
+
+
+\begin{DoxyParams}{Parameters}
+{\em sortedtuples} & museums \\
+\hline
+{\em buckets} & bucket definition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a48546a777c3de501f0dc17ad1232624e}\label{tree_8py_a48546a777c3de501f0dc17ad1232624e}} 
+\index{tree.\+py@{tree.\+py}!get\+Id\+From\+Line@{get\+Id\+From\+Line}}
+\index{get\+Id\+From\+Line@{get\+Id\+From\+Line}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{get\+Id\+From\+Line()}{getIdFromLine()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+get\+Id\+From\+Line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Parse id from line Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a05ef05a89bbc55153924dc0137de71f3}\label{tree_8py_a05ef05a89bbc55153924dc0137de71f3}} 
+\index{tree.\+py@{tree.\+py}!get\+Label\+From\+String@{get\+Label\+From\+String}}
+\index{get\+Label\+From\+String@{get\+Label\+From\+String}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{get\+Label\+From\+String()}{getLabelFromString()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+get\+Label\+From\+String (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ids }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Parse the label from an id Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ids} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a638719cf5e01e171fb6a9de8b0d2b5bb}\label{tree_8py_a638719cf5e01e171fb6a9de8b0d2b5bb}} 
+\index{tree.\+py@{tree.\+py}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+get\+Path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Calculates a path from an id Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a33a4c53a537dc2da245fe1570ad754fa}\label{tree_8py_a33a4c53a537dc2da245fe1570ad754fa}} 
+\index{tree.\+py@{tree.\+py}!get\+Path\+For\+ID@{get\+Path\+For\+ID}}
+\index{get\+Path\+For\+ID@{get\+Path\+For\+ID}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{get\+Path\+For\+I\+D()}{getPathForID()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+get\+Path\+For\+ID (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Calculates a path from an id Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a916f819d9fe675061f69522454e87d15}\label{tree_8py_a916f819d9fe675061f69522454e87d15}} 
+\index{tree.\+py@{tree.\+py}!load\+Tree@{load\+Tree}}
+\index{load\+Tree@{load\+Tree}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{load\+Tree()}{loadTree()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+load\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Load tree with name Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_af9f763e642179fb1f64539e625cee343}\label{tree_8py_af9f763e642179fb1f64539e625cee343}} 
+\index{tree.\+py@{tree.\+py}!modify\+Id@{modify\+Id}}
+\index{modify\+Id@{modify\+Id}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{modify\+Id()}{modifyId()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+modify\+Id (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mod,  }\item[{}]{line,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Changes an id on a line and returns the new line and its id Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & \\
+\hline
+{\em line} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a8d0db47b3cf6dcf3ad1e6a5059ffe373}\label{tree_8py_a8d0db47b3cf6dcf3ad1e6a5059ffe373}} 
+\index{tree.\+py@{tree.\+py}!pickle\+Tree@{pickle\+Tree}}
+\index{pickle\+Tree@{pickle\+Tree}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{pickle\+Tree()}{pickleTree()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+pickle\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Save tree with name Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a661a6d35745a42d44ed81ff84b13f271}\label{tree_8py_a661a6d35745a42d44ed81ff84b13f271}} 
+\index{tree.\+py@{tree.\+py}!put\+Last\+Line@{put\+Last\+Line}}
+\index{put\+Last\+Line@{put\+Last\+Line}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{put\+Last\+Line()}{putLastLine()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+put\+Last\+Line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Replaces the last line in a tree Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_ae74fc0038e9d1a36c84e2851c173d07a}\label{tree_8py_ae74fc0038e9d1a36c84e2851c173d07a}} 
+\index{tree.\+py@{tree.\+py}!set\+No\+Leafs@{set\+No\+Leafs}}
+\index{set\+No\+Leafs@{set\+No\+Leafs}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{set\+No\+Leafs()}{setNoLeafs()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+set\+No\+Leafs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Whether tree has leaves Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value=\+False} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tree_8py_a0b175f362d03df1981e0ba72af7c99f6}\label{tree_8py_a0b175f362d03df1981e0ba72af7c99f6}} 
+\index{tree.\+py@{tree.\+py}!trunc\+Level@{trunc\+Level}}
+\index{trunc\+Level@{trunc\+Level}!tree.\+py@{tree.\+py}}
+\subsubsection{\texorpdfstring{trunc\+Level()}{truncLevel()}}
+{\footnotesize\ttfamily def app.\+main.\+tree.\+trunc\+Level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{level }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Truncates the level of a menu Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+\end{DoxyParams}

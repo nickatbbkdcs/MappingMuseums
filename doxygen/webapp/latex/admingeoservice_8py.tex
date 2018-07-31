@@ -1,0 +1,119 @@
+\hypertarget{admingeoservice_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/admingeoservice.py File Reference}
+\label{admingeoservice_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/admingeoservice.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/admingeoservice.\+py}}
+
+
+~\newline
+ This is an A\+PI service for the search front end to provide locations from the geo graph that matches the users characters as they type.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1admingeoservice_1_1Admingeoservice}{app.\+main.\+admingeoservice.\+Admingeoservice}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_a8b7e130054af37d76d0f7c50318ce881}\label{admingeoservice_8py_a8b7e130054af37d76d0f7c50318ce881}} 
+def \mbox{\hyperlink{admingeoservice_8py_a8b7e130054af37d76d0f7c50318ce881}{app.\+main.\+admingeoservice.\+get}} (self, propertytodisplay)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Returns a set of geonames matching the propertytodisplay parameters starting letters Arguments\+:  The starting letters to match. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_a9997c1609fb6a16fdfb83e1222b0594d}\label{admingeoservice_8py_a9997c1609fb6a16fdfb83e1222b0594d}} 
+{\bfseries app.\+main.\+admingeoservice.\+lcaseprop}
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_ae1a79fbf6019f5cf8dc675ccde110a96}\label{admingeoservice_8py_ae1a79fbf6019f5cf8dc675ccde110a96}} 
+{\bfseries app.\+main.\+admingeoservice.\+sparql} = S\+P\+A\+R\+Q\+L\+Wrapper(app.\+config\mbox{[}\textquotesingle{}S\+P\+A\+R\+Q\+L\+E\+N\+D\+P\+O\+I\+NT\textquotesingle{}\mbox{]})
+\item 
+string {\bfseries app.\+main.\+admingeoservice.\+queryold}
+\item 
+string {\bfseries app.\+main.\+admingeoservice.\+query}
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_aef27d58570b11a682c4a34239f1ac8b2}\label{admingeoservice_8py_aef27d58570b11a682c4a34239f1ac8b2}} 
+string {\bfseries app.\+main.\+admingeoservice.\+results} = sparql.\+query().convert()
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_aed3c814758068b94f24197115c68ff03}\label{admingeoservice_8py_aed3c814758068b94f24197115c68ff03}} 
+list {\bfseries app.\+main.\+admingeoservice.\+proplist} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_a606e16329aab0f8034b66c2a2db05c68}\label{admingeoservice_8py_a606e16329aab0f8034b66c2a2db05c68}} 
+string {\bfseries app.\+main.\+admingeoservice.\+vars} = results\mbox{[}\textquotesingle{}head\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}vars\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{admingeoservice_8py_ad121d7ff0d1219866c69c3f4bfeccba6}\label{admingeoservice_8py_ad121d7ff0d1219866c69c3f4bfeccba6}} 
+{\bfseries app.\+main.\+admingeoservice.\+ps} = set(proplist)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+~\newline
+ This is an A\+PI service for the search front end to provide locations from the geo graph that matches the users characters as they type. 
+
+~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{admingeoservice_8py_aa89f48da918b1158eeb18a5b38f21f73}\label{admingeoservice_8py_aa89f48da918b1158eeb18a5b38f21f73}} 
+\index{admingeoservice.\+py@{admingeoservice.\+py}!query@{query}}
+\index{query@{query}!admingeoservice.\+py@{admingeoservice.\+py}}
+\subsubsection{\texorpdfstring{query}{query}}
+{\footnotesize\ttfamily string app.\+main.\+admingeoservice.\+query}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = definitions.RDF\_PREFIX\_PRELUDE+\textcolor{stringliteral}{"""}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{    prefix """}+definitions.PREFIX\_WITHCOLON+\textcolor{stringliteral}{""" <http://"""}+definitions.RDFDEFURI+\textcolor{stringliteral}{"""> }}
+\DoxyCodeLine{3 \textcolor{stringliteral}{    }}
+\DoxyCodeLine{4 \textcolor{stringliteral}{}}
+\DoxyCodeLine{5 \textcolor{stringliteral}{}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{}}
+\DoxyCodeLine{7 \textcolor{stringliteral}{    SELECT DISTINCT STR(?sname) }}
+\DoxyCodeLine{8 \textcolor{stringliteral}{    FROM <"""}+app.config[\textcolor{stringliteral}{'GEOADMINGRAPH'}]+\textcolor{stringliteral}{""">}}
+\DoxyCodeLine{9 \textcolor{stringliteral}{    WHERE \{ }}
+\DoxyCodeLine{10 \textcolor{stringliteral}{    ?adm bbkmm:hasTypedName  ?sname .}}
+\DoxyCodeLine{11 \textcolor{stringliteral}{    ?adm a ?clazz .}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{    }}
+\DoxyCodeLine{13 \textcolor{stringliteral}{    FILTER(STRSTARTS( LCASE(?sname),"""}+\textcolor{stringliteral}{'"'}+lcaseprop+\textcolor{stringliteral}{'"'}+\textcolor{stringliteral}{""")) }}
+\DoxyCodeLine{14 \textcolor{stringliteral}{}}
+\DoxyCodeLine{15 \textcolor{stringliteral}{}}
+\DoxyCodeLine{16 \textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{17 \textcolor{stringliteral}{    group by ?sname order by ?sname}}
+\DoxyCodeLine{18 \textcolor{stringliteral}{              }}
+\DoxyCodeLine{19 \textcolor{stringliteral}{        """}}
+\end{DoxyCode}
+\mbox{\Hypertarget{admingeoservice_8py_a03bda54808931cf598782a9d968c67ea}\label{admingeoservice_8py_a03bda54808931cf598782a9d968c67ea}} 
+\index{admingeoservice.\+py@{admingeoservice.\+py}!queryold@{queryold}}
+\index{queryold@{queryold}!admingeoservice.\+py@{admingeoservice.\+py}}
+\subsubsection{\texorpdfstring{queryold}{queryold}}
+{\footnotesize\ttfamily string app.\+main.\+admingeoservice.\+queryold}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = definitions.RDF\_PREFIX\_PRELUDE+\textcolor{stringliteral}{"""}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{    prefix """}+definitions.PREFIX\_WITHCOLON+\textcolor{stringliteral}{""" <http://"""}+definitions.RDFDEFURI+\textcolor{stringliteral}{"""> }}
+\DoxyCodeLine{3 \textcolor{stringliteral}{    }}
+\DoxyCodeLine{4 \textcolor{stringliteral}{    SELECT DISTINCT  Str(?subname)  Str(?ssname) Str(?sssname) }}
+\DoxyCodeLine{5 \textcolor{stringliteral}{    FROM <"""}+app.config[\textcolor{stringliteral}{'GEOADMINGRAPH'}]+\textcolor{stringliteral}{""">}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{}}
+\DoxyCodeLine{7 \textcolor{stringliteral}{}}
+\DoxyCodeLine{8 \textcolor{stringliteral}{    WHERE \{ }}
+\DoxyCodeLine{9 \textcolor{stringliteral}{    ?adm a bbkmm:Country .}}
+\DoxyCodeLine{10 \textcolor{stringliteral}{    OPTIONAL\{}}
+\DoxyCodeLine{11 \textcolor{stringliteral}{    ?adm bbkmm:contains ?sub .}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{    ?sub  bbkmm:hasTypedName  ?subname .}}
+\DoxyCodeLine{13 \textcolor{stringliteral}{    FILTER(STRSTARTS( LCASE(?subname),"""}+\textcolor{stringliteral}{'"'}+lcaseprop+\textcolor{stringliteral}{'"'}+\textcolor{stringliteral}{""")) }}
+\DoxyCodeLine{14 \textcolor{stringliteral}{    }}
+\DoxyCodeLine{15 \textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{16 \textcolor{stringliteral}{    OPTIONAL\{}}
+\DoxyCodeLine{17 \textcolor{stringliteral}{    ?sub bbkmm:contains ?subsub .}}
+\DoxyCodeLine{18 \textcolor{stringliteral}{    ?subsub bbkmm:hasTypedName ?ssname .}}
+\DoxyCodeLine{19 \textcolor{stringliteral}{    FILTER (STRSTARTS( LCASE(?ssname),"""}+\textcolor{stringliteral}{'"'}+lcaseprop+\textcolor{stringliteral}{'"'}+\textcolor{stringliteral}{""")) }}
+\DoxyCodeLine{20 \textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{21 \textcolor{stringliteral}{    OPTIONAL \{}}
+\DoxyCodeLine{22 \textcolor{stringliteral}{    ?subsub bbkmm:contains ?subsubsub .}}
+\DoxyCodeLine{23 \textcolor{stringliteral}{    ?subsubsub bbkmm:hasTypedName ?sssname}}
+\DoxyCodeLine{24 \textcolor{stringliteral}{    FILTER (STRSTARTS( LCASE(?sssname),"""}+\textcolor{stringliteral}{'"'}+lcaseprop+\textcolor{stringliteral}{'"'}+\textcolor{stringliteral}{""")) }}
+\DoxyCodeLine{25 \textcolor{stringliteral}{    \}}}
+\DoxyCodeLine{26 \textcolor{stringliteral}{    \}group by ?subname order by ?subname}}
+\DoxyCodeLine{27 \textcolor{stringliteral}{              }}
+\DoxyCodeLine{28 \textcolor{stringliteral}{        """}}
+\end{DoxyCode}

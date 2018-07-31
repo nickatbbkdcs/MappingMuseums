@@ -1,0 +1,9 @@
+ . /home/nlarsson/bbk/python/musenv/bin/activate
+STAGING_ARENA=/home/nlarsson/bbk/etl/staging;export STAGING_ARENA
+VERSION=8;export VERSION
+#REAL_SCRIPTDIR=$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )
+#echo ${REAL_SCRIPTDIR}
+#echo $_
+#readlink -f "$0"
+# Path to script is from invoker, not current script. So always ..
+ . ../common.def

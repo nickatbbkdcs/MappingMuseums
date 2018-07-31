@@ -1,0 +1,49 @@
+\hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View}{}\section{app.\+main.\+model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View Class Reference}
+\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View}\index{app.\+main.\+model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View@{app.\+main.\+model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View}}
+
+
+Purpose\+:Formats a model representation to a view representation of all datatypes.  
+
+
+Inheritance diagram for app.\+main.\+model\+\_\+to\+\_\+view.\+Model\+\_\+\+To\+\_\+\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classapp_1_1main_1_1model__to__view_1_1Model__To__View}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View_ac63b92ae6be77e991cf490f0683cfd9f}\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View_ac63b92ae6be77e991cf490f0683cfd9f}} 
+def {\bfseries get\+View} (self, model, attribute)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View_ad0073ad307c0e193e93933a86bdedde2}\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View_ad0073ad307c0e193e93933a86bdedde2}} 
+{\bfseries parts} = attribute.\+split(definitions.\+H\+I\+E\+R\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a21ce3063ed1c03e10bd09dc2d3018d20}\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a21ce3063ed1c03e10bd09dc2d3018d20}} 
+{\bfseries lastpart} = parts\mbox{[}len(parts)-\/1\mbox{]}
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a94de482d624c64f0d992a51ba7e1ebe2}\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a94de482d624c64f0d992a51ba7e1ebe2}} 
+{\bfseries vals} = attribute.\+split(definitions.\+R\+A\+N\+G\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR)
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a6df97d85268e379273f38e3e505c0fca}\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a6df97d85268e379273f38e3e505c0fca}} 
+{\bfseries instance} = apputils.\+get\+Data\+Class\+Instance(definitions.\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+GE)
+\item 
+\mbox{\Hypertarget{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a0eecdb417dbdfd70e65bde6a5cf3dfda}\label{classapp_1_1main_1_1model__to__view_1_1Model__To__View_a0eecdb417dbdfd70e65bde6a5cf3dfda}} 
+{\bfseries view} = instance.\+get\+Model\+To\+View(attribute)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Purpose\+:Formats a model representation to a view representation of all datatypes. 
+
+Arguments\+:
+
+The datatype of the attribute  The model representation 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nlarsson/bbk/python/webdev/museumflask/app/main/\mbox{\hyperlink{model__to__view_8py}{model\+\_\+to\+\_\+view.\+py}}\end{DoxyCompactItemize}

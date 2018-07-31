@@ -1,0 +1,150 @@
+\hypertarget{PTreeNode_8py}{}\section{/home/nlarsson/bbk/python/webdev/museumflask/app/main/\+P\+Tree\+Node.py File Reference}
+\label{PTreeNode_8py}\index{/home/nlarsson/bbk/python/webdev/museumflask/app/main/\+P\+Tree\+Node.\+py@{/home/nlarsson/bbk/python/webdev/museumflask/app/main/\+P\+Tree\+Node.\+py}}
+
+
+Simple tree implementation.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classapp_1_1main_1_1PTreeNode_1_1PTreeNode}{app.\+main.\+P\+Tree\+Node.\+P\+Tree\+Node}}
+\begin{DoxyCompactList}\small\item\em Purpose\+:Removes type info from name Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{PTreeNode_8py_afb90696c826ce87389788fedc7654a4c}\label{PTreeNode_8py_afb90696c826ce87389788fedc7654a4c}} 
+def \mbox{\hyperlink{PTreeNode_8py_afb90696c826ce87389788fedc7654a4c}{app.\+main.\+P\+Tree\+Node.\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Print representation. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{PTreeNode_8py_a83de8fd3bea52d04c634c2cfd7774c00}{app.\+main.\+P\+Tree\+Node.\+add\+Node}} (self, nodedesc, data)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Add node to tree Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{PTreeNode_8py_a77acb5b3baa3273926ef046448969044}\label{PTreeNode_8py_a77acb5b3baa3273926ef046448969044}} 
+def \mbox{\hyperlink{PTreeNode_8py_a77acb5b3baa3273926ef046448969044}{app.\+main.\+P\+Tree\+Node.\+is\+Leaf}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Does tree have children. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{PTreeNode_8py_a71bb29f70eaa8cf97e68b407752286e0}{app.\+main.\+P\+Tree\+Node.\+getchildatthislevel}} (self, name, children)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Find name in children Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{PTreeNode_8py_a82ff99edfaa5ea8fc6f7c99663239476}{app.\+main.\+P\+Tree\+Node.\+buildnode}} (self, ob, level=0)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Builds a tree from a subtree Arguments\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{PTreeNode_8py_a9fb166265e70cc588a49192f2e0507b3}\label{PTreeNode_8py_a9fb166265e70cc588a49192f2e0507b3}} 
+def \mbox{\hyperlink{PTreeNode_8py_a9fb166265e70cc588a49192f2e0507b3}{app.\+main.\+P\+Tree\+Node.\+get\+J\+S\+ON}} (self)
+\begin{DoxyCompactList}\small\item\em Purpose\+:return json representation. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{PTreeNode_8py_a45a68d89a3bdeb6d2ce4269debc2fc73}{app.\+main.\+P\+Tree\+Node.\+get\+Path\+Dict}} (self, node, t, menuname, action, path, pathdict)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Build a dictionary of paths and the associated H\+T\+ML tree from a node Arguments\+: \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{PTreeNode_8py_a647ce480a890681bdc96a14501d01a6c}{app.\+main.\+P\+Tree\+Node.\+add\+Child}} (self, name, data)
+\begin{DoxyCompactList}\small\item\em Purpose\+:Add child to tree Arguments\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{PTreeNode_8py_ac3f7294bafa1a04c0bd856bfc035f2ee}\label{PTreeNode_8py_ac3f7294bafa1a04c0bd856bfc035f2ee}} 
+string {\bfseries app.\+main.\+P\+Tree\+Node.\+version} = \char`\"{}1.\+7\char`\"{}
+\item 
+\mbox{\Hypertarget{PTreeNode_8py_a36f82bacab901d6d5ba52e5f76efb91a}\label{PTreeNode_8py_a36f82bacab901d6d5ba52e5f76efb91a}} 
+tuple {\bfseries app.\+main.\+P\+Tree\+Node.\+version\+\_\+info} = (1,7,0,\char`\"{}rc-\/1\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple tree implementation. 
+
+This class was replaced with the treelib class and should disappear when the showproperties class is rewritten.
+
+~\newline
+ ~\newline
+ More details. \$\$\+Author\$\+:Nick Larsson, Researcher, Dep. of Computer Science and Information Systems at Birkbeck University, London, England, email\+:\href{mailto:nick@dcs.bbk.ac.uk}{\tt nick@dcs.\+bbk.\+ac.\+uk}, License\+:G\+NU G\+P\+Lv3
+
+!/usr/bin/env python 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{PTreeNode_8py_a647ce480a890681bdc96a14501d01a6c}\label{PTreeNode_8py_a647ce480a890681bdc96a14501d01a6c}} 
+\index{P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}}
+\subsubsection{\texorpdfstring{add\+Child()}{addChild()}}
+{\footnotesize\ttfamily def app.\+main.\+P\+Tree\+Node.\+add\+Child (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Add child to tree Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & child \\
+\hline
+{\em data} & data to store \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{PTreeNode_8py_a83de8fd3bea52d04c634c2cfd7774c00}\label{PTreeNode_8py_a83de8fd3bea52d04c634c2cfd7774c00}} 
+\index{P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}!add\+Node@{add\+Node}}
+\index{add\+Node@{add\+Node}!P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}}
+\subsubsection{\texorpdfstring{add\+Node()}{addNode()}}
+{\footnotesize\ttfamily def app.\+main.\+P\+Tree\+Node.\+add\+Node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nodedesc,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Add node to tree Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodedesc} & desription of node in the forma \textquotesingle{}/a/b/c\textquotesingle{} \\
+\hline
+{\em data} & data to store \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{PTreeNode_8py_a82ff99edfaa5ea8fc6f7c99663239476}\label{PTreeNode_8py_a82ff99edfaa5ea8fc6f7c99663239476}} 
+\index{P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}!buildnode@{buildnode}}
+\index{buildnode@{buildnode}!P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}}
+\subsubsection{\texorpdfstring{buildnode()}{buildnode()}}
+{\footnotesize\ttfamily def app.\+main.\+P\+Tree\+Node.\+buildnode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ob,  }\item[{}]{level = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Builds a tree from a subtree Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ob} & subtree \\
+\hline
+{\em level=0} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{PTreeNode_8py_a71bb29f70eaa8cf97e68b407752286e0}\label{PTreeNode_8py_a71bb29f70eaa8cf97e68b407752286e0}} 
+\index{P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}!getchildatthislevel@{getchildatthislevel}}
+\index{getchildatthislevel@{getchildatthislevel}!P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}}
+\subsubsection{\texorpdfstring{getchildatthislevel()}{getchildatthislevel()}}
+{\footnotesize\ttfamily def app.\+main.\+P\+Tree\+Node.\+getchildatthislevel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{children }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Find name in children Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & to look for \\
+\hline
+{\em children} & amongst these \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{PTreeNode_8py_a45a68d89a3bdeb6d2ce4269debc2fc73}\label{PTreeNode_8py_a45a68d89a3bdeb6d2ce4269debc2fc73}} 
+\index{P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}!get\+Path\+Dict@{get\+Path\+Dict}}
+\index{get\+Path\+Dict@{get\+Path\+Dict}!P\+Tree\+Node.\+py@{P\+Tree\+Node.\+py}}
+\subsubsection{\texorpdfstring{get\+Path\+Dict()}{getPathDict()}}
+{\footnotesize\ttfamily def app.\+main.\+P\+Tree\+Node.\+get\+Path\+Dict (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node,  }\item[{}]{t,  }\item[{}]{menuname,  }\item[{}]{action,  }\item[{}]{path,  }\item[{}]{pathdict }\end{DoxyParamCaption})}
+
+
+
+Purpose\+:Build a dictionary of paths and the associated H\+T\+ML tree from a node Arguments\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & root \\
+\hline
+{\em t} & menu \\
+\hline
+{\em menuname} & name \\
+\hline
+{\em action} & the action to take \\
+\hline
+{\em path} & path to node \\
+\hline
+{\em pathdict} & dictionary of paths \\
+\hline
+\end{DoxyParams}

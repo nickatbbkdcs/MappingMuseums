@@ -1,0 +1,489 @@
+\hypertarget{classtreelib_1_1tree_1_1Tree}{}\section{treelib.\+tree.\+Tree Class Reference}
+\label{classtreelib_1_1tree_1_1Tree}\index{treelib.\+tree.\+Tree@{treelib.\+tree.\+Tree}}
+Inheritance diagram for treelib.\+tree.\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtreelib_1_1tree_1_1Tree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_adb243cbf617b5193f24d53812719f13f}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, identifier)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_ab6e19ed5aabb69d4a540bbcfa132fe25}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, tree=None, deep=False)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a7613b0d4d9e7d28211a94bbea40aa37c}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a9a932229a9eac3fa55c59e0c238cc1a5}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_afeacd37545576d851b136e85497a0a78}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, item)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a88cc6ad02932a464c7817aa94abb006d}\label{classtreelib_1_1tree_1_1Tree_a88cc6ad02932a464c7817aa94abb006d}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a757cf54d27a10e32a9f30ee0e1bbde28}{add\+\_\+nodewithprefix}} (self, node, \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a5b3ff09f1a10d49460888cdfa2c5ac0d}{parent}}=None, prefix=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a82d946c1c679ffe37d2c19a40ae2ac14}{add\+\_\+node}} (self, node, \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a5b3ff09f1a10d49460888cdfa2c5ac0d}{parent}}=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a55265009dc743cdd46eb1033d9a1e636}{all\+\_\+nodes}} (self)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_af227a9cdab23e258c061a82a8f76a7db}{all\+\_\+nodes\+\_\+itr}} (self)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_aff4f1430d4718c01198d2cc8ea55d936}{children}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a6c83066ff561408de6f8670f36ed6ad7}{contains}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a4b70a6cf20c1197b1b04e139e7bd4110}{create\+\_\+node}} (self, tag=None, identifier=None, \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a5b3ff09f1a10d49460888cdfa2c5ac0d}{parent}}=None, data=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a890a44d3244ac67247322719d9228163}{depth}} (self, node=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_ac6b3fbe0c1b1b6b906306b9925e3011a}{expand\+\_\+tree}} (self, nid=None, mode=D\+E\+P\+TH, filter=None, key=None, reverse=False)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_ae251cc543bdc07c80290cf5a3d6eb560}{filter\+\_\+nodes}} (self, func)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a0f2ed5ef9b4f364c872435f1a170a9c5}{get\+\_\+node}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a15a76763504c43369635e2f262d1678b}{is\+\_\+branch}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a6bd72744ae2728143a611f3b32eeb763}{leaves}} (self, nid=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a4c1fa1eb04b6c8b4613a34425207c07e}{level}} (self, nid, filter=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a8f9e29d59e9ec0b689d9321c7c2358a7}{link\+\_\+past\+\_\+node}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a4ce0af34154a2903c4692eb195e114b9}{move\+\_\+node}} (self, source, destination)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ad618f6ac43b0daeda257850549b5d576}\label{classtreelib_1_1tree_1_1Tree_ad618f6ac43b0daeda257850549b5d576}} 
+def {\bfseries is\+\_\+ancestor} (self, ancestor, grandchild)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a831a9ee3ed8a2e5da20853745cc92746}{nodes}} (self)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a5b3ff09f1a10d49460888cdfa2c5ac0d}{parent}} (self, nid)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a8a45acb9098d54865cc1716b9c555068}\label{classtreelib_1_1tree_1_1Tree_a8a45acb9098d54865cc1716b9c555068}} 
+def {\bfseries count\+Children} (self, node)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ac44405f0b498b6b6049bfc93571a267b}\label{classtreelib_1_1tree_1_1Tree_ac44405f0b498b6b6049bfc93571a267b}} 
+def {\bfseries has\+Child\+With\+Name} (self, node, name)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a07f3c6c1e5ed11fcf717f65c9819b914}\label{classtreelib_1_1tree_1_1Tree_a07f3c6c1e5ed11fcf717f65c9819b914}} 
+def {\bfseries get\+Path\+For\+Node\+Ids} (self, node)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a6392656bfe734c5f13e7ae462cac8445}\label{classtreelib_1_1tree_1_1Tree_a6392656bfe734c5f13e7ae462cac8445}} 
+def {\bfseries get\+Path\+For\+Node} (self, node)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a33742dae375dba44d958e6f34f97ef1d}{paste}} (self, nid, new\+\_\+tree, deepcopy=False)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a775b014905a41f6e2b17f80fdfcdb294}{paths\+\_\+to\+\_\+leaves}} (self)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_aed9ee0821e87c9864e43e075c076f967}{remove\+\_\+node}} (self, identifier)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a539eabaac44a993d6be3ee7ab6b031aa}{remove\+\_\+subtree}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a21bc133386f5610b9a9eb720823ca536}{rsearch}} (self, nid, filter=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_afd71be661a3e735c629e1c533b444734}{save2file}} (self, filename, nid=None, \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a4c1fa1eb04b6c8b4613a34425207c07e}{level}}=R\+O\+OT, idhidden=True, filter=None, key=None, reverse=False, line\+\_\+type=\textquotesingle{}ascii-\/ex\textquotesingle{}, data\+\_\+property=None)
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ae67f01b2e134a3a505a55e4f9c37994d}\label{classtreelib_1_1tree_1_1Tree_ae67f01b2e134a3a505a55e4f9c37994d}} 
+def {\bfseries show} (self, nid=None, \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a4c1fa1eb04b6c8b4613a34425207c07e}{level}}=R\+O\+OT, idhidden=True, filter=None, key=None, reverse=False, line\+\_\+type=\textquotesingle{}ascii-\/ex\textquotesingle{}, data\+\_\+property=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a9db8ff11f2c857dd552b43ce8b42459c}{siblings}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_aae6f22415766812580d66979c19966e0}{size}} (self, \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a4c1fa1eb04b6c8b4613a34425207c07e}{level}}=None)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_ad460737959269e893cd982c5b671da8e}{subtree}} (self, nid)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_ae50b498b092788a6e7e365cca925d4b8}{to\+\_\+dict}} (self, nid=None, key=None, sort=True, reverse=False, with\+\_\+data=False)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_aa39a6f2ad477fc42c7f5339f7b67527e}{to\+\_\+json}} (self, with\+\_\+data=False, sort=True, reverse=False)
+\item 
+def \mbox{\hyperlink{classtreelib_1_1tree_1_1Tree_a502b9221b106f3bda9ddc9506af40511}{update\+\_\+node}} (self, nid, attrs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_af30e59fe700908a4fa0d22a878cdb3d5}\label{classtreelib_1_1tree_1_1Tree_af30e59fe700908a4fa0d22a878cdb3d5}} 
+{\bfseries root}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a0dc2f30f27c749ad748ced1eee1d95a0}\label{classtreelib_1_1tree_1_1Tree_a0dc2f30f27c749ad748ced1eee1d95a0}} 
+{\bfseries count}
+\item 
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a6498a524482b7197ef8e7c7a69ea7018}\label{classtreelib_1_1tree_1_1Tree_a6498a524482b7197ef8e7c7a69ea7018}} 
+{\bfseries children}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Tree objects are made of Node(s) stored in _nodes dictionary.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ab6e19ed5aabb69d4a540bbcfa132fe25}\label{classtreelib_1_1tree_1_1Tree_ab6e19ed5aabb69d4a540bbcfa132fe25}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree = {\ttfamily None},  }\item[{}]{deep = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initiate a new tree or copy another tree with a shallow or
+deep copy.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_adb243cbf617b5193f24d53812719f13f}\label{classtreelib_1_1tree_1_1Tree_adb243cbf617b5193f24d53812719f13f}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!\+\_\+\+\_\+contains\+\_\+\+\_\+@{\+\_\+\+\_\+contains\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+contains\+\_\+\+\_\+@{\+\_\+\+\_\+contains\+\_\+\+\_\+}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+contains\+\_\+\+\_\+()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{identifier }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of the nodes'identifiers matching the
+identifier argument.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a7613b0d4d9e7d28211a94bbea40aa37c}\label{classtreelib_1_1tree_1_1Tree_a7613b0d4d9e7d28211a94bbea40aa37c}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+getitem\+\_\+\+\_\+()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return _nodes[key]\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a9a932229a9eac3fa55c59e0c238cc1a5}\label{classtreelib_1_1tree_1_1Tree_a9a932229a9eac3fa55c59e0c238cc1a5}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!\+\_\+\+\_\+len\+\_\+\+\_\+@{\+\_\+\+\_\+len\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+len\+\_\+\+\_\+@{\+\_\+\+\_\+len\+\_\+\+\_\+}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+len\+\_\+\+\_\+()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return len(_nodes)\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_afeacd37545576d851b136e85497a0a78}\label{classtreelib_1_1tree_1_1Tree_afeacd37545576d851b136e85497a0a78}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!\+\_\+\+\_\+setitem\+\_\+\+\_\+@{\+\_\+\+\_\+setitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+setitem\+\_\+\+\_\+@{\+\_\+\+\_\+setitem\+\_\+\+\_\+}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+setitem\+\_\+\+\_\+()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set _nodes[key]\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a82d946c1c679ffe37d2c19a40ae2ac14}\label{classtreelib_1_1tree_1_1Tree_a82d946c1c679ffe37d2c19a40ae2ac14}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!add\+\_\+node@{add\+\_\+node}}
+\index{add\+\_\+node@{add\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{add\+\_\+node()}{add\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+add\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node,  }\item[{}]{parent = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new node to tree.
+The 'node' parameter refers to an instance of Class::Node
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a757cf54d27a10e32a9f30ee0e1bbde28}\label{classtreelib_1_1tree_1_1Tree_a757cf54d27a10e32a9f30ee0e1bbde28}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!add\+\_\+nodewithprefix@{add\+\_\+nodewithprefix}}
+\index{add\+\_\+nodewithprefix@{add\+\_\+nodewithprefix}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{add\+\_\+nodewithprefix()}{add\_nodewithprefix()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+add\+\_\+nodewithprefix (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node,  }\item[{}]{parent = {\ttfamily None},  }\item[{}]{prefix = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new node to tree.
+The 'node' parameter refers to an instance of Class::Node
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a55265009dc743cdd46eb1033d9a1e636}\label{classtreelib_1_1tree_1_1Tree_a55265009dc743cdd46eb1033d9a1e636}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!all\+\_\+nodes@{all\+\_\+nodes}}
+\index{all\+\_\+nodes@{all\+\_\+nodes}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{all\+\_\+nodes()}{all\_nodes()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+all\+\_\+nodes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return all nodes in a list\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_af227a9cdab23e258c061a82a8f76a7db}\label{classtreelib_1_1tree_1_1Tree_af227a9cdab23e258c061a82a8f76a7db}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!all\+\_\+nodes\+\_\+itr@{all\+\_\+nodes\+\_\+itr}}
+\index{all\+\_\+nodes\+\_\+itr@{all\+\_\+nodes\+\_\+itr}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{all\+\_\+nodes\+\_\+itr()}{all\_nodes\_itr()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+all\+\_\+nodes\+\_\+itr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns all nodes in an iterator
+Added by William Rusnack
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_aff4f1430d4718c01198d2cc8ea55d936}\label{classtreelib_1_1tree_1_1Tree_aff4f1430d4718c01198d2cc8ea55d936}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!children@{children}}
+\index{children@{children}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{children()}{children()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+children (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the children (Node) list of nid.
+Empty list is returned if nid does not exist
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a6c83066ff561408de6f8670f36ed6ad7}\label{classtreelib_1_1tree_1_1Tree_a6c83066ff561408de6f8670f36ed6ad7}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!contains@{contains}}
+\index{contains@{contains}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+contains (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the tree contains node of given id\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a4b70a6cf20c1197b1b04e139e7bd4110}\label{classtreelib_1_1tree_1_1Tree_a4b70a6cf20c1197b1b04e139e7bd4110}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!create\+\_\+node@{create\+\_\+node}}
+\index{create\+\_\+node@{create\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{create\+\_\+node()}{create\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+create\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tag = {\ttfamily None},  }\item[{}]{identifier = {\ttfamily None},  }\item[{}]{parent = {\ttfamily None},  }\item[{}]{data = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a child node for given @parent node.\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a890a44d3244ac67247322719d9228163}\label{classtreelib_1_1tree_1_1Tree_a890a44d3244ac67247322719d9228163}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!depth@{depth}}
+\index{depth@{depth}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{depth()}{depth()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+depth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the maximum level of this tree or the level of the given node
+
+@param node Node instance or identifier
+@return int
+@throw NodeIDAbsentError
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ac6b3fbe0c1b1b6b906306b9925e3011a}\label{classtreelib_1_1tree_1_1Tree_ac6b3fbe0c1b1b6b906306b9925e3011a}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!expand\+\_\+tree@{expand\+\_\+tree}}
+\index{expand\+\_\+tree@{expand\+\_\+tree}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{expand\+\_\+tree()}{expand\_tree()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+expand\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid = {\ttfamily None},  }\item[{}]{mode = {\ttfamily DEPTH},  }\item[{}]{filter = {\ttfamily None},  }\item[{}]{key = {\ttfamily None},  }\item[{}]{reverse = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Python generator. Loosly based on an algorithm from
+'Essential LISP' by John R. Anderson, Albert T. Corbett, and
+Brian J. Reiser, page 239-241
+
+UPDATE: the @filter function is performed on Node object during
+traversing. In this manner, the traversing will not continue to
+following children of node whose condition does not pass the filter.
+
+UPDATE: the @key and @reverse are present to sort nodes at each
+level.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ae251cc543bdc07c80290cf5a3d6eb560}\label{classtreelib_1_1tree_1_1Tree_ae251cc543bdc07c80290cf5a3d6eb560}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!filter\+\_\+nodes@{filter\+\_\+nodes}}
+\index{filter\+\_\+nodes@{filter\+\_\+nodes}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{filter\+\_\+nodes()}{filter\_nodes()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+filter\+\_\+nodes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filters all nodes by function
+function is passed one node as an argument and that node is included if function returns true
+returns a filter iterator of the node in python 3 or a list of the nodes in python 2
+Added William Rusnack
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a0f2ed5ef9b4f364c872435f1a170a9c5}\label{classtreelib_1_1tree_1_1Tree_a0f2ed5ef9b4f364c872435f1a170a9c5}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!get\+\_\+node@{get\+\_\+node}}
+\index{get\+\_\+node@{get\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{get\+\_\+node()}{get\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+get\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the node with `nid`. None returned if `nid` does not exist.\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a15a76763504c43369635e2f262d1678b}\label{classtreelib_1_1tree_1_1Tree_a15a76763504c43369635e2f262d1678b}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!is\+\_\+branch@{is\+\_\+branch}}
+\index{is\+\_\+branch@{is\+\_\+branch}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{is\+\_\+branch()}{is\_branch()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+is\+\_\+branch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the children (ID) list of nid.
+Empty list is returned if nid does not exist
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a6bd72744ae2728143a611f3b32eeb763}\label{classtreelib_1_1tree_1_1Tree_a6bd72744ae2728143a611f3b32eeb763}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!leaves@{leaves}}
+\index{leaves@{leaves}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{leaves()}{leaves()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+leaves (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get leaves of the whole tree of a subtree.\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a4c1fa1eb04b6c8b4613a34425207c07e}\label{classtreelib_1_1tree_1_1Tree_a4c1fa1eb04b6c8b4613a34425207c07e}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!level@{level}}
+\index{level@{level}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{level()}{level()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid,  }\item[{}]{filter = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the node level in this tree.
+The level is an integer starting with '0' at the root.
+In other words, the root lives at level '0';
+
+Update: @filter params is added to calculate level passing
+exclusive nodes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a8f9e29d59e9ec0b689d9321c7c2358a7}\label{classtreelib_1_1tree_1_1Tree_a8f9e29d59e9ec0b689d9321c7c2358a7}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!link\+\_\+past\+\_\+node@{link\+\_\+past\+\_\+node}}
+\index{link\+\_\+past\+\_\+node@{link\+\_\+past\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{link\+\_\+past\+\_\+node()}{link\_past\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+link\+\_\+past\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete a node by linking past it.
+
+For example, if we have a -> b -> c and delete node b, we are left
+with a -> c
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a4ce0af34154a2903c4692eb195e114b9}\label{classtreelib_1_1tree_1_1Tree_a4ce0af34154a2903c4692eb195e114b9}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!move\+\_\+node@{move\+\_\+node}}
+\index{move\+\_\+node@{move\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{move\+\_\+node()}{move\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+move\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{source,  }\item[{}]{destination }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move a node indicated by @source parameter to be a child of
+@destination.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a831a9ee3ed8a2e5da20853745cc92746}\label{classtreelib_1_1tree_1_1Tree_a831a9ee3ed8a2e5da20853745cc92746}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!nodes@{nodes}}
+\index{nodes@{nodes}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{nodes()}{nodes()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+nodes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict form of nodes in a tree: {id: node_instance}\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a5b3ff09f1a10d49460888cdfa2c5ac0d}\label{classtreelib_1_1tree_1_1Tree_a5b3ff09f1a10d49460888cdfa2c5ac0d}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!parent@{parent}}
+\index{parent@{parent}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+parent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get parent node object of given id\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a33742dae375dba44d958e6f34f97ef1d}\label{classtreelib_1_1tree_1_1Tree_a33742dae375dba44d958e6f34f97ef1d}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!paste@{paste}}
+\index{paste@{paste}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{paste()}{paste()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+paste (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid,  }\item[{}]{new\+\_\+tree,  }\item[{}]{deepcopy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Paste a @new_tree to the original one by linking the root
+of new tree to given node (nid).
+
+Update: add @deepcopy of pasted tree.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a775b014905a41f6e2b17f80fdfcdb294}\label{classtreelib_1_1tree_1_1Tree_a775b014905a41f6e2b17f80fdfcdb294}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!paths\+\_\+to\+\_\+leaves@{paths\+\_\+to\+\_\+leaves}}
+\index{paths\+\_\+to\+\_\+leaves@{paths\+\_\+to\+\_\+leaves}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{paths\+\_\+to\+\_\+leaves()}{paths\_to\_leaves()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+paths\+\_\+to\+\_\+leaves (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use this function to get the identifiers allowing to go from the root
+nodes to each leaf.
+Return a list of list of identifiers, root being not omitted.
+
+For example :
+    Harry
+    |___ Bill
+    |___ Jane
+    |    |___ Diane
+    |         |___ George
+    |              |___ Jill
+    |         |___ Mary
+    |    |___ Mark
+
+expected result :
+[['harry', 'jane', 'diane', 'mary'],
+ ['harry', 'jane', 'mark'],
+ ['harry', 'jane', 'diane', 'george', 'jill'],
+ ['harry', 'bill']]
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_aed9ee0821e87c9864e43e075c076f967}\label{classtreelib_1_1tree_1_1Tree_aed9ee0821e87c9864e43e075c076f967}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!remove\+\_\+node@{remove\+\_\+node}}
+\index{remove\+\_\+node@{remove\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{remove\+\_\+node()}{remove\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+remove\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{identifier }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove a node indicated by 'identifier'; all the successors are
+removed as well.
+
+Return the number of removed nodes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a539eabaac44a993d6be3ee7ab6b031aa}\label{classtreelib_1_1tree_1_1Tree_a539eabaac44a993d6be3ee7ab6b031aa}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!remove\+\_\+subtree@{remove\+\_\+subtree}}
+\index{remove\+\_\+subtree@{remove\+\_\+subtree}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{remove\+\_\+subtree()}{remove\_subtree()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+remove\+\_\+subtree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a subtree deleted from this tree. If nid is None, an
+empty tree is returned.
+For the original tree, this method is similar to
+`remove_node(self,nid)`, because given node and its children
+are removed from the original tree in both methods.
+For the returned value and performance, these two methods are
+different:
+
+    `remove_node` returns the number of deleted nodes;
+    `remove_subtree` returns a subtree of deleted nodes;
+
+You are always suggested to use `remove_node` if your only to
+delete nodes from a tree, as the other one need memory
+allocation to store the new tree.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a21bc133386f5610b9a9eb720823ca536}\label{classtreelib_1_1tree_1_1Tree_a21bc133386f5610b9a9eb720823ca536}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!rsearch@{rsearch}}
+\index{rsearch@{rsearch}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{rsearch()}{rsearch()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+rsearch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid,  }\item[{}]{filter = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Traverse the tree branch along the branch from nid to its
+ancestors (until root).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_afd71be661a3e735c629e1c533b444734}\label{classtreelib_1_1tree_1_1Tree_afd71be661a3e735c629e1c533b444734}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!save2file@{save2file}}
+\index{save2file@{save2file}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{save2file()}{save2file()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+save2file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{nid = {\ttfamily None},  }\item[{}]{level = {\ttfamily ROOT},  }\item[{}]{idhidden = {\ttfamily True},  }\item[{}]{filter = {\ttfamily None},  }\item[{}]{key = {\ttfamily None},  }\item[{}]{reverse = {\ttfamily False},  }\item[{}]{line\+\_\+type = {\ttfamily \textquotesingle{}ascii-\/ex\textquotesingle{}},  }\item[{}]{data\+\_\+property = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update 20/05/13: Save tree into file for offline analysis\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a9db8ff11f2c857dd552b43ce8b42459c}\label{classtreelib_1_1tree_1_1Tree_a9db8ff11f2c857dd552b43ce8b42459c}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!siblings@{siblings}}
+\index{siblings@{siblings}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{siblings()}{siblings()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+siblings (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the siblings of given @nid.
+
+If @nid is root or there are no siblings, an empty list is returned.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_aae6f22415766812580d66979c19966e0}\label{classtreelib_1_1tree_1_1Tree_aae6f22415766812580d66979c19966e0}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!size@{size}}
+\index{size@{size}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+size (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{level = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the number of nodes of the whole tree if @level is not
+given. Otherwise, the total number of nodes at specific level
+is returned.
+
+@param level The level number in the tree. It must be between
+[0, tree.depth].
+
+Otherwise, InvalidLevelNumber exception will be raised.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ad460737959269e893cd982c5b671da8e}\label{classtreelib_1_1tree_1_1Tree_ad460737959269e893cd982c5b671da8e}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!subtree@{subtree}}
+\index{subtree@{subtree}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{subtree()}{subtree()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+subtree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a shallow COPY of subtree with nid being the new root.
+If nid is None, return an empty tree.
+If you are looking for a deepcopy, please create a new tree
+with this shallow copy,
+
+e.g.
+    new_tree = Tree(t.subtree(t.root), deep=True)
+
+This line creates a deep copy of the entire tree.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_ae50b498b092788a6e7e365cca925d4b8}\label{classtreelib_1_1tree_1_1Tree_ae50b498b092788a6e7e365cca925d4b8}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!to\+\_\+dict@{to\+\_\+dict}}
+\index{to\+\_\+dict@{to\+\_\+dict}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{to\+\_\+dict()}{to\_dict()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+to\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid = {\ttfamily None},  }\item[{}]{key = {\ttfamily None},  }\item[{}]{sort = {\ttfamily True},  }\item[{}]{reverse = {\ttfamily False},  }\item[{}]{with\+\_\+data = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}transform self into a dict\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_aa39a6f2ad477fc42c7f5339f7b67527e}\label{classtreelib_1_1tree_1_1Tree_aa39a6f2ad477fc42c7f5339f7b67527e}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!to\+\_\+json@{to\+\_\+json}}
+\index{to\+\_\+json@{to\+\_\+json}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{to\+\_\+json()}{to\_json()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+to\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{with\+\_\+data = {\ttfamily False},  }\item[{}]{sort = {\ttfamily True},  }\item[{}]{reverse = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the json string corresponding to self\end{DoxyVerb}
+ \mbox{\Hypertarget{classtreelib_1_1tree_1_1Tree_a502b9221b106f3bda9ddc9506af40511}\label{classtreelib_1_1tree_1_1Tree_a502b9221b106f3bda9ddc9506af40511}} 
+\index{treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}!update\+\_\+node@{update\+\_\+node}}
+\index{update\+\_\+node@{update\+\_\+node}!treelib\+::tree\+::\+Tree@{treelib\+::tree\+::\+Tree}}
+\subsubsection{\texorpdfstring{update\+\_\+node()}{update\_node()}}
+{\footnotesize\ttfamily def treelib.\+tree.\+Tree.\+update\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nid,  }\item[{}]{attrs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update node's attributes.
+:param nid: the identifier of modified node
+:param attrs: attribute pairs recognized by Node object
+:return: None
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/nlarsson/bbk/python/webdev/museumflask/app/main/treelib/tree.\+py\end{DoxyCompactItemize}
